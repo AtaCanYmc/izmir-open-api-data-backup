@@ -4,9 +4,12 @@ Bu proje, `izmir-open-data-js` kutuphanesi ile ESHOT hat verisini gunluk yedekle
 
 ## Dosyalar
 
-- `backup.js`: ESHOT hat listesini CKAN kaynagindan cekip `data/eshot-hatlar.json` dosyasina yazar.
+- `backup.ts`: ESHOT hat listesini CKAN kaynagindan cekip `data/eshot-hatlar.json` dosyasina yazar.
 - `.github/workflows/daily-backup.yml`: Her gun TSI 23:00 (UTC 20:00) backup scriptini calistirir ve degisiklik varsa commit/push yapar.
-- `index.html`: Tailwind tabanli, responsive, arama destekli goruntuleme arayuzu.
+- `index.html`: TypeScript React uygulamasini yukler.
+- `src/App.tsx`: Tailwind tabanli, responsive, arama destekli goruntuleme arayuzu.
+- `tests/backup.test.ts`: backup mantigi icin birim testleri.
+- `prompt.md`: Sik kullanilan prompt kaliplari.
 - `data/eshot-hatlar.json`: Uretilen JSON yedek dosyasi.
 
 ## Kurulum
@@ -25,6 +28,12 @@ Sadece cekme testi (dosya yazmadan):
 
 ```bash
 npm run backup:dry
+```
+
+Testleri calistirma:
+
+```bash
+npm test
 ```
 
 ## GitHub Pages
