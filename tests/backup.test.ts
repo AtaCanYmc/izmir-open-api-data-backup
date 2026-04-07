@@ -28,6 +28,9 @@ describe("fetchAllHatlar", () => {
 
         return { total: 201, records: [] };
       },
+      getDuraklar: async () => ({ records: [] }),
+      getHatGuzergahlari: async () => ({ records: [] }),
+      getHareketSaatleri: async () => ({ records: [] }),
     };
 
     const result = await fetchAllHatlar(api);
@@ -43,6 +46,9 @@ describe("fetchAllHatlar", () => {
           records: [{ HAT_NO: "5" }, { HAT_NO: "1" }],
         };
       },
+      getDuraklar: async () => ({ records: [] }),
+      getHatGuzergahlari: async () => ({ records: [] }),
+      getHareketSaatleri: async () => ({ records: [] }),
     };
 
     const result = await fetchAllHatlar(api);
