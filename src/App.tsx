@@ -83,15 +83,18 @@ function queryHatDetail(db: Database, hatNo: string): HatDetail | null {
   const hat = hatStmt.getAsObject() as Hat;
   hatStmt.free();
 
-  // Duraklar
+  // Duraklar - hat_no kolonu birden fazla hatti "-" ile birlestirerek tutar
   const durakStmt = db.prepare(`
     SELECT d.durak_id, d.durak_adi, d.enlem, d.boylam
     FROM duraktan_gecen_hatlar dgh
     JOIN duraklar d ON d.durak_id = dgh.durak_id
     WHERE dgh.hat_no = ?
+       OR dgh.hat_no LIKE ? || '-%'
+       OR dgh.hat_no LIKE '%-' || ?
+       OR dgh.hat_no LIKE '%-' || ? || '-%'
     ORDER BY d.durak_id
   `);
-  durakStmt.bind([hatNo]);
+  durakStmt.bind([hatNo, hatNo, hatNo, hatNo]);
   const duraklar: Durak[] = [];
   while (durakStmt.step()) {
     duraklar.push(durakStmt.getAsObject() as Durak);

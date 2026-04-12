@@ -36,11 +36,17 @@ ORDER BY hat_no;
 
 ## 2.2) Bir hattin gectigi duraklar (ornek: 168)
 
+`hat_no` kolonu birden fazla hatti "-" ile birlestirerek tutar (ornek: "10-20-300").
+Belirli bir hatti aramak icin asagidaki pattern kullanilmali:
+
 ```sql
 SELECT dgh.hat_no, dgh.durak_id, d.durak_adi
 FROM duraktan_gecen_hatlar dgh
 LEFT JOIN duraklar d ON d.durak_id = dgh.durak_id
-WHERE dgh.hat_no = '168'
+WHERE dgh.hat_no = '290'              -- tam eslesme
+   OR dgh.hat_no LIKE '290-%'         -- basinda (ornek: 290-168)
+   OR dgh.hat_no LIKE '%-290'         -- sonunda (ornek: 168-290)
+   OR dgh.hat_no LIKE '%-290-%'       -- ortada  (ornek: 168-290-5)
 ORDER BY dgh.durak_id;
 ```
 
