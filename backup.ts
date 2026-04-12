@@ -1,14 +1,17 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { createTables } from "./db/init";
 
 const PAGE_SIZE = 200;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DATA_DIR = path.join(__dirname, "data");
 const HATLAR_FILE = path.join(DATA_DIR, "eshot-hatlar.json");
-const ESHOT_DIR = path.join(DATA_DIR, "eshot");
-const ESHOT_INDEX_FILE = path.join(ESHOT_DIR, "index.json");
+const DB_FILE = path.join(DATA_DIR, "eshot.db");
+const require = createRequire(path.join(process.cwd(), "package.json"));
+const Database = require("better-sqlite3") as typeof import("better-sqlite3");
 
 export interface EshotHat {
   HAT_NO?: string | number;
@@ -76,6 +79,15 @@ export interface EshotIndexPayload {
   source: string;
   total: number;
   hatlar: EshotIndexEntry[];
+}
+
+export interface SqlitePersistResult {
+  runId: number;
+  dbFile: string;
+  hatlar: number;
+  duraklar: number;
+  guzergahlar: number;
+  saatler: number;
 }
 
 export async function createEshotApi(): Promise<EshotApi> {
@@ -156,6 +168,180 @@ function getHatNo(record: EshotHat): string | null {
 
   const value = String(raw).trim();
   return value ? value : null;
+}
+
+function pickNumber(record: EshotHat, keys: string[]): number | null {
+  for (const key of keys) {
+    const raw = record[key];
+    if (raw === undefined || raw === null || raw === "") continue;
+    const value = Number(raw);
+    if (!Number.isNaN(value)) {
+      return value;
+    }
+  }
+  return null;
+}
+
+function pickText(record: EshotHat, keys: string[]): string | null {
+  for (const key of keys) {
+    const raw = record[key];
+    if (raw === undefined || raw === null) continue;
+    const value = String(raw).trim();
+    if (value) {
+      return value;
+    }
+  }
+  return null;
+}
+
+export async function persistAllToSqlite(
+  now: Date,
+  hatlar: EshotHat[],
+  duraklar: EshotHat[],
+  guzergahlar: EshotHat[],
+  saatler: EshotHat[],
+  databaseFile = DB_FILE
+): Promise<SqlitePersistResult> {
+  createTables(databaseFile);
+  const db = new Database(databaseFile);
+  const nowIso = now.toISOString();
+
+  const runStartStmt = db.prepare(
+    `INSERT INTO backup_runs (source, started_at, status, notes) VALUES (@source, @startedAt, @status, @notes)`
+  );
+  const runFinishStmt = db.prepare(
+    `UPDATE backup_runs SET finished_at = @finishedAt, status = @status, notes = @notes WHERE id = @id`
+  );
+
+  const runResult = runStartStmt.run({
+    source: "backup.ts",
+    startedAt: nowIso,
+    status: "running",
+    notes: "Veriler API'den cekildi, SQLite yazimi basliyor",
+  });
+  const runId = Number(runResult.lastInsertRowid);
+
+  const writeAll = db.transaction(() => {
+    db.exec("DELETE FROM hatlar; DELETE FROM duraklar; DELETE FROM guzergah_noktalari; DELETE FROM hareket_saatleri;");
+
+    const upsertHat = db.prepare(
+      `INSERT INTO hatlar (hat_no, hat_adi, hat_baslangic, hat_bitis, updated_at, raw_json)
+       VALUES (@hatNo, @hatAdi, @hatBaslangic, @hatBitis, @updatedAt, @rawJson)
+       ON CONFLICT(hat_no) DO UPDATE SET
+         hat_adi = excluded.hat_adi,
+         hat_baslangic = excluded.hat_baslangic,
+         hat_bitis = excluded.hat_bitis,
+         updated_at = excluded.updated_at,
+         raw_json = excluded.raw_json`
+    );
+
+    const upsertDurak = db.prepare(
+      `INSERT INTO duraklar (hat_no, durak_id, durak_adi, enlem, boylam, yon, updated_at, raw_json)
+       VALUES (@hatNo, @durakId, @durakAdi, @enlem, @boylam, @yon, @updatedAt, @rawJson)
+       ON CONFLICT(hat_no, durak_id, yon) DO UPDATE SET
+         durak_adi = excluded.durak_adi,
+         enlem = excluded.enlem,
+         boylam = excluded.boylam,
+         updated_at = excluded.updated_at,
+         raw_json = excluded.raw_json`
+    );
+
+    const upsertGuzergah = db.prepare(
+      `INSERT INTO guzergah_noktalari (hat_no, yon, sira, enlem, boylam, updated_at, raw_json)
+       VALUES (@hatNo, @yon, @sira, @enlem, @boylam, @updatedAt, @rawJson)
+       ON CONFLICT(hat_no, yon, sira) DO UPDATE SET
+         enlem = excluded.enlem,
+         boylam = excluded.boylam,
+         updated_at = excluded.updated_at,
+         raw_json = excluded.raw_json`
+    );
+
+    const insertSaat = db.prepare(
+      `INSERT INTO hareket_saatleri (hat_no, yon, kalkis_saati, aciklama, updated_at, raw_json)
+       VALUES (@hatNo, @yon, @kalkisSaati, @aciklama, @updatedAt, @rawJson)`
+    );
+
+    for (const row of hatlar) {
+      const hatNo = getHatNo(row);
+      if (!hatNo) continue;
+      upsertHat.run({
+        hatNo,
+        hatAdi: pickText(row, ["HAT_ADI"]),
+        hatBaslangic: pickText(row, ["HAT_BASLANGIC"]),
+        hatBitis: pickText(row, ["HAT_BITIS"]),
+        updatedAt: nowIso,
+        rawJson: JSON.stringify(row),
+      });
+    }
+
+    for (const row of duraklar) {
+      upsertDurak.run({
+        hatNo: getHatNo(row),
+        durakId: pickNumber(row, ["DURAK_ID", "ID"]),
+        durakAdi: pickText(row, ["DURAK_ADI", "ADI"]),
+        enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
+        boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
+        yon: pickNumber(row, ["YON"]),
+        updatedAt: nowIso,
+        rawJson: JSON.stringify(row),
+      });
+    }
+
+    let guzergahSira = 0;
+    for (const row of guzergahlar) {
+      const sira = pickNumber(row, ["SIRA", "SIRANO", "NOKTA_SIRA"]) ?? ++guzergahSira;
+      upsertGuzergah.run({
+        hatNo: getHatNo(row),
+        yon: pickNumber(row, ["YON"]),
+        sira,
+        enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
+        boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
+        updatedAt: nowIso,
+        rawJson: JSON.stringify(row),
+      });
+    }
+
+    for (const row of saatler) {
+      insertSaat.run({
+        hatNo: getHatNo(row),
+        yon: pickNumber(row, ["YON"]),
+        kalkisSaati: pickText(row, ["KALKIS_SAATI", "HAREKET_SAATI", "SAAT", "GIDIS_SAATI", "DONUS_SAATI"]),
+        aciklama: pickText(row, ["ACIKLAMA", "NOT", "TIP"]),
+        updatedAt: nowIso,
+        rawJson: JSON.stringify(row),
+      });
+    }
+  });
+
+  try {
+    writeAll();
+    runFinishStmt.run({
+      id: runId,
+      finishedAt: new Date().toISOString(),
+      status: "success",
+      notes: `hatlar=${hatlar.length}, duraklar=${duraklar.length}, guzergahlar=${guzergahlar.length}, saatler=${saatler.length}`,
+    });
+  } catch (error) {
+    runFinishStmt.run({
+      id: runId,
+      finishedAt: new Date().toISOString(),
+      status: "failed",
+      notes: error instanceof Error ? error.message : "Bilinmeyen hata",
+    });
+    db.close();
+    throw error;
+  }
+
+  db.close();
+
+  return {
+    runId,
+    dbFile: databaseFile,
+    hatlar: hatlar.length,
+    duraklar: duraklar.length,
+    guzergahlar: guzergahlar.length,
+    saatler: saatler.length,
+  };
 }
 
 function normalizeFolderName(value: string): string {
@@ -316,9 +502,10 @@ export async function backupAll(api: EshotApi, dryRun = false): Promise<void> {
   if (!dryRun) console.log(`  ✓ Hareket Saatleri: ${saatler.records.length} kayit`);
 
   if (!dryRun) {
-    console.log("Veriler hat bazli klasorlere yaziliyor...");
-    const index = await writeHatBasedFiles(DATA_DIR, now, hatlarResult.records, duraklar.records, guzergahlar.records, saatler.records);
-    console.log(`  ✓ Hat klasorleri: ${index.total}`);
+    console.log("Veriler SQLite veritabanina yaziliyor...");
+    const persistResult = await persistAllToSqlite(now, hatlarResult.records, duraklar.records, guzergahlar.records, saatler.records);
+    console.log(`  ✓ SQLite run id: ${persistResult.runId}`);
+    console.log(`  ✓ SQLite dosyasi: ${persistResult.dbFile}`);
   }
 }
 
@@ -336,10 +523,7 @@ export async function run(argv = process.argv): Promise<void> {
   await backupAll(api);
   console.log("\n✓ Tum yedeklemeler tamamlandi!");
   console.log(`  - ${HATLAR_FILE}`);
-  console.log(`  - ${ESHOT_INDEX_FILE}`);
-  console.log(`  - ${ESHOT_DIR}/<hatNo>/duraklar.json`);
-  console.log(`  - ${ESHOT_DIR}/<hatNo>/guzergah.json`);
-  console.log(`  - ${ESHOT_DIR}/<hatNo>/saatler.json`);
+  console.log(`  - ${DB_FILE}`);
 }
 
 const isDirectRun = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
