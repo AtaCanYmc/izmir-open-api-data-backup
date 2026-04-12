@@ -1,5 +1,17 @@
-import { describe, expect, it } from "vitest";
-import { createPayload, fetchAllHatlar, backupHatlar, backupDuraklar, backupHatGuzergahlari, backupHareketSaatleri, type EshotApi } from "../backup";
+import { describe, expect, it, vi } from "vitest";
+import fs from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
+import {
+  createPayload,
+  fetchAllHatlar,
+  backupHatlar,
+  backupDuraklar,
+  backupHatGuzergahlari,
+  backupHareketSaatleri,
+  writeHatBasedFiles,
+  type EshotApi,
+} from "../backup";
 
 describe("fetchAllHatlar", () => {
   it("tum sayfalari toplar ve HAT_NO'ya gore siralar", async () => {
@@ -74,6 +86,9 @@ describe("createPayload", () => {
 
 describe("backupHatlar", () => {
   it("hatlar endpoint'ini cagirir ve dosya yazdigini simule eder", async () => {
+    const mkdirSpy = vi.spyOn(fs, "mkdir").mockResolvedValue(undefined);
+    const writeFileSpy = vi.spyOn(fs, "writeFile").mockResolvedValue(undefined);
+
     const mockApi: EshotApi = {
       async getHatlar() {
         return {
@@ -91,6 +106,11 @@ describe("backupHatlar", () => {
 
     expect(result.total).toBe(2);
     expect(result.records.length).toBe(1);
+    expect(mkdirSpy).toHaveBeenCalled();
+    expect(writeFileSpy).toHaveBeenCalled();
+
+    mkdirSpy.mockRestore();
+    writeFileSpy.mockRestore();
   });
 });
 
@@ -148,6 +168,46 @@ describe("backupHareketSaatleri", () => {
 
     const result = await backupHareketSaatleri(mockApi);
     expect(result.total).toBe(1000);
+  });
+});
+
+describe("writeHatBasedFiles", () => {
+  it("her hat icin klasor ve durak/guzergah/saatler dosyalarini olusturur", async () => {
+    const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "eshot-backup-test-"));
+    const now = new Date("2026-04-12T20:00:00.000Z");
+
+    const index = await writeHatBasedFiles(
+      tempDir,
+      now,
+      [{ HAT_NO: "10", HAT_ADI: "F.Altay - Konak" }],
+      [{ HAT_NO: "10", DURAK_ID: 1, DURAK_ADI: "Durak 1" }],
+      [{ HAT_NO: "10", YON: 1, ENLEM: 38.4, BOYLAM: 27.1 }],
+      [{ HAT_NO: "10", SAAT: "06:00" }]
+    );
+
+    expect(index.total).toBe(1);
+    expect(index.hatlar[0]?.hatNo).toBe("10");
+
+    const base = path.join(tempDir, "eshot", "10");
+    const duraklarRaw = await fs.readFile(path.join(base, "duraklar.json"), "utf8");
+    const guzergahRaw = await fs.readFile(path.join(base, "guzergah.json"), "utf8");
+    const saatlerRaw = await fs.readFile(path.join(base, "saatler.json"), "utf8");
+
+    const duraklarPayload = JSON.parse(duraklarRaw) as { total: number; duraklar: Array<{ DURAK_ID?: number }> };
+    const guzergahPayload = JSON.parse(guzergahRaw) as { total: number; guzergah: Array<{ YON?: number }> };
+    const saatlerPayload = JSON.parse(saatlerRaw) as { total: number; saatler: Array<{ SAAT?: string }> };
+
+    expect(duraklarPayload.total).toBe(1);
+    expect(duraklarPayload.duraklar[0]?.DURAK_ID).toBe(1);
+    expect(guzergahPayload.total).toBe(1);
+    expect(guzergahPayload.guzergah[0]?.YON).toBe(1);
+    expect(saatlerPayload.total).toBe(1);
+    expect(saatlerPayload.saatler[0]?.SAAT).toBe("06:00");
+
+    const indexRaw = await fs.readFile(path.join(tempDir, "eshot", "index.json"), "utf8");
+    const parsedIndex = JSON.parse(indexRaw) as { total: number; hatlar: Array<{ hatNo: string }> };
+    expect(parsedIndex.total).toBe(1);
+    expect(parsedIndex.hatlar[0]?.hatNo).toBe("10");
   });
 });
 

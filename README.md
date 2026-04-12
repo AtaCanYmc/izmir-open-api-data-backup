@@ -1,25 +1,23 @@
 # Izmir Open API Data Backup
 
-Bu proje, `izmir-open-data-js` kutuphanesi ile ESHOT hat verisini gunluk yedekler ve GitHub Pages uzerinden gosterir.
+Bu proje, `izmir-open-data-js` kutuphanesi ile ESHOT verisini gunluk yedekler ve GitHub Pages uzerinden hat bazli goruntuler.
 
 ## Dosyalar
 
-- `backup.ts`: ESHOT hat listesini CKAN kaynagindan cekip `data/eshot-hatlar.json` dosyasina yazar.
-   - ESHOT hatlar (441 kayit)
-   - ESHOT duraklar (11740 kayit)
-   - ESHOT hat guzergahlari (30250 kayit)
-   - ESHOT hareket saatleri (101761 kayit)
+- `backup.ts`: ESHOT verisini ceker, `data/eshot-hatlar.json` ve hat bazli klasor yapisini yazar.
+   - `data/eshot/index.json`
+   - `data/eshot/<hatNo>/duraklar.json`
+   - `data/eshot/<hatNo>/guzergah.json`
+   - `data/eshot/<hatNo>/saatler.json`
 - `.github/workflows/daily-backup.yml`: Her gun TSI 23:00 (UTC 20:00) backup scriptini calistirir ve degisiklik varsa commit/push yapar.
 - `index.html`: TypeScript React uygulamasini yukler.
 - `src/App.tsx`: Tailwind tabanli, responsive, arama destekli goruntuleme arayuzu.
-   - Sekme sistemiyle 4 farkli veri kaynagi goruntuler
-   - Her veri kaynagi icin ozellestirilmis tablo goruntumesi
+   - `index.json` uzerinden hat listesi yukler
+   - Secilen hat icin detay dosyalarini lazy-load eder
 - `tests/backup.test.ts`: backup mantigi icin birim testleri.
 - `prompt.md`: Sik kullanilan prompt kaliplari.
 - `data/eshot-hatlar.json`: Uretilen JSON yedek dosyasi.
-- `data/eshot-duraklar.json`: Durak bilgileri yedegi.
-- `data/eshot-guzergahlar.json`: Hat guzergah koordinatlari yedegi.
-- `data/eshot-hareket-saatleri.json`: Hareket saatleri yedegi.
+- `data/eshot/`: Hat bazli tum detay dosyalari.
 
 ## Kurulum
 
@@ -50,13 +48,23 @@ npm test
 1. GitHub depo ayarlarinda Pages kaynagini branch root olarak secin.
 2. `index.html` ve `data/` klasoru root'ta oldugu icin ek ayar gerekmez.
 
-## Ornek JSON formati
+## Ornek JSON formatlari
 
 ```json
 {
   "updatedAt": "2026-04-08T20:00:00.000Z",
-  "source": "izmir-open-data-js / ESHOT getHatlar",
+  "source": "izmir-open-data-js / ESHOT grouped by HAT_NO",
   "total": 441,
-  "hatlar": []
+  "hatlar": [{ "hatNo": "10", "folder": "10" }]
+}
+```
+
+```json
+{
+  "updatedAt": "2026-04-08T20:00:00.000Z",
+  "source": "izmir-open-data-js / ESHOT getDuraklar",
+  "hatNo": "10",
+  "total": 52,
+  "duraklar": []
 }
 ```

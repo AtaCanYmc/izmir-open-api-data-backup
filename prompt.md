@@ -9,6 +9,7 @@ Bu dosya, projede sik kullanilan komutlari tek satirda istemek icin hazir prompt
 - `Tum testleri calistir, basarisiz test varsa nedeniyle birlikte yaz.`
 - `Build al ve TypeScript hatasi varsa dosya/satir ile listele.`
 - `Workflow cron saatini kontrol et, TSI 23:00 ile uyumlu mu bak.`
+- `Belirli bir hat icin olusan dosyalari kontrol et: data/eshot/<hatNo> altinda 3 json var mi?`
 
 ## Gelistirme Promptlari
 
@@ -16,6 +17,7 @@ Bu dosya, projede sik kullanilan komutlari tek satirda istemek icin hazir prompt
 - `App.tsx'e yeni bir sekme ekle (yeni veri kaynagi), tab sistemiyle entegrasyonu sagla.`
 - `Yeni veri kaynagi icin backup fonksiyonu ekle, generic backup yolunu kullan.`
 - `README'yi guncelle ve gerekli komutlari code block icinde ver.`
+- `Hat bazli klasorleme kurallarini degistir (folder adlandirma, index alani) ve testleri guncelle.`
 
 ## Kod Inceleme Promptlari
 
@@ -31,19 +33,24 @@ Bu dosya, projede sik kullanilan komutlari tek satirda istemek icin hazir prompt
 - HAT_BASLANGIC: Baslangic duragi
 - HAT_BITIS: Bitis duragi
 
-### Duraklar (eshot-duraklar.json)
+### Duraklar (data/eshot/<hatNo>/duraklar.json)
 - DURAK_ID: Durak ID
 - DURAK_ADI: Durak ismi
 - ENLEM/BOYLAM: Koordinatlar
 - DURAKTAN_GECEN_HATLAR: Gecen hat numaralari
 
-### Guzergahlar (eshot-guzergahlar.json)
+### Guzergahlar (data/eshot/<hatNo>/guzergah.json)
 - HAT_NO: Hat numarasi
 - YON: Yonlendirme (1=Gidis, 2=Donus)
 - ENLEM/BOYLAM: Koordinat noktasi
 
-### Hareket Saatleri (eshot-hareket-saatleri.json)
+### Hareket Saatleri (data/eshot/<hatNo>/saatler.json)
 - Tum hareket saati kayitlari (101761 kayit)
+
+### Index (data/eshot/index.json)
+- hatNo: Hat numarasi
+- folder: Hat klasor adi
+- counts: durak/guzergah/saat sayilari
 
 ## Tek Komutla Calistirma
 
