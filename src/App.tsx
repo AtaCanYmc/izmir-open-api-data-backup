@@ -117,10 +117,13 @@ function queryHatDetail(db: Database, hatNo: string): HatDetail | null {
 
   // Saatler
   const saatStmt = db.prepare(`
-    SELECT yon, kalkis_saati, aciklama
+    SELECT tarife_id, sira, gidis_saati, donus_saati,
+           gidis_engelli_destegi, donus_engelli_destegi,
+           bisikletli_gidis, bisikletli_donus,
+           gidis_elektrikli_otobus, donus_elektrikli_otobus
     FROM hareket_saatleri
     WHERE hat_no = ?
-    ORDER BY yon, kalkis_saati
+    ORDER BY sira
   `);
   saatStmt.bind([hatNo]);
   const saatler: HareketSaati[] = [];
@@ -432,10 +435,11 @@ function App() {
                 {/* Saatler */}
                 {activeTab === "saatler" && (
                   <div className="p-4 grid gap-4 sm:grid-cols-2">
-                    {(["1", "2"] as const).map((yon) => {
-                      const rows = detail.saatler.filter(
-                        (s) => String(s.yon) === yon
-                      );
+                    {(["gidis", "donus"] as const).map((yon) => {
+                      const saatKey = yon === "gidis" ? "gidis_saati" : "donus_saati";
+                      const rows = detail.saatler
+                        .filter((s) => s[saatKey] !== null)
+                        .sort((a, b) => (a.sira ?? 0) - (b.sira ?? 0));
                       return (
                         <div
                           key={yon}
@@ -443,12 +447,12 @@ function App() {
                         >
                           <div
                             className={`px-4 py-2.5 text-sm font-semibold ${
-                              yon === "1"
+                              yon === "gidis"
                                 ? "bg-green-50 text-green-700"
                                 : "bg-orange-50 text-orange-700"
                             }`}
                           >
-                            {yon === "1" ? "Gidiş" : "Dönüş"} Saatleri
+                            {yon === "gidis" ? "Gidiş" : "Dönüş"} Saatleri
                             <span className="ml-1.5 font-normal opacity-70">
                               ({rows.length})
                             </span>
@@ -457,14 +461,28 @@ function App() {
                             {rows.length === 0 ? (
                               <span className="text-sm text-slate-400">Kayıt yok.</span>
                             ) : (
-                              rows.map((s, i) => (
-                                <span
-                                  key={i}
-                                  className="rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-sm text-slate-700"
-                                >
-                                  {s.kalkis_saati ?? "-"}
-                                </span>
-                              ))
+                              rows.map((s, i) => {
+                                const saat = yon === "gidis" ? s.gidis_saati : s.donus_saati;
+                                const engelliDestegi = yon === "gidis" ? s.gidis_engelli_destegi : s.donus_engelli_destegi;
+                                const bisikletli = yon === "gidis" ? s.bisikletli_gidis : s.bisikletli_donus;
+                                const elektrikli = yon === "gidis" ? s.gidis_elektrikli_otobus : s.donus_elektrikli_otobus;
+                                return (
+                                  <span
+                                    key={i}
+                                    className="rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-sm text-slate-700 flex items-center gap-1"
+                                    title={[
+                                      engelliDestegi ? "♿ Engelli desteği" : null,
+                                      bisikletli ? "🚲 Bisikletli" : null,
+                                      elektrikli ? "⚡ Elektrikli" : null,
+                                    ].filter(Boolean).join(", ") || undefined}
+                                  >
+                                    {saat ?? "-"}
+                                    {engelliDestegi === 1 && <span className="text-xs">♿</span>}
+                                    {bisikletli === 1 && <span className="text-xs">🚲</span>}
+                                    {elektrikli === 1 && <span className="text-xs">⚡</span>}
+                                  </span>
+                                );
+                              })
                             )}
                           </div>
                         </div>

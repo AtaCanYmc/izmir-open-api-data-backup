@@ -62,7 +62,7 @@ LIMIT 100;
 ## 4) Tek bir hatta ait duraklar (ornek: 168)
 
 ```sql
-SELECT hat_no, durak_id, durak_adi, enlem, boylam, yon
+SELECT hat_no, durak_id, durak_adi, enlem, boylam
 FROM duraklar
 WHERE hat_no = '168'
 ORDER BY durak_id;
@@ -80,10 +80,12 @@ ORDER BY yon, sira;
 ## 6) Tek bir hatta ait hareket saatleri (ornek: 168)
 
 ```sql
-SELECT hat_no, yon, kalkis_saati, aciklama, updated_at
+SELECT hat_no, sira, gidis_saati, donus_saati,
+       gidis_engelli_destegi, donus_engelli_destegi,
+       bisikletli_gidis, bisikletli_donus
 FROM hareket_saatleri
 WHERE hat_no = '168'
-ORDER BY yon, kalkis_saati
+ORDER BY sira
 LIMIT 500;
 ```
 

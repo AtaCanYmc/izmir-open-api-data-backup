@@ -71,6 +71,15 @@ function pickText(record: EshotHat, keys: string[]): string | null {
   return null;
 }
 
+function pickBool(record: EshotHat, key: string): number | null {
+  const raw = record[key];
+  if (raw === undefined || raw === null) return null;
+  const value = String(raw).trim().toLowerCase();
+  if (value === "true" || value === "1") return 1;
+  if (value === "false" || value === "0") return 0;
+  return null;
+}
+
 function parseDuraktanGecenHatlar(record: EshotHat): string[] {
   const raw = record.DURAKTAN_GECEN_HATLAR;
   if (raw === undefined || raw === null) return [];
@@ -155,8 +164,12 @@ export async function persistAllToSqlite(
     );
 
     const insertSaat = db.prepare(
-      `INSERT INTO hareket_saatleri (hat_no, yon, kalkis_saati, aciklama, updated_at, raw_json)
-       VALUES (@hatNo, @yon, @kalkisSaati, @aciklama, @updatedAt, @rawJson)`
+      `INSERT INTO hareket_saatleri (hat_no, tarife_id, sira, gidis_saati, donus_saati, 
+        gidis_engelli_destegi, donus_engelli_destegi, bisikletli_gidis, bisikletli_donus,
+        gidis_elektrikli_otobus, donus_elektrikli_otobus, updated_at, raw_json)
+       VALUES (@hatNo, @tarifeId, @sira, @gidisSaati, @donusSaati,
+        @gidisEngelliDestegi, @donusEngelliDestegi, @bisikletliGidis, @bisikletliDonus,
+        @gidisElektrikliOtobus, @donusElektrikliOtobus, @updatedAt, @rawJson)`
     );
 
     for (const row of hatlar) {
@@ -208,9 +221,16 @@ export async function persistAllToSqlite(
     for (const row of saatler) {
       insertSaat.run({
         hatNo: getHatNo(row),
-        yon: pickNumber(row, ["YON"]),
-        kalkisSaati: pickText(row, ["KALKIS_SAATI", "HAREKET_SAATI", "SAAT", "GIDIS_SAATI", "DONUS_SAATI"]),
-        aciklama: pickText(row, ["ACIKLAMA", "NOT", "TIP"]),
+        tarifeId: pickNumber(row, ["TARIFE_ID"]),
+        sira: pickNumber(row, ["SIRA"]),
+        gidisSaati: pickText(row, ["GIDIS_SAATI"]),
+        donusSaati: pickText(row, ["DONUS_SAATI"]),
+        gidisEngelliDestegi: pickBool(row, "GIDIS_ENGELLI_DESTEGI"),
+        donusEngelliDestegi: pickBool(row, "DONUS_ENGELLI_DESTEGI"),
+        bisikletliGidis: pickBool(row, "BISIKLETLI_GIDIS"),
+        bisikletliDonus: pickBool(row, "BISIKLETLI_DONUS"),
+        gidisElektrikliOtobus: pickBool(row, "GIDIS_ELEKTRIKLI_OTOBUS"),
+        donusElektrikliOtobus: pickBool(row, "DONUS_ELEKTRIKLI_OTOBUS"),
         updatedAt: nowIso,
         rawJson: JSON.stringify(row),
       });

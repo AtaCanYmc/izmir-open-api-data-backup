@@ -104,9 +104,16 @@ Hat hareket saatlerini saklar.
 |---|---|---|
 | `id` | INTEGER PK | Otomatik artan kimlik |
 | `hat_no` | TEXT | Hat numarasi |
-| `yon` | INTEGER | Yon |
-| `kalkis_saati` | TEXT | Saat bilgisi |
-| `aciklama` | TEXT | Serbest metin/ek bilgi |
+| `tarife_id` | INTEGER | Tarife kimligi |
+| `sira` | INTEGER | Sefer sirasi |
+| `gidis_saati` | TEXT | Gidis saati |
+| `donus_saati` | TEXT | Donus saati |
+| `gidis_engelli_destegi` | INTEGER | Gidis engelli destegi (0/1) |
+| `donus_engelli_destegi` | INTEGER | Donus engelli destegi (0/1) |
+| `bisikletli_gidis` | INTEGER | Gidiste bisiklet destegi (0/1) |
+| `bisikletli_donus` | INTEGER | Donuste bisiklet destegi (0/1) |
+| `gidis_elektrikli_otobus` | INTEGER | Gidis elektrikli otobus (0/1) |
+| `donus_elektrikli_otobus` | INTEGER | Donus elektrikli otobus (0/1) |
 | `updated_at` | TEXT NOT NULL | Son guncelleme zamani |
 | `raw_json` | TEXT NOT NULL | Ham veri |
 

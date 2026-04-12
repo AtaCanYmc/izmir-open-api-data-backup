@@ -61,9 +61,16 @@ export function createTables(databaseFile = dbPath): string {
     CREATE TABLE IF NOT EXISTS hareket_saatleri (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       hat_no TEXT,
-      yon INTEGER,
-      kalkis_saati TEXT,
-      aciklama TEXT,
+      tarife_id INTEGER,
+      sira INTEGER,
+      gidis_saati TEXT,
+      donus_saati TEXT,
+      gidis_engelli_destegi INTEGER,
+      donus_engelli_destegi INTEGER,
+      bisikletli_gidis INTEGER,
+      bisikletli_donus INTEGER,
+      gidis_elektrikli_otobus INTEGER,
+      donus_elektrikli_otobus INTEGER,
       updated_at TEXT NOT NULL,
       raw_json TEXT NOT NULL
     );
