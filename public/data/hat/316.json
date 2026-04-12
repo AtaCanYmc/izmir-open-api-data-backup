@@ -377,7 +377,380 @@
       "boylam": 27.2892472188046
     }
   ],
-  "guzergah": [],
+  "guzergah": [
+    {
+      "yon": null,
+      "sira": 1,
+      "enlem": 38.501632,
+      "boylam": 27.280284
+    },
+    {
+      "yon": null,
+      "sira": 2,
+      "enlem": 38.5088,
+      "boylam": 27.3134
+    },
+    {
+      "yon": null,
+      "sira": 3,
+      "enlem": 38.509,
+      "boylam": 27.3134
+    },
+    {
+      "yon": null,
+      "sira": 4,
+      "enlem": 38.501674,
+      "boylam": 27.279918
+    },
+    {
+      "yon": null,
+      "sira": 5,
+      "enlem": 38.5032,
+      "boylam": 27.2749
+    },
+    {
+      "yon": null,
+      "sira": 6,
+      "enlem": 38.5035271884462,
+      "boylam": 27.2743903136033
+    },
+    {
+      "yon": null,
+      "sira": 7,
+      "enlem": 38.502,
+      "boylam": 27.2777
+    },
+    {
+      "yon": null,
+      "sira": 8,
+      "enlem": 38.5019,
+      "boylam": 27.278
+    },
+    {
+      "yon": null,
+      "sira": 9,
+      "enlem": 38.4994368988801,
+      "boylam": 27.2865327881949
+    },
+    {
+      "yon": null,
+      "sira": 10,
+      "enlem": 38.4994012277314,
+      "boylam": 27.2862992846123
+    },
+    {
+      "yon": null,
+      "sira": 11,
+      "enlem": 38.4988,
+      "boylam": 27.2897
+    },
+    {
+      "yon": null,
+      "sira": 12,
+      "enlem": 38.4988,
+      "boylam": 27.2896
+    },
+    {
+      "yon": null,
+      "sira": 13,
+      "enlem": 38.4995412557695,
+      "boylam": 27.2925782523941
+    },
+    {
+      "yon": null,
+      "sira": 14,
+      "enlem": 38.499715,
+      "boylam": 27.293921
+    },
+    {
+      "yon": null,
+      "sira": 15,
+      "enlem": 38.499,
+      "boylam": 27.2997
+    },
+    {
+      "yon": null,
+      "sira": 16,
+      "enlem": 38.4989,
+      "boylam": 27.2998
+    },
+    {
+      "yon": null,
+      "sira": 17,
+      "enlem": 38.5015,
+      "boylam": 27.3068
+    },
+    {
+      "yon": null,
+      "sira": 18,
+      "enlem": 38.5016,
+      "boylam": 27.307
+    },
+    {
+      "yon": null,
+      "sira": 19,
+      "enlem": 38.5049,
+      "boylam": 27.3105
+    },
+    {
+      "yon": null,
+      "sira": 20,
+      "enlem": 38.5049,
+      "boylam": 27.3107
+    },
+    {
+      "yon": null,
+      "sira": 21,
+      "enlem": 38.5108,
+      "boylam": 27.3141
+    },
+    {
+      "yon": null,
+      "sira": 22,
+      "enlem": 38.5106,
+      "boylam": 27.314
+    },
+    {
+      "yon": null,
+      "sira": 23,
+      "enlem": 38.5134,
+      "boylam": 27.3168
+    },
+    {
+      "yon": null,
+      "sira": 24,
+      "enlem": 38.5133,
+      "boylam": 27.3166
+    },
+    {
+      "yon": null,
+      "sira": 25,
+      "enlem": 38.512482,
+      "boylam": 27.319703
+    },
+    {
+      "yon": null,
+      "sira": 26,
+      "enlem": 38.5123005290671,
+      "boylam": 27.3195388081778
+    },
+    {
+      "yon": null,
+      "sira": 27,
+      "enlem": 38.512,
+      "boylam": 27.3215
+    },
+    {
+      "yon": null,
+      "sira": 28,
+      "enlem": 38.5171854151688,
+      "boylam": 27.3140750032719
+    },
+    {
+      "yon": null,
+      "sira": 29,
+      "enlem": 38.5171014160002,
+      "boylam": 27.3142990028018
+    },
+    {
+      "yon": null,
+      "sira": 30,
+      "enlem": 38.5266523562417,
+      "boylam": 27.296245019707
+    },
+    {
+      "yon": null,
+      "sira": 31,
+      "enlem": 38.5268704386702,
+      "boylam": 27.2970134817985
+    },
+    {
+      "yon": null,
+      "sira": 32,
+      "enlem": 38.5338,
+      "boylam": 27.2929
+    },
+    {
+      "yon": null,
+      "sira": 33,
+      "enlem": 38.5226013944766,
+      "boylam": 27.3063989988291
+    },
+    {
+      "yon": null,
+      "sira": 34,
+      "enlem": 38.5225013956586,
+      "boylam": 27.3066989980662
+    },
+    {
+      "yon": null,
+      "sira": 35,
+      "enlem": 38.5252803731852,
+      "boylam": 27.3006583577849
+    },
+    {
+      "yon": null,
+      "sira": 36,
+      "enlem": 38.5253159250602,
+      "boylam": 27.3008883585613
+    },
+    {
+      "yon": null,
+      "sira": 37,
+      "enlem": 38.527481,
+      "boylam": 27.294774
+    },
+    {
+      "yon": null,
+      "sira": 38,
+      "enlem": 38.527505,
+      "boylam": 27.294966
+    },
+    {
+      "yon": null,
+      "sira": 39,
+      "enlem": 38.5399124330497,
+      "boylam": 27.304004866813
+    },
+    {
+      "yon": null,
+      "sira": 40,
+      "enlem": 38.5313393514357,
+      "boylam": 27.2926340008746
+    },
+    {
+      "yon": null,
+      "sira": 41,
+      "enlem": 38.5311973513076,
+      "boylam": 27.2926860017553
+    },
+    {
+      "yon": null,
+      "sira": 42,
+      "enlem": 38.5336023775727,
+      "boylam": 27.2966089605466
+    },
+    {
+      "yon": null,
+      "sira": 43,
+      "enlem": 38.5336533770655,
+      "boylam": 27.2964809608236
+    },
+    {
+      "yon": null,
+      "sira": 44,
+      "enlem": 38.4992013049587,
+      "boylam": 27.3037991995216
+    },
+    {
+      "yon": null,
+      "sira": 45,
+      "enlem": 38.4992013040509,
+      "boylam": 27.3035992005079
+    },
+    {
+      "yon": null,
+      "sira": 46,
+      "enlem": 38.5363662977561,
+      "boylam": 27.2987789556332
+    },
+    {
+      "yon": null,
+      "sira": 47,
+      "enlem": 38.536490857796,
+      "boylam": 27.2989531314246
+    },
+    {
+      "yon": null,
+      "sira": 48,
+      "enlem": 38.5389483052911,
+      "boylam": 27.301310900224
+    },
+    {
+      "yon": null,
+      "sira": 49,
+      "enlem": 38.538658780364,
+      "boylam": 27.3009488064749
+    },
+    {
+      "yon": null,
+      "sira": 50,
+      "enlem": 38.5002355816801,
+      "boylam": 27.2845074414642
+    },
+    {
+      "yon": null,
+      "sira": 51,
+      "enlem": 38.5003552265553,
+      "boylam": 27.284493951235
+    },
+    {
+      "yon": null,
+      "sira": 52,
+      "enlem": 38.5465568439061,
+      "boylam": 27.2772034725088
+    },
+    {
+      "yon": null,
+      "sira": 53,
+      "enlem": 38.5466470474275,
+      "boylam": 27.2771337347302
+    },
+    {
+      "yon": null,
+      "sira": 54,
+      "enlem": 38.5481120294774,
+      "boylam": 27.2758766719631
+    },
+    {
+      "yon": null,
+      "sira": 55,
+      "enlem": 38.5458766904523,
+      "boylam": 27.2790314195277
+    },
+    {
+      "yon": null,
+      "sira": 56,
+      "enlem": 38.5456354629592,
+      "boylam": 27.2791690314544
+    },
+    {
+      "yon": null,
+      "sira": 57,
+      "enlem": 38.5443450922052,
+      "boylam": 27.2816378431883
+    },
+    {
+      "yon": null,
+      "sira": 58,
+      "enlem": 38.5442145377203,
+      "boylam": 27.2815181855672
+    },
+    {
+      "yon": null,
+      "sira": 59,
+      "enlem": 38.5423266646761,
+      "boylam": 27.2827731592417
+    },
+    {
+      "yon": null,
+      "sira": 60,
+      "enlem": 38.5421252663182,
+      "boylam": 27.282639051208
+    },
+    {
+      "yon": null,
+      "sira": 61,
+      "enlem": 38.5329644899353,
+      "boylam": 27.2895227233465
+    },
+    {
+      "yon": null,
+      "sira": 62,
+      "enlem": 38.5328782822342,
+      "boylam": 27.2892472188046
+    }
+  ],
   "saatler": [
     {
       "yon": null,

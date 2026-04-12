@@ -47,7 +47,50 @@
       "boylam": 27.1734
     }
   ],
-  "guzergah": [],
+  "guzergah": [
+    {
+      "yon": null,
+      "sira": 1,
+      "enlem": 38.466821,
+      "boylam": 27.166965
+    },
+    {
+      "yon": null,
+      "sira": 2,
+      "enlem": 38.466902,
+      "boylam": 27.166968
+    },
+    {
+      "yon": null,
+      "sira": 3,
+      "enlem": 38.467714,
+      "boylam": 27.168973
+    },
+    {
+      "yon": null,
+      "sira": 4,
+      "enlem": 38.467755,
+      "boylam": 27.16885
+    },
+    {
+      "yon": null,
+      "sira": 5,
+      "enlem": 38.4684,
+      "boylam": 27.1711
+    },
+    {
+      "yon": null,
+      "sira": 6,
+      "enlem": 38.4685,
+      "boylam": 27.1714
+    },
+    {
+      "yon": null,
+      "sira": 7,
+      "enlem": 38.469,
+      "boylam": 27.1734
+    }
+  ],
   "saatler": [
     {
       "yon": null,

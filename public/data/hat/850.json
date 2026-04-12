@@ -17,7 +17,20 @@
       "boylam": 26.9370039672205
     }
   ],
-  "guzergah": [],
+  "guzergah": [
+    {
+      "yon": null,
+      "sira": 1,
+      "enlem": 38.5497980929016,
+      "boylam": 26.938720957508
+    },
+    {
+      "yon": null,
+      "sira": 2,
+      "enlem": 38.5500350882152,
+      "boylam": 26.9370039672205
+    }
+  ],
   "saatler": [
     {
       "yon": null,

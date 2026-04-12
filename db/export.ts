@@ -38,6 +38,21 @@ interface SaatRow {
   aciklama: string | null;
 }
 
+function buildFallbackGuzergahFromDuraklar(duraklar: DurakRow[]): GuzergahRow[] {
+  let sira = 0;
+  return duraklar
+    .filter((d) => d.enlem !== null && d.boylam !== null)
+    .map((d) => {
+      sira += 1;
+      return {
+        yon: null,
+        sira,
+        enlem: d.enlem,
+        boylam: d.boylam,
+      };
+    });
+}
+
 // --------------- main ---------------
 
 export function exportData(databaseFile = dbPath, targetDir = outputDir): void {
@@ -89,9 +104,16 @@ export function exportData(databaseFile = dbPath, targetDir = outputDir): void {
 
   // --- per-hat detail dosyasi ---
   let exported = 0;
+  let fallbackCount = 0;
   for (const hat of hatlar) {
     const duraklar = getDuraklar.all(hat.hat_no) as DurakRow[];
-    const guzergah = getGuzergah.all(hat.hat_no) as GuzergahRow[];
+    let guzergah = getGuzergah.all(hat.hat_no) as GuzergahRow[];
+    if (guzergah.length === 0) {
+      guzergah = buildFallbackGuzergahFromDuraklar(duraklar);
+      if (guzergah.length > 0) {
+        fallbackCount += 1;
+      }
+    }
     const saatler = getSaatler.all(hat.hat_no) as SaatRow[];
 
     const detail = {
@@ -115,6 +137,7 @@ export function exportData(databaseFile = dbPath, targetDir = outputDir): void {
 
   db.close();
   console.log(`✓ ${exported} hat export edildi -> ${targetDir}`);
+  console.log(`✓ ${fallbackCount} hat icin duraklardan fallback guzergah uretildi`);
 }
 
 if (
