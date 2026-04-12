@@ -399,7 +399,7 @@ function App() {
                     <div className="rounded-xl overflow-hidden border border-slate-200">
                       <div className="px-4 py-2 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
                         <span className="text-sm font-medium text-slate-700">Güzergah Haritası</span>
-                        <div className="flex gap-3 text-xs">
+                        <div className="flex gap-4 text-xs">
                           <span className="flex items-center gap-1">
                             <span className="w-3 h-0.5 bg-green-600 rounded"></span>
                             Gidiş
@@ -408,9 +408,13 @@ function App() {
                             <span className="w-3 h-0.5 bg-orange-600 rounded" style={{ borderStyle: "dashed" }}></span>
                             Dönüş
                           </span>
+                          <span className="flex items-center gap-1">
+                            <span className="w-2.5 h-2.5 bg-blue-500 rounded-full"></span>
+                            Durak
+                          </span>
                         </div>
                       </div>
-                      <RouteMap guzergah={detail.guzergah} className="h-[400px]" />
+                      <RouteMap guzergah={detail.guzergah} duraklar={detail.duraklar} className="h-[400px]" />
                     </div>
 
                     {/* Tablo */}

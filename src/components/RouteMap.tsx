@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Polyline, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Polyline, CircleMarker, Popup, useMap } from "react-leaflet";
 import type { LatLngExpression } from "leaflet";
 import { LatLngBounds } from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -13,8 +13,16 @@ export interface GuzergahNokta {
   boylam: number | null;
 }
 
+export interface Durak {
+  durak_id: number;
+  durak_adi: string | null;
+  enlem: number | null;
+  boylam: number | null;
+}
+
 interface RouteMapProps {
   guzergah: GuzergahNokta[];
+  duraklar?: Durak[];
   className?: string;
 }
 
@@ -38,7 +46,7 @@ function FitBounds({ bounds }: FitBoundsProps) {
 
 // --------------- main component ---------------
 
-export function RouteMap({ guzergah, className = "" }: RouteMapProps) {
+export function RouteMap({ guzergah, duraklar = [], className = "" }: RouteMapProps) {
   // Yön 1 (Gidiş) ve Yön 2 (Dönüş) olarak ayır
   const gidisNoktalar = guzergah
     .filter((g) => g.yon === 1 && g.enlem != null && g.boylam != null)
@@ -50,8 +58,17 @@ export function RouteMap({ guzergah, className = "" }: RouteMapProps) {
     .sort((a, b) => a.sira - b.sira)
     .map((g) => [g.enlem!, g.boylam!] as LatLngExpression);
 
+  // Koordinatı olan duraklar
+  const durakNoktalar = duraklar.filter(
+    (d) => d.enlem != null && d.boylam != null
+  );
+
   // Tüm noktaları birleştir (bounds hesaplamak için)
-  const tumNoktalar = [...gidisNoktalar, ...donusNoktalar];
+  const tumNoktalar = [
+    ...gidisNoktalar,
+    ...donusNoktalar,
+    ...durakNoktalar.map((d) => [d.enlem!, d.boylam!] as LatLngExpression),
+  ];
 
   // Harita merkezi ve bounds
   const defaultCenter: LatLngExpression = [38.4192, 27.1287]; // İzmir merkez
@@ -60,7 +77,7 @@ export function RouteMap({ guzergah, className = "" }: RouteMapProps) {
       ? new LatLngBounds(tumNoktalar as [number, number][])
       : null;
 
-  if (guzergah.length === 0) {
+  if (guzergah.length === 0 && duraklar.length === 0) {
     return (
       <div className={`flex items-center justify-center bg-slate-100 rounded-xl ${className}`}>
         <p className="text-slate-400 text-sm">Güzergah verisi yok</p>
@@ -104,6 +121,32 @@ export function RouteMap({ guzergah, className = "" }: RouteMapProps) {
           }}
         />
       )}
+
+      {/* Duraklar - Tek sayı kırmızı, çift sayı mavi */}
+      {durakNoktalar.map((durak) => {
+        const isTek = durak.durak_id % 2 !== 0;
+        const color = isTek ? "#dc2626" : "#3b82f6"; // kırmızı : mavi
+        return (
+          <CircleMarker
+            key={durak.durak_id}
+            center={[durak.enlem!, durak.boylam!]}
+            radius={6}
+            pathOptions={{
+              color: color,
+              fillColor: color,
+              fillOpacity: 0.8,
+              weight: 2,
+            }}
+          >
+            <Popup>
+              <div className="text-sm">
+                <p className="font-semibold">{durak.durak_adi ?? "İsimsiz Durak"}</p>
+                <p className="text-xs text-slate-500">ID: {durak.durak_id} ({isTek ? "Tek" : "Çift"})</p>
+              </div>
+            </Popup>
+          </CircleMarker>
+        );
+      })}
 
       <FitBounds bounds={bounds} />
     </MapContainer>
