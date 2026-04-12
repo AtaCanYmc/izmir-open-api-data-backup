@@ -69,7 +69,17 @@ export function createTables(databaseFile = dbPath): string {
       raw_json TEXT NOT NULL
     );
 
+    CREATE TABLE IF NOT EXISTS duraktan_gecen_hatlar (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      durak_id INTEGER NOT NULL,
+      hat_no TEXT NOT NULL,
+      updated_at TEXT NOT NULL,
+      UNIQUE (durak_id, hat_no)
+    );
+
     CREATE INDEX IF NOT EXISTS idx_duraklar_hat_no ON duraklar (hat_no);
+    CREATE INDEX IF NOT EXISTS idx_duraktan_gecen_hatlar_durak_id ON duraktan_gecen_hatlar (durak_id);
+    CREATE INDEX IF NOT EXISTS idx_duraktan_gecen_hatlar_hat_no ON duraktan_gecen_hatlar (hat_no);
     CREATE INDEX IF NOT EXISTS idx_guzergah_hat_no ON guzergah_noktalari (hat_no);
     CREATE INDEX IF NOT EXISTS idx_saatler_hat_no ON hareket_saatleri (hat_no);
   `);

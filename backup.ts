@@ -194,6 +194,26 @@ function pickText(record: EshotHat, keys: string[]): string | null {
   return null;
 }
 
+function parseDuraktanGecenHatlar(record: EshotHat): string[] {
+  const raw = record.DURAKTAN_GECEN_HATLAR;
+  if (raw === undefined || raw === null) {
+    return [];
+  }
+
+  const text = String(raw).trim();
+  if (!text) {
+    return [];
+  }
+
+  const parts = text
+    .split(/[;,|]/)
+    .flatMap((part) => part.split(/\s+/))
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  return [...new Set(parts)];
+}
+
 export async function persistAllToSqlite(
   now: Date,
   hatlar: EshotHat[],
@@ -222,7 +242,9 @@ export async function persistAllToSqlite(
   const runId = Number(runResult.lastInsertRowid);
 
   const writeAll = db.transaction(() => {
-    db.exec("DELETE FROM hatlar; DELETE FROM duraklar; DELETE FROM guzergah_noktalari; DELETE FROM hareket_saatleri;");
+    db.exec(
+      "DELETE FROM hatlar; DELETE FROM duraklar; DELETE FROM duraktan_gecen_hatlar; DELETE FROM guzergah_noktalari; DELETE FROM hareket_saatleri;"
+    );
 
     const upsertHat = db.prepare(
       `INSERT INTO hatlar (hat_no, hat_adi, hat_baslangic, hat_bitis, updated_at, raw_json)
@@ -244,6 +266,13 @@ export async function persistAllToSqlite(
          boylam = excluded.boylam,
          updated_at = excluded.updated_at,
          raw_json = excluded.raw_json`
+    );
+
+    const upsertDuraktanGecenHat = db.prepare(
+      `INSERT INTO duraktan_gecen_hatlar (durak_id, hat_no, updated_at)
+       VALUES (@durakId, @hatNo, @updatedAt)
+       ON CONFLICT(durak_id, hat_no) DO UPDATE SET
+         updated_at = excluded.updated_at`
     );
 
     const upsertGuzergah = db.prepare(
@@ -275,9 +304,10 @@ export async function persistAllToSqlite(
     }
 
     for (const row of duraklar) {
+      const durakId = pickNumber(row, ["DURAK_ID", "ID"]);
       upsertDurak.run({
         hatNo: getHatNo(row),
-        durakId: pickNumber(row, ["DURAK_ID", "ID"]),
+        durakId,
         durakAdi: pickText(row, ["DURAK_ADI", "ADI"]),
         enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
         boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
@@ -285,6 +315,17 @@ export async function persistAllToSqlite(
         updatedAt: nowIso,
         rawJson: JSON.stringify(row),
       });
+
+      if (durakId !== null) {
+        const lines = parseDuraktanGecenHatlar(row);
+        for (const hatNo of lines) {
+          upsertDuraktanGecenHat.run({
+            durakId,
+            hatNo,
+            updatedAt: nowIso,
+          });
+        }
+      }
     }
 
     let guzergahSira = 0;

@@ -58,6 +58,24 @@ Kisit:
 Indeks:
 - `idx_duraklar_hat_no`
 
+### `duraktan_gecen_hatlar`
+
+`DURAKTAN_GECEN_HATLAR` alaninin normalize edilmis iliski tablosu.
+
+| Alan | Tip | Aciklama |
+|---|---|---|
+| `id` | INTEGER PK | Otomatik artan kimlik |
+| `durak_id` | INTEGER NOT NULL | Durak kimligi |
+| `hat_no` | TEXT NOT NULL | Duraktan gecen hat numarasi |
+| `updated_at` | TEXT NOT NULL | Son guncelleme zamani |
+
+Kisit:
+- `UNIQUE (durak_id, hat_no)`
+
+Indeks:
+- `idx_duraktan_gecen_hatlar_durak_id`
+- `idx_duraktan_gecen_hatlar_hat_no`
+
 ### `guzergah_noktalari`
 
 Hat guzergah koordinat noktalarini saklar.

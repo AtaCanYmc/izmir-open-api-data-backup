@@ -18,9 +18,30 @@ SELECT 'hatlar' AS tablo, COUNT(*) AS toplam FROM hatlar
 UNION ALL
 SELECT 'duraklar', COUNT(*) FROM duraklar
 UNION ALL
+SELECT 'duraktan_gecen_hatlar', COUNT(*) FROM duraktan_gecen_hatlar
+UNION ALL
 SELECT 'guzergah_noktalari', COUNT(*) FROM guzergah_noktalari
 UNION ALL
 SELECT 'hareket_saatleri', COUNT(*) FROM hareket_saatleri;
+```
+
+## 2.1) Bir duraktan gecen hatlar (ornek: durak_id = 10005)
+
+```sql
+SELECT durak_id, hat_no, updated_at
+FROM duraktan_gecen_hatlar
+WHERE durak_id = 10005
+ORDER BY hat_no;
+```
+
+## 2.2) Bir hattin gectigi duraklar (ornek: 168)
+
+```sql
+SELECT dgh.hat_no, dgh.durak_id, d.durak_adi
+FROM duraktan_gecen_hatlar dgh
+LEFT JOIN duraklar d ON d.durak_id = dgh.durak_id
+WHERE dgh.hat_no = '168'
+ORDER BY dgh.durak_id;
 ```
 
 ## 3) Hat listesini gor

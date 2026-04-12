@@ -222,7 +222,7 @@ describe("persistAllToSqlite", () => {
     const result = await persistAllToSqlite(
       now,
       [{ HAT_NO: "10", HAT_ADI: "F.Altay - Konak", HAT_BASLANGIC: "F.Altay", HAT_BITIS: "Konak" }],
-      [{ HAT_NO: "10", DURAK_ID: 1, DURAK_ADI: "Durak 1", ENLEM: 38.4, BOYLAM: 27.1, YON: 1 }],
+      [{ HAT_NO: "10", DURAK_ID: 1, DURAK_ADI: "Durak 1", ENLEM: 38.4, BOYLAM: 27.1, YON: 1, DURAKTAN_GECEN_HATLAR: "10, 20" }],
       [{ HAT_NO: "10", YON: 1, SIRA: 1, ENLEM: 38.4, BOYLAM: 27.1 }],
       [{ HAT_NO: "10", YON: 1, SAAT: "06:00" }],
       dbFile
@@ -237,12 +237,15 @@ describe("persistAllToSqlite", () => {
     const db = new Database(dbFile, { readonly: true });
     const hatCount = (db.prepare("SELECT COUNT(*) as total FROM hatlar").get() as { total: number }).total;
     const durakCount = (db.prepare("SELECT COUNT(*) as total FROM duraklar").get() as { total: number }).total;
+    const duraktanGecenCount =
+      (db.prepare("SELECT COUNT(*) as total FROM duraktan_gecen_hatlar").get() as { total: number }).total;
     const guzergahCount = (db.prepare("SELECT COUNT(*) as total FROM guzergah_noktalari").get() as { total: number }).total;
     const saatCount = (db.prepare("SELECT COUNT(*) as total FROM hareket_saatleri").get() as { total: number }).total;
     const lastRun = db.prepare("SELECT status FROM backup_runs ORDER BY id DESC LIMIT 1").get() as { status: string };
 
     expect(hatCount).toBe(1);
     expect(durakCount).toBe(1);
+    expect(duraktanGecenCount).toBe(2);
     expect(guzergahCount).toBe(1);
     expect(saatCount).toBe(1);
     expect(lastRun.status).toBe("success");

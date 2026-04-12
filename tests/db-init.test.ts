@@ -21,6 +21,7 @@ describe("createTables", () => {
     expect(names).toContain("backup_runs");
     expect(names).toContain("hatlar");
     expect(names).toContain("duraklar");
+    expect(names).toContain("duraktan_gecen_hatlar");
     expect(names).toContain("guzergah_noktalari");
     expect(names).toContain("hareket_saatleri");
 
