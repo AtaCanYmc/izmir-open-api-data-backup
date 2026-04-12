@@ -1,4 +1,3 @@
-import fs from "node:fs/promises";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -8,7 +7,6 @@ const PAGE_SIZE = 200;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DATA_DIR = path.join(__dirname, "data");
-const HATLAR_FILE = path.join(DATA_DIR, "eshot-hatlar.json");
 const DB_FILE = path.join(DATA_DIR, "eshot.db");
 const require = createRequire(path.join(process.cwd(), "package.json"));
 const Database = require("better-sqlite3") as typeof import("better-sqlite3");
@@ -31,54 +29,6 @@ export interface EshotApi {
   getDuraklar(limit?: number, offset?: number): Promise<HatlarResponse>;
   getHatGuzergahlari(limit?: number, offset?: number): Promise<HatlarResponse>;
   getHareketSaatleri(limit?: number, offset?: number): Promise<HatlarResponse>;
-}
-
-export interface BackupPayload {
-  updatedAt: string;
-  source: string;
-  total: number;
-  hatlar: EshotHat[];
-}
-
-export interface DurakPayload {
-  updatedAt: string;
-  source: string;
-  total: number;
-  duraklar: EshotHat[];
-}
-
-export interface GuzergahPayload {
-  updatedAt: string;
-  source: string;
-  total: number;
-  guzergahlar: EshotHat[];
-}
-
-export interface HareketSaatleriPayload {
-  updatedAt: string;
-  source: string;
-  total: number;
-  saatler: EshotHat[];
-}
-
-export interface EshotIndexEntry {
-  hatNo: string;
-  folder: string;
-  hatAdi?: string;
-  baslangic?: string;
-  bitis?: string;
-  counts: {
-    duraklar: number;
-    guzergah: number;
-    saatler: number;
-  };
-}
-
-export interface EshotIndexPayload {
-  updatedAt: string;
-  source: string;
-  total: number;
-  hatlar: EshotIndexEntry[];
 }
 
 export interface SqlitePersistResult {
@@ -124,15 +74,6 @@ export async function fetchAllHatlar(api: EshotApi): Promise<{ total: number; re
   return fetchAllByMethod(api, "getHatlar");
 }
 
-export function createPayload(total: number, records: EshotHat[], now = new Date()): BackupPayload {
-  return {
-    updatedAt: now.toISOString(),
-    source: "izmir-open-data-js / ESHOT getHatlar",
-    total,
-    hatlar: records,
-  };
-}
-
 async function fetchAllByMethod(api: EshotApi, method: keyof EshotApi): Promise<{ total: number; records: EshotHat[] }> {
   const fn = api[method];
   if (typeof fn !== "function") {
@@ -145,9 +86,7 @@ async function fetchAllByMethod(api: EshotApi, method: keyof EshotApi): Promise<
 
   for (let offset = PAGE_SIZE; offset < total; offset += PAGE_SIZE) {
     const page = await (fn as (limit?: number, offset?: number) => Promise<HatlarResponse>)(PAGE_SIZE, offset);
-    if (!page.records?.length) {
-      break;
-    }
+    if (!page.records?.length) break;
     allRecords.push(...page.records);
   }
 
@@ -155,17 +94,9 @@ async function fetchAllByMethod(api: EshotApi, method: keyof EshotApi): Promise<
   return { total, records: allRecords };
 }
 
-async function writeJsonFile(targetFile: string, payload: unknown): Promise<void> {
-  await fs.mkdir(path.dirname(targetFile), { recursive: true });
-  await fs.writeFile(targetFile, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-}
-
 function getHatNo(record: EshotHat): string | null {
   const raw = record.HAT_NO;
-  if (raw === undefined || raw === null) {
-    return null;
-  }
-
+  if (raw === undefined || raw === null) return null;
   const value = String(raw).trim();
   return value ? value : null;
 }
@@ -175,9 +106,7 @@ function pickNumber(record: EshotHat, keys: string[]): number | null {
     const raw = record[key];
     if (raw === undefined || raw === null || raw === "") continue;
     const value = Number(raw);
-    if (!Number.isNaN(value)) {
-      return value;
-    }
+    if (!Number.isNaN(value)) return value;
   }
   return null;
 }
@@ -187,30 +116,21 @@ function pickText(record: EshotHat, keys: string[]): string | null {
     const raw = record[key];
     if (raw === undefined || raw === null) continue;
     const value = String(raw).trim();
-    if (value) {
-      return value;
-    }
+    if (value) return value;
   }
   return null;
 }
 
 function parseDuraktanGecenHatlar(record: EshotHat): string[] {
   const raw = record.DURAKTAN_GECEN_HATLAR;
-  if (raw === undefined || raw === null) {
-    return [];
-  }
-
+  if (raw === undefined || raw === null) return [];
   const text = String(raw).trim();
-  if (!text) {
-    return [];
-  }
-
+  if (!text) return [];
   const parts = text
     .split(/[;,|]/)
     .flatMap((part) => part.split(/\s+/))
     .map((part) => part.trim())
     .filter(Boolean);
-
   return [...new Set(parts)];
 }
 
@@ -271,8 +191,7 @@ export async function persistAllToSqlite(
     const upsertDuraktanGecenHat = db.prepare(
       `INSERT INTO duraktan_gecen_hatlar (durak_id, hat_no, updated_at)
        VALUES (@durakId, @hatNo, @updatedAt)
-       ON CONFLICT(durak_id, hat_no) DO UPDATE SET
-         updated_at = excluded.updated_at`
+       ON CONFLICT(durak_id, hat_no) DO UPDATE SET updated_at = excluded.updated_at`
     );
 
     const upsertGuzergah = db.prepare(
@@ -317,13 +236,8 @@ export async function persistAllToSqlite(
       });
 
       if (durakId !== null) {
-        const lines = parseDuraktanGecenHatlar(row);
-        for (const hatNo of lines) {
-          upsertDuraktanGecenHat.run({
-            durakId,
-            hatNo,
-            updatedAt: nowIso,
-          });
+        for (const hatNo of parseDuraktanGecenHatlar(row)) {
+          upsertDuraktanGecenHat.run({ durakId, hatNo, updatedAt: nowIso });
         }
       }
     }
@@ -374,180 +288,50 @@ export async function persistAllToSqlite(
   }
 
   db.close();
-
-  return {
-    runId,
-    dbFile: databaseFile,
-    hatlar: hatlar.length,
-    duraklar: duraklar.length,
-    guzergahlar: guzergahlar.length,
-    saatler: saatler.length,
-  };
+  return { runId, dbFile: databaseFile, hatlar: hatlar.length, duraklar: duraklar.length, guzergahlar: guzergahlar.length, saatler: saatler.length };
 }
 
-function normalizeFolderName(value: string): string {
-  return value.replace(/[^a-zA-Z0-9._-]/g, "_");
+export async function backupHatlar(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
+  return fetchAllByMethod(api, "getHatlar");
 }
 
-function groupByHatNo(records: EshotHat[]): Map<string, EshotHat[]> {
-  const grouped = new Map<string, EshotHat[]>();
-  for (const record of records) {
-    const hatNo = getHatNo(record);
-    if (!hatNo) {
-      continue;
-    }
-    const bucket = grouped.get(hatNo);
-    if (bucket) {
-      bucket.push(record);
-      continue;
-    }
-    grouped.set(hatNo, [record]);
-  }
-  return grouped;
-}
-
-export async function writeHatBasedFiles(
-  baseDataDir: string,
-  now: Date,
-  hatlar: EshotHat[],
-  duraklar: EshotHat[],
-  guzergahlar: EshotHat[],
-  saatler: EshotHat[]
-): Promise<EshotIndexPayload> {
-  const targetEshotDir = path.join(baseDataDir, "eshot");
-  await fs.rm(targetEshotDir, { recursive: true, force: true });
-  await fs.mkdir(targetEshotDir, { recursive: true });
-
-  const durakByHat = groupByHatNo(duraklar);
-  const guzergahByHat = groupByHatNo(guzergahlar);
-  const saatlerByHat = groupByHatNo(saatler);
-
-  const hatInfoByNo = new Map<string, EshotHat>();
-  const hatNumbers = new Set<string>();
-
-  for (const hat of hatlar) {
-    const hatNo = getHatNo(hat);
-    if (!hatNo) {
-      continue;
-    }
-    hatNumbers.add(hatNo);
-    if (!hatInfoByNo.has(hatNo)) {
-      hatInfoByNo.set(hatNo, hat);
-    }
-  }
-
-  for (const key of durakByHat.keys()) hatNumbers.add(key);
-  for (const key of guzergahByHat.keys()) hatNumbers.add(key);
-  for (const key of saatlerByHat.keys()) hatNumbers.add(key);
-
-  const sortedHatNumbers = [...hatNumbers].sort((a, b) => a.localeCompare(b, "tr", { numeric: true }));
-  const indexRows: EshotIndexEntry[] = [];
-
-  for (const hatNo of sortedHatNumbers) {
-    const folder = normalizeFolderName(hatNo);
-    const lineDir = path.join(targetEshotDir, folder);
-    const lineInfo = hatInfoByNo.get(hatNo);
-    const lineDuraklar = durakByHat.get(hatNo) || [];
-    const lineGuzergahlar = guzergahByHat.get(hatNo) || [];
-    const lineSaatler = saatlerByHat.get(hatNo) || [];
-
-    await fs.mkdir(lineDir, { recursive: true });
-
-    await writeJsonFile(path.join(lineDir, "duraklar.json"), {
-      updatedAt: now.toISOString(),
-      source: "izmir-open-data-js / ESHOT getDuraklar",
-      hatNo,
-      total: lineDuraklar.length,
-      duraklar: lineDuraklar,
-    });
-
-    await writeJsonFile(path.join(lineDir, "guzergah.json"), {
-      updatedAt: now.toISOString(),
-      source: "izmir-open-data-js / ESHOT getHatGuzergahlari",
-      hatNo,
-      total: lineGuzergahlar.length,
-      guzergah: lineGuzergahlar,
-    });
-
-    await writeJsonFile(path.join(lineDir, "saatler.json"), {
-      updatedAt: now.toISOString(),
-      source: "izmir-open-data-js / ESHOT getHareketSaatleri",
-      hatNo,
-      total: lineSaatler.length,
-      saatler: lineSaatler,
-    });
-
-    indexRows.push({
-      hatNo,
-      folder,
-      hatAdi: lineInfo?.HAT_ADI ? String(lineInfo.HAT_ADI) : undefined,
-      baslangic: lineInfo?.HAT_BASLANGIC ? String(lineInfo.HAT_BASLANGIC) : undefined,
-      bitis: lineInfo?.HAT_BITIS ? String(lineInfo.HAT_BITIS) : undefined,
-      counts: {
-        duraklar: lineDuraklar.length,
-        guzergah: lineGuzergahlar.length,
-        saatler: lineSaatler.length,
-      },
-    });
-  }
-
-  const payload: EshotIndexPayload = {
-    updatedAt: now.toISOString(),
-    source: "izmir-open-data-js / ESHOT grouped by HAT_NO",
-    total: indexRows.length,
-    hatlar: indexRows,
-  };
-
-  await writeJsonFile(path.join(targetEshotDir, "index.json"), payload);
-  return payload;
-}
-
-export async function backupHatlar(api: EshotApi, now = new Date()): Promise<{ total: number; records: EshotHat[] }> {
-  const result = await fetchAllByMethod(api, "getHatlar");
-  await writeJsonFile(HATLAR_FILE, createPayload(result.total, result.records, now));
-  return result;
-}
-
-export async function backupDuraklar(api: EshotApi, now = new Date()): Promise<{ total: number; records: EshotHat[] }> {
-  void now;
+export async function backupDuraklar(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
   return fetchAllByMethod(api, "getDuraklar");
 }
 
-export async function backupHatGuzergahlari(api: EshotApi, now = new Date()): Promise<{ total: number; records: EshotHat[] }> {
-  void now;
+export async function backupHatGuzergahlari(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
   return fetchAllByMethod(api, "getHatGuzergahlari");
 }
 
-export async function backupHareketSaatleri(api: EshotApi, now = new Date()): Promise<{ total: number; records: EshotHat[] }> {
-  void now;
+export async function backupHareketSaatleri(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
   return fetchAllByMethod(api, "getHareketSaatleri");
 }
 
 export async function backupAll(api: EshotApi, dryRun = false): Promise<void> {
   const now = new Date();
 
-  console.log("ESHOT hat bilgileri yedekleniyor...");
-  const hatlarResult = await backupHatlar(api, now);
-  if (!dryRun) console.log(`  ✓ Hatlar: ${hatlarResult.records.length} kayit`);
+  console.log("ESHOT hat bilgileri cekiliyor...");
+  const hatlar = await backupHatlar(api);
+  console.log(`  ✓ Hatlar: ${hatlar.records.length} kayit`);
 
-  console.log("ESHOT durak bilgileri yedekleniyor...");
-  const duraklar = await backupDuraklar(api, now);
-  if (!dryRun) console.log(`  ✓ Duraklar: ${duraklar.records.length} kayit`);
+  console.log("ESHOT durak bilgileri cekiliyor...");
+  const duraklar = await backupDuraklar(api);
+  console.log(`  ✓ Duraklar: ${duraklar.records.length} kayit`);
 
-  console.log("ESHOT hat guzergahları yedekleniyor...");
-  const guzergahlar = await backupHatGuzergahlari(api, now);
-  if (!dryRun) console.log(`  ✓ Guzergahlar: ${guzergahlar.records.length} kayit`);
+  console.log("ESHOT guzergahlar cekiliyor...");
+  const guzergahlar = await backupHatGuzergahlari(api);
+  console.log(`  ✓ Guzergahlar: ${guzergahlar.records.length} kayit`);
 
-  console.log("ESHOT hareket saatleri yedekleniyor...");
-  const saatler = await backupHareketSaatleri(api, now);
-  if (!dryRun) console.log(`  ✓ Hareket Saatleri: ${saatler.records.length} kayit`);
+  console.log("ESHOT hareket saatleri cekiliyor...");
+  const saatler = await backupHareketSaatleri(api);
+  console.log(`  ✓ Hareket Saatleri: ${saatler.records.length} kayit`);
 
-  if (!dryRun) {
-    console.log("Veriler SQLite veritabanina yaziliyor...");
-    const persistResult = await persistAllToSqlite(now, hatlarResult.records, duraklar.records, guzergahlar.records, saatler.records);
-    console.log(`  ✓ SQLite run id: ${persistResult.runId}`);
-    console.log(`  ✓ SQLite dosyasi: ${persistResult.dbFile}`);
-  }
+  if (dryRun) return;
+
+  console.log("SQLite veritabanina yaziliyor...");
+  const result = await persistAllToSqlite(now, hatlar.records, duraklar.records, guzergahlar.records, saatler.records);
+  console.log(`  ✓ run id  : ${result.runId}`);
+  console.log(`  ✓ db      : ${result.dbFile}`);
 }
 
 export async function run(argv = process.argv): Promise<void> {
@@ -555,16 +339,14 @@ export async function run(argv = process.argv): Promise<void> {
   const api = await createEshotApi();
 
   if (dryRun) {
-    console.log("[dry-run modu] Veri cekiliyor...\n");
+    console.log("[dry-run] Veri cekiliyor, DB'ye yazilmayacak...\n");
     await backupAll(api, true);
-    console.log("\n[dry-run] Testim basarili!");
+    console.log("\n[dry-run] Basarili!");
     return;
   }
 
   await backupAll(api);
-  console.log("\n✓ Tum yedeklemeler tamamlandi!");
-  console.log(`  - ${HATLAR_FILE}`);
-  console.log(`  - ${DB_FILE}`);
+  console.log(`\n✓ Yedekleme tamamlandi! -> ${DB_FILE}`);
 }
 
 const isDirectRun = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
@@ -575,4 +357,3 @@ if (isDirectRun) {
     process.exit(1);
   });
 }
-
