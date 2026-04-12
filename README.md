@@ -1,6 +1,7 @@
 # Izmir Open API Data Backup
 
 Bu proje, `izmir-open-data-js` kutuphanesi ile ESHOT verisini gunluk yedekler ve GitHub Pages uzerinden hat bazli goruntuler.
+Ek olarak verileri SQLite uzerinde saklamak icin `better-sqlite3` kullanir.
 
 ## Dosyalar
 
@@ -15,6 +16,8 @@ Bu proje, `izmir-open-data-js` kutuphanesi ile ESHOT verisini gunluk yedekler ve
    - `index.json` uzerinden hat listesi yukler
    - Secilen hat icin detay dosyalarini lazy-load eder
 - `tests/backup.test.ts`: backup mantigi icin birim testleri.
+- `db/init.ts`: `data/eshot.db` dosyasini ve tablolari olusturur.
+- `docs/sqlite-tablolar.md`: SQLite tablo semasi ve alan aciklamalari.
 - `prompt.md`: Sik kullanilan prompt kaliplari.
 - `data/eshot-hatlar.json`: Uretilen JSON yedek dosyasi.
 - `data/eshot/`: Hat bazli tum detay dosyalari.
@@ -35,6 +38,12 @@ Sadece cekme testi (dosya yazmadan):
 
 ```bash
 npm run backup:dry
+```
+
+SQLite tablolarini olusturma:
+
+```bash
+npm run db:init
 ```
 
 Testleri calistirma:

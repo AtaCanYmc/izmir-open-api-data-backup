@@ -10,10 +10,13 @@
     "preview": "vite preview",
     "backup": "tsx backup.ts",
     "backup:dry": "tsx backup.ts --dry-run",
+    "db:init": "tsx db/init.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "better-sqlite3": "^12.8.0",
     "izmir-open-data-js": "^1.1.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
