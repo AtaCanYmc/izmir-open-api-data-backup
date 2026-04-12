@@ -11,6 +11,7 @@
     "backup": "tsx backup.ts",
     "backup:dry": "tsx backup.ts --dry-run",
     "db:init": "tsx db/init.ts",
+    "db:export": "tsx db/export.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },

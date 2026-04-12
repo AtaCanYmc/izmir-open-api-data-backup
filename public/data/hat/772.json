@@ -1,0 +1,197 @@
+{
+  "hat_no": "772",
+  "hat_adi": "BEŞPINAR - KEMALPAŞA",
+  "hat_baslangic": "BEŞPINAR",
+  "hat_bitis": "KEMALPAŞA",
+  "duraklar": [
+    {
+      "durak_id": 31517,
+      "durak_adi": "Beşpınar Meydan",
+      "enlem": 38.5188871959107,
+      "boylam": 27.4538884666465
+    },
+    {
+      "durak_id": 31549,
+      "durak_adi": "Yukarı Sütçüler Çeşme",
+      "enlem": 38.4723339512953,
+      "boylam": 27.4645298452482
+    },
+    {
+      "durak_id": 31550,
+      "durak_adi": "Yukarı Sütçüler Çeşme",
+      "enlem": 38.472383,
+      "boylam": 27.464621
+    },
+    {
+      "durak_id": 31610,
+      "durak_adi": "Sütçüler Kavşağı",
+      "enlem": 38.452678,
+      "boylam": 27.454014
+    },
+    {
+      "durak_id": 31611,
+      "durak_adi": "Sütçüler Kavşağı",
+      "enlem": 38.452821,
+      "boylam": 27.453895
+    },
+    {
+      "durak_id": 31612,
+      "durak_adi": "Kemalpaşa Şantiye",
+      "enlem": 38.448369,
+      "boylam": 27.453175
+    },
+    {
+      "durak_id": 31613,
+      "durak_adi": "Kemalpaşa Şantiye",
+      "enlem": 38.448017,
+      "boylam": 27.453021
+    },
+    {
+      "durak_id": 31614,
+      "durak_adi": "Cennet Bahçesi Mezarlığı",
+      "enlem": 38.439639,
+      "boylam": 27.449051
+    },
+    {
+      "durak_id": 31615,
+      "durak_adi": "Cennet Bahçesi Mezarlığı",
+      "enlem": 38.439821,
+      "boylam": 27.44925
+    },
+    {
+      "durak_id": 31616,
+      "durak_adi": "Kemalpaşa Arıtma Tesisi",
+      "enlem": 38.436596,
+      "boylam": 27.44539
+    },
+    {
+      "durak_id": 31617,
+      "durak_adi": "Kemalpaşa Arıtma Tesisi",
+      "enlem": 38.43641,
+      "boylam": 27.44513
+    },
+    {
+      "durak_id": 31618,
+      "durak_adi": "Kiraz Ağacı",
+      "enlem": 38.4325775550164,
+      "boylam": 27.4370501933083
+    },
+    {
+      "durak_id": 31619,
+      "durak_adi": "Kiraz Ağacı",
+      "enlem": 38.4327285578695,
+      "boylam": 27.4374231907126
+    },
+    {
+      "durak_id": 31620,
+      "durak_adi": "Sütçüler Yol Ayrımı",
+      "enlem": 38.428774,
+      "boylam": 27.424833
+    },
+    {
+      "durak_id": 31621,
+      "durak_adi": "Sütçüler Yol Ayrımı",
+      "enlem": 38.428895,
+      "boylam": 27.424898
+    },
+    {
+      "durak_id": 31622,
+      "durak_adi": "Kemalpaşa Sevgi",
+      "enlem": 38.429303,
+      "boylam": 27.422266
+    },
+    {
+      "durak_id": 31623,
+      "durak_adi": "Kemalpaşa Sevgi",
+      "enlem": 38.429368,
+      "boylam": 27.422425
+    },
+    {
+      "durak_id": 31624,
+      "durak_adi": "Kemalpaşa Pazaryeri",
+      "enlem": 38.430568,
+      "boylam": 27.417442
+    },
+    {
+      "durak_id": 31625,
+      "durak_adi": "Kemalpaşa Pazaryeri",
+      "enlem": 38.430572,
+      "boylam": 27.417966
+    },
+    {
+      "durak_id": 31626,
+      "durak_adi": "Kemalpaşa Karakol",
+      "enlem": 38.431465,
+      "boylam": 27.413265
+    },
+    {
+      "durak_id": 31627,
+      "durak_adi": "Kemalpaşa Karakol",
+      "enlem": 38.431606,
+      "boylam": 27.413094
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:50",
+      "aciklama": null
+    }
+  ]
+}

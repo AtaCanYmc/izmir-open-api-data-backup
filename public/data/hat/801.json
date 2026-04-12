@@ -1,0 +1,188 @@
+{
+  "hat_no": "801",
+  "hat_adi": "KİRAZ - BEYDAĞ",
+  "hat_baslangic": "KİRAZ",
+  "hat_bitis": "BEYDAĞ",
+  "duraklar": [
+    {
+      "durak_id": 15935,
+      "durak_adi": "Beydağ Terminal",
+      "enlem": 38.086161,
+      "boylam": 28.21075
+    },
+    {
+      "durak_id": 15936,
+      "durak_adi": "Kiraz Devlet Hastanesi",
+      "enlem": 38.231042,
+      "boylam": 28.218045
+    },
+    {
+      "durak_id": 15937,
+      "durak_adi": "Özkan",
+      "enlem": 38.231803,
+      "boylam": 28.216513
+    },
+    {
+      "durak_id": 15938,
+      "durak_adi": "Özkan",
+      "enlem": 38.231918,
+      "boylam": 28.216143
+    },
+    {
+      "durak_id": 15939,
+      "durak_adi": "Ziya Gökalp",
+      "enlem": 38.231587,
+      "boylam": 28.212094
+    },
+    {
+      "durak_id": 15940,
+      "durak_adi": "Ziya Gökalp",
+      "enlem": 38.231432,
+      "boylam": 28.21204
+    },
+    {
+      "durak_id": 15941,
+      "durak_adi": "Beyazıt",
+      "enlem": 38.231755,
+      "boylam": 28.209687
+    },
+    {
+      "durak_id": 15942,
+      "durak_adi": "Beyazıt",
+      "enlem": 38.231599,
+      "boylam": 28.209716
+    },
+    {
+      "durak_id": 15943,
+      "durak_adi": "Kiraz Hükümet Konağı",
+      "enlem": 38.231494,
+      "boylam": 28.206588
+    },
+    {
+      "durak_id": 15944,
+      "durak_adi": "Kiraz Hükümet Konağı",
+      "enlem": 38.2314365015965,
+      "boylam": 28.2067616976866
+    },
+    {
+      "durak_id": 15945,
+      "durak_adi": "Okul",
+      "enlem": 38.2309684537881,
+      "boylam": 28.2038926968651
+    },
+    {
+      "durak_id": 15946,
+      "durak_adi": "Okul",
+      "enlem": 38.2309184517772,
+      "boylam": 28.2038956985687
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    }
+  ]
+}

@@ -1,0 +1,881 @@
+{
+  "hat_no": "732",
+  "hat_adi": "SEFERİHİSAR - URLA",
+  "hat_baslangic": "SEFERİHİSAR",
+  "hat_bitis": "URLA",
+  "duraklar": [
+    {
+      "durak_id": 51140,
+      "durak_adi": "Palmiye",
+      "enlem": 38.315547,
+      "boylam": 26.766397
+    },
+    {
+      "durak_id": 51141,
+      "durak_adi": "Palmiye",
+      "enlem": 38.315565,
+      "boylam": 26.766009
+    },
+    {
+      "durak_id": 51142,
+      "durak_adi": "Ovacık",
+      "enlem": 38.2974,
+      "boylam": 26.8064
+    },
+    {
+      "durak_id": 51143,
+      "durak_adi": "Ovacık",
+      "enlem": 38.2973,
+      "boylam": 26.8064
+    },
+    {
+      "durak_id": 51144,
+      "durak_adi": "Tekkebaşı",
+      "enlem": 38.2845,
+      "boylam": 26.8284
+    },
+    {
+      "durak_id": 51145,
+      "durak_adi": "Tekkebaşı",
+      "enlem": 38.2843,
+      "boylam": 26.8285
+    },
+    {
+      "durak_id": 51146,
+      "durak_adi": "Yeni Orman",
+      "enlem": 38.2756,
+      "boylam": 26.8351
+    },
+    {
+      "durak_id": 51147,
+      "durak_adi": "Yeni Orman",
+      "enlem": 38.2756,
+      "boylam": 26.835
+    },
+    {
+      "durak_id": 51148,
+      "durak_adi": "Bademler Park",
+      "enlem": 38.273404,
+      "boylam": 26.829113
+    },
+    {
+      "durak_id": 51149,
+      "durak_adi": "Bademler Park",
+      "enlem": 38.273425,
+      "boylam": 26.828967
+    },
+    {
+      "durak_id": 51150,
+      "durak_adi": "Bademler Çıkış",
+      "enlem": 38.2733004708048,
+      "boylam": 26.8280014623289
+    },
+    {
+      "durak_id": 51151,
+      "durak_adi": "Bademler Çıkış",
+      "enlem": 38.2733,
+      "boylam": 26.8279
+    },
+    {
+      "durak_id": 51152,
+      "durak_adi": "At Çiftliği",
+      "enlem": 38.269200485831,
+      "boylam": 26.8184014785201
+    },
+    {
+      "durak_id": 51153,
+      "durak_adi": "At Çiftliği",
+      "enlem": 38.2691141869714,
+      "boylam": 26.8182313780533
+    },
+    {
+      "durak_id": 51154,
+      "durak_adi": "İhsaniye yolu",
+      "enlem": 38.2724004838327,
+      "boylam": 26.8122015389142
+    },
+    {
+      "durak_id": 51155,
+      "durak_adi": "İhsaniye yolu",
+      "enlem": 38.2725004835561,
+      "boylam": 26.8123015392147
+    },
+    {
+      "durak_id": 51156,
+      "durak_adi": "İhsaniye",
+      "enlem": 38.2757288236857,
+      "boylam": 26.8086110632634
+    },
+    {
+      "durak_id": 51160,
+      "durak_adi": "Bozyer",
+      "enlem": 38.2656648553582,
+      "boylam": 26.8139825156695
+    },
+    {
+      "durak_id": 51161,
+      "durak_adi": "Bozyer",
+      "enlem": 38.2657354815315,
+      "boylam": 26.8139902715708
+    },
+    {
+      "durak_id": 51162,
+      "durak_adi": "Çiftlik",
+      "enlem": 38.2614005082119,
+      "boylam": 26.8102014529862
+    },
+    {
+      "durak_id": 51163,
+      "durak_adi": "Çiftlik",
+      "enlem": 38.2614190591117,
+      "boylam": 26.8100760110424
+    },
+    {
+      "durak_id": 51164,
+      "durak_adi": "Turgut Mezarlık",
+      "enlem": 38.2595870311126,
+      "boylam": 26.808019256428
+    },
+    {
+      "durak_id": 51165,
+      "durak_adi": "Turgut Mezarlık",
+      "enlem": 38.2596404114843,
+      "boylam": 26.8080118605697
+    },
+    {
+      "durak_id": 51166,
+      "durak_adi": "Turgut Meydan",
+      "enlem": 38.2586,
+      "boylam": 26.8073
+    },
+    {
+      "durak_id": 51167,
+      "durak_adi": "Turgut Meydan",
+      "enlem": 38.2584,
+      "boylam": 26.8071
+    },
+    {
+      "durak_id": 51168,
+      "durak_adi": "Tarım  Koop",
+      "enlem": 38.2551,
+      "boylam": 26.8069
+    },
+    {
+      "durak_id": 51169,
+      "durak_adi": "Tarım  Koop",
+      "enlem": 38.2551,
+      "boylam": 26.8068
+    },
+    {
+      "durak_id": 51170,
+      "durak_adi": "Azmak Yol Ayrımı",
+      "enlem": 38.245589,
+      "boylam": 26.811055
+    },
+    {
+      "durak_id": 51171,
+      "durak_adi": "Azmak Yol Ayrımı",
+      "enlem": 38.245686,
+      "boylam": 26.810664
+    },
+    {
+      "durak_id": 51172,
+      "durak_adi": "Şehit Piyade Çavuş Ceysu Ceylan",
+      "enlem": 38.2444,
+      "boylam": 26.8153
+    },
+    {
+      "durak_id": 51173,
+      "durak_adi": "Şehit Piyade Çavuş Ceysu Ceylan",
+      "enlem": 38.2443,
+      "boylam": 26.8155
+    },
+    {
+      "durak_id": 51174,
+      "durak_adi": "Düzce Yolu",
+      "enlem": 38.244251,
+      "boylam": 26.824873
+    },
+    {
+      "durak_id": 51175,
+      "durak_adi": "Düzce Yolu",
+      "enlem": 38.244168,
+      "boylam": 26.824687
+    },
+    {
+      "durak_id": 51849,
+      "durak_adi": "Uysal",
+      "enlem": 38.2723104706575,
+      "boylam": 26.8306414404618
+    },
+    {
+      "durak_id": 51850,
+      "durak_adi": "Davulcu Deresi",
+      "enlem": 38.2703634716825,
+      "boylam": 26.8338164080058
+    },
+    {
+      "durak_id": 51964,
+      "durak_adi": "Düzce Köprü",
+      "enlem": 38.2447145329349,
+      "boylam": 26.8189982464911
+    },
+    {
+      "durak_id": 51965,
+      "durak_adi": "Düzce Köprü",
+      "enlem": 38.2446165332183,
+      "boylam": 26.8189122459269
+    },
+    {
+      "durak_id": 52052,
+      "durak_adi": "Davulcu Deresi",
+      "enlem": 38.2703964713957,
+      "boylam": 26.8341044068056
+    },
+    {
+      "durak_id": 52053,
+      "durak_adi": "Uysal",
+      "enlem": 38.2717864711913,
+      "boylam": 26.8311874333185
+    },
+    {
+      "durak_id": 52080,
+      "durak_adi": "Çınar",
+      "enlem": 38.2874302197102,
+      "boylam": 26.8223906233883
+    },
+    {
+      "durak_id": 52081,
+      "durak_adi": "Çınar",
+      "enlem": 38.2874254474125,
+      "boylam": 26.8221036037425
+    },
+    {
+      "durak_id": 52126,
+      "durak_adi": "Bademler Tarla",
+      "enlem": 38.2706944785636,
+      "boylam": 26.8241624608095
+    },
+    {
+      "durak_id": 52127,
+      "durak_adi": "Bademler Tarla",
+      "enlem": 38.2707264786282,
+      "boylam": 26.8239964619493
+    },
+    {
+      "durak_id": 52147,
+      "durak_adi": "Çiftlik",
+      "enlem": 38.3123844028524,
+      "boylam": 26.7765170405943
+    },
+    {
+      "durak_id": 52148,
+      "durak_adi": "Çiftlik",
+      "enlem": 38.3122304032496,
+      "boylam": 26.7765940391496
+    },
+    {
+      "durak_id": 52161,
+      "durak_adi": "İlke",
+      "enlem": 38.3143553978411,
+      "boylam": 26.7698510947
+    },
+    {
+      "durak_id": 52162,
+      "durak_adi": "İlke",
+      "enlem": 38.3143153979498,
+      "boylam": 26.7697190952865
+    },
+    {
+      "durak_id": 52174,
+      "durak_adi": "Elektrik",
+      "enlem": 38.2823474521352,
+      "boylam": 26.8308935185215
+    },
+    {
+      "durak_id": 52175,
+      "durak_adi": "Elektrik",
+      "enlem": 38.2819354527277,
+      "boylam": 26.8311605139764
+    },
+    {
+      "durak_id": 52216,
+      "durak_adi": "Ovacık Çıkış",
+      "enlem": 38.2981504323441,
+      "boylam": 26.8039417822498
+    },
+    {
+      "durak_id": 52217,
+      "durak_adi": "Ovacık Çıkış",
+      "enlem": 38.29823943218,
+      "boylam": 26.8038297835103
+    },
+    {
+      "durak_id": 52218,
+      "durak_adi": "Ovacık Giriş",
+      "enlem": 38.2964134344393,
+      "boylam": 26.8090947406579
+    },
+    {
+      "durak_id": 52219,
+      "durak_adi": "Ovacık Giriş",
+      "enlem": 38.2965084342753,
+      "boylam": 26.8089757419963
+    },
+    {
+      "durak_id": 52299,
+      "durak_adi": "Turgut Çiftlik",
+      "enlem": 38.2472805381512,
+      "boylam": 26.8094253211916
+    },
+    {
+      "durak_id": 52300,
+      "durak_adi": "Turgut Çiftlik",
+      "enlem": 38.2471895381858,
+      "boylam": 26.8095723195132
+    },
+    {
+      "durak_id": 52301,
+      "durak_adi": "Turgut Restoran",
+      "enlem": 38.2500930658454,
+      "boylam": 26.8088537045867
+    },
+    {
+      "durak_id": 52302,
+      "durak_adi": "Turgut Restoran",
+      "enlem": 38.2502845328035,
+      "boylam": 26.8085723556561
+    },
+    {
+      "durak_id": 52303,
+      "durak_adi": "Turgut Tarla",
+      "enlem": 38.2519455298526,
+      "boylam": 26.8080513747435
+    },
+    {
+      "durak_id": 52304,
+      "durak_adi": "Turgut Tarla",
+      "enlem": 38.2520625294762,
+      "boylam": 26.8081883751715
+    },
+    {
+      "durak_id": 52460,
+      "durak_adi": "Turgut Dörtyol",
+      "enlem": 38.2665954927426,
+      "boylam": 26.8161784677563
+    },
+    {
+      "durak_id": 52461,
+      "durak_adi": "Turgut Dörtyol",
+      "enlem": 38.2664934929929,
+      "boylam": 26.8161204671707
+    },
+    {
+      "durak_id": 52466,
+      "durak_adi": "Ovacık Samyeli",
+      "enlem": 38.3056234171682,
+      "boylam": 26.7961288780966
+    },
+    {
+      "durak_id": 52467,
+      "durak_adi": "Ovacık Samyeli",
+      "enlem": 38.3056144172055,
+      "boylam": 26.7960478785191
+    },
+    {
+      "durak_id": 52511,
+      "durak_adi": "Bademler Küçükevler",
+      "enlem": 38.2721194746005,
+      "boylam": 26.8258494638576
+    },
+    {
+      "durak_id": 52512,
+      "durak_adi": "Bademler Küçükevler",
+      "enlem": 38.2722564741847,
+      "boylam": 26.8260624638767
+    },
+    {
+      "durak_id": 52513,
+      "durak_adi": "Bademler Bozyer",
+      "enlem": 38.2692634826539,
+      "boylam": 26.8223944579885
+    },
+    {
+      "durak_id": 52514,
+      "durak_adi": "Bademler Bozyer",
+      "enlem": 38.2694464822993,
+      "boylam": 26.8223974595293
+    },
+    {
+      "durak_id": 52517,
+      "durak_adi": "Hürriyet",
+      "enlem": 38.2438445240033,
+      "boylam": 26.828230192043
+    },
+    {
+      "durak_id": 52518,
+      "durak_adi": "Hürriyet",
+      "enlem": 38.2439535239046,
+      "boylam": 26.8281491935382
+    },
+    {
+      "durak_id": 52628,
+      "durak_adi": "Bademler Üçyol",
+      "enlem": 38.2709164720637,
+      "boylam": 26.8320834214969
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "05:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:00",
+      "aciklama": null
+    }
+  ]
+}

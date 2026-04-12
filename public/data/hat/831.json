@@ -1,0 +1,303 @@
+{
+  "hat_no": "831",
+  "hat_adi": "DEMİRCİDERE - BERGAMA",
+  "hat_baslangic": "DEMİRCİDERE",
+  "hat_bitis": "BERGAMA",
+  "duraklar": [
+    {
+      "durak_id": 23488,
+      "durak_adi": "Demircidere Son Durak",
+      "enlem": 39.264912,
+      "boylam": 26.919884
+    },
+    {
+      "durak_id": 23490,
+      "durak_adi": "Kaplan Son Durak",
+      "enlem": 39.23494,
+      "boylam": 26.95846
+    },
+    {
+      "durak_id": 23492,
+      "durak_adi": "Kaplanköy Giriş",
+      "enlem": 39.236202,
+      "boylam": 26.957954
+    },
+    {
+      "durak_id": 23493,
+      "durak_adi": "Kaplanköy Giriş",
+      "enlem": 39.236305,
+      "boylam": 26.957844
+    },
+    {
+      "durak_id": 23494,
+      "durak_adi": "Aşağıbey Son Durak",
+      "enlem": 39.2474698797405,
+      "boylam": 26.965634937735
+    },
+    {
+      "durak_id": 23495,
+      "durak_adi": "Aşağıbey Son Durak",
+      "enlem": 39.2473971023752,
+      "boylam": 26.9655962460722
+    },
+    {
+      "durak_id": 23496,
+      "durak_adi": "Aşağıbey Okul",
+      "enlem": 39.25029,
+      "boylam": 26.966776
+    },
+    {
+      "durak_id": 23497,
+      "durak_adi": "Aşağıbey Okul",
+      "enlem": 39.250286,
+      "boylam": 26.966932
+    },
+    {
+      "durak_id": 23498,
+      "durak_adi": "Aşağıbey Camii",
+      "enlem": 39.250946,
+      "boylam": 26.968662
+    },
+    {
+      "durak_id": 23499,
+      "durak_adi": "Aşağıbey Camii",
+      "enlem": 39.250865,
+      "boylam": 26.968678
+    },
+    {
+      "durak_id": 23500,
+      "durak_adi": "Aşağıbey Giriş",
+      "enlem": 39.251638,
+      "boylam": 26.970038
+    },
+    {
+      "durak_id": 23501,
+      "durak_adi": "Aşağıbey Giriş",
+      "enlem": 39.251591,
+      "boylam": 26.970181
+    },
+    {
+      "durak_id": 23503,
+      "durak_adi": "Hisarköy Merkez",
+      "enlem": 39.2565870813179,
+      "boylam": 26.9948522643565
+    },
+    {
+      "durak_id": 23504,
+      "durak_adi": "Hisarköy Okul",
+      "enlem": 39.258545,
+      "boylam": 26.994371
+    },
+    {
+      "durak_id": 23505,
+      "durak_adi": "Hisarköy Okul",
+      "enlem": 39.258417,
+      "boylam": 26.994207
+    },
+    {
+      "durak_id": 23506,
+      "durak_adi": "Hisarköy Giriş",
+      "enlem": 39.260644,
+      "boylam": 26.993262
+    },
+    {
+      "durak_id": 23507,
+      "durak_adi": "Hisarköy Giriş",
+      "enlem": 39.2608,
+      "boylam": 26.993309
+    },
+    {
+      "durak_id": 23508,
+      "durak_adi": "Ayvatlar Merkez",
+      "enlem": 39.267078,
+      "boylam": 26.981785
+    },
+    {
+      "durak_id": 23509,
+      "durak_adi": "Ayvatlar Merkez",
+      "enlem": 39.266997,
+      "boylam": 26.981822
+    },
+    {
+      "durak_id": 23510,
+      "durak_adi": "Ayvatlar Giriş",
+      "enlem": 39.266975,
+      "boylam": 26.984072
+    },
+    {
+      "durak_id": 23511,
+      "durak_adi": "Ayvatlar Giriş",
+      "enlem": 39.266874,
+      "boylam": 26.984059
+    },
+    {
+      "durak_id": 23512,
+      "durak_adi": "Göbeller Merkez",
+      "enlem": 39.251987,
+      "boylam": 27.018837
+    },
+    {
+      "durak_id": 23590,
+      "durak_adi": "Kamyoncular Kooperatifi",
+      "enlem": 39.2625950685613,
+      "boylam": 27.0118182779141
+    },
+    {
+      "durak_id": 23591,
+      "durak_adi": "Kamyoncular Kooperatifi",
+      "enlem": 39.262805066781,
+      "boylam": 27.0117632786113
+    },
+    {
+      "durak_id": 23610,
+      "durak_adi": "Aşağıbey Köy İçi Yolu",
+      "enlem": 39.2519666840038,
+      "boylam": 26.9719778828714
+    },
+    {
+      "durak_id": 23611,
+      "durak_adi": "Aşağıbey Köy İçi Yolu",
+      "enlem": 39.2517970796899,
+      "boylam": 26.9721962540752
+    },
+    {
+      "durak_id": 23612,
+      "durak_adi": "Aşağıbey Muhtarlık",
+      "enlem": 39.2497063809914,
+      "boylam": 26.9660685240408
+    },
+    {
+      "durak_id": 23613,
+      "durak_adi": "Aşağıbey Muhtarlık",
+      "enlem": 39.2498420760269,
+      "boylam": 26.9660684584061
+    },
+    {
+      "durak_id": 23614,
+      "durak_adi": "Aşağıbey",
+      "enlem": 39.2491970888358,
+      "boylam": 26.9651962486466
+    },
+    {
+      "durak_id": 23615,
+      "durak_adi": "Aşağıbey",
+      "enlem": 39.2491320894009,
+      "boylam": 26.9652672485622
+    },
+    {
+      "durak_id": 24260,
+      "durak_adi": "Ayvatlar Köy İçi",
+      "enlem": 39.2663799849823,
+      "boylam": 26.9818192892855
+    },
+    {
+      "durak_id": 24261,
+      "durak_adi": "Ayvatlar Köy İçi",
+      "enlem": 39.2663509853375,
+      "boylam": 26.9819112892336
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    }
+  ]
+}

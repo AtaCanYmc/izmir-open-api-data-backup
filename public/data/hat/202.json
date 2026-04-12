@@ -1,0 +1,137 @@
+{
+  "hat_no": "202",
+  "hat_adi": "CUMHURİYET MEYDANI - HAVALİMANI",
+  "hat_baslangic": "CUMHURİYET MEYDANI",
+  "hat_bitis": "HAVALİMANI",
+  "duraklar": [
+    {
+      "durak_id": 10210,
+      "durak_adi": "İzmir Mesleki ve Teknik Anadolu Lisesi",
+      "enlem": 38.4270783004504,
+      "boylam": 27.1358567618648
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    }
+  ]
+}

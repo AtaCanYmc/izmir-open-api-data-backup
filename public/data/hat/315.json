@@ -1,0 +1,413 @@
+{
+  "hat_no": "315",
+  "hat_adi": "KARAÇAM - EVKA3 METRO",
+  "hat_baslangic": "KARAÇAM",
+  "hat_bitis": "EVKA3 METRO",
+  "duraklar": [
+    {
+      "durak_id": 30384,
+      "durak_adi": "Karaçam Giriş",
+      "enlem": 38.5088991828425,
+      "boylam": 27.2696292980643
+    },
+    {
+      "durak_id": 30939,
+      "durak_adi": "Karaçam Giriş",
+      "enlem": 38.5094486550198,
+      "boylam": 27.2698093575519
+    },
+    {
+      "durak_id": 30940,
+      "durak_adi": "Villa",
+      "enlem": 38.5115859177918,
+      "boylam": 27.2695231077847
+    },
+    {
+      "durak_id": 30941,
+      "durak_adi": "Villa",
+      "enlem": 38.5117118662685,
+      "boylam": 27.269688987455
+    },
+    {
+      "durak_id": 30943,
+      "durak_adi": "Zirve Kent",
+      "enlem": 38.5131,
+      "boylam": 27.2691
+    },
+    {
+      "durak_id": 30944,
+      "durak_adi": "Zirve Kent",
+      "enlem": 38.51339,
+      "boylam": 27.26897
+    },
+    {
+      "durak_id": 30945,
+      "durak_adi": "Trafo",
+      "enlem": 38.516102444165,
+      "boylam": 27.2709829729526
+    },
+    {
+      "durak_id": 30946,
+      "durak_adi": "Trafo",
+      "enlem": 38.5162794418812,
+      "boylam": 27.2708079229532
+    },
+    {
+      "durak_id": 30947,
+      "durak_adi": "Karaçam",
+      "enlem": 38.5177789500691,
+      "boylam": 27.2710575675309
+    },
+    {
+      "durak_id": 30950,
+      "durak_adi": "Karaçam Havuz",
+      "enlem": 38.5143445650598,
+      "boylam": 27.2692966575733
+    },
+    {
+      "durak_id": 30951,
+      "durak_adi": "Karaçam Havuz",
+      "enlem": 38.5142950924537,
+      "boylam": 27.2693104016025
+    },
+    {
+      "durak_id": 32381,
+      "durak_adi": "Karaçam Çiftlik",
+      "enlem": 38.5179192027096,
+      "boylam": 27.2687412348787
+    },
+    {
+      "durak_id": 32382,
+      "durak_adi": "Karaçam Çiftlik",
+      "enlem": 38.5176732010443,
+      "boylam": 27.2685112379611
+    },
+    {
+      "durak_id": 32383,
+      "durak_adi": "Karaçam Santral",
+      "enlem": 38.5195512163931,
+      "boylam": 27.2708382113351
+    },
+    {
+      "durak_id": 32384,
+      "durak_adi": "Karaçam Santral",
+      "enlem": 38.5196602170691,
+      "boylam": 27.2709252100387
+    },
+    {
+      "durak_id": 32385,
+      "durak_adi": "Karaçam Park",
+      "enlem": 38.5190822219368,
+      "boylam": 27.2723192070943
+    },
+    {
+      "durak_id": 32386,
+      "durak_adi": "Karaçam Park",
+      "enlem": 38.5187312224332,
+      "boylam": 27.272628208155
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    }
+  ]
+}

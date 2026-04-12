@@ -1,0 +1,1306 @@
+{
+  "hat_no": "873",
+  "hat_adi": "YENİTEPE EVLERİ - FAHRETTİN ALTAY AKTARMA",
+  "hat_baslangic": "YENİTEPE EVLERİ",
+  "hat_bitis": "FAHRETTİN ALTAY AKT.",
+  "duraklar": [
+    {
+      "durak_id": 15448,
+      "durak_adi": "Uzundere Mezarlığı",
+      "enlem": 38.3566334061515,
+      "boylam": 27.097574647347
+    },
+    {
+      "durak_id": 15449,
+      "durak_adi": "Uzundere Mezarlığı",
+      "enlem": 38.3564664058397,
+      "boylam": 27.0975766473231
+    },
+    {
+      "durak_id": 15450,
+      "durak_adi": "Nasrettin Hoca Parkı",
+      "enlem": 38.3581924085209,
+      "boylam": 27.0967246505611
+    },
+    {
+      "durak_id": 15451,
+      "durak_adi": "Nasrettin Hoca Parkı",
+      "enlem": 38.3580394081831,
+      "boylam": 27.0966356508809
+    },
+    {
+      "durak_id": 51925,
+      "durak_adi": "Fahrettin Altay Aktarma Merkezi",
+      "enlem": 38.3982154349971,
+      "boylam": 27.066159751976
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "20:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "22:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "23:30",
+      "aciklama": null
+    }
+  ]
+}

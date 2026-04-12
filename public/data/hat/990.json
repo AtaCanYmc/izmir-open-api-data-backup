@@ -1,0 +1,469 @@
+{
+  "hat_no": "990",
+  "hat_adi": "BEYLER - SEFERİHİSAR",
+  "hat_baslangic": "BEYLER",
+  "hat_bitis": "SEFERİHİSAR",
+  "duraklar": [
+    {
+      "durak_id": 51332,
+      "durak_adi": "Beyler Üç Yol",
+      "enlem": 38.1530010362464,
+      "boylam": 26.8943131330791
+    },
+    {
+      "durak_id": 51333,
+      "durak_adi": "Beyler Üç Yol",
+      "enlem": 38.1529059342964,
+      "boylam": 26.8945221326833
+    },
+    {
+      "durak_id": 51334,
+      "durak_adi": "Dere Çeşme",
+      "enlem": 38.2280003988591,
+      "boylam": 26.9244006364118
+    },
+    {
+      "durak_id": 51335,
+      "durak_adi": "Manolya",
+      "enlem": 38.181754,
+      "boylam": 26.837354
+    },
+    {
+      "durak_id": 51336,
+      "durak_adi": "Beyler İlkokulu",
+      "enlem": 38.2258941627236,
+      "boylam": 26.9261438090822
+    },
+    {
+      "durak_id": 51337,
+      "durak_adi": "Bahçeköy",
+      "enlem": 38.178955,
+      "boylam": 26.83918
+    },
+    {
+      "durak_id": 51338,
+      "durak_adi": "İbrahim Alanı",
+      "enlem": 38.2148831243466,
+      "boylam": 26.9178539024016
+    },
+    {
+      "durak_id": 51339,
+      "durak_adi": "Kavakdere Üçyol",
+      "enlem": 38.1431,
+      "boylam": 26.8947
+    },
+    {
+      "durak_id": 51340,
+      "durak_adi": "Orhanlı Yol Ayrımı",
+      "enlem": 38.1885516127881,
+      "boylam": 26.9217182212976
+    },
+    {
+      "durak_id": 51341,
+      "durak_adi": "Samyeli",
+      "enlem": 38.1605054855647,
+      "boylam": 26.8933929014796
+    },
+    {
+      "durak_id": 51342,
+      "durak_adi": "Borlu",
+      "enlem": 38.1825,
+      "boylam": 26.914
+    },
+    {
+      "durak_id": 51343,
+      "durak_adi": "Kavak Çayı",
+      "enlem": 38.1681,
+      "boylam": 26.8965
+    },
+    {
+      "durak_id": 51344,
+      "durak_adi": "Vakıf Kuyu",
+      "enlem": 38.1713794690282,
+      "boylam": 26.8980530460081
+    },
+    {
+      "durak_id": 51345,
+      "durak_adi": "Vakıf Kuyu",
+      "enlem": 38.1714184686907,
+      "boylam": 26.8981740462144
+    },
+    {
+      "durak_id": 51346,
+      "durak_adi": "Kavak Çayı",
+      "enlem": 38.1683,
+      "boylam": 26.8965
+    },
+    {
+      "durak_id": 51347,
+      "durak_adi": "Borlu",
+      "enlem": 38.1825,
+      "boylam": 26.9141
+    },
+    {
+      "durak_id": 51348,
+      "durak_adi": "Samyeli",
+      "enlem": 38.1604724858351,
+      "boylam": 26.8933029012308
+    },
+    {
+      "durak_id": 51349,
+      "durak_adi": "Orhanlı Yol Ayrımı",
+      "enlem": 38.1886420253757,
+      "boylam": 26.921938820076
+    },
+    {
+      "durak_id": 51350,
+      "durak_adi": "Kavakdere Üçyol",
+      "enlem": 38.143,
+      "boylam": 26.8946
+    },
+    {
+      "durak_id": 51351,
+      "durak_adi": "İbrahim Alanı",
+      "enlem": 38.2148739931346,
+      "boylam": 26.9179962776082
+    },
+    {
+      "durak_id": 51352,
+      "durak_adi": "Bahçeköy",
+      "enlem": 38.178901,
+      "boylam": 26.839433
+    },
+    {
+      "durak_id": 51353,
+      "durak_adi": "Beyler İlkokulu",
+      "enlem": 38.2257,
+      "boylam": 26.926
+    },
+    {
+      "durak_id": 51354,
+      "durak_adi": "Manolya",
+      "enlem": 38.18178,
+      "boylam": 26.837496
+    },
+    {
+      "durak_id": 51355,
+      "durak_adi": "Dere Çeşme",
+      "enlem": 38.2281003986729,
+      "boylam": 26.9245006370498
+    },
+    {
+      "durak_id": 51357,
+      "durak_adi": "Beyler Son Durak",
+      "enlem": 38.2298,
+      "boylam": 26.9242
+    },
+    {
+      "durak_id": 51837,
+      "durak_adi": "Meşelik",
+      "enlem": 38.2131584138928,
+      "boylam": 26.9174705063597
+    },
+    {
+      "durak_id": 51838,
+      "durak_adi": "Meşelik",
+      "enlem": 38.2132054136923,
+      "boylam": 26.917567506555
+    },
+    {
+      "durak_id": 51845,
+      "durak_adi": "İzli Kuyu",
+      "enlem": 38.2191164057578,
+      "boylam": 26.9212145574378
+    },
+    {
+      "durak_id": 51846,
+      "durak_adi": "İzli Kuyu",
+      "enlem": 38.2191924058879,
+      "boylam": 26.9211405584718
+    },
+    {
+      "durak_id": 51847,
+      "durak_adi": "İmamlar",
+      "enlem": 38.2235383981663,
+      "boylam": 26.9250465900095
+    },
+    {
+      "durak_id": 51848,
+      "durak_adi": "İmamlar",
+      "enlem": 38.2236253982937,
+      "boylam": 26.9249725911291
+    },
+    {
+      "durak_id": 51861,
+      "durak_adi": "Çeşme",
+      "enlem": 38.2105164178732,
+      "boylam": 26.9157164830931
+    },
+    {
+      "durak_id": 51862,
+      "durak_adi": "Çeşme",
+      "enlem": 38.2106124174965,
+      "boylam": 26.9158934835831
+    },
+    {
+      "durak_id": 51863,
+      "durak_adi": "Bağ Bozumu",
+      "enlem": 38.2067384189127,
+      "boylam": 26.9155284414423
+    },
+    {
+      "durak_id": 51864,
+      "durak_adi": "Bağ Bozumu",
+      "enlem": 38.2068774189527,
+      "boylam": 26.915498443109
+    },
+    {
+      "durak_id": 51865,
+      "durak_adi": "İncircik",
+      "enlem": 38.2022134185276,
+      "boylam": 26.9160193880573
+    },
+    {
+      "durak_id": 51866,
+      "durak_adi": "İncircik",
+      "enlem": 38.202252418361,
+      "boylam": 26.9160933882815
+    },
+    {
+      "durak_id": 51867,
+      "durak_adi": "Kuzyaka",
+      "enlem": 38.1985394199777,
+      "boylam": 26.9155723463144
+    },
+    {
+      "durak_id": 51868,
+      "durak_adi": "Kuzyaka",
+      "enlem": 38.1984594198724,
+      "boylam": 26.9156233452108
+    },
+    {
+      "durak_id": 51869,
+      "durak_adi": "Han Deresi",
+      "enlem": 38.1902114234384,
+      "boylam": 26.9144682483745
+    },
+    {
+      "durak_id": 51870,
+      "durak_adi": "Han Deresi",
+      "enlem": 38.1902384232245,
+      "boylam": 26.9145562484548
+    },
+    {
+      "durak_id": 51871,
+      "durak_adi": "Kara Pınar",
+      "enlem": 38.1898474153826,
+      "boylam": 26.9178192342005
+    },
+    {
+      "durak_id": 51872,
+      "durak_adi": "Kara Pınar",
+      "enlem": 38.189915446574,
+      "boylam": 26.9178988623752
+    },
+    {
+      "durak_id": 51873,
+      "durak_adi": "Yonca",
+      "enlem": 38.186780416952,
+      "boylam": 26.9172131974994
+    },
+    {
+      "durak_id": 51874,
+      "durak_adi": "Yonca",
+      "enlem": 38.1867704166774,
+      "boylam": 26.9173241970614
+    },
+    {
+      "durak_id": 51875,
+      "durak_adi": "Baraj Yolu",
+      "enlem": 38.1747184622732,
+      "boylam": 26.9002170863121
+    },
+    {
+      "durak_id": 51876,
+      "durak_adi": "Baraj Yolu",
+      "enlem": 38.1745767678395,
+      "boylam": 26.9003490625717
+    },
+    {
+      "durak_id": 51877,
+      "durak_adi": "Zeybek",
+      "enlem": 38.1641884817389,
+      "boylam": 26.8942889534201
+    },
+    {
+      "durak_id": 51878,
+      "durak_adi": "Zeybek",
+      "enlem": 38.1643374813447,
+      "boylam": 26.8944109552624
+    },
+    {
+      "durak_id": 51879,
+      "durak_adi": "Kavakdere Okul",
+      "enlem": 38.1576214893764,
+      "boylam": 26.8924268607527
+    },
+    {
+      "durak_id": 51880,
+      "durak_adi": "Kavakdere Okul",
+      "enlem": 38.1576994889335,
+      "boylam": 26.8925688615543
+    },
+    {
+      "durak_id": 52222,
+      "durak_adi": "Kavakdere Mezarlık",
+      "enlem": 38.1423948073093,
+      "boylam": 26.8897028819158
+    },
+    {
+      "durak_id": 52223,
+      "durak_adi": "Kavakdere Mezarlık",
+      "enlem": 38.1422985047426,
+      "boylam": 26.889161628123
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    }
+  ]
+}

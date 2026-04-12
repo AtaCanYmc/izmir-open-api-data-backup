@@ -1,0 +1,511 @@
+{
+  "hat_no": "976",
+  "hat_adi": "MORDOĞAN - KARABURUN",
+  "hat_baslangic": "MORDOĞAN",
+  "hat_bitis": "KARABURUN",
+  "duraklar": [
+    {
+      "durak_id": 52472,
+      "durak_adi": "Eğlenhoca Son Durak",
+      "enlem": 38.542839389911,
+      "boylam": 26.5690726668963
+    },
+    {
+      "durak_id": 52473,
+      "durak_adi": "Eğlenhoca Fabrika",
+      "enlem": 38.5427293836427,
+      "boylam": 26.5654916971789
+    },
+    {
+      "durak_id": 52474,
+      "durak_adi": "Eğlenhoca Fabrika",
+      "enlem": 38.5427903834841,
+      "boylam": 26.5655206965855
+    },
+    {
+      "durak_id": 52475,
+      "durak_adi": "Eğlenhoca Tarla",
+      "enlem": 38.5422673788136,
+      "boylam": 26.5620357285523
+    },
+    {
+      "durak_id": 52476,
+      "durak_adi": "Eğlenhoca Tarla",
+      "enlem": 38.5422013789151,
+      "boylam": 26.5619667295083
+    },
+    {
+      "durak_id": 52477,
+      "durak_adi": "Eğlenhoca Çıkış",
+      "enlem": 38.5431693730674,
+      "boylam": 26.5606427348961
+    },
+    {
+      "durak_id": 52478,
+      "durak_adi": "Eğlenhoca Çıkış",
+      "enlem": 38.5432473727826,
+      "boylam": 26.5606357344988
+    },
+    {
+      "durak_id": 52479,
+      "durak_adi": "Kösedere Çıkış",
+      "enlem": 38.5445203609024,
+      "boylam": 26.556657760136
+    },
+    {
+      "durak_id": 52480,
+      "durak_adi": "Kösedere Çıkış",
+      "enlem": 38.5446963606675,
+      "boylam": 26.5568587574165
+    },
+    {
+      "durak_id": 52481,
+      "durak_adi": "Kösedere Mezarlık",
+      "enlem": 38.5462773533456,
+      "boylam": 26.5558827561029
+    },
+    {
+      "durak_id": 52482,
+      "durak_adi": "Kösedere Mezarlık",
+      "enlem": 38.5463473532004,
+      "boylam": 26.5559347552489
+    },
+    {
+      "durak_id": 52483,
+      "durak_adi": "Kösedere",
+      "enlem": 38.5462003487497,
+      "boylam": 26.553295778136
+    },
+    {
+      "durak_id": 52484,
+      "durak_adi": "İnecik Yolayrımı",
+      "enlem": 38.5439043707135,
+      "boylam": 26.5607527296776
+    },
+    {
+      "durak_id": 52485,
+      "durak_adi": "İnecik Yolayrımı",
+      "enlem": 38.543949370598,
+      "boylam": 26.5607747292304
+    },
+    {
+      "durak_id": 52486,
+      "durak_adi": "İnecik Giriş",
+      "enlem": 38.5464693647413,
+      "boylam": 26.5623267014223
+    },
+    {
+      "durak_id": 52487,
+      "durak_adi": "İnecik Giriş",
+      "enlem": 38.5464983644877,
+      "boylam": 26.5622447019284
+    },
+    {
+      "durak_id": 52488,
+      "durak_adi": "İnecik Tarla",
+      "enlem": 38.5491603576211,
+      "boylam": 26.563503675463
+    },
+    {
+      "durak_id": 52489,
+      "durak_adi": "İnecik Tarla",
+      "enlem": 38.5491513573781,
+      "boylam": 26.5633566767318
+    },
+    {
+      "durak_id": 52490,
+      "durak_adi": "İnecik Merkez",
+      "enlem": 38.5506413559288,
+      "boylam": 26.5653396512746
+    },
+    {
+      "durak_id": 52521,
+      "durak_adi": "Kösedere Muhtarlık",
+      "enlem": 38.5476973426215,
+      "boylam": 26.5527957732288
+    },
+    {
+      "durak_id": 52522,
+      "durak_adi": "Kösedere Muhtarlık",
+      "enlem": 38.5476093430277,
+      "boylam": 26.5528497733151
+    },
+    {
+      "durak_id": 52523,
+      "durak_adi": "Kösedere Çıkış",
+      "enlem": 38.5496073349562,
+      "boylam": 26.5522307662015
+    },
+    {
+      "durak_id": 52524,
+      "durak_adi": "Kösedere Çıkış",
+      "enlem": 38.5495123354498,
+      "boylam": 26.5523187660564
+    },
+    {
+      "durak_id": 52525,
+      "durak_adi": "Kösedere Restoran",
+      "enlem": 38.5517363295128,
+      "boylam": 26.553236744568
+    },
+    {
+      "durak_id": 52526,
+      "durak_adi": "Kösedere Restoran",
+      "enlem": 38.5517133293531,
+      "boylam": 26.5531097457671
+    },
+    {
+      "durak_id": 52527,
+      "durak_adi": "Kösedere Manzara",
+      "enlem": 38.5534433185979,
+      "boylam": 26.5505547560519
+    },
+    {
+      "durak_id": 52528,
+      "durak_adi": "Kösedere Manzara",
+      "enlem": 38.5539043164909,
+      "boylam": 26.5502757554273
+    },
+    {
+      "durak_id": 52529,
+      "durak_adi": "Kösedere Zeytinlik",
+      "enlem": 38.5590553047565,
+      "boylam": 26.5533926961826
+    },
+    {
+      "durak_id": 52530,
+      "durak_adi": "Kösedere Zeytinlik",
+      "enlem": 38.5590263047201,
+      "boylam": 26.5533206969675
+    },
+    {
+      "durak_id": 52531,
+      "durak_adi": "Kösedere Tarla",
+      "enlem": 38.5679422806072,
+      "boylam": 26.5565526101005
+    },
+    {
+      "durak_id": 52532,
+      "durak_adi": "Kösedere Tarla",
+      "enlem": 38.568045280526,
+      "boylam": 26.5566946082272
+    },
+    {
+      "durak_id": 52535,
+      "durak_adi": "Kösedere Yol Ayrımı",
+      "enlem": 38.5713412781602,
+      "boylam": 26.561362547233
+    },
+    {
+      "durak_id": 52536,
+      "durak_adi": "Kösedere Yol Ayrımı",
+      "enlem": 38.5714442776461,
+      "boylam": 26.5612715472435
+    },
+    {
+      "durak_id": 52559,
+      "durak_adi": "Kösedere Ağaçlıyol",
+      "enlem": 38.5648635736585,
+      "boylam": 26.554335298899
+    },
+    {
+      "durak_id": 52560,
+      "durak_adi": "Kösedere Ağaçlıyol",
+      "enlem": 38.5647435742105,
+      "boylam": 26.5542663016694
+    },
+    {
+      "durak_id": 52561,
+      "durak_adi": "İncir",
+      "enlem": 38.543951390392,
+      "boylam": 26.571421641076
+    },
+    {
+      "durak_id": 52562,
+      "durak_adi": "İncir",
+      "enlem": 38.543890390332,
+      "boylam": 26.5712746426415
+    },
+    {
+      "durak_id": 52563,
+      "durak_adi": "Badem",
+      "enlem": 38.5452093896362,
+      "boylam": 26.5733766176606
+    },
+    {
+      "durak_id": 52564,
+      "durak_adi": "Badem",
+      "enlem": 38.5453853896073,
+      "boylam": 26.5736916140429
+    },
+    {
+      "durak_id": 52565,
+      "durak_adi": "Ceviz",
+      "enlem": 38.5457703926469,
+      "boylam": 26.5760615923347
+    },
+    {
+      "durak_id": 52566,
+      "durak_adi": "Ceviz",
+      "enlem": 38.545787392206,
+      "boylam": 26.575854593933
+    },
+    {
+      "durak_id": 52567,
+      "durak_adi": "Çınar",
+      "enlem": 38.5483153852107,
+      "boylam": 26.5768085712049
+    },
+    {
+      "durak_id": 52568,
+      "durak_adi": "Çınar",
+      "enlem": 38.5484033850171,
+      "boylam": 26.5768685701903
+    },
+    {
+      "durak_id": 52569,
+      "durak_adi": "Eğlenhoca Son Durak",
+      "enlem": 38.5429443900775,
+      "boylam": 26.5693596639187
+    },
+    {
+      "durak_id": 52570,
+      "durak_adi": "Kösedere",
+      "enlem": 38.5465153479094,
+      "boylam": 26.5534297751166
+    },
+    {
+      "durak_id": 52571,
+      "durak_adi": "Eski Mordoğan Meydan",
+      "enlem": 38.5187865295448,
+      "boylam": 26.5992025419485
+    },
+    {
+      "durak_id": 52572,
+      "durak_adi": "Eski Mordoğan Mezarlık",
+      "enlem": 38.5198745322262,
+      "boylam": 26.6028805069109
+    },
+    {
+      "durak_id": 52573,
+      "durak_adi": "Eski Mordoğan Mezarlık",
+      "enlem": 38.5198885318888,
+      "boylam": 26.602718508172
+    },
+    {
+      "durak_id": 52574,
+      "durak_adi": "Eski Mordoğan İZSU",
+      "enlem": 38.519848535273,
+      "boylam": 26.604544493434
+    },
+    {
+      "durak_id": 52575,
+      "durak_adi": "Eski Mordoğan İZSU",
+      "enlem": 38.5198925348137,
+      "boylam": 26.6043734946312
+    },
+    {
+      "durak_id": 52576,
+      "durak_adi": "Eski Mordoğan",
+      "enlem": 38.5218335399154,
+      "boylam": 26.6111244308707
+    },
+    {
+      "durak_id": 52577,
+      "durak_adi": "Eski Mordoğan",
+      "enlem": 38.5218355403467,
+      "boylam": 26.6113724288509
+    },
+    {
+      "durak_id": 52582,
+      "durak_adi": "Eğlenhoca Giriş",
+      "enlem": 38.5513117564739,
+      "boylam": 26.5786370765673
+    },
+    {
+      "durak_id": 52583,
+      "durak_adi": "Eğlenhoca Giriş",
+      "enlem": 38.5511993780634,
+      "boylam": 26.5783305414505
+    },
+    {
+      "durak_id": 52584,
+      "durak_adi": "Derebağ",
+      "enlem": 38.5688652855562,
+      "boylam": 26.560872568537
+    },
+    {
+      "durak_id": 52585,
+      "durak_adi": "Derebağ",
+      "enlem": 38.5688982852666,
+      "boylam": 26.5607765690871
+    },
+    {
+      "durak_id": 52586,
+      "durak_adi": "Karpusça Yolu",
+      "enlem": 38.5572963052706,
+      "boylam": 26.5504777318158
+    },
+    {
+      "durak_id": 52587,
+      "durak_adi": "Karpusça Yolu",
+      "enlem": 38.5570733056718,
+      "boylam": 26.5502867348548
+    },
+    {
+      "durak_id": 52620,
+      "durak_adi": "Eğlenhoca Zeytinyağı",
+      "enlem": 38.5433463845516,
+      "boylam": 26.567136679978
+    },
+    {
+      "durak_id": 52621,
+      "durak_adi": "Eğlenhoca Zeytinyağı",
+      "enlem": 38.5432663845291,
+      "boylam": 26.5669746817829
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    }
+  ]
+}

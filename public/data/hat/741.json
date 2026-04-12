@@ -1,0 +1,206 @@
+{
+  "hat_no": "741",
+  "hat_adi": "YAMANLAR KÖYÜ - KARŞIYAKA",
+  "hat_baslangic": "YAMANLAR KÖYÜ",
+  "hat_bitis": "KARŞIYAKA İSKELE",
+  "duraklar": [
+    {
+      "durak_id": 20650,
+      "durak_adi": "Mezbaha",
+      "enlem": 38.4988484899432,
+      "boylam": 27.1167490144718
+    },
+    {
+      "durak_id": 20651,
+      "durak_adi": "Mezbaha",
+      "enlem": 38.4987084906412,
+      "boylam": 27.1171490129048
+    },
+    {
+      "durak_id": 20652,
+      "durak_adi": "Zübeyde Hanım Huzurevi",
+      "enlem": 38.496682,
+      "boylam": 27.1167
+    },
+    {
+      "durak_id": 20653,
+      "durak_adi": "Zübeyde Hanım Huzurevi",
+      "enlem": 38.496632,
+      "boylam": 27.116827
+    },
+    {
+      "durak_id": 22322,
+      "durak_adi": "Örnekköy Mezarlık",
+      "enlem": 38.502661,
+      "boylam": 27.115686
+    },
+    {
+      "durak_id": 22323,
+      "durak_adi": "Örnekköy Mezarlık",
+      "enlem": 38.502773,
+      "boylam": 27.115508
+    },
+    {
+      "durak_id": 22324,
+      "durak_adi": "Yamanlar Mesire Yeri",
+      "enlem": 38.516461,
+      "boylam": 27.125209
+    },
+    {
+      "durak_id": 22325,
+      "durak_adi": "Yamanlar Mesire Yeri",
+      "enlem": 38.516489,
+      "boylam": 27.125586
+    },
+    {
+      "durak_id": 22327,
+      "durak_adi": "Yamanlar Köyü Son Durak",
+      "enlem": 38.541932,
+      "boylam": 27.134131
+    },
+    {
+      "durak_id": 24183,
+      "durak_adi": "Yamanlar Köyü Cami",
+      "enlem": 38.542308682588,
+      "boylam": 27.1326618200657
+    },
+    {
+      "durak_id": 24184,
+      "durak_adi": "Yamanlar Köyü Cami",
+      "enlem": 38.5423166816288,
+      "boylam": 27.1323978215499
+    },
+    {
+      "durak_id": 24185,
+      "durak_adi": "Yamanlar Küme Evleri",
+      "enlem": 38.5245266520232,
+      "boylam": 27.1252929735315
+    },
+    {
+      "durak_id": 24186,
+      "durak_adi": "Yamanlar Küme Evleri",
+      "enlem": 38.5240256508287,
+      "boylam": 27.1249859782727
+    },
+    {
+      "durak_id": 24220,
+      "durak_adi": "Karagöl Ayrımı",
+      "enlem": 38.5384236731534,
+      "boylam": 27.1302778589092
+    },
+    {
+      "durak_id": 24221,
+      "durak_adi": "Karagöl Ayrımı",
+      "enlem": 38.5388506740282,
+      "boylam": 27.1304958549196
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    }
+  ]
+}

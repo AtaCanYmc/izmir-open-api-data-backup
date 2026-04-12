@@ -1,0 +1,679 @@
+{
+  "hat_no": "784",
+  "hat_adi": "DOĞANCILAR - TORBALI",
+  "hat_baslangic": "DOĞANCILAR",
+  "hat_bitis": "ÇAYBAŞI",
+  "duraklar": [
+    {
+      "durak_id": 13798,
+      "durak_adi": "Çapak Yol Ayrımı",
+      "enlem": 38.233613,
+      "boylam": 27.37279
+    },
+    {
+      "durak_id": 13799,
+      "durak_adi": "Çapak Yol Ayrımı",
+      "enlem": 38.235155,
+      "boylam": 27.37375
+    },
+    {
+      "durak_id": 13800,
+      "durak_adi": "Nezahat Onbaşı",
+      "enlem": 38.219218,
+      "boylam": 27.369903
+    },
+    {
+      "durak_id": 13801,
+      "durak_adi": "Nezahat Onbaşı",
+      "enlem": 38.219024,
+      "boylam": 27.370121
+    },
+    {
+      "durak_id": 13802,
+      "durak_adi": "Çakırbeyli Giriş",
+      "enlem": 38.284938,
+      "boylam": 27.374296
+    },
+    {
+      "durak_id": 13803,
+      "durak_adi": "Çakırbeyli Giriş",
+      "enlem": 38.28483,
+      "boylam": 27.374126
+    },
+    {
+      "durak_id": 13804,
+      "durak_adi": "Çakırbeyli Sağlık Ocağı",
+      "enlem": 38.2851234689414,
+      "boylam": 27.3790619551405
+    },
+    {
+      "durak_id": 13805,
+      "durak_adi": "Çakırbeyli Sağlık Ocağı",
+      "enlem": 38.2845637730775,
+      "boylam": 27.3801314302
+    },
+    {
+      "durak_id": 13806,
+      "durak_adi": "Çakırbeyli Çıkış",
+      "enlem": 38.283588,
+      "boylam": 27.383088
+    },
+    {
+      "durak_id": 13807,
+      "durak_adi": "Çakırbeyli Çıkış",
+      "enlem": 38.283493,
+      "boylam": 27.383014
+    },
+    {
+      "durak_id": 13808,
+      "durak_adi": "Çakırbeyli Yol Ayrımı",
+      "enlem": 38.281341,
+      "boylam": 27.397776
+    },
+    {
+      "durak_id": 13809,
+      "durak_adi": "Çakırbeyli Yol Ayrımı",
+      "enlem": 38.281247,
+      "boylam": 27.397778
+    },
+    {
+      "durak_id": 13810,
+      "durak_adi": "Bozköy Gelincik",
+      "enlem": 38.277531597607,
+      "boylam": 27.3661457160977
+    },
+    {
+      "durak_id": 13811,
+      "durak_adi": "Bozköy Gelincik",
+      "enlem": 38.2775185974697,
+      "boylam": 27.3662387161182
+    },
+    {
+      "durak_id": 13812,
+      "durak_adi": "Bozköy Nar",
+      "enlem": 38.2746000709463,
+      "boylam": 27.3635002220119
+    },
+    {
+      "durak_id": 13813,
+      "durak_adi": "Bozköy Nar",
+      "enlem": 38.2745,
+      "boylam": 27.3634
+    },
+    {
+      "durak_id": 13814,
+      "durak_adi": "Bozköy Bahçe",
+      "enlem": 38.2733,
+      "boylam": 27.3613
+    },
+    {
+      "durak_id": 13815,
+      "durak_adi": "Bozköy Bahçe",
+      "enlem": 38.2732,
+      "boylam": 27.3611
+    },
+    {
+      "durak_id": 13816,
+      "durak_adi": "Bozköy Yukarı Mahalle",
+      "enlem": 38.2713461594015,
+      "boylam": 27.3652792349597
+    },
+    {
+      "durak_id": 13817,
+      "durak_adi": "Bozköy Yukarı Mahalle",
+      "enlem": 38.2714461602721,
+      "boylam": 27.3650792345609
+    },
+    {
+      "durak_id": 13818,
+      "durak_adi": "Saipler Meydan",
+      "enlem": 38.266711,
+      "boylam": 27.369181
+    },
+    {
+      "durak_id": 13819,
+      "durak_adi": "Saipler Meydan",
+      "enlem": 38.2662,
+      "boylam": 27.3694
+    },
+    {
+      "durak_id": 13820,
+      "durak_adi": "Saipler",
+      "enlem": 38.2659,
+      "boylam": 27.3703
+    },
+    {
+      "durak_id": 13821,
+      "durak_adi": "Saipler",
+      "enlem": 38.265817,
+      "boylam": 27.37002
+    },
+    {
+      "durak_id": 13822,
+      "durak_adi": "Bozköy",
+      "enlem": 38.271641,
+      "boylam": 27.36127
+    },
+    {
+      "durak_id": 13823,
+      "durak_adi": "Bozköy",
+      "enlem": 38.271643,
+      "boylam": 27.361379
+    },
+    {
+      "durak_id": 13824,
+      "durak_adi": "Çakırbeyli",
+      "enlem": 38.2839,
+      "boylam": 27.3816
+    },
+    {
+      "durak_id": 13825,
+      "durak_adi": "Çakırbeyli",
+      "enlem": 38.2839,
+      "boylam": 27.3815
+    },
+    {
+      "durak_id": 13826,
+      "durak_adi": "Dağkızılca Zeytin",
+      "enlem": 38.30428,
+      "boylam": 27.391739
+    },
+    {
+      "durak_id": 13827,
+      "durak_adi": "Dağkızılca",
+      "enlem": 38.30945,
+      "boylam": 27.38953
+    },
+    {
+      "durak_id": 13828,
+      "durak_adi": "Dağkızılca Lale",
+      "enlem": 38.305778,
+      "boylam": 27.390709
+    },
+    {
+      "durak_id": 13829,
+      "durak_adi": "Dağkızılca Zeytin",
+      "enlem": 38.3043,
+      "boylam": 27.3918
+    },
+    {
+      "durak_id": 13830,
+      "durak_adi": "Dağkızılca Papatya",
+      "enlem": 38.3074,
+      "boylam": 27.3895
+    },
+    {
+      "durak_id": 13831,
+      "durak_adi": "Dağkızılca Lale",
+      "enlem": 38.3058,
+      "boylam": 27.3908
+    },
+    {
+      "durak_id": 13832,
+      "durak_adi": "Dağkızılca Çıkış",
+      "enlem": 38.3144581147763,
+      "boylam": 27.3866114160816
+    },
+    {
+      "durak_id": 13833,
+      "durak_adi": "Dağkızılca Çıkış",
+      "enlem": 38.3142118296804,
+      "boylam": 27.3870219581282
+    },
+    {
+      "durak_id": 13834,
+      "durak_adi": "Dağkızılca",
+      "enlem": 38.309536400232,
+      "boylam": 27.3893891088227
+    },
+    {
+      "durak_id": 13835,
+      "durak_adi": "Dağkızılca Papatya",
+      "enlem": 38.3075,
+      "boylam": 27.3896
+    },
+    {
+      "durak_id": 13988,
+      "durak_adi": "Çakırbeylı Gündoğumu",
+      "enlem": 38.2818957090985,
+      "boylam": 27.3866862923567
+    },
+    {
+      "durak_id": 13989,
+      "durak_adi": "Çakırbeylı Gündoğumu",
+      "enlem": 38.2819030027798,
+      "boylam": 27.3861382832225
+    },
+    {
+      "durak_id": 13990,
+      "durak_adi": "Çakırbeyli Mezarlık",
+      "enlem": 38.2818930024943,
+      "boylam": 27.3912740054204
+    },
+    {
+      "durak_id": 13991,
+      "durak_adi": "Çakırbeyli Mezarlık",
+      "enlem": 38.281710765683,
+      "boylam": 27.3914606639098
+    },
+    {
+      "durak_id": 13992,
+      "durak_adi": "Şehit Şerife Bacı",
+      "enlem": 38.291544,
+      "boylam": 27.397077
+    },
+    {
+      "durak_id": 13993,
+      "durak_adi": "Şehit Şerife Bacı",
+      "enlem": 38.291496,
+      "boylam": 27.396936
+    },
+    {
+      "durak_id": 14022,
+      "durak_adi": "Nene Hatun",
+      "enlem": 38.297974,
+      "boylam": 27.394189
+    },
+    {
+      "durak_id": 14023,
+      "durak_adi": "Nene Hatun",
+      "enlem": 38.297953,
+      "boylam": 27.394323
+    },
+    {
+      "durak_id": 14024,
+      "durak_adi": "Seyit Onbaşı",
+      "enlem": 38.301086,
+      "boylam": 27.393633
+    },
+    {
+      "durak_id": 14025,
+      "durak_adi": "Seyit Onbaşı",
+      "enlem": 38.301303,
+      "boylam": 27.393719
+    },
+    {
+      "durak_id": 15440,
+      "durak_adi": "Dağkızılca Yol Ayrımı",
+      "enlem": 38.3125880755594,
+      "boylam": 27.3881024862708
+    },
+    {
+      "durak_id": 15441,
+      "durak_adi": "Dağkızılca  Yol Ayrımı",
+      "enlem": 38.3124434243378,
+      "boylam": 27.3879110977439
+    },
+    {
+      "durak_id": 15454,
+      "durak_adi": "Doğancılar Mezarlık",
+      "enlem": 38.3019182941666,
+      "boylam": 27.3431701641335
+    },
+    {
+      "durak_id": 15455,
+      "durak_adi": "Doğancılar Mezarlık",
+      "enlem": 38.301820293545,
+      "boylam": 27.3434101642218
+    },
+    {
+      "durak_id": 15593,
+      "durak_adi": "Saipler Çiftlik",
+      "enlem": 38.2640419733845,
+      "boylam": 27.3743882462719
+    },
+    {
+      "durak_id": 15594,
+      "durak_adi": "Saipler Çiftlik",
+      "enlem": 38.2643247490065,
+      "boylam": 27.3741930140152
+    },
+    {
+      "durak_id": 15595,
+      "durak_adi": "Bozköy Köşe",
+      "enlem": 38.2814651339835,
+      "boylam": 27.3702852070364
+    },
+    {
+      "durak_id": 15596,
+      "durak_adi": "Bozköy Köşe",
+      "enlem": 38.2814661339198,
+      "boylam": 27.3700462070299
+    },
+    {
+      "durak_id": 15597,
+      "durak_adi": "Çakırbeyli Viraj",
+      "enlem": 38.2844521613432,
+      "boylam": 27.3716371993226
+    },
+    {
+      "durak_id": 15598,
+      "durak_adi": "Çakırbeyli Viraj",
+      "enlem": 38.2844161609957,
+      "boylam": 27.3715761994211
+    },
+    {
+      "durak_id": 15685,
+      "durak_adi": "Saipler Çıkış",
+      "enlem": 38.2680760116131,
+      "boylam": 27.3690262362705
+    },
+    {
+      "durak_id": 15686,
+      "durak_adi": "Saipler Çıkış",
+      "enlem": 38.2682270130069,
+      "boylam": 27.3690562359935
+    },
+    {
+      "durak_id": 15874,
+      "durak_adi": "Karaçam",
+      "enlem": 38.2953632768491,
+      "boylam": 27.3960621618064
+    },
+    {
+      "durak_id": 15875,
+      "durak_adi": "Karaçam",
+      "enlem": 38.2952540551488,
+      "boylam": 27.3960202425734
+    },
+    {
+      "durak_id": 16007,
+      "durak_adi": "Saipler Kavşak",
+      "enlem": 38.2508378433489,
+      "boylam": 27.3816032738943
+    },
+    {
+      "durak_id": 16008,
+      "durak_adi": "Saipler Kavşak",
+      "enlem": 38.2507198422077,
+      "boylam": 27.3815372740093
+    },
+    {
+      "durak_id": 16088,
+      "durak_adi": "Saipler Zeytinlik",
+      "enlem": 38.253284867934,
+      "boylam": 27.3806322692309
+    },
+    {
+      "durak_id": 16089,
+      "durak_adi": "Saipler Zeytinlik",
+      "enlem": 38.2534618697347,
+      "boylam": 27.3804782688169
+    },
+    {
+      "durak_id": 16090,
+      "durak_adi": "Saipler Tarla",
+      "enlem": 38.2561868966829,
+      "boylam": 27.3797812637783
+    },
+    {
+      "durak_id": 16091,
+      "durak_adi": "Saipler Tarla",
+      "enlem": 38.2562738975722,
+      "boylam": 27.3796512635303
+    },
+    {
+      "durak_id": 16092,
+      "durak_adi": "Saipler Yol Ayrımı",
+      "enlem": 38.2586439209158,
+      "boylam": 27.3785582586354
+    },
+    {
+      "durak_id": 16093,
+      "durak_adi": "Saipler Yol Ayrımı",
+      "enlem": 38.2586919214155,
+      "boylam": 27.378418258453
+    },
+    {
+      "durak_id": 16094,
+      "durak_adi": "Saipler Yolu",
+      "enlem": 38.2616779503832,
+      "boylam": 27.3775032524483
+    },
+    {
+      "durak_id": 16095,
+      "durak_adi": "Saipler Yolu",
+      "enlem": 38.2617469510701,
+      "boylam": 27.3773592522325
+    },
+    {
+      "durak_id": 16124,
+      "durak_adi": "Mermer Fabrikası",
+      "enlem": 38.2257336013601,
+      "boylam": 27.3702262793302
+    },
+    {
+      "durak_id": 16125,
+      "durak_adi": "Mermer Fabrikası",
+      "enlem": 38.2257456017831,
+      "boylam": 27.3699752789389
+    },
+    {
+      "durak_id": 16166,
+      "durak_adi": "Halide Onbaşı",
+      "enlem": 38.2865731946376,
+      "boylam": 27.398155193296
+    },
+    {
+      "durak_id": 16167,
+      "durak_adi": "Halide Onbaşı",
+      "enlem": 38.2863781927248,
+      "boylam": 27.3981051939634
+    },
+    {
+      "durak_id": 16168,
+      "durak_adi": "Dağkızılca Çiftlik",
+      "enlem": 38.3163184529036,
+      "boylam": 27.3836540846642
+    },
+    {
+      "durak_id": 16169,
+      "durak_adi": "Dağkızılca Çiftlik",
+      "enlem": 38.3163944532065,
+      "boylam": 27.3833800845643
+    },
+    {
+      "durak_id": 16380,
+      "durak_adi": "Elmalı",
+      "enlem": 38.3170204452614,
+      "boylam": 27.3728870908576
+    },
+    {
+      "durak_id": 16381,
+      "durak_adi": "Elmalı",
+      "enlem": 38.3170494453514,
+      "boylam": 27.3727630908528
+    },
+    {
+      "durak_id": 16812,
+      "durak_adi": "Arap Mahallesi",
+      "enlem": 38.2712110404488,
+      "boylam": 27.3624752284111
+    },
+    {
+      "durak_id": 16813,
+      "durak_adi": "Arap Mahallesi",
+      "enlem": 38.2712220405442,
+      "boylam": 27.3627602284568
+    },
+    {
+      "durak_id": 41391,
+      "durak_adi": "Doğancılar Yolu",
+      "enlem": 38.3063453356253,
+      "boylam": 27.3514771455821
+    },
+    {
+      "durak_id": 41392,
+      "durak_adi": "Doğancılar Yolu",
+      "enlem": 38.3063133352041,
+      "boylam": 27.3512761458308
+    },
+    {
+      "durak_id": 41393,
+      "durak_adi": "Doğancılar Zeytinlik",
+      "enlem": 38.308268354647,
+      "boylam": 27.3555491364985
+    },
+    {
+      "durak_id": 41394,
+      "durak_adi": "Doğancılar Zeytinlik",
+      "enlem": 38.3082193542377,
+      "boylam": 27.3555361366645
+    },
+    {
+      "durak_id": 41398,
+      "durak_adi": "Doğancılar Yeşillik",
+      "enlem": 38.3108383808861,
+      "boylam": 27.3611301235865
+    },
+    {
+      "durak_id": 41399,
+      "durak_adi": "Doğancılar Yeşillik",
+      "enlem": 38.3109163814914,
+      "boylam": 27.3610951233476
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:50",
+      "aciklama": null
+    }
+  ]
+}

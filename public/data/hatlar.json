@@ -1,0 +1,2651 @@
+{
+  "total": 441,
+  "hatlar": [
+    {
+      "hat_no": "5",
+      "hat_adi": "NARLIDERE - ÜÇKUYULAR İSKELE",
+      "hat_baslangic": "NARLIDERE",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "6",
+      "hat_adi": "ARIKENT - ÜÇKUYULAR İSK.",
+      "hat_baslangic": "ARIKENT",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "7",
+      "hat_adi": "SAHİLEVLERİ - ÜÇKUYULAR İSK.",
+      "hat_baslangic": "SAHİLEVLERİ",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "8",
+      "hat_adi": "GÜZELBAHÇE - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "GÜZELBAHÇE",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "9",
+      "hat_adi": "ÖZZÜMRÜT EVLERİ - SİTELER",
+      "hat_baslangic": "ÖZZÜMRÜT EVLERİ",
+      "hat_bitis": "SİTELER"
+    },
+    {
+      "hat_no": "10",
+      "hat_adi": "ÜÇKUYULAR İSKELE - KONAK",
+      "hat_baslangic": "ÜÇKUYULAR İSKELE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "15",
+      "hat_adi": "İNÖNÜ - KONAK",
+      "hat_baslangic": "İNÖNÜ MAH.",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "16",
+      "hat_adi": "VATAN MAHALLESİ - ÜÇYOL",
+      "hat_baslangic": "VATAN MAH.",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "17",
+      "hat_adi": "UZUNDERE TOPLU KONUTLARI - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "UZUNDERE TOPLU KONUTLARI",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "18",
+      "hat_adi": "YEŞİLYURT - KONAK",
+      "hat_baslangic": "YEŞİLYURT",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "19",
+      "hat_adi": "ŞEHİTLER - KONAK",
+      "hat_baslangic": "ŞEHİTLER",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "20",
+      "hat_adi": "KOOPERATİF EVLERİ - KONAK",
+      "hat_baslangic": "KOOP. EVLERİ",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "21",
+      "hat_adi": "HALİL RIFAT PAŞA - KONAK",
+      "hat_baslangic": "HALİL RIFAT PAŞA",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "23",
+      "hat_adi": "UZUNDERE - KONAK",
+      "hat_baslangic": "UZUNDERE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "24",
+      "hat_adi": "KAVACIK - ÜÇKUYULAR İSKELE",
+      "hat_baslangic": "KAVACIK",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "25",
+      "hat_adi": "OYUNLAR KÖYÜ - ÜÇKUYULAR İSKELE",
+      "hat_baslangic": "OYUNLAR KÖYÜ",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "27",
+      "hat_adi": "ÇAMLIK - KONAK",
+      "hat_baslangic": "ÇAMLIK",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "28",
+      "hat_adi": "KAVACIK - GÜZELBAHÇE",
+      "hat_baslangic": "KAVACIK",
+      "hat_bitis": "GÜZELBAHÇE"
+    },
+    {
+      "hat_no": "29",
+      "hat_adi": "KADRİYE MAH. - KONAK",
+      "hat_baslangic": "KADRİYE MAH.",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "30",
+      "hat_adi": "KAYNAK - KONAK",
+      "hat_baslangic": "KAYNAK",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "32",
+      "hat_adi": "ÇİMENTEPE SİTESİ - KONAK",
+      "hat_baslangic": "ÇİMENTEPE SİTESİ",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "33",
+      "hat_adi": "KADİFEKALE - KONAK",
+      "hat_baslangic": "KADİFEKALE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "34",
+      "hat_adi": "ESENTEPE - GÜMRÜK",
+      "hat_baslangic": "ESENTEPE",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "35",
+      "hat_adi": "BALLIKUYU - KONAK",
+      "hat_baslangic": "BALLIKUYU",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "36",
+      "hat_adi": "ŞİRİNYER AKTARMA MERKEZİ - GÜMRÜK",
+      "hat_baslangic": "ŞİRİNYER AKT.",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "39",
+      "hat_adi": "İSMETPAŞA MAH. - GÜMRÜK",
+      "hat_baslangic": "İSMETPAŞA",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "41",
+      "hat_adi": "LEVENT - GÜMRÜK",
+      "hat_baslangic": "LEVENT",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "42",
+      "hat_adi": "ÇINARTEPE - GÜMRÜK",
+      "hat_baslangic": "ÇINARTEPE",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "44",
+      "hat_adi": "MERSİNPINAR - GÜMRÜK",
+      "hat_baslangic": "MERSİNPINAR",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "45",
+      "hat_adi": "GÜLTEPE - GÜMRÜK",
+      "hat_baslangic": "GÜLTEPE",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "46",
+      "hat_adi": "ÇOBANÇEŞME - GÜMRÜK",
+      "hat_baslangic": "ÇOBANÇEŞME",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "49",
+      "hat_adi": "TEPECİK EĞİTİM ARAŞTIRMA HASTANESİ - LOZAN MEYDANI",
+      "hat_baslangic": "TEPECİK EĞİTİM ARAŞTIRMA HASTANESİ",
+      "hat_bitis": "LOZAN MEYDANI"
+    },
+    {
+      "hat_no": "53",
+      "hat_adi": "MTK ALTINDAĞ - HALKAPINAR METRO",
+      "hat_baslangic": "ALTINDAĞ",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "54",
+      "hat_adi": "OTOGAR - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "OTOGAR",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "57",
+      "hat_adi": "ALTINDAĞ - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "ALTINDAĞ",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "58",
+      "hat_adi": "KANDERE - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "KANDERE",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "59",
+      "hat_adi": "BORNOVA METRO - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "BORNOVA METRO",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "60",
+      "hat_adi": "PINARBAŞI - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "PINARBAŞI",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "64",
+      "hat_adi": "AYAKKABICILAR SİT. - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "AYAKKABICILAR SİTESİ",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "67",
+      "hat_adi": "PINARBAŞI - EVKA3 METRO",
+      "hat_baslangic": "PINARBAŞI",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "72",
+      "hat_adi": "İŞÇİEVLERİ - KONAK",
+      "hat_baslangic": "İŞÇİEVLERİ",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "74",
+      "hat_adi": "YENİGÜN MAH. - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "YENİGÜN MAH.",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "77",
+      "hat_adi": "NAFİZ GÜRMAN - HALKAPINAR METRO 2",
+      "hat_baslangic": "NAFİZ GÜRMAN",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "78",
+      "hat_adi": "YAMANLAR - HALKAPINAR METRO 2",
+      "hat_baslangic": "YAMANLAR",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "82",
+      "hat_adi": "SİTELER - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "SİTELER",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "84",
+      "hat_adi": "SALİH OMURTAK - ÜÇYOL METRO",
+      "hat_baslangic": "SALİH OMURTAK",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "89",
+      "hat_adi": "CENNETOĞLU - ÜÇYOL METRO",
+      "hat_baslangic": "CENNETOĞLU",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "92",
+      "hat_adi": "FUAR İZMİR - ÜÇYOL METRO",
+      "hat_baslangic": "FUAR İZMİR",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "102",
+      "hat_adi": "ALPASLAN MAH. - HALKAPINAR METRO",
+      "hat_baslangic": "ALPARSLAN MAH.",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "104",
+      "hat_adi": "BUCA TOPLU KONUTLARI - KONAK",
+      "hat_baslangic": "BUCA TOPLU KONUTLARI",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "105",
+      "hat_adi": "ÇAMLIKULE - KONAK",
+      "hat_baslangic": "ÇAMLIKULE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "108",
+      "hat_adi": "ESERKENT - ÜÇYOL METRO",
+      "hat_baslangic": "ESERKENT",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "111",
+      "hat_adi": "NALDÖKEN - EVKA3 METRO",
+      "hat_baslangic": "NALDÖKEN",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "114",
+      "hat_adi": "EVKA 3 - EVKA3 METRO",
+      "hat_baslangic": "EVKA 3",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "117",
+      "hat_adi": "KAVAKLIDERE - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "KAVAKLIDERE",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "119",
+      "hat_adi": "ALTINDAĞ - BORNOVA METRO",
+      "hat_baslangic": "ALTINDAĞ",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "121",
+      "hat_adi": "MAVİŞEHİR AKTARMA MERKEZİ - KONAK",
+      "hat_baslangic": "MAVİŞEHİR AKTARMA MERKEZİ",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "123",
+      "hat_adi": "ŞİRİNEVLER - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "ŞİRİNEVLER",
+      "hat_bitis": "ÇİĞLİ AKT."
+    },
+    {
+      "hat_no": "124",
+      "hat_adi": "ALİ FUAT ERDEN - ÜÇYOL METRO",
+      "hat_baslangic": "ALİ FUAT ERDEN",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "125",
+      "hat_adi": "MUSTAFA KEMAL MAH - HALKAPINAR METRO2",
+      "hat_baslangic": "MUSTAFA KEMAL MAH.",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "126",
+      "hat_adi": "CUMHURİYET MAH. - KARŞIYAKA",
+      "hat_baslangic": "CUMHURİYET MAH.",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "128",
+      "hat_adi": "EGEKENT 2 - EGEKENT AKTARMA",
+      "hat_baslangic": "EGEKENT 2",
+      "hat_bitis": "EGEKENT AKTARMA"
+    },
+    {
+      "hat_no": "135",
+      "hat_adi": "DOĞANÇAY - KARŞIYAKA",
+      "hat_baslangic": "DOĞANÇAY",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "136",
+      "hat_adi": "ÖRNEKKÖY - KARŞIYAKA",
+      "hat_baslangic": "ÖRNEKKÖY",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "137",
+      "hat_adi": "YAMANLAR - KARŞIYAKA",
+      "hat_baslangic": "YAMANLAR",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "140",
+      "hat_adi": "ÖRNEKKÖY - HALKAPINAR METRO2",
+      "hat_baslangic": "ÖRNEKKÖY",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "147",
+      "hat_adi": "POSTACILAR - HALKAPINAR METRO2",
+      "hat_baslangic": "POSTACILAR",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "148",
+      "hat_adi": "ONUR MAH. - HALKAPINAR METRO2",
+      "hat_baslangic": "ONUR MAH.",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "149",
+      "hat_adi": "KAKLIÇ - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "KAKLIÇ",
+      "hat_bitis": "ÇİĞLİ AKT."
+    },
+    {
+      "hat_no": "152",
+      "hat_adi": "GAZİEMİR - KONAK",
+      "hat_baslangic": "GAZİEMİR",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "153",
+      "hat_adi": "ÇAMKULE - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "ÇAMKULE",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "154",
+      "hat_adi": "ALTINDAĞ - HALKAPINAR METRO",
+      "hat_baslangic": "ALTINDAĞ",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "156",
+      "hat_adi": "SAĞLIK OCAĞI - ÜÇYOL METRO",
+      "hat_baslangic": "SAĞLIK OCAĞI",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "157",
+      "hat_adi": "AKTEPE MAHALLESİ - KONAK",
+      "hat_baslangic": "AKTEPE MAH.",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "167",
+      "hat_adi": "BALÇOVA KABRİSTAN - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "BALÇOVA KABRİSTAN",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "168",
+      "hat_adi": "EVKA 4 - HALKAPINAR METRO",
+      "hat_baslangic": "EVKA-4",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "171",
+      "hat_adi": "TINAZTEPE - KONAK",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "176",
+      "hat_adi": "DEMİRCİKÖY - ADATEPE",
+      "hat_baslangic": "DEMİRCİKÖY",
+      "hat_bitis": "ADATEPE"
+    },
+    {
+      "hat_no": "177",
+      "hat_adi": "KAYNAKLAR - ADATEPE",
+      "hat_baslangic": "KAYNAKLAR",
+      "hat_bitis": "ADATEPE"
+    },
+    {
+      "hat_no": "193",
+      "hat_adi": "YURTOĞLU - KONAK",
+      "hat_baslangic": "YURTOĞLU",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "196",
+      "hat_adi": "NAFİZ GÜRMAN - KARŞIYAKA İSKELE",
+      "hat_baslangic": "NAFİZ GÜRMAN",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "197",
+      "hat_adi": "NAFİZ GÜRMAN - KARŞIYAKA",
+      "hat_baslangic": "NAFİZ GÜRMAN",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "200",
+      "hat_adi": "MAVİŞEHİR AKTARMA MERKEZİ - HAVALİMANI",
+      "hat_baslangic": "MAVİŞEHİR AKT.",
+      "hat_bitis": "HAVALİMANI"
+    },
+    {
+      "hat_no": "202",
+      "hat_adi": "CUMHURİYET MEYDANI - HAVALİMANI",
+      "hat_baslangic": "CUMHURİYET MEYDANI",
+      "hat_bitis": "HAVALİMANI"
+    },
+    {
+      "hat_no": "204",
+      "hat_adi": "BORNOVA METRO - HAVALİMANI",
+      "hat_baslangic": "BORNOVA METRO",
+      "hat_bitis": "HAVALİMANI"
+    },
+    {
+      "hat_no": "206",
+      "hat_adi": "ŞİRİNYER AKTARMA MERKEZİ - HAVALİMANI",
+      "hat_baslangic": "ŞİRINYER AKTARMA MERKEZİ",
+      "hat_bitis": "HAVALİMANI"
+    },
+    {
+      "hat_no": "207",
+      "hat_adi": "BAYRAKLI KYK KIZ YURDU - BAKIRÇAY ÜNIVERSITESI",
+      "hat_baslangic": "BAYRAKLI KYK KIZ YURDU",
+      "hat_bitis": "BAKIRÇAY ÜNİVERSİTESİ"
+    },
+    {
+      "hat_no": "212",
+      "hat_adi": "BOSTANLI İSKELE - BORNOVA METRO",
+      "hat_baslangic": "BOSTANLI İSKELE",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "213",
+      "hat_adi": "BOSTANLI İSKELE - TINAZTEPE",
+      "hat_baslangic": "BOSTANLI İSKELE",
+      "hat_bitis": "TINAZTEPE"
+    },
+    {
+      "hat_no": "214",
+      "hat_adi": "EVKA3 METRO - KEMER",
+      "hat_baslangic": "EVKA3 METRO",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "221",
+      "hat_adi": "ŞEMİKLER - BOSTANLI İSKELE",
+      "hat_baslangic": "ŞEMİKLER",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "222",
+      "hat_adi": "ŞEMİKLER - KARŞIYAKA İSKELE",
+      "hat_baslangic": "ŞEMİKLER",
+      "hat_bitis": "KARŞIYAKA ISKELE"
+    },
+    {
+      "hat_no": "224",
+      "hat_adi": "CENNETÇEŞME - KONAK",
+      "hat_baslangic": "CENNETÇEŞME",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "229",
+      "hat_adi": "YAKAKENT MAHALLESİ - BOSTANLI İSKELE",
+      "hat_baslangic": "YAKAKENT MAHALLESİ",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "232",
+      "hat_adi": "BİNBAŞI REŞATBEY MAHALLESİ - ESBAŞ AKTARMA MERKEZİ",
+      "hat_baslangic": "BİNBAŞI REŞATBEY MAHALLESİ",
+      "hat_bitis": "ESBAŞ AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "233",
+      "hat_adi": "ESBAŞ AKTARMA MERKEZİ - KONAK",
+      "hat_baslangic": "ESBAŞ AKT",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "234",
+      "hat_adi": "BALLIKUYU-GÜMRÜK",
+      "hat_baslangic": "BALLIKUYU",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "240",
+      "hat_adi": "ZÜBEYDE HANIM MAH. - HALKAPINAR METRO2",
+      "hat_baslangic": "ZÜBEYDE HANIM MAH.",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "247",
+      "hat_adi": "EVKA 6 - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "EVKA-6",
+      "hat_bitis": "ÇİĞLİ AKT."
+    },
+    {
+      "hat_no": "249",
+      "hat_adi": "EVKA 4 - KEMER",
+      "hat_baslangic": "EVKA-4",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "253",
+      "hat_adi": "H.PINAR METRO 2 - KONAK",
+      "hat_baslangic": "HALKAPINAR METRO",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "258",
+      "hat_adi": "ONUR MAH. - KARŞIYAKA",
+      "hat_baslangic": "ONUR MAH.",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "259",
+      "hat_adi": "YEŞİLOVA MAHALLESİ - BORNOVA METRO",
+      "hat_baslangic": "YEŞİLOVA MAHALLESİ",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "267",
+      "hat_adi": "PINARBAŞI - BORNOVA METRO",
+      "hat_baslangic": "PINARBAŞI",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "268",
+      "hat_adi": "DOĞANLAR - EVKA3 METRO",
+      "hat_baslangic": "DOĞANLAR",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "277",
+      "hat_adi": "OTOGAR - TINAZTEPE",
+      "hat_baslangic": "OTOGAR",
+      "hat_bitis": "TINAZTEPE"
+    },
+    {
+      "hat_no": "284",
+      "hat_adi": "EVKA 1 - KONAK",
+      "hat_baslangic": "EVKA 1",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "285",
+      "hat_adi": "EVKA 1 - KONAK",
+      "hat_baslangic": "EVKA-1",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "290",
+      "hat_adi": "BOSTANLI İSKELE - TINAZTEPE",
+      "hat_baslangic": "BOSTANLI",
+      "hat_bitis": "TINAZTEPE"
+    },
+    {
+      "hat_no": "295",
+      "hat_adi": "HARMANDALI - EGEKENT AKTARMA MERKEZİ",
+      "hat_baslangic": "HARMANDALI",
+      "hat_bitis": "EGEKENT AKT."
+    },
+    {
+      "hat_no": "302",
+      "hat_adi": "OTOGAR - KONAK",
+      "hat_baslangic": "OTOGAR",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "303",
+      "hat_adi": "BUCA HEYKEL - KONAK",
+      "hat_baslangic": "BUCA HEYKEL",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "304",
+      "hat_adi": "TINAZTEPE-KONAK",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "305",
+      "hat_adi": "2. İNÖNÜ MAH. - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "2.İNÖNÜ",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "311",
+      "hat_adi": "İNCİRALTI - F.ALTAY",
+      "hat_baslangic": "İNCİRALTI",
+      "hat_bitis": "ESENTEPE"
+    },
+    {
+      "hat_no": "313",
+      "hat_adi": "YENİ MEZARLIK - BORNOVA METRO",
+      "hat_baslangic": "YENİ MEZARLIK",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "314",
+      "hat_adi": "EVKA 3 - BORNOVA METRO",
+      "hat_baslangic": "EVKA 3",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "315",
+      "hat_adi": "KARAÇAM - EVKA3 METRO",
+      "hat_baslangic": "KARAÇAM",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "316",
+      "hat_adi": "BEŞYOL - EVKA3 METRO",
+      "hat_baslangic": "BEŞYOL",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "317",
+      "hat_adi": "KAVAKLIDERE - EVKA3 METRO",
+      "hat_baslangic": "KAVAKLIDERE",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "321",
+      "hat_adi": "ÇAMLI - F. ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "ÇAMLI MAH.",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "322",
+      "hat_adi": "MUSTAFA KEMAL MAHALLESİ - BOSTANLI İSKELE",
+      "hat_baslangic": "MUSTAFA KEMAL MAHALLESİ",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "326",
+      "hat_adi": "MUSTAFA KEMAL MAH. - KARŞIYAKA",
+      "hat_baslangic": "MUSTAFA KEMAL MAH.",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "327",
+      "hat_adi": "İNÖNÜ MAHALLESİ-BOSTANLI İSKELE",
+      "hat_baslangic": "İNÖNÜ MAHALLESİ",
+      "hat_bitis": "BOSTANLI"
+    },
+    {
+      "hat_no": "328",
+      "hat_adi": "EVKA 3 METRO - SALHANE AKTARMA MERKEZİ",
+      "hat_baslangic": "EVKA3 METRO",
+      "hat_bitis": "SALHANE AKT."
+    },
+    {
+      "hat_no": "329",
+      "hat_adi": "GÜZELTEPE - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "GÜZELTEPE",
+      "hat_bitis": "ÇİĞLİ AKT."
+    },
+    {
+      "hat_no": "330",
+      "hat_adi": "BOSTANLI İSKELE - EVKA3 METRO",
+      "hat_baslangic": "BOSTANLI İSKELE",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "335",
+      "hat_adi": "DOĞANÇAY - HALKAPINAR METRO 2",
+      "hat_baslangic": "DOĞAN ÇAY MEYD",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "338",
+      "hat_adi": "EVKA 3 METRO - SALHANE AKTARMA MERKEZİ",
+      "hat_baslangic": "EVKA3 METRO",
+      "hat_bitis": "SALHANE AKT."
+    },
+    {
+      "hat_no": "342",
+      "hat_adi": "EGEKENT - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "EGEKENT",
+      "hat_bitis": "ÇİĞLİ AKT."
+    },
+    {
+      "hat_no": "344",
+      "hat_adi": "EVKA 2 - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "EVKA-2",
+      "hat_bitis": "ÇİĞLİ AKT."
+    },
+    {
+      "hat_no": "346",
+      "hat_adi": "EVKA 5 - EGEKENT AKTARMA MERKEZİ",
+      "hat_baslangic": "EVKA-5",
+      "hat_bitis": "EGEKENT AKT."
+    },
+    {
+      "hat_no": "353",
+      "hat_adi": "GAZİEMİR - TINAZTEPE",
+      "hat_baslangic": "GAZİEMİR",
+      "hat_bitis": "TINAZTEPE"
+    },
+    {
+      "hat_no": "358",
+      "hat_adi": "PINARBAŞI - EVKA3 METRO",
+      "hat_baslangic": "PINARBAŞI",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "359",
+      "hat_adi": "R.ŞEVKET İNCE MAH. - SALHANE AKTARMA MERKEZİ",
+      "hat_baslangic": "R.ŞEVKET İNCE MAH.",
+      "hat_bitis": "SALHANE AKT."
+    },
+    {
+      "hat_no": "361",
+      "hat_adi": "BAHRİYE ÜÇOK - KARŞIYAKA İSKELE",
+      "hat_baslangic": "BAHRİYE ÜÇOK",
+      "hat_bitis": "KARŞIYAKA ISKELE"
+    },
+    {
+      "hat_no": "364",
+      "hat_adi": "GERİKAZANIMCILAR SİTESİ - HALKAPINAR METRO",
+      "hat_baslangic": "GERİKAZANIMCILAR SİTESİ",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "365",
+      "hat_adi": "KAYADİBİ - EVKA3 METRO",
+      "hat_baslangic": "KAYADİBİ",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "367",
+      "hat_adi": "ÜMİT MAH. - KEMER AKTARMA MERKEZİ",
+      "hat_baslangic": "ÜMİT MAH.",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "368",
+      "hat_adi": "ÜMİT MAH. - EVKA3 METRO",
+      "hat_baslangic": "ÜMİT MAH.",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "374",
+      "hat_adi": "İZKENT - KONAK",
+      "hat_baslangic": "İZKENT",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "390",
+      "hat_adi": "TINAZTEPE - BORNOVA METRO",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "412",
+      "hat_adi": "TINAZTEPE - YERLEŞKE",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "YERLEŞKE"
+    },
+    {
+      "hat_no": "417",
+      "hat_adi": "BUCA KOOP - KONAK",
+      "hat_baslangic": "BUCA KOOP",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "418",
+      "hat_adi": "ŞİRİNYER AKTARMA MERKEZİ - H.PINAR METRO",
+      "hat_baslangic": "ŞİRİNYER AKT.",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "423",
+      "hat_adi": "ŞİRİNEVLER - BOSTANLI İSKELE",
+      "hat_baslangic": "ŞİRİNEVLER",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "426",
+      "hat_adi": "MUSTAFA KEMAL MAH - HALKAPINAR METRO2",
+      "hat_baslangic": "MUSTAFA KEMAL MAH",
+      "hat_bitis": "HALKAPINAR METRO2"
+    },
+    {
+      "hat_no": "428",
+      "hat_adi": "EGEKENT 2 - BOSTANLI İSKELE",
+      "hat_baslangic": "EGEKENT-2",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "429",
+      "hat_adi": "GÜZELTEPE - BOSTANLI İSKELE",
+      "hat_baslangic": "GÜZELTEPE",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "430",
+      "hat_adi": "YAKAKENT MAHALLESİ - BOSTANLI İSKELE",
+      "hat_baslangic": "YAKAKENT MAHALLESİ",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "434",
+      "hat_adi": "KÖRFEZ MAHALLESI - HALKAPINAR METRO 2",
+      "hat_baslangic": "KÖRFEZ EVLERİ",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "435",
+      "hat_adi": "KÖRFEZ MAHALLESI - BOSTANLI İSKELE",
+      "hat_baslangic": "KÖRFEZ EVLERİ",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "441",
+      "hat_adi": "ÇINARTEPE - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "ÇINARTEPE",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "442",
+      "hat_adi": "ATATÜRK MAHALLESİ - BOSTANLI İSKELE",
+      "hat_baslangic": "ATATÜRK MAH.",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "443",
+      "hat_adi": "EGEKENT - BOSTANLI İSKELE",
+      "hat_baslangic": "EGEKENT",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "445",
+      "hat_adi": "EVKA 2 - BOSTANLI İSKELE",
+      "hat_baslangic": "EVKA-2",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "446",
+      "hat_adi": "EVKA 5 - BOSTANLI İSKELE",
+      "hat_baslangic": "EVKA-5",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "447",
+      "hat_adi": "EVKA 6 - BOSTANLI İSKELE",
+      "hat_baslangic": "EVKA-6",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "449",
+      "hat_adi": "İZYUVA - EVKA3 METRO",
+      "hat_baslangic": "İZYUVA",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "465",
+      "hat_adi": "TINAZTEPE - KONAK",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "466",
+      "hat_adi": "ŞİRİNYER AKTARMA MERKEZİ - KONAK",
+      "hat_baslangic": "ŞİRİNYER AKT.",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "468",
+      "hat_adi": "MEVLANA MAH. - EVKA3 METRO",
+      "hat_baslangic": "MEVLANA MAH.",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "470",
+      "hat_adi": "TINAZTEPE - LOZAN MEYDANI",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "LOZAN MEYDANI"
+    },
+    {
+      "hat_no": "471",
+      "hat_adi": "TINAZTEPE - KONAK",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "472",
+      "hat_adi": "İŞÇİEVLERİ - TINAZTEPE",
+      "hat_baslangic": "İŞÇİEVLERİ",
+      "hat_bitis": "TINAZTEPE"
+    },
+    {
+      "hat_no": "475",
+      "hat_adi": "TINAZTEPE ÜNİVERSİTESİ - HALKAPINAR METRO",
+      "hat_baslangic": "TINAZTEPE ÜNİVERSİTESİ",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "476",
+      "hat_adi": "TINAZTEPE - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "477",
+      "hat_adi": "NAFİZ GÜRMAN - HALKAPINAR METRO2",
+      "hat_baslangic": "NAFİZ GÜRMAN",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "480",
+      "hat_adi": "İNCİRALTI - ÜÇKUYULAR İSKELE",
+      "hat_baslangic": "İNCİRALTI",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "481",
+      "hat_adi": "İNCİRALTI - BALÇOVA",
+      "hat_baslangic": "İNCİRALTI",
+      "hat_bitis": "BALÇOVA"
+    },
+    {
+      "hat_no": "483",
+      "hat_adi": "İZMİR EKONOMİ ÜNİVERSİTESİ - ÜÇKUYULAR İSKELE EKSPRES",
+      "hat_baslangic": "İZMİR EKONOMİ ÜNİVERSİTESİ",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "484",
+      "hat_adi": "YEŞİLBAĞLAR - KONAK",
+      "hat_baslangic": "YEŞİLBAĞLAR",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "485",
+      "hat_adi": "GAZİEMİR İLÇE TERMİNALİ - KONAK",
+      "hat_baslangic": "GAZİEMİR İLÇE TERMİNALİ",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "486",
+      "hat_adi": "OYAK SİTESİ - İNCİRALTI",
+      "hat_baslangic": "OYAK SİTESİ",
+      "hat_bitis": "İNCİRALTI"
+    },
+    {
+      "hat_no": "487",
+      "hat_adi": "DEMİRKÖPRÜ - KARŞIYAKA",
+      "hat_baslangic": "DEMİRKÖPRÜ",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "490",
+      "hat_adi": "TINAZTEPE - ÜÇYOL",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "491",
+      "hat_adi": "EVKA 7 - ESBAŞ AKTARMA MERKEZİ",
+      "hat_baslangic": "EVKA 7",
+      "hat_bitis": "ESBAŞ AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "498",
+      "hat_adi": "EVKA 3 METRO - HALKAPINAR METRO",
+      "hat_baslangic": "EVKA3 METRO",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "501",
+      "hat_adi": "ÇİÇEK MAH. - HALKAPINAR METRO",
+      "hat_baslangic": "ÇİÇEK MAH.",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "502",
+      "hat_adi": "CENGİZHAN - HALKAPINAR METRO",
+      "hat_baslangic": "CENGİZHAN",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "503",
+      "hat_adi": "BARIŞ KAHVESİ - HALKAPINAR METRO",
+      "hat_baslangic": "BARIŞ KAHVESİ",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "504",
+      "hat_adi": "FUAT EDİP BAKSI - HALKAPINAR METRO",
+      "hat_baslangic": "F.EDİP BAKSI",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "505",
+      "hat_adi": "ÇAMKULE - BORNOVA METRO",
+      "hat_baslangic": "ÇAMKULE",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "508",
+      "hat_adi": "MENDERES - KONAK",
+      "hat_baslangic": "MENDERES",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "510",
+      "hat_adi": "GAZİEMİR - BALÇOVA",
+      "hat_baslangic": "GAZİEMİR",
+      "hat_bitis": "BALÇOVA"
+    },
+    {
+      "hat_no": "515",
+      "hat_adi": "TINAZTEPE - EVKA3 METRO",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "516",
+      "hat_adi": "YENİTEPE EVLERİ - GAZİEMİR SEMT GARAJI",
+      "hat_baslangic": "YENİTEPE EVLERİ",
+      "hat_bitis": "GAZİEMİR SEMT GARAJI"
+    },
+    {
+      "hat_no": "517",
+      "hat_adi": "UZUNDERE TOPLU KONUTLARI - F.ALTAY",
+      "hat_baslangic": "UZUNDERE TOPLU KONUTLARI",
+      "hat_bitis": "F.ALTAY"
+    },
+    {
+      "hat_no": "520",
+      "hat_adi": "SALİH OMURTAK - ÜÇYOL METRO",
+      "hat_baslangic": "SALİH OMURTAK",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "522",
+      "hat_adi": "UZUNDERE TOPLU KONUTLARI - ÜÇYOL METRO",
+      "hat_baslangic": "UZUNDERE TOPLU KONUTLARI",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "523",
+      "hat_adi": "UZUNDERE - ÜÇYOL METRO",
+      "hat_baslangic": "UZUNDERE",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "524",
+      "hat_adi": "CENNETÇEŞME - ÜÇYOL METRO",
+      "hat_baslangic": "CENNETÇEŞME",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "529",
+      "hat_adi": "YAKAKENT MAHALLESİ - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "YAKAKENT MAHALLESİ",
+      "hat_bitis": "ÇİĞLİ AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "532",
+      "hat_adi": "BAYRAKLI ŞEHİR HASTANESİ - BOSTANLI İSKELE",
+      "hat_baslangic": "ŞEHİR HASTANESİ",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "533",
+      "hat_adi": "BAYRAKLI ŞEHİR HASTANESİ - BORNOVA METRO",
+      "hat_baslangic": "ŞEHİR HASTANESİ",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "534",
+      "hat_adi": "BAYRAKLI ŞEHİR HASTANESİ -  HALKAPINAR METRO",
+      "hat_baslangic": "BAYRAKLI ŞEHİR HASTANESI",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "535",
+      "hat_adi": "BAYRAKLI ŞEHİR HASTANESİ - EGEKENT AKTARMA MERKEZİ",
+      "hat_baslangic": "BAYRAKLI ŞEHİR HASTANESİ",
+      "hat_bitis": "EGEKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "536",
+      "hat_adi": "BAYRAKLI ŞEHİR HASTANESİ - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "BAYRAKLI ŞEHİR HASTANESİ",
+      "hat_bitis": "ŞİRİNYER AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "537",
+      "hat_adi": "BAYRAKLI ŞEHİR HASTANESİ-DOĞANÇAY",
+      "hat_baslangic": "BAYRAKLI ŞEHİR HASTANESİ",
+      "hat_bitis": "DOĞANÇAY"
+    },
+    {
+      "hat_no": "539",
+      "hat_adi": "YENİTEPE EVLERİ - SALHANE AKTARMA MERKEZİ",
+      "hat_baslangic": "YENİTEPE EVLERİ",
+      "hat_bitis": "SALHANE AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "543",
+      "hat_adi": "BOSTANLI İSKELE - H.PINAR METRO",
+      "hat_baslangic": "BOSTANLI İSKELE",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "547",
+      "hat_adi": "ÇİĞLİ AKTARMA MERKEZİ - BOSTANLI İSKELE",
+      "hat_baslangic": "ÇİĞLİ AKT.",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "550",
+      "hat_adi": "GÜNALTAY - KONAK",
+      "hat_baslangic": "GÜNALTAY",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "551",
+      "hat_adi": "NARLIDERE - F.ALTAY",
+      "hat_baslangic": "NARLIDERE",
+      "hat_bitis": "F.ALTAY"
+    },
+    {
+      "hat_no": "555",
+      "hat_adi": "OTOGAR - HALKAPINAR METRO",
+      "hat_baslangic": "OTOGAR",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "556",
+      "hat_adi": "ÇAMLIK - ÜÇYOL METRO",
+      "hat_baslangic": "ÇAMLIK",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "557",
+      "hat_adi": "BAYRAKLI TOPLU KONUTLAR - BAYRAKLI İZBAN",
+      "hat_baslangic": "BAYRAKLI TOPLU KONUTLAR",
+      "hat_bitis": "BAYRAKLI İZBAN"
+    },
+    {
+      "hat_no": "558",
+      "hat_adi": "BAYRAKLI TOPLU KONUTLARI - BORNOVA METRO EKSPRES",
+      "hat_baslangic": "BAYRAKLI TOPLU KONUTLARI",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "559",
+      "hat_adi": "BAYRAKLI TOPLU KONUTLARI - EVKA3 METRO",
+      "hat_baslangic": "BAYRAKLI TOPLU KONUTLARI",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "560",
+      "hat_adi": "PINARBAŞI - HALKAPINAR METRO",
+      "hat_baslangic": "PINARBAŞI",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "564",
+      "hat_adi": "AYAKKABICILAR SİTESİ - HALKAPINAR METRO",
+      "hat_baslangic": "AYAKKABICILAR SİTESİ",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "565",
+      "hat_adi": "EVKA 4 - BORNOVA METRO",
+      "hat_baslangic": "EVKA-4",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "566",
+      "hat_adi": "EVKA 4 - BORNOVA METRO",
+      "hat_baslangic": "EVKA-4",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "568",
+      "hat_adi": "EVKA 4 - BORNOVA METRO",
+      "hat_baslangic": "EVKA-4",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "570",
+      "hat_adi": "LAKA MAHALLESİ - BORNOVA METRO",
+      "hat_baslangic": "LAKA MAH.",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "575",
+      "hat_adi": "MALİYECİLER MAHALLESİ - ÜÇYOL METRO",
+      "hat_baslangic": "MALİYECİLER MAHALLESİ",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "577",
+      "hat_adi": "NAFİZ GÜRMAN-HALKAPINAR METRO 2",
+      "hat_baslangic": "NAFİZ GÜRMAN",
+      "hat_bitis": "HALKAPINAR METRO 2"
+    },
+    {
+      "hat_no": "579",
+      "hat_adi": "YEŞİLYURT - ÜÇYOL METRO",
+      "hat_baslangic": "YEŞİLYURT",
+      "hat_bitis": "ÜÇYOL METRO"
+    },
+    {
+      "hat_no": "584",
+      "hat_adi": "İNÖNÜ MAH. - BORNOVA METRO",
+      "hat_baslangic": "İNÖNÜ MAH.",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "585",
+      "hat_adi": "EVKA 4 - BORNOVA METRO",
+      "hat_baslangic": "EVKA-4",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "587",
+      "hat_adi": "LİMONTEPE - KONAK",
+      "hat_baslangic": "LİMONTEPE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "588",
+      "hat_adi": "YENİ ÇAMLIK - KONAK",
+      "hat_baslangic": "YENİ ÇAMLIK",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "595",
+      "hat_adi": "9 EYLÜL MAHALLESI - BOSTANLI İSKELE",
+      "hat_baslangic": "9 EYLÜL MAH.",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "596",
+      "hat_adi": "KATIP ÇELEBI ÜNIVERSITESI - EGEKENT AKTARMA MERKEZİ",
+      "hat_baslangic": "KATİP ÇELEBİ ÜNİVERSİTESİ",
+      "hat_bitis": "EGEKENT AKT."
+    },
+    {
+      "hat_no": "597",
+      "hat_adi": "M. ERENER - BAYRAKLI SEVGİ YOLU",
+      "hat_baslangic": "M. ERENER",
+      "hat_bitis": "BAYRAKLI SEVGİ YOLU"
+    },
+    {
+      "hat_no": "598",
+      "hat_adi": "BAYRAKLI TOPLU KONUTLARI - BAYRAKLI İZBAN",
+      "hat_baslangic": "BAYRAKLI TOPLU KONUTLARI",
+      "hat_bitis": "BAYRAKLI İZBAN"
+    },
+    {
+      "hat_no": "599",
+      "hat_adi": "M.ERENER - HALKAPINAR METRO",
+      "hat_baslangic": "M.ERENER",
+      "hat_bitis": "HALKAPINAR METRO"
+    },
+    {
+      "hat_no": "602",
+      "hat_adi": "MENEMEN AKTARMA - İZMİR OTOGAR",
+      "hat_baslangic": "MENEMEN AKTARMA",
+      "hat_bitis": "İZMİR OTOGAR"
+    },
+    {
+      "hat_no": "608",
+      "hat_adi": "EGEKENT 2 - İZMİR OTOGAR",
+      "hat_baslangic": "EGEKENT 2",
+      "hat_bitis": "İZMİR OTOGAR"
+    },
+    {
+      "hat_no": "609",
+      "hat_adi": "KÖFÜNDERE-ÖDEMİŞ",
+      "hat_baslangic": "KÖFÜNDERE",
+      "hat_bitis": "ÖDEMİŞ"
+    },
+    {
+      "hat_no": "610",
+      "hat_adi": "FUAR İZMİR - GAZİEMİR SEMT GARAJI",
+      "hat_baslangic": "FUAR İZMİR",
+      "hat_bitis": "GAZİEMİR SEMT GARAJI"
+    },
+    {
+      "hat_no": "611",
+      "hat_adi": "ÇAYLI-ÖDEMİŞ",
+      "hat_baslangic": "ÇAYLI",
+      "hat_bitis": "ÖDEMİŞ"
+    },
+    {
+      "hat_no": "616",
+      "hat_adi": "KAYMAKÇI-ÖDEMİŞ",
+      "hat_baslangic": "KAYMAKÇI",
+      "hat_bitis": "ÖDEMİŞ"
+    },
+    {
+      "hat_no": "618",
+      "hat_adi": "ERTUĞRULKÖY-ÖDEMİŞ",
+      "hat_baslangic": "ERTUĞRUL KÖY",
+      "hat_bitis": "ÖDEMİŞ"
+    },
+    {
+      "hat_no": "619",
+      "hat_adi": "SEYREK - ULUKENT AKTARMA MERKEZİ 2",
+      "hat_baslangic": "SEYREK",
+      "hat_bitis": "ULUKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "621",
+      "hat_adi": "KURUCUOVA-ÖDEMİŞ",
+      "hat_baslangic": "KURUCUOVA",
+      "hat_bitis": "ÖDEMİŞ"
+    },
+    {
+      "hat_no": "640",
+      "hat_adi": "SIĞACIK - SEFERİHİSAR",
+      "hat_baslangic": "SIĞACIK",
+      "hat_bitis": "SEFERİHİSAR"
+    },
+    {
+      "hat_no": "641",
+      "hat_adi": "SEFERİHİSAR TOKİ - SEFERİHİSAR",
+      "hat_baslangic": "SEFERİHİSAR TOKİ",
+      "hat_bitis": "SEFERİHİSAR"
+    },
+    {
+      "hat_no": "642",
+      "hat_adi": "AKARCA - SEFERİHİSAR",
+      "hat_baslangic": "AKARCA",
+      "hat_bitis": "SEFERİHİSAR"
+    },
+    {
+      "hat_no": "643",
+      "hat_adi": "DEREKÖY - BERGAMA",
+      "hat_baslangic": "DEREKÖY",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "644",
+      "hat_adi": "GÖÇBEYLİ - BERGAMA",
+      "hat_baslangic": "GÖÇBEYLİ",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "645",
+      "hat_adi": "YENİKENT - BERGAMA",
+      "hat_baslangic": "YENİKENT",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "646",
+      "hat_adi": "BERGAMA ORGANİZE SANAYİ BÖLGESİ - BERGAMA",
+      "hat_baslangic": "BERGAMA ORGANİZE SANAYİ BÖLGESİ",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "648",
+      "hat_adi": "GAZİ MAHALLESİ - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "GAZİ MAHALLESİ",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "650",
+      "hat_adi": "FUAR İZMİR - BALÇOVA",
+      "hat_baslangic": "FUAR İZMİR",
+      "hat_bitis": "BALÇOVA"
+    },
+    {
+      "hat_no": "651",
+      "hat_adi": "OTOGAR - YILDIZEVLER",
+      "hat_baslangic": "OTOGAR",
+      "hat_bitis": "YILDIZEVLER"
+    },
+    {
+      "hat_no": "652",
+      "hat_adi": "OTOGAR - ÖĞRETMENEVİ",
+      "hat_baslangic": "OTOGAR",
+      "hat_bitis": "ÖĞRETMENEVİ"
+    },
+    {
+      "hat_no": "653",
+      "hat_adi": "OTOGAR - TEPEKÖY",
+      "hat_baslangic": "OTOGAR",
+      "hat_bitis": "TEPEKÖY"
+    },
+    {
+      "hat_no": "656",
+      "hat_adi": "DEVLET HASTANESİ - DİKİLİSULTAN",
+      "hat_baslangic": "DEVLET HASTANESİ",
+      "hat_bitis": "DİKİLİSULTAN"
+    },
+    {
+      "hat_no": "657",
+      "hat_adi": "MALTEPE - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "MALTEPE",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "658",
+      "hat_adi": "TOKİ - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "TOKİ",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "660",
+      "hat_adi": "YENİ FOÇA - İZMİR OTOGAR",
+      "hat_baslangic": "YENİ FOÇA",
+      "hat_bitis": "OTOGAR"
+    },
+    {
+      "hat_no": "661",
+      "hat_adi": "YENİ FOÇA - ALİAĞA",
+      "hat_baslangic": "YENİ FOÇA",
+      "hat_bitis": "ALİAĞA"
+    },
+    {
+      "hat_no": "662",
+      "hat_adi": "CENGİZHAN - KEMER",
+      "hat_baslangic": "CENGİZHAN",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "664",
+      "hat_adi": "YENİ FOÇA - ESKI FOÇA",
+      "hat_baslangic": "YENİ FOÇA",
+      "hat_bitis": "ESKI FOÇA"
+    },
+    {
+      "hat_no": "665",
+      "hat_adi": "YENİ FOÇA - SİTELER",
+      "hat_baslangic": "YENİ FOÇA",
+      "hat_bitis": "SİTELER"
+    },
+    {
+      "hat_no": "666",
+      "hat_adi": "YENİ FOÇA - KOZBEYLI",
+      "hat_baslangic": "YENİ FOÇA",
+      "hat_bitis": "KOZBEYLI"
+    },
+    {
+      "hat_no": "668",
+      "hat_adi": "NAZARKÖY - KEMALPAŞA",
+      "hat_baslangic": "NAZARKÖY",
+      "hat_bitis": "KEMALPAŞA"
+    },
+    {
+      "hat_no": "671",
+      "hat_adi": "ŞİRİNYER AKTARMA MERKEZİ - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "ŞİRİNYER AKTARMA",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "675",
+      "hat_adi": "SEFERİHİSAR - F.ALTAY AKT. MER. EKSPRES",
+      "hat_baslangic": "SEFERİHİSAR",
+      "hat_bitis": "F.ALTAY AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "676",
+      "hat_adi": "TINAZTEPE - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "678",
+      "hat_adi": "ALANKIYI-BAYINDIR",
+      "hat_baslangic": "ALANKIYI",
+      "hat_bitis": "BAYINDIR"
+    },
+    {
+      "hat_no": "679",
+      "hat_adi": "SARIYURT-BAYINDIR",
+      "hat_baslangic": "SARIYURT",
+      "hat_bitis": "BAYINDIR"
+    },
+    {
+      "hat_no": "680",
+      "hat_adi": "BOZYAKA - LOZAN MEYDANI",
+      "hat_baslangic": "BOZYAKA",
+      "hat_bitis": "LOZAN MEYDANI"
+    },
+    {
+      "hat_no": "681",
+      "hat_adi": "F.ALTAY - LOZAN MEYDANI",
+      "hat_baslangic": "F.ALTAY AKT.",
+      "hat_bitis": "LOZAN MEYDANI"
+    },
+    {
+      "hat_no": "684",
+      "hat_adi": "URLA - F.ALTAY AKT. MER. EKSPRES",
+      "hat_baslangic": "URLA",
+      "hat_bitis": "F.ALTAY AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "690",
+      "hat_adi": "TINAZTEPE - F.ALTAY",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "691",
+      "hat_adi": "GAZİEMİR - LOZAN MEYDAN",
+      "hat_baslangic": "GAZİEMİR",
+      "hat_bitis": "LOZAN MEYDANI"
+    },
+    {
+      "hat_no": "692",
+      "hat_adi": "KARAKUYU - PANCAR AKTARMA",
+      "hat_baslangic": "KARAKUYU",
+      "hat_bitis": "PANCAR AKTARMA"
+    },
+    {
+      "hat_no": "693",
+      "hat_adi": "ZEYTİNKÖY - SELÇUK",
+      "hat_baslangic": "ZEYTİNKÖY",
+      "hat_bitis": "SELÇUK"
+    },
+    {
+      "hat_no": "694",
+      "hat_adi": "HAVUTÇULU - SELÇUK",
+      "hat_baslangic": "HAVUTÇULU",
+      "hat_bitis": "SELÇUK"
+    },
+    {
+      "hat_no": "695",
+      "hat_adi": "ULUKENT KOOP - EGEKENT AKTARMA MERKEZİ",
+      "hat_baslangic": "ULUKENT KOOP",
+      "hat_bitis": "EGEKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "697",
+      "hat_adi": "BEYDAĞ - İZMİR OTOGAR",
+      "hat_baslangic": "BEYDAĞ",
+      "hat_bitis": "İZMİR OTOGAR"
+    },
+    {
+      "hat_no": "698",
+      "hat_adi": "ASARLIK TOPLU KONUTLARI - ULUKENT AKTARMA MERKEZİ 1",
+      "hat_baslangic": "ASARLIK TOPLU KONUTLARI",
+      "hat_bitis": "ULUKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "699",
+      "hat_adi": "M.ERENER - KEMER",
+      "hat_baslangic": "M.ERENER",
+      "hat_bitis": "KEMER AKT."
+    },
+    {
+      "hat_no": "701",
+      "hat_adi": "TORBALI - TEKELİ",
+      "hat_baslangic": "TORBALI",
+      "hat_bitis": "TEKELİ"
+    },
+    {
+      "hat_no": "705",
+      "hat_adi": "AYRANCILAR - SARNIÇ AKTARMA MERKEZİ",
+      "hat_baslangic": "AYRANCILAR",
+      "hat_bitis": "SARNIÇ AKT."
+    },
+    {
+      "hat_no": "707",
+      "hat_adi": "PANCAR AKTARMA MERKEZİ - MENDERES",
+      "hat_baslangic": "PANCAR",
+      "hat_bitis": "MENDERES"
+    },
+    {
+      "hat_no": "709",
+      "hat_adi": "DEMİRCİ - PANCAR AKTARMA MERKEZİ",
+      "hat_baslangic": "DEMİRCİ",
+      "hat_bitis": "PANCAR"
+    },
+    {
+      "hat_no": "710",
+      "hat_adi": "YAZIBAŞI - KUŞÇUBURUN AKTARMA MERKEZİ",
+      "hat_baslangic": "YAZIBAŞI",
+      "hat_bitis": "KUŞÇUBURUN AKTARMA"
+    },
+    {
+      "hat_no": "712",
+      "hat_adi": "PANCAR AKTARMA - TORBALI",
+      "hat_baslangic": "PANCAR AKTARMA",
+      "hat_bitis": "ÇAYBAŞI"
+    },
+    {
+      "hat_no": "713",
+      "hat_adi": "DEÜ MESLEK YÜKSEK OKULU - TORBALI",
+      "hat_baslangic": "DEÜ MESLEK YÜKSEK OKULU",
+      "hat_bitis": "TORBALI"
+    },
+    {
+      "hat_no": "714",
+      "hat_adi": "DEÜ MESLEK YÜKSEK OKULU - TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "DEÜ MESLEK YÜKSEK OKULU",
+      "hat_bitis": "TORBALI"
+    },
+    {
+      "hat_no": "715",
+      "hat_adi": "DEÜ MESLEK YÜKSEK OKULU - TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "DEÜ MESLEK YÜKSEK OKULU",
+      "hat_bitis": "TORBALI AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "719",
+      "hat_adi": "ÇAPAK - TORBALI",
+      "hat_baslangic": "ÇAPAK",
+      "hat_bitis": "TORBALI"
+    },
+    {
+      "hat_no": "721",
+      "hat_adi": "KARAKUYU - TORBALI",
+      "hat_baslangic": "KARAKUYU",
+      "hat_bitis": "ÇAYBAŞI"
+    },
+    {
+      "hat_no": "722",
+      "hat_adi": "YAZIBAŞI - TORBALI",
+      "hat_baslangic": "YAZIBAŞI",
+      "hat_bitis": "ÇAYBAŞI"
+    },
+    {
+      "hat_no": "724",
+      "hat_adi": "ŞEHİTLER - TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "ŞEHİTLER",
+      "hat_bitis": "TORBALI AKTARMA"
+    },
+    {
+      "hat_no": "727",
+      "hat_adi": "BAYINDIR - TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "BAYINDIR",
+      "hat_bitis": "TORBALI AKTARMA"
+    },
+    {
+      "hat_no": "728",
+      "hat_adi": "KISIK SANAYİ - SARNIÇ AKTARMA MERKEZİ",
+      "hat_baslangic": "KISIK SANAYİ",
+      "hat_bitis": "SARNIÇ AKT."
+    },
+    {
+      "hat_no": "729",
+      "hat_adi": "ATAKÖY - CUMAOVASI AKTARMA MERKEZİ",
+      "hat_baslangic": "ATAKÖY",
+      "hat_bitis": "CUMAOVASI AKT."
+    },
+    {
+      "hat_no": "732",
+      "hat_adi": "SEFERİHİSAR - URLA",
+      "hat_baslangic": "SEFERİHİSAR",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "733",
+      "hat_adi": "YAĞCILAR - URLA",
+      "hat_baslangic": "YAĞCILAR",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "734",
+      "hat_adi": "ÖZBEK - URLA",
+      "hat_baslangic": "ÖZBEK",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "737",
+      "hat_adi": "KADIOVACIK - URLA",
+      "hat_baslangic": "KADIOVACIK",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "738",
+      "hat_adi": "ÇEŞMEALTI - URLA",
+      "hat_baslangic": "ÇEŞMEALTI",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "741",
+      "hat_adi": "YAMANLAR KÖYÜ - KARŞIYAKA",
+      "hat_baslangic": "YAMANLAR KÖYÜ",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "742",
+      "hat_adi": "SANCAKLI KÖYÜ - KARŞIYAKA",
+      "hat_baslangic": "SANCAKLI KÖYÜ",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "743",
+      "hat_adi": "TİRE - SELÇUK",
+      "hat_baslangic": "TİRE",
+      "hat_bitis": "SELÇUK"
+    },
+    {
+      "hat_no": "744",
+      "hat_adi": "FOÇA - HATUNDERE AKTARMA MERKEZİ",
+      "hat_baslangic": "FOÇA",
+      "hat_bitis": "HATUNDERE AKT."
+    },
+    {
+      "hat_no": "745",
+      "hat_adi": "YENİ FOÇA - BİÇEROVA AKTARMA MERKEZİ",
+      "hat_baslangic": "YENİFOÇA",
+      "hat_bitis": "BİÇEROVA AKT."
+    },
+    {
+      "hat_no": "746",
+      "hat_adi": "ÇAKMAKLI - BİÇEROVA AKTARMA MERKEZİ",
+      "hat_baslangic": "ÇAKMAKLI",
+      "hat_bitis": "BİÇEROVA AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "747",
+      "hat_adi": "EMİRALEM - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "EMİRALEM",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "748",
+      "hat_adi": "ULUKENT AKTARMA MERKEZİ 1- MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "ULUKENT AKTARMA MERKEZİ",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "749",
+      "hat_adi": "ULUKENT AKTARMA MERKEZİ 1 - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "ULUKENT AKTARMA MERKEZİ",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "750",
+      "hat_adi": "YENİ FOÇA - ULUKENT AKTARMA MERKEZİ 2",
+      "hat_baslangic": "YENİ FOÇA",
+      "hat_bitis": "ULUKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "751",
+      "hat_adi": "SASALI - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "SASALI",
+      "hat_bitis": "ÇİĞLİ AKT."
+    },
+    {
+      "hat_no": "752",
+      "hat_adi": "BURUNCUK - HATUNDERE AKTARMA MERKEZİ",
+      "hat_baslangic": "BURUNCUK",
+      "hat_bitis": "HATUNDERE AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "753",
+      "hat_adi": "GÖKTEPE - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "GÖKTEPE",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "754",
+      "hat_adi": "BOZALAN - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "BOZALAN",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "755",
+      "hat_adi": "SÜLEYMANLI - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "SÜLEYMANLI",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "756",
+      "hat_adi": "KOZBEYLİ - MENEMEN AKTARMA",
+      "hat_baslangic": "KOZBEYLİ",
+      "hat_bitis": "MENEMEN AKTARMA"
+    },
+    {
+      "hat_no": "757",
+      "hat_adi": "MALTEPE - ULUKENT AKTARMA MERKEZİ 2",
+      "hat_baslangic": "MALTEPE",
+      "hat_bitis": "ULUKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "758",
+      "hat_adi": "ÇUKURKÖY - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "ÇUKURKÖY",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "759",
+      "hat_adi": "KARAORMAN - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "KARAORMAN",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "760",
+      "hat_adi": "ÇEŞME-URLA",
+      "hat_baslangic": "ÇEŞME",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "761",
+      "hat_adi": "KARABURUN-URLA",
+      "hat_baslangic": "KARABURUN",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "762",
+      "hat_adi": "GÜZELBAHÇE - URLA",
+      "hat_baslangic": "GÜZELBAHÇE",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "763",
+      "hat_adi": "DÜVERLİK - TORBALI",
+      "hat_baslangic": "DÜVERLİK",
+      "hat_bitis": "TORBALI"
+    },
+    {
+      "hat_no": "766",
+      "hat_adi": "ANSIZCA - KEMALPAŞA",
+      "hat_baslangic": "ANSIZCA",
+      "hat_bitis": "KEMALPAŞA"
+    },
+    {
+      "hat_no": "767",
+      "hat_adi": "HALİLBEYLİ - KEMALPAŞA",
+      "hat_baslangic": "HALİLBEYLİ",
+      "hat_bitis": "KEMALPAŞA"
+    },
+    {
+      "hat_no": "768",
+      "hat_adi": "VİŞNELİ - KEMALPAŞA",
+      "hat_baslangic": "VİŞNELİ",
+      "hat_bitis": "KEMALPAŞA"
+    },
+    {
+      "hat_no": "769",
+      "hat_adi": "ÇAMBEL - KEMALPAŞA",
+      "hat_baslangic": "ÇAMBEL",
+      "hat_bitis": "KEMALPAŞA"
+    },
+    {
+      "hat_no": "770",
+      "hat_adi": "SELÇUK - TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "SELÇUK",
+      "hat_bitis": "TORBALI AKTARMA"
+    },
+    {
+      "hat_no": "772",
+      "hat_adi": "BEŞPINAR - KEMALPAŞA",
+      "hat_baslangic": "BEŞPINAR",
+      "hat_bitis": "KEMALPAŞA"
+    },
+    {
+      "hat_no": "774",
+      "hat_adi": "TİRE TOPLU KONUTLAR - KAHRAT",
+      "hat_baslangic": "TİRE TOPLU KONUTLAR",
+      "hat_bitis": "KAHRAT"
+    },
+    {
+      "hat_no": "775",
+      "hat_adi": "ÖZDERE - CUMAOVASI AKTARMA MERKEZİ",
+      "hat_baslangic": "ÖZDERE",
+      "hat_bitis": "CUMAOVASI AKT."
+    },
+    {
+      "hat_no": "776",
+      "hat_adi": "DOĞANBEY - CUMAOVASI AKTARMA MERKEZİ",
+      "hat_baslangic": "DOĞANBEY",
+      "hat_bitis": "CUMAOVASI AKT."
+    },
+    {
+      "hat_no": "777",
+      "hat_adi": "DOĞAL YAŞAM PARKI - KARŞIYAKA",
+      "hat_baslangic": "DOĞAL YAŞAM PARKI",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "778",
+      "hat_adi": "ÖZDERE - ÜRKMEZ",
+      "hat_baslangic": "ÖZDERE",
+      "hat_bitis": "ÜRKMEZ"
+    },
+    {
+      "hat_no": "780",
+      "hat_adi": "BÜLBÜLDERE - TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "BÜLBÜLDERE",
+      "hat_bitis": "TORBALI AKTARMA"
+    },
+    {
+      "hat_no": "781",
+      "hat_adi": "TULUMKÖY - TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "TULUMKÖY",
+      "hat_bitis": "TORBALI AKTARMA"
+    },
+    {
+      "hat_no": "782",
+      "hat_adi": "TAŞKESİK - TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "TAŞKESİK",
+      "hat_bitis": "TORBALI AKTARMA"
+    },
+    {
+      "hat_no": "783",
+      "hat_adi": "BELEVİ - TORBALI",
+      "hat_baslangic": "BELEVİ",
+      "hat_bitis": "TORBALI"
+    },
+    {
+      "hat_no": "784",
+      "hat_adi": "DOĞANCILAR - TORBALI",
+      "hat_baslangic": "DOĞANCILAR",
+      "hat_bitis": "ÇAYBAŞI"
+    },
+    {
+      "hat_no": "785",
+      "hat_adi": "DAĞTEKKE - TORBALI",
+      "hat_baslangic": "DAĞTEKKE",
+      "hat_bitis": "ÇAYBAŞI"
+    },
+    {
+      "hat_no": "786",
+      "hat_adi": "KARAOT - TORBALI",
+      "hat_baslangic": "KARAOT",
+      "hat_bitis": "ÇAYBAŞI"
+    },
+    {
+      "hat_no": "787",
+      "hat_adi": "OSMANLAR - BAYINDIR",
+      "hat_baslangic": "OSMANLAR",
+      "hat_bitis": "BAYINDIR"
+    },
+    {
+      "hat_no": "788",
+      "hat_adi": "HAVUZBAŞI - BAYINDIR",
+      "hat_baslangic": "HAVUZBAŞI",
+      "hat_bitis": "BAYINDIR"
+    },
+    {
+      "hat_no": "789",
+      "hat_adi": "EFEMÇUKURU - CUMAOVASI AKTARMA MERKEZİ",
+      "hat_baslangic": "EFEMÇUKURU",
+      "hat_bitis": "CUMAOVASI AKT."
+    },
+    {
+      "hat_no": "790",
+      "hat_adi": "HİSARLIK - BAYINDIR",
+      "hat_baslangic": "HİSARLIK",
+      "hat_bitis": "BAYINDIR"
+    },
+    {
+      "hat_no": "791",
+      "hat_adi": "ÇAMLIBEL - BAYINDIR",
+      "hat_baslangic": "ÇAMLIBEL",
+      "hat_bitis": "BAYINDIR"
+    },
+    {
+      "hat_no": "792",
+      "hat_adi": "GÖLOVA - CUMAOVASI AKTARMA MERKEZİ",
+      "hat_baslangic": "GÖLOVA",
+      "hat_bitis": "CUMAOVASI AKT."
+    },
+    {
+      "hat_no": "793",
+      "hat_adi": "BALCILAR - BAYINDIR",
+      "hat_baslangic": "BALCILAR",
+      "hat_bitis": "BAYINDIR"
+    },
+    {
+      "hat_no": "794",
+      "hat_adi": "KÜNER - CUMAOVASI AKTARMA MERKEZİ",
+      "hat_baslangic": "KÜNER",
+      "hat_bitis": "CUMAOVASI AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "795",
+      "hat_adi": "ÖDEMİŞ-TORBALI",
+      "hat_baslangic": "ÖDEMİŞ",
+      "hat_bitis": "ÇAYBAŞI"
+    },
+    {
+      "hat_no": "796",
+      "hat_adi": "BEYDAĞ-ÖDEMİŞ",
+      "hat_baslangic": "BEYDAĞ",
+      "hat_bitis": "ÖDEMİŞ"
+    },
+    {
+      "hat_no": "798",
+      "hat_adi": "TİRE-TORBALI AKTARMA MERKEZİ",
+      "hat_baslangic": "TİRE",
+      "hat_bitis": "TORBALI AKTARMA"
+    },
+    {
+      "hat_no": "799",
+      "hat_adi": "ÇATALCA - CUMAOVASI AKTARMA",
+      "hat_baslangic": "ÇATALCA",
+      "hat_bitis": "CUMAOVASI AKTARMA"
+    },
+    {
+      "hat_no": "800",
+      "hat_adi": "MENEMEN AKTARMA - BORNOVA METRO",
+      "hat_baslangic": "MENEMEN AKTARMA",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "801",
+      "hat_adi": "KİRAZ - BEYDAĞ",
+      "hat_baslangic": "KİRAZ",
+      "hat_bitis": "BEYDAĞ"
+    },
+    {
+      "hat_no": "803",
+      "hat_adi": "KİRAZ - ÖDEMİŞ",
+      "hat_baslangic": "KİRAZ",
+      "hat_bitis": "ÖDEMİŞ"
+    },
+    {
+      "hat_no": "804",
+      "hat_adi": "DEREKÖY - CUMAOVASI AKTARMA MERKEZI",
+      "hat_baslangic": "DEREKÖY",
+      "hat_bitis": "CUMAOVASI AKT."
+    },
+    {
+      "hat_no": "805",
+      "hat_adi": "ÇAMLIKULE - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "ÇAMLIKULE",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "806",
+      "hat_adi": "KİRAZ - OTOGAR",
+      "hat_baslangic": "KİRAZ",
+      "hat_bitis": "OTOGAR"
+    },
+    {
+      "hat_no": "808",
+      "hat_adi": "CUMAOVASI AKTARMA MERKEZİ - ESBAŞ AKTARMA MERKEZİ",
+      "hat_baslangic": "CUMAOVASI AKT.",
+      "hat_bitis": "ESBAŞ AKT"
+    },
+    {
+      "hat_no": "810",
+      "hat_adi": "ATATÜRK MAHALLESİ - EGEKENT AKTARMA MERKEZİ",
+      "hat_baslangic": "ATATÜRK MAH.",
+      "hat_bitis": "EGEKENT AKT."
+    },
+    {
+      "hat_no": "811",
+      "hat_adi": "ENGELLİLER MERKEZİ - MONTRÖ",
+      "hat_baslangic": "ENGELLİLER MERKEZİ",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "812",
+      "hat_adi": "BAKIRÇAY ÜNİVERSİTESİ - ULUKENT AKTARMA MERKEZİ 2",
+      "hat_baslangic": "BAKIRÇAY ÜNİVERSİTESİ",
+      "hat_bitis": "ULUKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "814",
+      "hat_adi": "MENDERES - CUMAOVASI AKTARMA MERKEZİ",
+      "hat_baslangic": "MENDERES",
+      "hat_bitis": "CUMAOVASI AKT."
+    },
+    {
+      "hat_no": "816",
+      "hat_adi": "ÇİĞLİ BÖLGE EĞİTİM HASTANESİ - EGEKENT AKTARMA MERKEZİ",
+      "hat_baslangic": "ÇİĞLİ BÖLGE EĞİTİM HASTANESİ",
+      "hat_bitis": "EGEKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "817",
+      "hat_adi": "EGEKENT AKTARMA MERKEZİ - ÇİĞLİ AKTARMA MERKEZİ",
+      "hat_baslangic": "EGEKENT AKT.",
+      "hat_bitis": "ÇİĞLİ AKT."
+    },
+    {
+      "hat_no": "818",
+      "hat_adi": "ESBAŞ AKTARMA MERKEZİ - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "ESBAŞ AKT",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "820",
+      "hat_adi": "HARMANDALI - BOSTANLI İSKELE",
+      "hat_baslangic": "HARMANDALI",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "821",
+      "hat_adi": "MAVİŞEHİR AKTARMA MERKEZİ - BOSTANLI İSKELE",
+      "hat_baslangic": "MAVİŞEHİR AKT.",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "823",
+      "hat_adi": "ÜÇYOL - GAZİEMİR SEMT GARAJI",
+      "hat_baslangic": "ÜÇYOL METRO",
+      "hat_bitis": "GAZİEMİR SEMT GARAJI"
+    },
+    {
+      "hat_no": "826",
+      "hat_adi": "GAZİ MAHALLESI - ULUKENT AKTARMA MERKEZİ 1",
+      "hat_baslangic": "GAZİ MAHALLESI",
+      "hat_bitis": "ULUKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "827",
+      "hat_adi": "ULUKENT AKTARMA MERKEZİ - BOSTANLI İSKELE",
+      "hat_baslangic": "ULUKENT AKT.",
+      "hat_bitis": "BOSTANLI İSKELE"
+    },
+    {
+      "hat_no": "828",
+      "hat_adi": "SARNIÇ - YENİ ÇAMLIK",
+      "hat_baslangic": "SARNIÇ",
+      "hat_bitis": "YENİ ÇAMLIK"
+    },
+    {
+      "hat_no": "829",
+      "hat_adi": "ÜRKMEZ-CUMAOVASI AKTARMA",
+      "hat_baslangic": "ÜRKMEZ",
+      "hat_bitis": "CUMAOVASI AKTARMA"
+    },
+    {
+      "hat_no": "830",
+      "hat_adi": "EGEKENT AKTARMA MERKEZİ - BORNOVA METRO",
+      "hat_baslangic": "EGEKENT AKT.",
+      "hat_bitis": "BORNOVA METRO"
+    },
+    {
+      "hat_no": "831",
+      "hat_adi": "DEMİRCİDERE - BERGAMA",
+      "hat_baslangic": "DEMİRCİDERE",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "832",
+      "hat_adi": "YUKARICUMA - BERGAMA",
+      "hat_baslangic": "YUKARICUMA",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "833",
+      "hat_adi": "GÜNEŞLİ - BERGAMA",
+      "hat_baslangic": "GÜNEŞLİ",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "834",
+      "hat_adi": "YENİ MAHALLE - ALİAĞA AKTARMA MERKEZİ",
+      "hat_baslangic": "YENİ MAHALLE",
+      "hat_bitis": "ALİAĞA AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "835",
+      "hat_adi": "BERGAMA - ALİAĞA AKTARMA MERKEZİ",
+      "hat_baslangic": "BERGAMA",
+      "hat_bitis": "ALİAĞA"
+    },
+    {
+      "hat_no": "836",
+      "hat_adi": "KINIK-BERGAMA",
+      "hat_baslangic": "KINIK",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "837",
+      "hat_adi": "DİKİLİ-ALİAĞA AKTARMA MERKEZİ",
+      "hat_baslangic": "DİKİLİ",
+      "hat_bitis": "ALİAĞA"
+    },
+    {
+      "hat_no": "838",
+      "hat_adi": "ŞİRİNYER AKTARMA MERKEZİ - GÜMRÜK",
+      "hat_baslangic": "ŞİRİNYER AKT.",
+      "hat_bitis": "GÜMRÜK"
+    },
+    {
+      "hat_no": "839",
+      "hat_adi": "DİKİLİ DEVLET HASTANESİ - DİKİLİ İLÇE GARAJI",
+      "hat_baslangic": "DİKİLİ DEVLET HASTANESİ",
+      "hat_bitis": "DİKİLİ İLÇE GARAJI"
+    },
+    {
+      "hat_no": "842",
+      "hat_adi": "ZEYTİNDAĞ - BERGAMA",
+      "hat_baslangic": "ZEYTİNDAĞ",
+      "hat_bitis": "BERGAMA"
+    },
+    {
+      "hat_no": "847",
+      "hat_adi": "POSTACILAR MAHALLESİ - KARŞIYAKA İSKELE",
+      "hat_baslangic": "POSTACILAR",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "848",
+      "hat_adi": "KOYUNDERE - ULUKENT AKTARMA MERKEZİ 1",
+      "hat_baslangic": "KOYUNDERE",
+      "hat_bitis": "ULUKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "849",
+      "hat_adi": "YENİ ŞAKRAN MAHALLESİ - ALİAĞA AKTARMA",
+      "hat_baslangic": "YENİ ŞAKRAN MAHALLESİ",
+      "hat_bitis": "ALİAĞA AKTARMA"
+    },
+    {
+      "hat_no": "850",
+      "hat_adi": "TUZÇULLU -SEYREK - ULUKENT AKTARMA MERKEZİ 2",
+      "hat_baslangic": "TUZCULLU",
+      "hat_bitis": "ULUKENT AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "853",
+      "hat_adi": "EGEKENT AKTARMA MERKEZİ - KARŞIYAKA İSKELE",
+      "hat_baslangic": "EGEKENT AKT.",
+      "hat_bitis": "KARŞIYAKA İSKELE"
+    },
+    {
+      "hat_no": "858",
+      "hat_adi": "BAYINDIR - İZMİR OTOGAR",
+      "hat_baslangic": "BAYINDIR",
+      "hat_bitis": "İZMİR OTOGAR"
+    },
+    {
+      "hat_no": "865",
+      "hat_adi": "KIZILKEÇİLİ - BAYINDIR",
+      "hat_baslangic": "KIZILKEÇİLİ",
+      "hat_bitis": "BAYINDIR"
+    },
+    {
+      "hat_no": "866",
+      "hat_adi": "BUCA TOPLU KONUTLARI - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "BUCA TOPLU KONUTLARI",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "868",
+      "hat_adi": "MENEMEN PLASTİK İHTİSAS ORGANİZE SANAYİ - ATATÜRK MAHALLESİ - MENEMEN AKTARMA MERKEZİ",
+      "hat_baslangic": "ORGANİZE SANAYİ",
+      "hat_bitis": "MENEMEN AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "869",
+      "hat_adi": "BUCA TOPLU KONUTLARI - ÜÇKUYULAR MEYDAN",
+      "hat_baslangic": "BUCA TOPLU KONUTLARI",
+      "hat_bitis": "ÜÇKUYULAR MEYDAN"
+    },
+    {
+      "hat_no": "871",
+      "hat_adi": "İŞÇİEVLERİ - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "İŞÇİEVLERİ",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "873",
+      "hat_adi": "YENİTEPE EVLERİ - FAHRETTİN ALTAY AKTARMA",
+      "hat_baslangic": "YENİTEPE EVLERİ",
+      "hat_bitis": "FAHRETTİN ALTAY AKT."
+    },
+    {
+      "hat_no": "874",
+      "hat_adi": "İZKENT - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "İZKENT",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "875",
+      "hat_adi": "EVKA 1 - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "EVKA-1",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "876",
+      "hat_adi": "ŞİRİNKAPI - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "ŞİRİNKAPI",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "877",
+      "hat_adi": "UZUNDERE TOPLU KONUTLARI - GAZİEMİR SEMT GARAJI",
+      "hat_baslangic": "UZUNDERE TOPLU KONUTLARI",
+      "hat_bitis": "GAZİEMİR SEMT GARAJI"
+    },
+    {
+      "hat_no": "878",
+      "hat_adi": "TINAZTEPE - ŞİRİNYER AKTARMA MERKEZİ",
+      "hat_baslangic": "TINAZTEPE",
+      "hat_bitis": "ŞİRİNYER AKT."
+    },
+    {
+      "hat_no": "879",
+      "hat_adi": "F.ALTAY - GAZİEMİR SEMT GARAJI",
+      "hat_baslangic": "F.ALTAY",
+      "hat_bitis": "GAZİEMİR SEMT GARAJI"
+    },
+    {
+      "hat_no": "882",
+      "hat_adi": "İYTE - URLA",
+      "hat_baslangic": "İ.Y.T.E",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "883",
+      "hat_adi": "İYTE - F.ALTAY AKT. MER. EKSPRES",
+      "hat_baslangic": "İYTE",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "887",
+      "hat_adi": "SARNIÇ AKTARMA MERKEZİ - KONAK",
+      "hat_baslangic": "SARNIÇ AKT.",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "889",
+      "hat_adi": "SARNIÇ - SARNIÇ AKTARMA MERKEZİ",
+      "hat_baslangic": "SARNIÇ",
+      "hat_bitis": "SARNIÇ AKT."
+    },
+    {
+      "hat_no": "891",
+      "hat_adi": "EVKA 7 - GAZİEMİR SEMT GARAJI",
+      "hat_baslangic": "EVKA-7",
+      "hat_bitis": "GAZİEMİR SEMT GARAJI"
+    },
+    {
+      "hat_no": "906",
+      "hat_adi": "ÇEŞME - URLA",
+      "hat_baslangic": "ÇEŞME",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "909",
+      "hat_adi": "ZEYTİNALANI - F. ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "ZEYTİNALANI",
+      "hat_bitis": "F. ALTAY AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "910",
+      "hat_adi": "GAZİEMİR - KONAK",
+      "hat_baslangic": "GAZİEMİR",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "912",
+      "hat_adi": "EGEKENT AKTARMA MERKEZİ - ALSANCAK GAR",
+      "hat_baslangic": "EGEKENT AKTARMA",
+      "hat_bitis": "ALSANCAK GAR"
+    },
+    {
+      "hat_no": "920",
+      "hat_adi": "ÇİĞLİ - KONAK",
+      "hat_baslangic": "ÇİĞLİ MERKEZ",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "930",
+      "hat_adi": "BORNOVA - KONAK",
+      "hat_baslangic": "BORNOVA",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "935",
+      "hat_adi": "ALİAĞA OSB - ALİAĞA AKTARMA MERKEZİ",
+      "hat_baslangic": "ALİAĞA OSB",
+      "hat_bitis": "ALİAĞA AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "936",
+      "hat_adi": "KINIK - ALİAĞA AKTARMA MERKEZİ",
+      "hat_baslangic": "KINIK",
+      "hat_bitis": "ALİAĞA"
+    },
+    {
+      "hat_no": "940",
+      "hat_adi": "BUCA - KONAK",
+      "hat_baslangic": "BUCA",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "945",
+      "hat_adi": "ESENTEPE - ÜÇKUYULAR İSKELE",
+      "hat_baslangic": "ESENTEPE",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "946",
+      "hat_adi": "GENERAL KAZIM ÖZALP MAH.- ÜÇKUYULAR İSKELE",
+      "hat_baslangic": "ESENTEPE",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "949",
+      "hat_adi": "ÇAMBEL - EVKA 3 METRO",
+      "hat_baslangic": "ÇAMBEL",
+      "hat_bitis": "EVKA 3 METRO"
+    },
+    {
+      "hat_no": "950",
+      "hat_adi": "NARLIDERE - KONAK",
+      "hat_baslangic": "NARLIDERE",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "951",
+      "hat_adi": "HALKAPINAR METRO2-KONAK",
+      "hat_baslangic": "HALKAPINAR METRO2",
+      "hat_bitis": "KONAK"
+    },
+    {
+      "hat_no": "961",
+      "hat_adi": "İÇMELER - URLA",
+      "hat_baslangic": "İÇMELER",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "962",
+      "hat_adi": "URLA - YELKİ",
+      "hat_baslangic": "URLA",
+      "hat_bitis": "YELKİ"
+    },
+    {
+      "hat_no": "963",
+      "hat_adi": "EVKA 3 METRO - ALSANCAK GAR",
+      "hat_baslangic": "EVKA 3 METRO",
+      "hat_bitis": "ALSANCAK GAR"
+    },
+    {
+      "hat_no": "966",
+      "hat_adi": "ULUCAK - EVKA3 METRO",
+      "hat_baslangic": "ULUCAK",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "967",
+      "hat_adi": "ARMUTLU - KEMALPAŞA",
+      "hat_baslangic": "ARMUTLU",
+      "hat_bitis": "KEMALPAŞA"
+    },
+    {
+      "hat_no": "969",
+      "hat_adi": "BALÇOVA - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "BALÇOVA",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "971",
+      "hat_adi": "NARBEL - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "NARBEL",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "975",
+      "hat_adi": "SEFERİHİSAR - F.ALTAY AKTARMA",
+      "hat_baslangic": "SEFERİHSAR",
+      "hat_bitis": "F.ALTAY AKTARMA"
+    },
+    {
+      "hat_no": "976",
+      "hat_adi": "MORDOĞAN - KARABURUN",
+      "hat_baslangic": "MORDOĞAN",
+      "hat_bitis": "KARABURUN"
+    },
+    {
+      "hat_no": "977",
+      "hat_adi": "İZMİR DEMOKRASİ ÜNİVERSİTESİ - ÜÇKUYULAR İSKELE",
+      "hat_baslangic": "DEMOKRASİ ÜNİVERSİTESİ",
+      "hat_bitis": "ÜÇKUYULAR İSKELE"
+    },
+    {
+      "hat_no": "978",
+      "hat_adi": "PARLAK-URLA",
+      "hat_baslangic": "PARLAK",
+      "hat_bitis": "URLA"
+    },
+    {
+      "hat_no": "979",
+      "hat_adi": "ÖMÜR BELDESİ - SEFERİHİSAR",
+      "hat_baslangic": "ÖMÜR BELDESİ",
+      "hat_bitis": "SEFERİHİSAR"
+    },
+    {
+      "hat_no": "981",
+      "hat_adi": "BALIKLIOVA - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "BALIKLIOVA",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "982",
+      "hat_adi": "İYTE - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "İ.Y.T.E.",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "983",
+      "hat_adi": "BADEMLER - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "BADEMLER",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "984",
+      "hat_adi": "URLA - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "URLA",
+      "hat_bitis": "F.ALTAY AKT."
+    },
+    {
+      "hat_no": "985",
+      "hat_adi": "SEFERİHİSAR - F.ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "SEFERİHİSAR",
+      "hat_bitis": "F.ALTAY AKTARMA"
+    },
+    {
+      "hat_no": "986",
+      "hat_adi": "ÜRKMEZ - SEFERİHİSAR",
+      "hat_baslangic": "ÜRKMEZ",
+      "hat_bitis": "SEFERİHİSAR"
+    },
+    {
+      "hat_no": "987",
+      "hat_adi": "ÜRKMEZ - F. ALTAY AKTARMA MERKEZİ",
+      "hat_baslangic": "ÜRKMEZ",
+      "hat_bitis": "F. ALTAY AKTARMA MERKEZİ"
+    },
+    {
+      "hat_no": "988",
+      "hat_adi": "KEMALPAŞA - EVKA3 METRO",
+      "hat_baslangic": "KEMALPAŞA",
+      "hat_bitis": "EVKA3 METRO"
+    },
+    {
+      "hat_no": "989",
+      "hat_adi": "ORHANLI - SEFERİHİSAR",
+      "hat_baslangic": "ORHANLI",
+      "hat_bitis": "SEFERİHİSAR"
+    },
+    {
+      "hat_no": "990",
+      "hat_adi": "BEYLER - SEFERİHİSAR",
+      "hat_baslangic": "BEYLER",
+      "hat_bitis": "SEFERİHİSAR"
+    },
+    {
+      "hat_no": "991",
+      "hat_adi": "ÇAMTEPE - SEFERİHİSAR",
+      "hat_baslangic": "ÇAMTEPE",
+      "hat_bitis": "SEFERİHİSAR"
+    }
+  ]
+}

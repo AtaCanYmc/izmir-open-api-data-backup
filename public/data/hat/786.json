@@ -1,0 +1,385 @@
+{
+  "hat_no": "786",
+  "hat_adi": "KARAOT - TORBALI",
+  "hat_baslangic": "KARAOT",
+  "hat_bitis": "ÇAYBAŞI",
+  "duraklar": [
+    {
+      "durak_id": 13873,
+      "durak_adi": "Güldeste",
+      "enlem": 38.2416,
+      "boylam": 27.3908
+    },
+    {
+      "durak_id": 13874,
+      "durak_adi": "Güldeste",
+      "enlem": 38.2417,
+      "boylam": 27.3907
+    },
+    {
+      "durak_id": 13875,
+      "durak_adi": "Enginar",
+      "enlem": 38.2439,
+      "boylam": 27.3915
+    },
+    {
+      "durak_id": 13876,
+      "durak_adi": "Enginar",
+      "enlem": 38.2439,
+      "boylam": 27.3914
+    },
+    {
+      "durak_id": 13884,
+      "durak_adi": "Karakızlar Giriş",
+      "enlem": 38.2789711439267,
+      "boylam": 27.4385452359484
+    },
+    {
+      "durak_id": 13886,
+      "durak_adi": "Karakızlar Meydan",
+      "enlem": 38.280339,
+      "boylam": 27.440834
+    },
+    {
+      "durak_id": 13887,
+      "durak_adi": "Karakızlar Giriş",
+      "enlem": 38.2787971419583,
+      "boylam": 27.4384472366351
+    },
+    {
+      "durak_id": 13888,
+      "durak_adi": "Karakızlar Çıkış",
+      "enlem": 38.281719,
+      "boylam": 27.440408
+    },
+    {
+      "durak_id": 13889,
+      "durak_adi": "Karakızlar Meydan",
+      "enlem": 38.280289,
+      "boylam": 27.440951
+    },
+    {
+      "durak_id": 13891,
+      "durak_adi": "Karakızlar Çıkış",
+      "enlem": 38.281835,
+      "boylam": 27.440427
+    },
+    {
+      "durak_id": 13893,
+      "durak_adi": "Karaot Son Durak",
+      "enlem": 38.295364,
+      "boylam": 27.437452
+    },
+    {
+      "durak_id": 15466,
+      "durak_adi": "Karakızlar Dört Yol",
+      "enlem": 38.2738220829016,
+      "boylam": 27.4302282516782
+    },
+    {
+      "durak_id": 15467,
+      "durak_adi": "Karakızlar Dört Yol",
+      "enlem": 38.2737580820076,
+      "boylam": 27.4298342516613
+    },
+    {
+      "durak_id": 15493,
+      "durak_adi": "Karakuyu Çiftlik",
+      "enlem": 38.2543298738122,
+      "boylam": 27.3948462802698
+    },
+    {
+      "durak_id": 15494,
+      "durak_adi": "Karakuyu Çiftlik",
+      "enlem": 38.2545278758523,
+      "boylam": 27.3947762798004
+    },
+    {
+      "durak_id": 15546,
+      "durak_adi": "Karakuyu Zeytinlik",
+      "enlem": 38.2606469375917,
+      "boylam": 27.3992772700913
+    },
+    {
+      "durak_id": 15547,
+      "durak_adi": "Karakuyu Zeytinlik",
+      "enlem": 38.260520936307,
+      "boylam": 27.3992532703771
+    },
+    {
+      "durak_id": 15548,
+      "durak_adi": "Korucuk Yol Ayrımı",
+      "enlem": 38.264205974,
+      "boylam": 27.4034862642452
+    },
+    {
+      "durak_id": 15549,
+      "durak_adi": "Korucuk Yol Ayrımı",
+      "enlem": 38.2639969718416,
+      "boylam": 27.4032122646026
+    },
+    {
+      "durak_id": 15550,
+      "durak_adi": "Karakızlar Zeytinlik",
+      "enlem": 38.269401031027,
+      "boylam": 27.419052259866
+    },
+    {
+      "durak_id": 15551,
+      "durak_adi": "Karakızlar Çiftlik Evleri",
+      "enlem": 38.2701920416987,
+      "boylam": 27.4254732617778
+    },
+    {
+      "durak_id": 15552,
+      "durak_adi": "Karakızlar Zeytinlik",
+      "enlem": 38.2694700316659,
+      "boylam": 27.4187672594334
+    },
+    {
+      "durak_id": 15553,
+      "durak_adi": "Karakızlar Çiftlik Evleri",
+      "enlem": 38.2701410411728,
+      "boylam": 27.4255292620006
+    },
+    {
+      "durak_id": 15554,
+      "durak_adi": "Karakızlar Arılık",
+      "enlem": 38.2759181075564,
+      "boylam": 27.4337702457349
+    },
+    {
+      "durak_id": 15555,
+      "durak_adi": "Karakızlar Arılık",
+      "enlem": 38.275870107094,
+      "boylam": 27.4338662459888
+    },
+    {
+      "durak_id": 15556,
+      "durak_adi": "Karakızlar Çiftlik",
+      "enlem": 38.277519126597,
+      "boylam": 27.4363722407911
+    },
+    {
+      "durak_id": 15557,
+      "durak_adi": "Karakızlar Çiftlik",
+      "enlem": 38.2774361256836,
+      "boylam": 27.4363562411265
+    },
+    {
+      "durak_id": 15587,
+      "durak_adi": "Karakızlar Yol Ayrımı",
+      "enlem": 38.285845217849,
+      "boylam": 27.4379702054168
+    },
+    {
+      "durak_id": 15588,
+      "durak_adi": "Karakızlar Yol Ayrımı",
+      "enlem": 38.2858952183485,
+      "boylam": 27.4379292051751
+    },
+    {
+      "durak_id": 15589,
+      "durak_adi": "Karaot Orman",
+      "enlem": 38.2895482601881,
+      "boylam": 27.4406241891538
+    },
+    {
+      "durak_id": 15590,
+      "durak_adi": "Karaot Orman",
+      "enlem": 38.289800262796,
+      "boylam": 27.4405321879324
+    },
+    {
+      "durak_id": 15591,
+      "durak_adi": "Karaot Giriş",
+      "enlem": 38.2923482898053,
+      "boylam": 27.4403111756737
+    },
+    {
+      "durak_id": 15592,
+      "durak_adi": "Karaot Giriş",
+      "enlem": 38.2921982881328,
+      "boylam": 27.4402451763842
+    },
+    {
+      "durak_id": 16233,
+      "durak_adi": "Karaot Köşe",
+      "enlem": 38.2945413107899,
+      "boylam": 27.4382901646966
+    },
+    {
+      "durak_id": 16234,
+      "durak_adi": "Karaot Köşe",
+      "enlem": 38.2945713112278,
+      "boylam": 27.438395164565
+    },
+    {
+      "durak_id": 16550,
+      "durak_adi": "Karakuyu Bahçeler",
+      "enlem": 38.2563698944127,
+      "boylam": 27.3957932768868
+    },
+    {
+      "durak_id": 16551,
+      "durak_adi": "Karakuyu Bahçeler",
+      "enlem": 38.2563288939842,
+      "boylam": 27.3958442770209
+    },
+    {
+      "durak_id": 16631,
+      "durak_adi": "Karakuyu Zeytinlik",
+      "enlem": 38.2577369081982,
+      "boylam": 27.3966422746498
+    },
+    {
+      "durak_id": 16632,
+      "durak_adi": "Karakuyu Zeytinlik",
+      "enlem": 38.2577399082113,
+      "boylam": 27.3967522747389
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    }
+  ]
+}

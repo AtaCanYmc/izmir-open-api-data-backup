@@ -1,0 +1,282 @@
+{
+  "hat_no": "364",
+  "hat_adi": "GERİKAZANIMCILAR SİTESİ - HALKAPINAR METRO",
+  "hat_baslangic": "GERİKAZANIMCILAR SİTESİ",
+  "hat_bitis": "HALKAPINAR METRO",
+  "duraklar": [
+    {
+      "durak_id": 10463,
+      "durak_adi": "Halkapınar Metro",
+      "enlem": 38.432924,
+      "boylam": 27.169364
+    },
+    {
+      "durak_id": 32289,
+      "durak_adi": "Aydınlar Caddesi",
+      "enlem": 38.4171717785114,
+      "boylam": 27.2367950008204
+    },
+    {
+      "durak_id": 32290,
+      "durak_adi": "Aydınlar Caddesi",
+      "enlem": 38.4174627792421,
+      "boylam": 27.236664000005
+    },
+    {
+      "durak_id": 32291,
+      "durak_adi": "Şehit. Jnd. Onbaşı Uğur Demirkan",
+      "enlem": 38.4204867913737,
+      "boylam": 27.2371749842667
+    },
+    {
+      "durak_id": 32292,
+      "durak_adi": "Şehit. Jnd. Onbaşı Uğur Demirkan",
+      "enlem": 38.4207157913911,
+      "boylam": 27.2368569844308
+    },
+    {
+      "durak_id": 32293,
+      "durak_adi": "Yabancılar Şube Müdürlüğü",
+      "enlem": 38.4317938491274,
+      "boylam": 27.2438459033524
+    },
+    {
+      "durak_id": 32294,
+      "durak_adi": "Galericiler",
+      "enlem": 38.4351698593661,
+      "boylam": 27.243296888281
+    },
+    {
+      "durak_id": 32295,
+      "durak_adi": "Yabancılar Şube Müdürlüğü",
+      "enlem": 38.4329538517529,
+      "boylam": 27.2433278995292
+    },
+    {
+      "durak_id": 32298,
+      "durak_adi": "Işıklar",
+      "enlem": 38.4132617637551,
+      "boylam": 27.2365880189449
+    },
+    {
+      "durak_id": 32305,
+      "durak_adi": "Aydınlar Köşe",
+      "enlem": 38.4231067981661,
+      "boylam": 27.2361919758911
+    },
+    {
+      "durak_id": 32306,
+      "durak_adi": "Aydınlar Köşe",
+      "enlem": 38.4229557988566,
+      "boylam": 27.2366699747417
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    }
+  ]
+}

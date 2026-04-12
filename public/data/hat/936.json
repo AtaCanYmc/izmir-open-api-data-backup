@@ -1,0 +1,100 @@
+{
+  "hat_no": "936",
+  "hat_adi": "KINIK - ALİAĞA AKTARMA MERKEZİ",
+  "hat_baslangic": "KINIK",
+  "hat_bitis": "ALİAĞA",
+  "duraklar": [],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "05:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "05:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "hat_no": "200",
+  "hat_adi": "MAVİŞEHİR AKTARMA MERKEZİ - HAVALİMANI",
+  "hat_baslangic": "MAVİŞEHİR AKT.",
+  "hat_bitis": "HAVALİMANI",
+  "duraklar": [
+    {
+      "durak_id": 20382,
+      "durak_adi": "Pamukkale Sitesi 2",
+      "enlem": 38.469889,
+      "boylam": 27.075362
+    },
+    {
+      "durak_id": 20383,
+      "durak_adi": "Pamukkale Sitesi 2",
+      "enlem": 38.4702,
+      "boylam": 27.0755
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "00:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:20",
+      "aciklama": null
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "hat_no": "643",
+  "hat_adi": "DEREKÖY - BERGAMA",
+  "hat_baslangic": "DEREKÖY",
+  "hat_bitis": "BERGAMA",
+  "duraklar": [
+    {
+      "durak_id": 24308,
+      "durak_adi": "Yukarıkırıklar",
+      "enlem": 39.1587232241092,
+      "boylam": 27.2545371739626
+    },
+    {
+      "durak_id": 24309,
+      "durak_adi": "Yukarıkırıklar",
+      "enlem": 39.1588962244399,
+      "boylam": 27.2547501730015
+    },
+    {
+      "durak_id": 24310,
+      "durak_adi": "Çitköy Giriş",
+      "enlem": 39.1797321573021,
+      "boylam": 27.267963146524
+    },
+    {
+      "durak_id": 24311,
+      "durak_adi": "Çitköy Giriş",
+      "enlem": 39.1796241589003,
+      "boylam": 27.2680381457159
+    },
+    {
+      "durak_id": 24314,
+      "durak_adi": "Çitköy Orman Deposu",
+      "enlem": 39.1899401294292,
+      "boylam": 27.2752471381801
+    },
+    {
+      "durak_id": 24315,
+      "durak_adi": "Çitköy Orman Deposu",
+      "enlem": 39.1900971277404,
+      "boylam": 27.2752161389777
+    },
+    {
+      "durak_id": 24316,
+      "durak_adi": "Ferizler-Paşa Köy Girişi",
+      "enlem": 39.200593494519,
+      "boylam": 27.2845271727679
+    },
+    {
+      "durak_id": 24317,
+      "durak_adi": "Ferizler-Paşa Köy Girişi",
+      "enlem": 39.2005332978338,
+      "boylam": 27.2847796235593
+    },
+    {
+      "durak_id": 24318,
+      "durak_adi": "Örenli",
+      "enlem": 39.2088079959731,
+      "boylam": 27.2798451936926
+    },
+    {
+      "durak_id": 24319,
+      "durak_adi": "Örenli",
+      "enlem": 39.2090119944348,
+      "boylam": 27.2798881944513
+    },
+    {
+      "durak_id": 24320,
+      "durak_adi": "Yortanlı",
+      "enlem": 39.2478146641413,
+      "boylam": 27.2854144011499
+    },
+    {
+      "durak_id": 24321,
+      "durak_adi": "Yortanlı",
+      "enlem": 39.2476036673227,
+      "boylam": 27.2855343989347
+    },
+    {
+      "durak_id": 24322,
+      "durak_adi": "Tırmanlar Yol Ayrımı",
+      "enlem": 39.2459968654579,
+      "boylam": 27.305781270326
+    },
+    {
+      "durak_id": 24323,
+      "durak_adi": "Tırmanlar Yol Ayrımı",
+      "enlem": 39.2464348661113,
+      "boylam": 27.3063352703164
+    },
+    {
+      "durak_id": 24324,
+      "durak_adi": "Çeltikçi",
+      "enlem": 39.2599998036364,
+      "boylam": 27.3147123292459
+    },
+    {
+      "durak_id": 24325,
+      "durak_adi": "Çeltikçi",
+      "enlem": 39.259964807307,
+      "boylam": 27.3150633268587
+    },
+    {
+      "durak_id": 24326,
+      "durak_adi": "Eğiller",
+      "enlem": 39.2609108523285,
+      "boylam": 27.3208603001603
+    },
+    {
+      "durak_id": 24327,
+      "durak_adi": "Eğiller",
+      "enlem": 39.260734852382,
+      "boylam": 27.3206712997834
+    },
+    {
+      "durak_id": 24328,
+      "durak_adi": "Dereköy Giriş",
+      "enlem": 39.2711258643031,
+      "boylam": 27.3333683163478
+    },
+    {
+      "durak_id": 24329,
+      "durak_adi": "Dereköy Giriş",
+      "enlem": 39.2711148653869,
+      "boylam": 27.3334663156393
+    },
+    {
+      "durak_id": 24330,
+      "durak_adi": "Dereköy",
+      "enlem": 39.2800027688639,
+      "boylam": 27.3335294021639
+    },
+    {
+      "durak_id": 24498,
+      "durak_adi": "Ahmetbeyler Benzinlik",
+      "enlem": 39.1776992040172,
+      "boylam": 27.2712921195158
+    },
+    {
+      "durak_id": 24499,
+      "durak_adi": "Ahmetbeyler Cami",
+      "enlem": 39.1771022346782,
+      "boylam": 27.2742010995117
+    },
+    {
+      "durak_id": 24500,
+      "durak_adi": "Ahmetbeyler Cami",
+      "enlem": 39.1771302377404,
+      "boylam": 27.2745780972413
+    },
+    {
+      "durak_id": 24501,
+      "durak_adi": "Çitköy Ahmetbeyler Ortaokulu",
+      "enlem": 39.1790172453514,
+      "boylam": 27.2773310860838
+    },
+    {
+      "durak_id": 24502,
+      "durak_adi": "Çitköy Ahmetbeyler Ortaokulu",
+      "enlem": 39.1793722449613,
+      "boylam": 27.2776420853061
+    },
+    {
+      "durak_id": 24503,
+      "durak_adi": "Çitköy Yeşillik",
+      "enlem": 39.1811162368103,
+      "boylam": 27.2784680860085
+    },
+    {
+      "durak_id": 24504,
+      "durak_adi": "Çitköy Yeşllik",
+      "enlem": 39.1813692376639,
+      "boylam": 27.2788180846798
+    },
+    {
+      "durak_id": 24505,
+      "durak_adi": "Dereköy Jandarma",
+      "enlem": 39.273334761853,
+      "boylam": 27.3252963863228
+    },
+    {
+      "durak_id": 24506,
+      "durak_adi": "Dereköy Jandarma",
+      "enlem": 39.2735917581925,
+      "boylam": 27.3252053893142
+    },
+    {
+      "durak_id": 24507,
+      "durak_adi": "Dereköy Ebdo İlkokulu",
+      "enlem": 39.2752357311392,
+      "boylam": 27.3242454107743
+    },
+    {
+      "durak_id": 24508,
+      "durak_adi": "Dereköy Ebdo İlkokulu",
+      "enlem": 39.2751077328654,
+      "boylam": 27.3242804093349
+    },
+    {
+      "durak_id": 24509,
+      "durak_adi": "Dereköy Muhtarlık",
+      "enlem": 39.2764917286313,
+      "boylam": 27.3254104160226
+    },
+    {
+      "durak_id": 24510,
+      "durak_adi": "Dereköy Muhtarlık",
+      "enlem": 39.2763527293309,
+      "boylam": 27.3253254151755
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    }
+  ]
+}

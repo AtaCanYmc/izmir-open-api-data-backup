@@ -1,0 +1,453 @@
+{
+  "hat_no": "644",
+  "hat_adi": "GÖÇBEYLİ - BERGAMA",
+  "hat_baslangic": "GÖÇBEYLİ",
+  "hat_bitis": "BERGAMA",
+  "duraklar": [
+    {
+      "durak_id": 24334,
+      "durak_adi": "Güneş Tarlası",
+      "enlem": 39.1584783325135,
+      "boylam": 27.2670170955623
+    },
+    {
+      "durak_id": 24335,
+      "durak_adi": "Güneş Tarlası",
+      "enlem": 39.15846333571,
+      "boylam": 27.2673710932833
+    },
+    {
+      "durak_id": 24336,
+      "durak_adi": "Ahmetbeyler",
+      "enlem": 39.1646984663277,
+      "boylam": 27.2879989744422
+    },
+    {
+      "durak_id": 24337,
+      "durak_adi": "Ahmetbeyler",
+      "enlem": 39.1646994689635,
+      "boylam": 27.2882879725301
+    },
+    {
+      "durak_id": 24338,
+      "durak_adi": "Dul Deresi",
+      "enlem": 39.1669605158286,
+      "boylam": 27.2954799307793
+    },
+    {
+      "durak_id": 24339,
+      "durak_adi": "Dul Deresi",
+      "enlem": 39.166882518473,
+      "boylam": 27.2956909291365
+    },
+    {
+      "durak_id": 24340,
+      "durak_adi": "Ayaskent İlyas Deresi",
+      "enlem": 39.1735376658081,
+      "boylam": 27.3171748024187
+    },
+    {
+      "durak_id": 24341,
+      "durak_adi": "Ayaskent İlyas Deresi",
+      "enlem": 39.1734756678234,
+      "boylam": 27.3173238011586
+    },
+    {
+      "durak_id": 24342,
+      "durak_adi": "Ayaskent Zeytinyağı Fabrikası",
+      "enlem": 39.1755806925231,
+      "boylam": 27.3217167775831
+    },
+    {
+      "durak_id": 24343,
+      "durak_adi": "Ayaskent Zeytinyağı Fabrikası",
+      "enlem": 39.175498694398,
+      "boylam": 27.3218317764737
+    },
+    {
+      "durak_id": 24344,
+      "durak_adi": "Ayaskent Benzinlik",
+      "enlem": 39.1786827317288,
+      "boylam": 27.3284067414698
+    },
+    {
+      "durak_id": 24345,
+      "durak_adi": "Ayaskent Benzinlik",
+      "enlem": 39.1787927380946,
+      "boylam": 27.3291347366728
+    },
+    {
+      "durak_id": 24346,
+      "durak_adi": "Ayaskent Aile Sağlık Merkezi",
+      "enlem": 39.1826177610315,
+      "boylam": 27.3347897111678
+    },
+    {
+      "durak_id": 24347,
+      "durak_adi": "Ayaskent Aile Sağlık Merkezi",
+      "enlem": 39.1824927639213,
+      "boylam": 27.3349607094155
+    },
+    {
+      "durak_id": 24348,
+      "durak_adi": "Zağnos",
+      "enlem": 39.188096826337,
+      "boylam": 27.3459216535612
+    },
+    {
+      "durak_id": 24349,
+      "durak_adi": "Zağnos",
+      "enlem": 39.1879438276135,
+      "boylam": 27.3459086529631
+    },
+    {
+      "durak_id": 24350,
+      "durak_adi": "Kadıköy Yolu",
+      "enlem": 39.1907778486951,
+      "boylam": 27.3574501600086
+    },
+    {
+      "durak_id": 24351,
+      "durak_adi": "Kadıköy Yolu",
+      "enlem": 39.1906249255002,
+      "boylam": 27.3574275794607
+    },
+    {
+      "durak_id": 24352,
+      "durak_adi": "Kadıköy Girişi",
+      "enlem": 39.184262057827,
+      "boylam": 27.3641624983901
+    },
+    {
+      "durak_id": 24353,
+      "durak_adi": "Kadıköy Girişi",
+      "enlem": 39.1843350554078,
+      "boylam": 27.3640034999482
+    },
+    {
+      "durak_id": 24354,
+      "durak_adi": "Kadıköy",
+      "enlem": 39.1824381038977,
+      "boylam": 27.3668204696129
+    },
+    {
+      "durak_id": 24355,
+      "durak_adi": "Kadıköy",
+      "enlem": 39.1820811082999,
+      "boylam": 27.3669224672436
+    },
+    {
+      "durak_id": 24356,
+      "durak_adi": "Kadıköy Çıkış",
+      "enlem": 39.1803661425899,
+      "boylam": 27.3685994466453
+    },
+    {
+      "durak_id": 24357,
+      "durak_adi": "Kadıköy Çıkış",
+      "enlem": 39.1804351403152,
+      "boylam": 27.3684514481048
+    },
+    {
+      "durak_id": 24358,
+      "durak_adi": "Kadıköy Mezarlığı",
+      "enlem": 39.1768311921056,
+      "boylam": 27.370157419445
+    },
+    {
+      "durak_id": 24359,
+      "durak_adi": "Kadıköy Mezarlığı",
+      "enlem": 39.1766711930311,
+      "boylam": 27.3701104191569
+    },
+    {
+      "durak_id": 24360,
+      "durak_adi": "Bölcek Giriş",
+      "enlem": 39.17792678531,
+      "boylam": 27.4211749979732
+    },
+    {
+      "durak_id": 24361,
+      "durak_adi": "Bölcek Giriş",
+      "enlem": 39.1778447894226,
+      "boylam": 27.4214439952263
+    },
+    {
+      "durak_id": 24366,
+      "durak_adi": "Bölcek Çıkış",
+      "enlem": 39.1937675700255,
+      "boylam": 27.4157391253293
+    },
+    {
+      "durak_id": 24367,
+      "durak_adi": "Bölcek Çıkış",
+      "enlem": 39.1935745731049,
+      "boylam": 27.4158401234004
+    },
+    {
+      "durak_id": 24368,
+      "durak_adi": "Göçbeyli Yolu",
+      "enlem": 39.2086814149555,
+      "boylam": 27.414856221701
+    },
+    {
+      "durak_id": 24369,
+      "durak_adi": "Göçbeyli Yolu",
+      "enlem": 39.2090084117877,
+      "boylam": 27.4148602237673
+    },
+    {
+      "durak_id": 24372,
+      "durak_adi": "Göçbeyli",
+      "enlem": 39.2180901461959,
+      "boylam": 27.4003294041225
+    },
+    {
+      "durak_id": 24512,
+      "durak_adi": "Ayaskent İrfan Kırdar İlkokulu",
+      "enlem": 39.1842947342906,
+      "boylam": 27.3336697262298
+    },
+    {
+      "durak_id": 24513,
+      "durak_adi": "Ayaskent İrfan Kırdar İlkokulu",
+      "enlem": 39.1842237365935,
+      "boylam": 27.3338317247649
+    },
+    {
+      "durak_id": 24514,
+      "durak_adi": "Ayaskent Meydan",
+      "enlem": 39.1861287169638,
+      "boylam": 27.3336157344192
+    },
+    {
+      "durak_id": 24515,
+      "durak_adi": "Ayaskent Meydan",
+      "enlem": 39.1863847177104,
+      "boylam": 27.3339187333476
+    },
+    {
+      "durak_id": 24516,
+      "durak_adi": "Ayaskent Fırın",
+      "enlem": 39.1888507002538,
+      "boylam": 27.3344297405182
+    },
+    {
+      "durak_id": 24518,
+      "durak_adi": "Aziziye Atatürk Parkı",
+      "enlem": 39.1903047120916,
+      "boylam": 27.3368957293844
+    },
+    {
+      "durak_id": 24519,
+      "durak_adi": "Aziziye Atatürk Parkı",
+      "enlem": 39.1902157165346,
+      "boylam": 27.3372477264435
+    },
+    {
+      "durak_id": 24520,
+      "durak_adi": "Bölcek Ortaokulu",
+      "enlem": 39.1784548312141,
+      "boylam": 27.425218964678
+    },
+    {
+      "durak_id": 24521,
+      "durak_adi": "Bölcek Ortaokulu",
+      "enlem": 39.1783998369882,
+      "boylam": 27.4256369607106
+    },
+    {
+      "durak_id": 24522,
+      "durak_adi": "Bölcek Meydan",
+      "enlem": 39.1808278043863,
+      "boylam": 27.4248219794378
+    },
+    {
+      "durak_id": 24523,
+      "durak_adi": "Bölcek Meydan",
+      "enlem": 39.1811158021567,
+      "boylam": 27.4248559805236
+    },
+    {
+      "durak_id": 24524,
+      "durak_adi": "Bölcek Tarım",
+      "enlem": 39.1821677579405,
+      "boylam": 27.4221080098519
+    },
+    {
+      "durak_id": 24525,
+      "durak_adi": "Bölcek Tarım",
+      "enlem": 39.1819837634234,
+      "boylam": 27.4224100063021
+    },
+    {
+      "durak_id": 24526,
+      "durak_adi": "Bölcek Parkı",
+      "enlem": 39.1830607758319,
+      "boylam": 27.4241939958604
+    },
+    {
+      "durak_id": 24527,
+      "durak_adi": "Bölcek Parkı",
+      "enlem": 39.1830987721242,
+      "boylam": 27.4239269984022
+    },
+    {
+      "durak_id": 24528,
+      "durak_adi": "Bölcek Kanarya",
+      "enlem": 39.1847467662368,
+      "boylam": 27.4246770000075
+    },
+    {
+      "durak_id": 24529,
+      "durak_adi": "Bölcek Kanarya",
+      "enlem": 39.1847367684188,
+      "boylam": 27.4248429984934
+    },
+    {
+      "durak_id": 24530,
+      "durak_adi": "Bölcek Zeyrinlik",
+      "enlem": 39.1865947203768,
+      "boylam": 27.4223970294407
+    },
+    {
+      "durak_id": 24531,
+      "durak_adi": "Bölcek Zeytinlik",
+      "enlem": 39.1867547182292,
+      "boylam": 27.4223450307178
+    },
+    {
+      "durak_id": 24532,
+      "durak_adi": "Göçbeyli Benzinlik",
+      "enlem": 39.2162282855132,
+      "boylam": 27.410383309111
+    },
+    {
+      "durak_id": 24533,
+      "durak_adi": "Göçbeyli Benzinlik",
+      "enlem": 39.2164982824988,
+      "boylam": 27.4103573111757
+    },
+    {
+      "durak_id": 24534,
+      "durak_adi": "Göçbeyli Çiftlik",
+      "enlem": 39.2185842323746,
+      "boylam": 27.4079433455079
+    },
+    {
+      "durak_id": 24535,
+      "durak_adi": "Göçbeyli Çiftlik",
+      "enlem": 39.2187432294264,
+      "boylam": 27.4078313475363
+    },
+    {
+      "durak_id": 24536,
+      "durak_adi": "Göçbeyli Ağaçlık",
+      "enlem": 39.219747201061,
+      "boylam": 27.4063143669937
+    },
+    {
+      "durak_id": 24537,
+      "durak_adi": "Göçbeyli Ağaçlık",
+      "enlem": 39.2199181979218,
+      "boylam": 27.40619636916
+    },
+    {
+      "durak_id": 24538,
+      "durak_adi": "Göçbeyli Meydan",
+      "enlem": 39.2217431517387,
+      "boylam": 27.4038784009489
+    },
+    {
+      "durak_id": 24539,
+      "durak_adi": "Göçbeyli Meydan",
+      "enlem": 39.2216811544929,
+      "boylam": 27.4040563990634
+    },
+    {
+      "durak_id": 24540,
+      "durak_adi": "Göçbeyli Çocuk Bahçesi",
+      "enlem": 39.2199321478548,
+      "boylam": 27.4020234031895
+    },
+    {
+      "durak_id": 24541,
+      "durak_adi": "Göçbeyli Çocuk Bahçesi",
+      "enlem": 39.2201051488545,
+      "boylam": 27.4022534025392
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:25",
+      "aciklama": null
+    }
+  ]
+}

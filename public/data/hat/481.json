@@ -1,0 +1,311 @@
+{
+  "hat_no": "481",
+  "hat_adi": "İNCİRALTI - BALÇOVA",
+  "hat_baslangic": "İNCİRALTI",
+  "hat_bitis": "BALÇOVA",
+  "duraklar": [
+    {
+      "durak_id": 52537,
+      "durak_adi": "Bahçe",
+      "enlem": 38.4063424045485,
+      "boylam": 27.0365488793386
+    },
+    {
+      "durak_id": 52538,
+      "durak_adi": "Bahçe",
+      "enlem": 38.4057614058816,
+      "boylam": 27.0378338738824
+    },
+    {
+      "durak_id": 52539,
+      "durak_adi": "Yıldız",
+      "enlem": 38.4056884082591,
+      "boylam": 27.0398228645164
+    },
+    {
+      "durak_id": 52540,
+      "durak_adi": "Yıldız",
+      "enlem": 38.4057554086458,
+      "boylam": 27.0401178630385
+    },
+    {
+      "durak_id": 52541,
+      "durak_adi": "Sera",
+      "enlem": 38.4057594118285,
+      "boylam": 27.0427258506869
+    },
+    {
+      "durak_id": 52542,
+      "durak_adi": "Sera",
+      "enlem": 38.4056824118806,
+      "boylam": 27.0427978504395
+    },
+    {
+      "durak_id": 52543,
+      "durak_adi": "Bahçelerarası",
+      "enlem": 38.4044174160086,
+      "boylam": 27.0467018335999
+    },
+    {
+      "durak_id": 52544,
+      "durak_adi": "Bahçelerarası",
+      "enlem": 38.4045064159371,
+      "boylam": 27.0466038339518
+    },
+    {
+      "durak_id": 52545,
+      "durak_adi": "Bahçelerarası Merkez",
+      "enlem": 38.4021384176202,
+      "boylam": 27.0491148250219
+    },
+    {
+      "durak_id": 52546,
+      "durak_adi": "Bahçelerarası Merkez",
+      "enlem": 38.4022324175094,
+      "boylam": 27.0489748255641
+    },
+    {
+      "durak_id": 52547,
+      "durak_adi": "Bahçelerarası Muhtarlık",
+      "enlem": 38.4002354176839,
+      "boylam": 27.0501618222883
+    },
+    {
+      "durak_id": 52548,
+      "durak_adi": "Bahçelerarası Muhtarlık",
+      "enlem": 38.4000484175026,
+      "boylam": 27.050107822737
+    },
+    {
+      "durak_id": 52549,
+      "durak_adi": "Körfez",
+      "enlem": 38.39920542011,
+      "boylam": 27.0528308111389
+    },
+    {
+      "durak_id": 52550,
+      "durak_adi": "Körfez",
+      "enlem": 38.3992214203424,
+      "boylam": 27.0530218102481
+    },
+    {
+      "durak_id": 52551,
+      "durak_adi": "Çiçekçiler",
+      "enlem": 38.398837423446,
+      "boylam": 27.0559257974174
+    },
+    {
+      "durak_id": 52552,
+      "durak_adi": "Çiçekçiler",
+      "enlem": 38.3988994233668,
+      "boylam": 27.0558187978366
+    },
+    {
+      "durak_id": 52553,
+      "durak_adi": "Sarmaşık",
+      "enlem": 38.3920844142182,
+      "boylam": 27.0520928209949
+    },
+    {
+      "durak_id": 52554,
+      "durak_adi": "Sarmaşık",
+      "enlem": 38.3929734149825,
+      "boylam": 27.0521948198421
+    },
+    {
+      "durak_id": 52555,
+      "durak_adi": "Kültür Merkezi",
+      "enlem": 38.3903844105066,
+      "boylam": 27.0496958329533
+    },
+    {
+      "durak_id": 52556,
+      "durak_adi": "Kültür Merkezi",
+      "enlem": 38.390470409853,
+      "boylam": 27.0489888360679
+    },
+    {
+      "durak_id": 52557,
+      "durak_adi": "Çağdaş",
+      "enlem": 38.3931634073054,
+      "boylam": 27.0447608533427
+    },
+    {
+      "durak_id": 52558,
+      "durak_adi": "Ağaçlıyol",
+      "enlem": 38.3886204053625,
+      "boylam": 27.0457538516844
+    },
+    {
+      "durak_id": 52579,
+      "durak_adi": "Balçova Fırın",
+      "enlem": 38.3897604066164,
+      "boylam": 27.0462468488299
+    },
+    {
+      "durak_id": 52592,
+      "durak_adi": "Serçe",
+      "enlem": 38.4031168331097,
+      "boylam": 27.047748660498
+    },
+    {
+      "durak_id": 52593,
+      "durak_adi": "Serçe",
+      "enlem": 38.403234416573,
+      "boylam": 27.0477078303003
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    }
+  ]
+}

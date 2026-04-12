@@ -1,0 +1,343 @@
+{
+  "hat_no": "782",
+  "hat_adi": "TAŞKESİK - TORBALI AKTARMA MERKEZİ",
+  "hat_baslangic": "TAŞKESİK",
+  "hat_bitis": "TORBALI AKTARMA",
+  "duraklar": [
+    {
+      "durak_id": 11604,
+      "durak_adi": "Güvercin",
+      "enlem": 38.139872,
+      "boylam": 27.378746
+    },
+    {
+      "durak_id": 11618,
+      "durak_adi": "Durmaz",
+      "enlem": 38.13883,
+      "boylam": 27.378199
+    },
+    {
+      "durak_id": 11620,
+      "durak_adi": "Yeni Dünya",
+      "enlem": 38.1399270819264,
+      "boylam": 27.3801954449275
+    },
+    {
+      "durak_id": 11622,
+      "durak_adi": "Yıldırım",
+      "enlem": 38.13867,
+      "boylam": 27.37981
+    },
+    {
+      "durak_id": 13690,
+      "durak_adi": "Taşkesik Camii",
+      "enlem": 38.1719,
+      "boylam": 27.4454
+    },
+    {
+      "durak_id": 13691,
+      "durak_adi": "Taşkesik Camii",
+      "enlem": 38.1719,
+      "boylam": 27.4456
+    },
+    {
+      "durak_id": 13692,
+      "durak_adi": "Taşkesik Zeytinlik",
+      "enlem": 38.1745,
+      "boylam": 27.4465
+    },
+    {
+      "durak_id": 13693,
+      "durak_adi": "Taşkesik Zeytinlik",
+      "enlem": 38.1747,
+      "boylam": 27.4468
+    },
+    {
+      "durak_id": 13694,
+      "durak_adi": "Taskesik İlkokulu",
+      "enlem": 38.1760938858134,
+      "boylam": 27.4480334885892
+    },
+    {
+      "durak_id": 13695,
+      "durak_adi": "Taskesik İlkokulu",
+      "enlem": 38.1761338858732,
+      "boylam": 27.4482464894002
+    },
+    {
+      "durak_id": 13700,
+      "durak_adi": "Değirmenaltı",
+      "enlem": 38.1638,
+      "boylam": 27.4144
+    },
+    {
+      "durak_id": 13701,
+      "durak_adi": "Değirmenaltı",
+      "enlem": 38.1637,
+      "boylam": 27.4145
+    },
+    {
+      "durak_id": 13702,
+      "durak_adi": "Saraç",
+      "enlem": 38.154,
+      "boylam": 27.4
+    },
+    {
+      "durak_id": 13703,
+      "durak_adi": "Saraç",
+      "enlem": 38.1538,
+      "boylam": 27.4002
+    },
+    {
+      "durak_id": 13704,
+      "durak_adi": "Şehitler Çıkış",
+      "enlem": 38.1521127053364,
+      "boylam": 27.4005697683253
+    },
+    {
+      "durak_id": 13705,
+      "durak_adi": "Şehitler Çıkış",
+      "enlem": 38.1521087050484,
+      "boylam": 27.4006527686609
+    },
+    {
+      "durak_id": 13706,
+      "durak_adi": "Aslanlar",
+      "enlem": 38.1646,
+      "boylam": 27.416
+    },
+    {
+      "durak_id": 13707,
+      "durak_adi": "Aslanlar",
+      "enlem": 38.1646,
+      "boylam": 27.4161
+    },
+    {
+      "durak_id": 13708,
+      "durak_adi": "Taşkesik Son Durak",
+      "enlem": 38.1788,
+      "boylam": 27.4502
+    },
+    {
+      "durak_id": 15542,
+      "durak_adi": "Arslanlar Trafo",
+      "enlem": 38.1696188646033,
+      "boylam": 27.4217253853109
+    },
+    {
+      "durak_id": 15543,
+      "durak_adi": "Arslanlar Trafo",
+      "enlem": 38.169419861923,
+      "boylam": 27.4217803852944
+    },
+    {
+      "durak_id": 15544,
+      "durak_adi": "Harmanlılar",
+      "enlem": 38.1675108418326,
+      "boylam": 27.4201593768373
+    },
+    {
+      "durak_id": 15545,
+      "durak_adi": "Harmanlılar",
+      "enlem": 38.1674778411409,
+      "boylam": 27.420261377185
+    },
+    {
+      "durak_id": 16147,
+      "durak_adi": "Arslanlar Çıkış",
+      "enlem": 38.1702858620784,
+      "boylam": 27.4260444023268
+    },
+    {
+      "durak_id": 16148,
+      "durak_adi": "Arslanlar Çıkış",
+      "enlem": 38.1703238629104,
+      "boylam": 27.4259094018512
+    },
+    {
+      "durak_id": 16480,
+      "durak_adi": "Fide",
+      "enlem": 38.1595166221527,
+      "boylam": 27.3959045381081
+    },
+    {
+      "durak_id": 16481,
+      "durak_adi": "Fide",
+      "enlem": 38.1597246277607,
+      "boylam": 27.3958135384417
+    },
+    {
+      "durak_id": 16627,
+      "durak_adi": "Arslanlar Trafo",
+      "enlem": 38.1660138294761,
+      "boylam": 27.4176683652561
+    },
+    {
+      "durak_id": 16628,
+      "durak_adi": "Arslanlar Trafo",
+      "enlem": 38.166071829803,
+      "boylam": 27.4178193659198
+    },
+    {
+      "durak_id": 16639,
+      "durak_adi": "Şehitler Giriş",
+      "enlem": 38.1608118204806,
+      "boylam": 27.3980352803058
+    },
+    {
+      "durak_id": 16640,
+      "durak_adi": "Şehitler Giriş",
+      "enlem": 38.1607478200674,
+      "boylam": 27.3979112796836
+    },
+    {
+      "durak_id": 16861,
+      "durak_adi": "Arslanlar Zeytinlik",
+      "enlem": 38.1612037956489,
+      "boylam": 27.4081383200939
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    }
+  ]
+}

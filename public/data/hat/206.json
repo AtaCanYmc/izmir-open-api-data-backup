@@ -1,0 +1,137 @@
+{
+  "hat_no": "206",
+  "hat_adi": "ŞİRİNYER AKTARMA MERKEZİ - HAVALİMANI",
+  "hat_baslangic": "ŞİRINYER AKTARMA MERKEZİ",
+  "hat_bitis": "HAVALİMANI",
+  "duraklar": [
+    {
+      "durak_id": 41309,
+      "durak_adi": "Şirinyer Aktarma",
+      "enlem": 38.390578528306,
+      "boylam": 27.1475534266989
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "00:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:30",
+      "aciklama": null
+    }
+  ]
+}

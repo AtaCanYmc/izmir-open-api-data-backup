@@ -1,0 +1,308 @@
+{
+  "hat_no": "865",
+  "hat_adi": "KIZILKEÇİLİ - BAYINDIR",
+  "hat_baslangic": "KIZILKEÇİLİ",
+  "hat_bitis": "BAYINDIR",
+  "duraklar": [
+    {
+      "durak_id": 16699,
+      "durak_adi": "İZTAŞIT Garaj",
+      "enlem": 38.219143418079,
+      "boylam": 27.6527171070738
+    },
+    {
+      "durak_id": 16700,
+      "durak_adi": "Zeytinova Yol Ayrımı",
+      "enlem": 38.1718644494733,
+      "boylam": 27.7218009111695
+    },
+    {
+      "durak_id": 16701,
+      "durak_adi": "Zeytinova Yol Ayrımı",
+      "enlem": 38.1719484514138,
+      "boylam": 27.7217159097955
+    },
+    {
+      "durak_id": 16702,
+      "durak_adi": "Küme Evler",
+      "enlem": 38.1830157047179,
+      "boylam": 27.7266508262889
+    },
+    {
+      "durak_id": 16703,
+      "durak_adi": "Küme Evler",
+      "enlem": 38.1829907040842,
+      "boylam": 27.7264388253011
+    },
+    {
+      "durak_id": 16704,
+      "durak_adi": "Fen İşleri",
+      "enlem": 38.1860307739691,
+      "boylam": 27.7283278039316
+    },
+    {
+      "durak_id": 16705,
+      "durak_adi": "Fen İşleri",
+      "enlem": 38.1859907729916,
+      "boylam": 27.7281718034575
+    },
+    {
+      "durak_id": 16706,
+      "durak_adi": "Bayındır Anadolu Lisesi",
+      "enlem": 38.1910038870535,
+      "boylam": 27.7288767530417
+    },
+    {
+      "durak_id": 16707,
+      "durak_adi": "Bayındır Anadolu Lisesi",
+      "enlem": 38.1910198873177,
+      "boylam": 27.7287207519928
+    },
+    {
+      "durak_id": 16708,
+      "durak_adi": "Aile Sağlığı Merkezi",
+      "enlem": 38.2020291345297,
+      "boylam": 27.7289026301095
+    },
+    {
+      "durak_id": 16709,
+      "durak_adi": "Aile Sağlığı Merkezi",
+      "enlem": 38.2020671351532,
+      "boylam": 27.7286866285636
+    },
+    {
+      "durak_id": 16710,
+      "durak_adi": "Zeytinova Meydan",
+      "enlem": 38.2054322086193,
+      "boylam": 27.7275675845464
+    },
+    {
+      "durak_id": 16711,
+      "durak_adi": "Zeytinova Meydan",
+      "enlem": 38.2054252083117,
+      "boylam": 27.7274335839542
+    },
+    {
+      "durak_id": 16712,
+      "durak_adi": "Zeytinova Çıkış",
+      "enlem": 38.2073082473056,
+      "boylam": 27.7252615516693
+    },
+    {
+      "durak_id": 16713,
+      "durak_adi": "Zeytinova Çıkış",
+      "enlem": 38.2072402456976,
+      "boylam": 27.7251655519711
+    },
+    {
+      "durak_id": 16714,
+      "durak_adi": "Karapınar Yol Ayrımı",
+      "enlem": 38.2299697777743,
+      "boylam": 27.744313362716
+    },
+    {
+      "durak_id": 16715,
+      "durak_adi": "Karapınar Yol Ayrımı",
+      "enlem": 38.23005177939,
+      "boylam": 27.7442303613137
+    },
+    {
+      "durak_id": 16716,
+      "durak_adi": "Karahayıt Yol Ayrım",
+      "enlem": 38.240724011821,
+      "boylam": 27.7441782216836
+    },
+    {
+      "durak_id": 16717,
+      "durak_adi": "Karahayıt Yol Ayrımı",
+      "enlem": 38.2407220109988,
+      "boylam": 27.743880220597
+    },
+    {
+      "durak_id": 16718,
+      "durak_adi": "Gaziler",
+      "enlem": 38.2394630160251,
+      "boylam": 27.7560822837679
+    },
+    {
+      "durak_id": 16719,
+      "durak_adi": "Gaziler",
+      "enlem": 38.2395340171985,
+      "boylam": 27.7559372822411
+    },
+    {
+      "durak_id": 16720,
+      "durak_adi": "Alanköy",
+      "enlem": 38.2454284214151,
+      "boylam": 27.7767575552767
+    },
+    {
+      "durak_id": 16721,
+      "durak_adi": "Alanköy",
+      "enlem": 38.2453624181053,
+      "boylam": 27.7767075568365
+    },
+    {
+      "durak_id": 16722,
+      "durak_adi": "Lütuflar Meydan",
+      "enlem": 38.2703697732904,
+      "boylam": 27.8049579664209
+    },
+    {
+      "durak_id": 16723,
+      "durak_adi": "Lütuflar Meydan",
+      "enlem": 38.2703598857165,
+      "boylam": 27.8047989829109
+    },
+    {
+      "durak_id": 16724,
+      "durak_adi": "Orman İşletme",
+      "enlem": 38.296536415645,
+      "boylam": 27.7942465258859
+    },
+    {
+      "durak_id": 16725,
+      "durak_adi": "Orman İşletme",
+      "enlem": 38.2964964140062,
+      "boylam": 27.7940995262825
+    },
+    {
+      "durak_id": 16726,
+      "durak_adi": "Kızılkeçili Meydan",
+      "enlem": 38.321607930855,
+      "boylam": 27.7916701001288
+    },
+    {
+      "durak_id": 16852,
+      "durak_adi": "Karapınar",
+      "enlem": 38.2588875611346,
+      "boylam": 27.78960911952
+    },
+    {
+      "durak_id": 16853,
+      "durak_adi": "Karapınar",
+      "enlem": 38.2587515569659,
+      "boylam": 27.7893281207144
+    },
+    {
+      "durak_id": 16854,
+      "durak_adi": "Zeytin",
+      "enlem": 38.2487452834777,
+      "boylam": 27.7761052265955
+    },
+    {
+      "durak_id": 16855,
+      "durak_adi": "Zeytin",
+      "enlem": 38.2486192804484,
+      "boylam": 27.7760472282399
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    }
+  ]
+}

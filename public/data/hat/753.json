@@ -1,0 +1,225 @@
+{
+  "hat_no": "753",
+  "hat_adi": "GÖKTEPE - MENEMEN AKTARMA MERKEZİ",
+  "hat_baslangic": "GÖKTEPE",
+  "hat_bitis": "MENEMEN AKTARMA MERKEZİ",
+  "duraklar": [
+    {
+      "durak_id": 23551,
+      "durak_adi": "Göktepe Köy Girişi",
+      "enlem": 38.6151087903122,
+      "boylam": 27.1599171202445
+    },
+    {
+      "durak_id": 23552,
+      "durak_adi": "Göktepe Köy Girişi",
+      "enlem": 38.6152217913649,
+      "boylam": 27.160148117856
+    },
+    {
+      "durak_id": 23553,
+      "durak_adi": "Göktepe",
+      "enlem": 38.6127228060086,
+      "boylam": 27.1630231195134
+    },
+    {
+      "durak_id": 23554,
+      "durak_adi": "Göktepe",
+      "enlem": 38.6124948059685,
+      "boylam": 27.1629981215018
+    },
+    {
+      "durak_id": 23555,
+      "durak_adi": "Göktepe Manzara",
+      "enlem": 38.6111898083582,
+      "boylam": 27.1634091293321
+    },
+    {
+      "durak_id": 23556,
+      "durak_adi": "Göktepe Manzara",
+      "enlem": 38.611384306243,
+      "boylam": 27.1631944537194
+    },
+    {
+      "durak_id": 23557,
+      "durak_adi": "Göktepe İlkokulu",
+      "enlem": 38.6108738004765,
+      "boylam": 27.1617241426086
+    },
+    {
+      "durak_id": 23558,
+      "durak_adi": "Göktepe İlkokulu",
+      "enlem": 38.6107957995196,
+      "boylam": 27.1615161445581
+    },
+    {
+      "durak_id": 23559,
+      "durak_adi": "Göktepe Meydan",
+      "enlem": 38.6092278042848,
+      "boylam": 27.1624181513181
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:00",
+      "aciklama": null
+    }
+  ]
+}

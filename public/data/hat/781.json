@@ -1,0 +1,288 @@
+{
+  "hat_no": "781",
+  "hat_adi": "TULUMKÖY - TORBALI AKTARMA MERKEZİ",
+  "hat_baslangic": "TULUMKÖY",
+  "hat_bitis": "TORBALI AKTARMA",
+  "duraklar": [
+    {
+      "durak_id": 13970,
+      "durak_adi": "Sevgi",
+      "enlem": 38.10202,
+      "boylam": 27.4344
+    },
+    {
+      "durak_id": 13971,
+      "durak_adi": "Sevgi",
+      "enlem": 38.102276,
+      "boylam": 27.43432
+    },
+    {
+      "durak_id": 13972,
+      "durak_adi": "İncir",
+      "enlem": 38.09878,
+      "boylam": 27.43415
+    },
+    {
+      "durak_id": 13973,
+      "durak_adi": "İncir",
+      "enlem": 38.09855,
+      "boylam": 27.43401
+    },
+    {
+      "durak_id": 13974,
+      "durak_adi": "Naime Meydan",
+      "enlem": 38.09497,
+      "boylam": 27.43453
+    },
+    {
+      "durak_id": 13975,
+      "durak_adi": "Naime Meydan",
+      "enlem": 38.095146,
+      "boylam": 27.434419
+    },
+    {
+      "durak_id": 13976,
+      "durak_adi": "Tulum Okul",
+      "enlem": 38.089311,
+      "boylam": 27.432706
+    },
+    {
+      "durak_id": 13977,
+      "durak_adi": "Tulum Okul",
+      "enlem": 38.08935,
+      "boylam": 27.43259
+    },
+    {
+      "durak_id": 13978,
+      "durak_adi": "Tulum Giriş",
+      "enlem": 38.0884947249992,
+      "boylam": 27.4286961636019
+    },
+    {
+      "durak_id": 13979,
+      "durak_adi": "Tulum Giriş",
+      "enlem": 38.08838,
+      "boylam": 27.428215
+    },
+    {
+      "durak_id": 13980,
+      "durak_adi": "Tulum Son Durak",
+      "enlem": 38.0872057289265,
+      "boylam": 27.4243111275726
+    },
+    {
+      "durak_id": 13981,
+      "durak_adi": "Naime Yolu",
+      "enlem": 38.1042,
+      "boylam": 27.4342
+    },
+    {
+      "durak_id": 13982,
+      "durak_adi": "Naime Yolu",
+      "enlem": 38.1042,
+      "boylam": 27.4343
+    },
+    {
+      "durak_id": 15491,
+      "durak_adi": "Naime Çiftlik",
+      "enlem": 38.0926757640865,
+      "boylam": 27.4331062140551
+    },
+    {
+      "durak_id": 15492,
+      "durak_adi": "Naime Çiftlik",
+      "enlem": 38.0925217622669,
+      "boylam": 27.4330162127067
+    },
+    {
+      "durak_id": 16289,
+      "durak_adi": "Tulum Çıkış",
+      "enlem": 38.087610499702,
+      "boylam": 27.4214322217993
+    },
+    {
+      "durak_id": 16290,
+      "durak_adi": "Tulum Son Durak",
+      "enlem": 38.0872904623379,
+      "boylam": 27.4241212535936
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:55",
+      "aciklama": null
+    }
+  ]
+}

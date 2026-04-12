@@ -1,0 +1,519 @@
+{
+  "hat_no": "906",
+  "hat_adi": "ÇEŞME - URLA",
+  "hat_baslangic": "ÇEŞME",
+  "hat_bitis": "URLA",
+  "duraklar": [
+    {
+      "durak_id": 52309,
+      "durak_adi": "Reisdere Siteler",
+      "enlem": 38.3114140682894,
+      "boylam": 26.411026161763
+    },
+    {
+      "durak_id": 52310,
+      "durak_adi": "Reisdere Siteler",
+      "enlem": 38.3115610671375,
+      "boylam": 26.4108721645448
+    },
+    {
+      "durak_id": 52311,
+      "durak_adi": "Şehit Öğretmen Necmettin Yılmaz İlkokulu",
+      "enlem": 38.3145150505608,
+      "boylam": 26.4106281885189
+    },
+    {
+      "durak_id": 52312,
+      "durak_adi": "Şehit Öğretmen Necmettin Yılmaz İlkokulu",
+      "enlem": 38.3145580499778,
+      "boylam": 26.4104761905071
+    },
+    {
+      "durak_id": 52313,
+      "durak_adi": "Reisdere Market",
+      "enlem": 38.314640056375,
+      "boylam": 26.4134601581017
+    },
+    {
+      "durak_id": 52314,
+      "durak_adi": "Reisdere Market",
+      "enlem": 38.3147380562698,
+      "boylam": 26.4136461567442
+    },
+    {
+      "durak_id": 52315,
+      "durak_adi": "Reisdere Taşevler",
+      "enlem": 38.319133037441,
+      "boylam": 26.4157451640539
+    },
+    {
+      "durak_id": 52316,
+      "durak_adi": "Reisdere Taşevler",
+      "enlem": 38.3190250375843,
+      "boylam": 26.4155541654221
+    },
+    {
+      "durak_id": 52317,
+      "durak_adi": "Reisdere Özkanlar Sitesi",
+      "enlem": 38.3212120351591,
+      "boylam": 26.419641135278
+    },
+    {
+      "durak_id": 52318,
+      "durak_adi": "Reisdere Özkanlar Sitesi",
+      "enlem": 38.3214130340308,
+      "boylam": 26.4196141369015
+    },
+    {
+      "durak_id": 52319,
+      "durak_adi": "Yalı Villalar",
+      "enlem": 38.3237850247815,
+      "boylam": 26.4210931362236
+    },
+    {
+      "durak_id": 52320,
+      "durak_adi": "Yalı Villalar",
+      "enlem": 38.3237880243445,
+      "boylam": 26.4209051382915
+    },
+    {
+      "durak_id": 52321,
+      "durak_adi": "Yalı Manzara",
+      "enlem": 38.3262080123323,
+      "boylam": 26.4212381500124
+    },
+    {
+      "durak_id": 52322,
+      "durak_adi": "Yalı Manzara",
+      "enlem": 38.3260480130955,
+      "boylam": 26.4212031493919
+    },
+    {
+      "durak_id": 52323,
+      "durak_adi": "Yalı Siteler",
+      "enlem": 38.3286260026478,
+      "boylam": 26.4225761503768
+    },
+    {
+      "durak_id": 52324,
+      "durak_adi": "Yalı Siteler",
+      "enlem": 38.3286620023045,
+      "boylam": 26.422507151345
+    },
+    {
+      "durak_id": 52325,
+      "durak_adi": "Germiyan Yalı",
+      "enlem": 38.3307679952765,
+      "boylam": 26.4242791447723
+    },
+    {
+      "durak_id": 52326,
+      "durak_adi": "Germiyan Yalı",
+      "enlem": 38.3305559952495,
+      "boylam": 26.4237731489952
+    },
+    {
+      "durak_id": 52327,
+      "durak_adi": "Yalı Market",
+      "enlem": 38.3333989875342,
+      "boylam": 26.4269361314214
+    },
+    {
+      "durak_id": 52328,
+      "durak_adi": "Yalı Market",
+      "enlem": 38.3337989857179,
+      "boylam": 26.4270501324855
+    },
+    {
+      "durak_id": 52329,
+      "durak_adi": "Yalı Çiçekevler",
+      "enlem": 38.334968982847,
+      "boylam": 26.4284811237195
+    },
+    {
+      "durak_id": 52330,
+      "durak_adi": "Yalı Çiçekevler",
+      "enlem": 38.3350649820535,
+      "boylam": 26.4283461257128
+    },
+    {
+      "durak_id": 52331,
+      "durak_adi": "Yalı Tatil Sitesi",
+      "enlem": 38.3375179795755,
+      "boylam": 26.4329540899173
+    },
+    {
+      "durak_id": 52332,
+      "durak_adi": "Yalı Tatil Sitesi",
+      "enlem": 38.3374799785233,
+      "boylam": 26.4323830958141
+    },
+    {
+      "durak_id": 52333,
+      "durak_adi": "Martı Sitesi",
+      "enlem": 38.3435769715225,
+      "boylam": 26.443526009729
+    },
+    {
+      "durak_id": 52334,
+      "durak_adi": "Martı Sitesi",
+      "enlem": 38.3435949709481,
+      "boylam": 26.4432970122306
+    },
+    {
+      "durak_id": 52335,
+      "durak_adi": "Çınar Sitesi",
+      "enlem": 38.3462089614231,
+      "boylam": 26.4449960073879
+    },
+    {
+      "durak_id": 52336,
+      "durak_adi": "Burcu Sitesi",
+      "enlem": 38.3452449708614,
+      "boylam": 26.4471959795761
+    },
+    {
+      "durak_id": 52337,
+      "durak_adi": "Burcu Sitesi",
+      "enlem": 38.3453139702886,
+      "boylam": 26.4470869810597
+    },
+    {
+      "durak_id": 52338,
+      "durak_adi": "Germiyan Köyiçi",
+      "enlem": 38.3213951270829,
+      "boylam": 26.465142654249
+    },
+    {
+      "durak_id": 52339,
+      "durak_adi": "Germiyan Köyiçi",
+      "enlem": 38.3212001283616,
+      "boylam": 26.4652936513889
+    },
+    {
+      "durak_id": 52340,
+      "durak_adi": "Germiyan Cami",
+      "enlem": 38.3173591477485,
+      "boylam": 26.4650866271811
+    },
+    {
+      "durak_id": 52341,
+      "durak_adi": "Germiyan Cami",
+      "enlem": 38.3168851497545,
+      "boylam": 26.464844626346
+    },
+    {
+      "durak_id": 52342,
+      "durak_adi": "Germiyan Meydan",
+      "enlem": 38.3150401615508,
+      "boylam": 26.4660856004954
+    },
+    {
+      "durak_id": 52343,
+      "durak_adi": "Germiyan Meydan",
+      "enlem": 38.3149761626871,
+      "boylam": 26.4665315954571
+    },
+    {
+      "durak_id": 52344,
+      "durak_adi": "Germiyan Restoran",
+      "enlem": 38.3137771742913,
+      "boylam": 26.4695545558375
+    },
+    {
+      "durak_id": 52345,
+      "durak_adi": "Germiyan Restoran",
+      "enlem": 38.3135731751814,
+      "boylam": 26.4694615553055
+    },
+    {
+      "durak_id": 52366,
+      "durak_adi": "Çınar Sitesi",
+      "enlem": 38.3462139617965,
+      "boylam": 26.4451850054288
+    },
+    {
+      "durak_id": 52369,
+      "durak_adi": "Ildır",
+      "enlem": 38.3811587231059,
+      "boylam": 26.4784145932997
+    },
+    {
+      "durak_id": 52370,
+      "durak_adi": "Ildır Tatil Sitesi",
+      "enlem": 38.373487900945,
+      "boylam": 26.4803607551241
+    },
+    {
+      "durak_id": 52371,
+      "durak_adi": "Ildır Tatil Sitesi",
+      "enlem": 38.373375901284,
+      "boylam": 26.4802657557179
+    },
+    {
+      "durak_id": 52372,
+      "durak_adi": "Dolaplı Kuyu Mezarlık",
+      "enlem": 38.3718069042492,
+      "boylam": 26.478008773215
+    },
+    {
+      "durak_id": 52373,
+      "durak_adi": "Dolaplı Kuyu Mezarlık",
+      "enlem": 38.3717199047035,
+      "boylam": 26.4780327726928
+    },
+    {
+      "durak_id": 52374,
+      "durak_adi": "Germiyan İştur Sitesi",
+      "enlem": 38.3673319167863,
+      "boylam": 26.4736298019595
+    },
+    {
+      "durak_id": 52375,
+      "durak_adi": "Germiyan İştur Sitesi",
+      "enlem": 38.367163917529,
+      "boylam": 26.4736028016374
+    },
+    {
+      "durak_id": 52376,
+      "durak_adi": "Germiyan Atatürk Parkı",
+      "enlem": 38.3647249285547,
+      "boylam": 26.4733217956343
+    },
+    {
+      "durak_id": 52377,
+      "durak_adi": "Germiyan Atatürk Parkı",
+      "enlem": 38.364694928916,
+      "boylam": 26.4734337943954
+    },
+    {
+      "durak_id": 52378,
+      "durak_adi": "Germiyan May Sitesi",
+      "enlem": 38.3635579279312,
+      "boylam": 26.470168823093
+    },
+    {
+      "durak_id": 52379,
+      "durak_adi": "Germiyan May Sitesi",
+      "enlem": 38.3634619280428,
+      "boylam": 26.4699928245109
+    },
+    {
+      "durak_id": 52380,
+      "durak_adi": "Germiyan Manzara",
+      "enlem": 38.3621639218586,
+      "boylam": 26.4637688827857
+    },
+    {
+      "durak_id": 52381,
+      "durak_adi": "Germiyan Manzara",
+      "enlem": 38.3621439216041,
+      "boylam": 26.4635948844837
+    },
+    {
+      "durak_id": 52382,
+      "durak_adi": "Egem Sahil Evleri",
+      "enlem": 38.3565119382137,
+      "boylam": 26.4583389156286
+    },
+    {
+      "durak_id": 52383,
+      "durak_adi": "Egem Sahil Evleri",
+      "enlem": 38.3566059376132,
+      "boylam": 26.4582689167446
+    },
+    {
+      "durak_id": 52384,
+      "durak_adi": "Yeni Dostlar Sitesi",
+      "enlem": 38.3541049513549,
+      "boylam": 26.4590258982139
+    },
+    {
+      "durak_id": 52385,
+      "durak_adi": "Yeni Dostlar Sitesi",
+      "enlem": 38.3538509522347,
+      "boylam": 26.4588468989399
+    },
+    {
+      "durak_id": 52386,
+      "durak_adi": "Germiyan Deniz Sitesi",
+      "enlem": 38.3528879534171,
+      "boylam": 26.457104912619
+    },
+    {
+      "durak_id": 52387,
+      "durak_adi": "Germiyan Deniz Sitesi",
+      "enlem": 38.3527949539832,
+      "boylam": 26.4571589116468
+    },
+    {
+      "durak_id": 52388,
+      "durak_adi": "Germiyan 8 Evler Sitesi",
+      "enlem": 38.3471759717621,
+      "boylam": 26.4522819359876
+    },
+    {
+      "durak_id": 52389,
+      "durak_adi": "Germiyan 8 Evler Sitesi",
+      "enlem": 38.347251971799,
+      "boylam": 26.452483934256
+    },
+    {
+      "durak_id": 52390,
+      "durak_adi": "Germiyan Burcu Sitesi",
+      "enlem": 38.3466539696865,
+      "boylam": 26.4500149570536
+    },
+    {
+      "durak_id": 52391,
+      "durak_adi": "Germiyan Burcu Sitesi",
+      "enlem": 38.3465629697963,
+      "boylam": 26.449848958341
+    },
+    {
+      "durak_id": 52437,
+      "durak_adi": "Germiyan Evleri",
+      "enlem": 38.329429079989,
+      "boylam": 26.4618977391591
+    },
+    {
+      "durak_id": 52438,
+      "durak_adi": "Germiyan Evleri",
+      "enlem": 38.3295460794882,
+      "boylam": 26.4619467393697
+    },
+    {
+      "durak_id": 52447,
+      "durak_adi": "Ildır İskele",
+      "enlem": 38.3785798804672,
+      "boylam": 26.4819987539938
+    },
+    {
+      "durak_id": 52448,
+      "durak_adi": "Ildır İskele",
+      "enlem": 38.3784698811771,
+      "boylam": 26.4821027526526
+    },
+    {
+      "durak_id": 52449,
+      "durak_adi": "Ildır Sahil",
+      "enlem": 38.3760768947394,
+      "boylam": 26.4833917329371
+    },
+    {
+      "durak_id": 52450,
+      "durak_adi": "Ildır Sahil",
+      "enlem": 38.3760998948938,
+      "boylam": 26.4835277316579
+    },
+    {
+      "durak_id": 52462,
+      "durak_adi": "Germiyan Fidanlık",
+      "enlem": 38.3241801123233,
+      "boylam": 26.4648706754328
+    },
+    {
+      "durak_id": 52463,
+      "durak_adi": "Germiyan Fidanlık",
+      "enlem": 38.3240641127281,
+      "boylam": 26.464769675716
+    },
+    {
+      "durak_id": 52464,
+      "durak_adi": "Germiyan Ören",
+      "enlem": 38.3266050977208,
+      "boylam": 26.4636767032639
+    },
+    {
+      "durak_id": 52465,
+      "durak_adi": "Germiyan Ören",
+      "enlem": 38.3266430971492,
+      "boylam": 26.4634757055724
+    },
+    {
+      "durak_id": 52504,
+      "durak_adi": "Nohutalan Merkez",
+      "enlem": 38.2973063394489,
+      "boylam": 26.523800892501
+    },
+    {
+      "durak_id": 52505,
+      "durak_adi": "Nohutalan Merkez",
+      "enlem": 38.2974113391405,
+      "boylam": 26.5239748917445
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "08:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    }
+  ]
+}

@@ -1,0 +1,657 @@
+{
+  "hat_no": "978",
+  "hat_adi": "PARLAK-URLA",
+  "hat_baslangic": "PARLAK",
+  "hat_bitis": "URLA",
+  "duraklar": [
+    {
+      "durak_id": 52182,
+      "durak_adi": "Balıklıova Ortaokulu",
+      "enlem": 38.4275568362004,
+      "boylam": 26.5776779335833
+    },
+    {
+      "durak_id": 52183,
+      "durak_adi": "Balıklıova Ortaokulu",
+      "enlem": 38.4275826654758,
+      "boylam": 26.5775379842132
+    },
+    {
+      "durak_id": 52186,
+      "durak_adi": "Balıklıova Depo",
+      "enlem": 38.423623842183,
+      "boylam": 26.5715359866447
+    },
+    {
+      "durak_id": 52187,
+      "durak_adi": "Balıklıova Depo",
+      "enlem": 38.4238308418508,
+      "boylam": 26.5718499839432
+    },
+    {
+      "durak_id": 52188,
+      "durak_adi": "Karaburun TEİAŞ",
+      "enlem": 38.4422296503017,
+      "boylam": 26.50631657368
+    },
+    {
+      "durak_id": 52189,
+      "durak_adi": "İltur",
+      "enlem": 38.4349256997515,
+      "boylam": 26.5163594853543
+    },
+    {
+      "durak_id": 52190,
+      "durak_adi": "İltur",
+      "enlem": 38.4348887003259,
+      "boylam": 26.5165824832957
+    },
+    {
+      "durak_id": 52191,
+      "durak_adi": "Karaburun TEİAŞ",
+      "enlem": 38.4420766503407,
+      "boylam": 26.5060145766695
+    },
+    {
+      "durak_id": 52192,
+      "durak_adi": "Karareis Market",
+      "enlem": 38.4874162929474,
+      "boylam": 26.4248522441193
+    },
+    {
+      "durak_id": 52193,
+      "durak_adi": "Karareis Market",
+      "enlem": 38.4874862921768,
+      "boylam": 26.4246402459197
+    },
+    {
+      "durak_id": 52194,
+      "durak_adi": "Samanyolu Tatil Sitesi",
+      "enlem": 38.4901852789427,
+      "boylam": 26.4233592471204
+    },
+    {
+      "durak_id": 52195,
+      "durak_adi": "Samanyolu Tatil Sitesi",
+      "enlem": 38.4902922780078,
+      "boylam": 26.4231362488552
+    },
+    {
+      "durak_id": 52196,
+      "durak_adi": "Karareis Tatil Sitesi",
+      "enlem": 38.4850843085687,
+      "boylam": 26.4276972255558
+    },
+    {
+      "durak_id": 52197,
+      "durak_adi": "Karareis Tatil Sitesi",
+      "enlem": 38.4849733088396,
+      "boylam": 26.4276332266293
+    },
+    {
+      "durak_id": 52198,
+      "durak_adi": "Mercankoyu Sitesi Giriş",
+      "enlem": 38.4869022788167,
+      "boylam": 26.4181643124435
+    },
+    {
+      "durak_id": 52199,
+      "durak_adi": "Mercankoyu Sitesi Giriş",
+      "enlem": 38.4867812798576,
+      "boylam": 26.4184053105557
+    },
+    {
+      "durak_id": 52200,
+      "durak_adi": "Çağlar",
+      "enlem": 38.4862162781331,
+      "boylam": 26.4168133287297
+    },
+    {
+      "durak_id": 52201,
+      "durak_adi": "Çağlar",
+      "enlem": 38.4860852785268,
+      "boylam": 26.4167713296913
+    },
+    {
+      "durak_id": 52202,
+      "durak_adi": "Eski Küçükbahçe",
+      "enlem": 38.5633579146381,
+      "boylam": 26.3741062445872
+    },
+    {
+      "durak_id": 52203,
+      "durak_adi": "Eski Küçükbahçe",
+      "enlem": 38.5634429146319,
+      "boylam": 26.3742062429022
+    },
+    {
+      "durak_id": 52204,
+      "durak_adi": "Heykel",
+      "enlem": 38.5570359404225,
+      "boylam": 26.3770932704501
+    },
+    {
+      "durak_id": 52205,
+      "durak_adi": "Küçükbahçe",
+      "enlem": 38.5568129449874,
+      "boylam": 26.3787072570117
+    },
+    {
+      "durak_id": 52206,
+      "durak_adi": "Küçükbahçe",
+      "enlem": 38.5569129448094,
+      "boylam": 26.3787572557029
+    },
+    {
+      "durak_id": 52207,
+      "durak_adi": "Küçükbahçe Plajı",
+      "enlem": 38.5608649119084,
+      "boylam": 26.3699863052414
+    },
+    {
+      "durak_id": 52208,
+      "durak_adi": "Tarla",
+      "enlem": 38.4256688402416,
+      "boylam": 26.5754719526025
+    },
+    {
+      "durak_id": 52209,
+      "durak_adi": "Tarla",
+      "enlem": 38.4255278405522,
+      "boylam": 26.5753119539759
+    },
+    {
+      "durak_id": 52224,
+      "durak_adi": "Eski Küçükbahçe",
+      "enlem": 38.5615959425921,
+      "boylam": 26.3836541700364
+    },
+    {
+      "durak_id": 52225,
+      "durak_adi": "Eski Küçükbahçe",
+      "enlem": 38.5614609434423,
+      "boylam": 26.3838441694045
+    },
+    {
+      "durak_id": 52226,
+      "durak_adi": "Eğri Liman Çiftlik",
+      "enlem": 38.5359680301796,
+      "boylam": 26.3870603388253
+    },
+    {
+      "durak_id": 52227,
+      "durak_adi": "Eğri Liman Çiftlik",
+      "enlem": 38.536057029607,
+      "boylam": 26.386944339309
+    },
+    {
+      "durak_id": 52228,
+      "durak_adi": "Küçükbahçe Yol Ayrımı",
+      "enlem": 38.5547549794917,
+      "boylam": 26.3905351622023
+    },
+    {
+      "durak_id": 52229,
+      "durak_adi": "Küçükbahçe Yol Ayrımı",
+      "enlem": 38.5554919759216,
+      "boylam": 26.3899781614657
+    },
+    {
+      "durak_id": 52230,
+      "durak_adi": "Maden",
+      "enlem": 38.5123751336995,
+      "boylam": 26.3968283965311
+    },
+    {
+      "durak_id": 52231,
+      "durak_adi": "Maden",
+      "enlem": 38.5125091333455,
+      "boylam": 26.3968743952991
+    },
+    {
+      "durak_id": 52234,
+      "durak_adi": "Eğri Liman",
+      "enlem": 38.5339340379874,
+      "boylam": 26.3875533485275
+    },
+    {
+      "durak_id": 52235,
+      "durak_adi": "Eğri Liman",
+      "enlem": 38.5340880369595,
+      "boylam": 26.3873393495142
+    },
+    {
+      "durak_id": 52236,
+      "durak_adi": "Küçükbahçe Çiftlik",
+      "enlem": 38.5098991491481,
+      "boylam": 26.3995543838012
+    },
+    {
+      "durak_id": 52237,
+      "durak_adi": "Küçükbahçe Çiftlik",
+      "enlem": 38.5099901491465,
+      "boylam": 26.3996833820149
+    },
+    {
+      "durak_id": 52238,
+      "durak_adi": "Gerence",
+      "enlem": 38.5018441915273,
+      "boylam": 26.4050653727348
+    },
+    {
+      "durak_id": 52239,
+      "durak_adi": "Gerence",
+      "enlem": 38.5017181926065,
+      "boylam": 26.4053183708763
+    },
+    {
+      "durak_id": 52240,
+      "durak_adi": "Doğanata Çiftlik",
+      "enlem": 38.5236990830946,
+      "boylam": 26.3920943735442
+    },
+    {
+      "durak_id": 52241,
+      "durak_adi": "Doğanata Çiftlik",
+      "enlem": 38.5238730821323,
+      "boylam": 26.3919423739044
+    },
+    {
+      "durak_id": 52242,
+      "durak_adi": "Güzelkent Yolu",
+      "enlem": 38.4897813749961,
+      "boylam": 26.4647238490899
+    },
+    {
+      "durak_id": 52243,
+      "durak_adi": "Güzelkent Yolu",
+      "enlem": 38.4897353745018,
+      "boylam": 26.4644178521712
+    },
+    {
+      "durak_id": 52244,
+      "durak_adi": "İris Gölü",
+      "enlem": 38.4912513146632,
+      "boylam": 26.4403040770595
+    },
+    {
+      "durak_id": 52245,
+      "durak_adi": "İris Gölü",
+      "enlem": 38.4911543148309,
+      "boylam": 26.4402180783016
+    },
+    {
+      "durak_id": 52246,
+      "durak_adi": "Güneş Tarlası",
+      "enlem": 38.486795315406,
+      "boylam": 26.4333591630747
+    },
+    {
+      "durak_id": 52247,
+      "durak_adi": "Güneş Tarlası",
+      "enlem": 38.4868613148813,
+      "boylam": 26.4332421639535
+    },
+    {
+      "durak_id": 52248,
+      "durak_adi": "Maden",
+      "enlem": 38.4970192191442,
+      "boylam": 26.4091473563396
+    },
+    {
+      "durak_id": 52249,
+      "durak_adi": "Tuzla Koyu Burun",
+      "enlem": 38.4996432025552,
+      "boylam": 26.4063003716623
+    },
+    {
+      "durak_id": 52250,
+      "durak_adi": "Tuzla Koyu Burun",
+      "enlem": 38.4997282017163,
+      "boylam": 26.4060853733684
+    },
+    {
+      "durak_id": 52251,
+      "durak_adi": "Maden",
+      "enlem": 38.49715921866,
+      "boylam": 26.4091593555436
+    },
+    {
+      "durak_id": 52252,
+      "durak_adi": "Eğlenhoca Balık Çiftliği",
+      "enlem": 38.4614975090721,
+      "boylam": 26.4755948335489
+    },
+    {
+      "durak_id": 52253,
+      "durak_adi": "Eğlenhoca Balık Çiftliği",
+      "enlem": 38.4615685092517,
+      "boylam": 26.4758128312979
+    },
+    {
+      "durak_id": 52254,
+      "durak_adi": "Balıkçı",
+      "enlem": 38.4469006137489,
+      "boylam": 26.497542650911
+    },
+    {
+      "durak_id": 52255,
+      "durak_adi": "Balıkçı",
+      "enlem": 38.4468436137197,
+      "boylam": 26.4974116522247
+    },
+    {
+      "durak_id": 52256,
+      "durak_adi": "Ağaçlı Yol",
+      "enlem": 38.4343317369243,
+      "boylam": 26.5352033117753
+    },
+    {
+      "durak_id": 52257,
+      "durak_adi": "Ağaçlı Yol",
+      "enlem": 38.4343867365336,
+      "boylam": 26.535111312592
+    },
+    {
+      "durak_id": 52258,
+      "durak_adi": "Eğlenhoca",
+      "enlem": 38.4568305435003,
+      "boylam": 26.4829917727619
+    },
+    {
+      "durak_id": 52259,
+      "durak_adi": "Eğlenhoca",
+      "enlem": 38.4568815428737,
+      "boylam": 26.4827907745788
+    },
+    {
+      "durak_id": 52260,
+      "durak_adi": "Karareis Barajı",
+      "enlem": 38.4946962568607,
+      "boylam": 26.4211712485739
+    },
+    {
+      "durak_id": 52261,
+      "durak_adi": "Karareis Barajı",
+      "enlem": 38.4948772562893,
+      "boylam": 26.4212132473303
+    },
+    {
+      "durak_id": 52262,
+      "durak_adi": "Kıyı Yolu",
+      "enlem": 38.4484256025736,
+      "boylam": 26.4950926720007
+    },
+    {
+      "durak_id": 52263,
+      "durak_adi": "Kıyı Yolu",
+      "enlem": 38.4482726033308,
+      "boylam": 26.4951576716019
+    },
+    {
+      "durak_id": 52264,
+      "durak_adi": "Parlak Muhtarlık",
+      "enlem": 38.6098118412113,
+      "boylam": 26.3978295810204
+    },
+    {
+      "durak_id": 52265,
+      "durak_adi": "Parlak Giriş",
+      "enlem": 38.6098198385292,
+      "boylam": 26.3965495919593
+    },
+    {
+      "durak_id": 52266,
+      "durak_adi": "Parlak Giriş",
+      "enlem": 38.6097088386461,
+      "boylam": 26.396469593824
+    },
+    {
+      "durak_id": 52267,
+      "durak_adi": "Badembükü Yol Ayrımı",
+      "enlem": 38.6040858396886,
+      "boylam": 26.3901267079687
+    },
+    {
+      "durak_id": 52268,
+      "durak_adi": "Badembükü Yol Ayrımı",
+      "enlem": 38.60420283978,
+      "boylam": 26.3903107051403
+    },
+    {
+      "durak_id": 52269,
+      "durak_adi": "Eski Salman Giriş",
+      "enlem": 38.5946678556653,
+      "boylam": 26.3861628394529
+    },
+    {
+      "durak_id": 52270,
+      "durak_adi": "Eski Salman Giriş",
+      "enlem": 38.5948798558519,
+      "boylam": 26.3865028342936
+    },
+    {
+      "durak_id": 52271,
+      "durak_adi": "Eski Salman Cami",
+      "enlem": 38.5942338542189,
+      "boylam": 26.3849848543131
+    },
+    {
+      "durak_id": 52272,
+      "durak_adi": "Eski Salman Cami",
+      "enlem": 38.5942408544451,
+      "boylam": 26.3850958532532
+    },
+    {
+      "durak_id": 52273,
+      "durak_adi": "Eski Salman",
+      "enlem": 38.5928268551353,
+      "boylam": 26.3837158797664
+    },
+    {
+      "durak_id": 52274,
+      "durak_adi": "Eski Salman",
+      "enlem": 38.5926788553477,
+      "boylam": 26.3836348819725
+    },
+    {
+      "durak_id": 52275,
+      "durak_adi": "Eski Salman Çıkış",
+      "enlem": 38.5918538556048,
+      "boylam": 26.3827658980005
+    },
+    {
+      "durak_id": 52276,
+      "durak_adi": "Eski Salman Çıkış",
+      "enlem": 38.5916918561239,
+      "boylam": 26.3828058992585
+    },
+    {
+      "durak_id": 52277,
+      "durak_adi": "Eski Salman Bahçe",
+      "enlem": 38.5830628654804,
+      "boylam": 26.3767050391715
+    },
+    {
+      "durak_id": 52278,
+      "durak_adi": "Eski Salman Bahçe",
+      "enlem": 38.5831618656847,
+      "boylam": 26.3769110363348
+    },
+    {
+      "durak_id": 52279,
+      "durak_adi": "Salman Giriş",
+      "enlem": 38.5718188737148,
+      "boylam": 26.3670592346676
+    },
+    {
+      "durak_id": 52280,
+      "durak_adi": "Salman Giriş",
+      "enlem": 38.5716519865432,
+      "boylam": 26.3674130166598
+    },
+    {
+      "durak_id": 52281,
+      "durak_adi": "Salman Cami",
+      "enlem": 38.5707658795081,
+      "boylam": 26.3682542331874
+    },
+    {
+      "durak_id": 52282,
+      "durak_adi": "Salman Cami",
+      "enlem": 38.5707588791374,
+      "boylam": 26.3680912347781
+    },
+    {
+      "durak_id": 52283,
+      "durak_adi": "Salman Market",
+      "enlem": 38.5684678907314,
+      "boylam": 26.370243235486
+    },
+    {
+      "durak_id": 52284,
+      "durak_adi": "Salman Market",
+      "enlem": 38.5684278910435,
+      "boylam": 26.3703262350689
+    },
+    {
+      "durak_id": 52285,
+      "durak_adi": "Salman Köprü",
+      "enlem": 38.5681728981673,
+      "boylam": 26.3730032122738
+    },
+    {
+      "durak_id": 52286,
+      "durak_adi": "Salman Köprü",
+      "enlem": 38.5680898987518,
+      "boylam": 26.3731492116522
+    },
+    {
+      "durak_id": 52287,
+      "durak_adi": "Küçükbahçe Giriş",
+      "enlem": 38.5664819102899,
+      "boylam": 26.3760601987363
+    },
+    {
+      "durak_id": 52288,
+      "durak_adi": "Küçükbahçe Giriş",
+      "enlem": 38.5664799099862,
+      "boylam": 26.3759301999718
+    },
+    {
+      "durak_id": 52594,
+      "durak_adi": "Üçyol Ayrımı",
+      "enlem": 38.5382350253977,
+      "boylam": 26.3880893125046
+    },
+    {
+      "durak_id": 52595,
+      "durak_adi": "Üçyol Ayrımı",
+      "enlem": 38.5383850252262,
+      "boylam": 26.3882163101882
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:45",
+      "aciklama": null
+    }
+  ]
+}

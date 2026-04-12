@@ -1,0 +1,335 @@
+{
+  "hat_no": "759",
+  "hat_adi": "KARAORMAN - MENEMEN AKTARMA MERKEZİ",
+  "hat_baslangic": "KARAORMAN",
+  "hat_bitis": "MENEMEN AKTARMA MERKEZİ",
+  "duraklar": [
+    {
+      "durak_id": 23561,
+      "durak_adi": "Bağcılar Çeşme",
+      "enlem": 38.6218408894973,
+      "boylam": 27.1978960563391
+    },
+    {
+      "durak_id": 23562,
+      "durak_adi": "Bağcılar Çeşme",
+      "enlem": 38.6217809889942,
+      "boylam": 27.1999278075189
+    },
+    {
+      "durak_id": 23563,
+      "durak_adi": "Bağcılar Tepe",
+      "enlem": 38.6205839897679,
+      "boylam": 27.2000658167059
+    },
+    {
+      "durak_id": 23564,
+      "durak_adi": "Bağcılar Tepe",
+      "enlem": 38.6205479904718,
+      "boylam": 27.2001998161416
+    },
+    {
+      "durak_id": 23565,
+      "durak_adi": "Bağcılar Meydan",
+      "enlem": 38.6199329935536,
+      "boylam": 27.2007848175321
+    },
+    {
+      "durak_id": 23566,
+      "durak_adi": "Bağcılar Meydan",
+      "enlem": 38.6198299927055,
+      "boylam": 27.2006228194462
+    },
+    {
+      "durak_id": 23567,
+      "durak_adi": "Bağcılar Köprü",
+      "enlem": 38.6189969785307,
+      "boylam": 27.1979048440039
+    },
+    {
+      "durak_id": 23568,
+      "durak_adi": "Bağcılar Köprü",
+      "enlem": 38.618966979359,
+      "boylam": 27.1980638432285
+    },
+    {
+      "durak_id": 23569,
+      "durak_adi": "Ayvacık Girişi",
+      "enlem": 38.616914949993,
+      "boylam": 27.1923538971655
+    },
+    {
+      "durak_id": 23570,
+      "durak_adi": "Ayvacık Girişi",
+      "enlem": 38.6166399498732,
+      "boylam": 27.1923268996237
+    },
+    {
+      "durak_id": 23571,
+      "durak_adi": "Ayvacık Park",
+      "enlem": 38.6144059430878,
+      "boylam": 27.1909699268535
+    },
+    {
+      "durak_id": 23572,
+      "durak_adi": "Ayvacık Park",
+      "enlem": 38.613780939162,
+      "boylam": 27.190188937024
+    },
+    {
+      "durak_id": 23573,
+      "durak_adi": "Kardan",
+      "enlem": 38.614200386795,
+      "boylam": 27.1878486513078
+    },
+    {
+      "durak_id": 23574,
+      "durak_adi": "Kardan",
+      "enlem": 38.6140879280975,
+      "boylam": 27.1880009485195
+    },
+    {
+      "durak_id": 23575,
+      "durak_adi": "Ayvacık Çıkış",
+      "enlem": 38.6135386663453,
+      "boylam": 27.18510197856
+    },
+    {
+      "durak_id": 23576,
+      "durak_adi": "Ayvacık Çıkış",
+      "enlem": 38.6134799152984,
+      "boylam": 27.1854409699252
+    },
+    {
+      "durak_id": 23577,
+      "durak_adi": "Alaniçi Yol Ayrımı",
+      "enlem": 38.6071478996353,
+      "boylam": 27.182181042357
+    },
+    {
+      "durak_id": 23578,
+      "durak_adi": "Alaniçi Yol Ayrımı",
+      "enlem": 38.6069728998148,
+      "boylam": 27.182216043552
+    },
+    {
+      "durak_id": 23579,
+      "durak_adi": "Alaniçi Meydan",
+      "enlem": 38.6087390374678,
+      "boylam": 27.2094508557562
+    },
+    {
+      "durak_id": 23580,
+      "durak_adi": "Alaniçi Meydan",
+      "enlem": 38.6088090379595,
+      "boylam": 27.2095418545909
+    },
+    {
+      "durak_id": 23581,
+      "durak_adi": "Alaniçi Çıkış",
+      "enlem": 38.6088130477513,
+      "boylam": 27.2114188425897
+    },
+    {
+      "durak_id": 23582,
+      "durak_adi": "Alaniçi Çıkış",
+      "enlem": 38.6086830477772,
+      "boylam": 27.2114308436021
+    },
+    {
+      "durak_id": 23583,
+      "durak_adi": "Çaltı Giriş",
+      "enlem": 38.6183150342348,
+      "boylam": 27.2258438459837
+    },
+    {
+      "durak_id": 23584,
+      "durak_adi": "Çaltı Giriş",
+      "enlem": 38.6183119875335,
+      "boylam": 27.2258932132845
+    },
+    {
+      "durak_id": 23585,
+      "durak_adi": "Çaltı Meydan",
+      "enlem": 38.6188312332866,
+      "boylam": 27.227090749668
+    },
+    {
+      "durak_id": 23586,
+      "durak_adi": "Çaltı Meydan",
+      "enlem": 38.618721525982,
+      "boylam": 27.2271637241731
+    },
+    {
+      "durak_id": 23587,
+      "durak_adi": "Karaorman Giriş",
+      "enlem": 38.6081372692609,
+      "boylam": 27.2321792708872
+    },
+    {
+      "durak_id": 23588,
+      "durak_adi": "Karaorman Giriş",
+      "enlem": 38.6082122696506,
+      "boylam": 27.2322431588371
+    },
+    {
+      "durak_id": 23589,
+      "durak_adi": "Karaorman Meydan",
+      "enlem": 38.6064461540478,
+      "boylam": 27.2315797341709
+    },
+    {
+      "durak_id": 23711,
+      "durak_adi": "Beyköy Küme Evleri",
+      "enlem": 38.6012629629144,
+      "boylam": 27.1951090083076
+    },
+    {
+      "durak_id": 23712,
+      "durak_adi": "Beyköy Küme Evleri",
+      "enlem": 38.60139696173,
+      "boylam": 27.1948650087561
+    },
+    {
+      "durak_id": 24177,
+      "durak_adi": "Alaniçi Giriş",
+      "enlem": 38.6057570262251,
+      "boylam": 27.2074328934333
+    },
+    {
+      "durak_id": 24178,
+      "durak_adi": "Alaniçi Giriş",
+      "enlem": 38.6057240267254,
+      "boylam": 27.207531893079
+    },
+    {
+      "durak_id": 24237,
+      "durak_adi": "Bağcılar Çeşme",
+      "enlem": 38.6217779887368,
+      "boylam": 27.1998788078618
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:25",
+      "aciklama": null
+    }
+  ]
+}

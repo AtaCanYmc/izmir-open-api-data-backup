@@ -1,0 +1,313 @@
+{
+  "hat_no": "991",
+  "hat_adi": "ÇAMTEPE - SEFERİHİSAR",
+  "hat_baslangic": "ÇAMTEPE",
+  "hat_bitis": "SEFERİHİSAR",
+  "duraklar": [
+    {
+      "durak_id": 51274,
+      "durak_adi": "Hisar Evleri",
+      "enlem": 38.2714186201056,
+      "boylam": 26.8428327765074
+    },
+    {
+      "durak_id": 51275,
+      "durak_adi": "Hisar Evleri",
+      "enlem": 38.2716814315064,
+      "boylam": 26.8418467777265
+    },
+    {
+      "durak_id": 51276,
+      "durak_adi": "Gelincik",
+      "enlem": 38.2703,
+      "boylam": 26.8466
+    },
+    {
+      "durak_id": 51277,
+      "durak_adi": "Gelincik",
+      "enlem": 38.2703004620393,
+      "boylam": 26.8458013470117
+    },
+    {
+      "durak_id": 51278,
+      "durak_adi": "Yakınca",
+      "enlem": 38.2728,
+      "boylam": 26.864
+    },
+    {
+      "durak_id": 51279,
+      "durak_adi": "Yakınca",
+      "enlem": 38.2724,
+      "boylam": 26.8638
+    },
+    {
+      "durak_id": 51280,
+      "durak_adi": "Gölcük Giriş",
+      "enlem": 38.2755724033712,
+      "boylam": 26.9061381075128
+    },
+    {
+      "durak_id": 51281,
+      "durak_adi": "Gölcük Giriş",
+      "enlem": 38.2756444033712,
+      "boylam": 26.9060831082604
+    },
+    {
+      "durak_id": 51283,
+      "durak_adi": "Gölcük Zeytinlik",
+      "enlem": 38.2739,
+      "boylam": 26.9059
+    },
+    {
+      "durak_id": 51285,
+      "durak_adi": "Gölcük Meydan",
+      "enlem": 38.2712004077169,
+      "boylam": 26.9047010820577
+    },
+    {
+      "durak_id": 51286,
+      "durak_adi": "Gölcük Zeytinlik",
+      "enlem": 38.2741,
+      "boylam": 26.906
+    },
+    {
+      "durak_id": 51288,
+      "durak_adi": "Meşe",
+      "enlem": 38.2813,
+      "boylam": 26.9176
+    },
+    {
+      "durak_id": 51289,
+      "durak_adi": "Meşe",
+      "enlem": 38.2809,
+      "boylam": 26.9171
+    },
+    {
+      "durak_id": 51290,
+      "durak_adi": "Selvi",
+      "enlem": 38.2777,
+      "boylam": 26.9225
+    },
+    {
+      "durak_id": 51291,
+      "durak_adi": "Selvi",
+      "enlem": 38.2777,
+      "boylam": 26.9224
+    },
+    {
+      "durak_id": 51292,
+      "durak_adi": "Çınar",
+      "enlem": 38.2744,
+      "boylam": 26.922
+    },
+    {
+      "durak_id": 51293,
+      "durak_adi": "Çınar",
+      "enlem": 38.2743,
+      "boylam": 26.9218
+    },
+    {
+      "durak_id": 51294,
+      "durak_adi": "Akasya",
+      "enlem": 38.272537,
+      "boylam": 26.920707
+    },
+    {
+      "durak_id": 51295,
+      "durak_adi": "Akasya",
+      "enlem": 38.272682,
+      "boylam": 26.920713
+    },
+    {
+      "durak_id": 51297,
+      "durak_adi": "Gödence Meydan",
+      "enlem": 38.2699,
+      "boylam": 26.9183
+    },
+    {
+      "durak_id": 51298,
+      "durak_adi": "Beyler Yol ayrımı",
+      "enlem": 38.270973,
+      "boylam": 26.919748
+    },
+    {
+      "durak_id": 51299,
+      "durak_adi": "Beyler Yol ayrımı",
+      "enlem": 38.271173,
+      "boylam": 26.919759
+    },
+    {
+      "durak_id": 51393,
+      "durak_adi": "Çamtepe",
+      "enlem": 38.2844902302308,
+      "boylam": 26.9417270193608
+    },
+    {
+      "durak_id": 52618,
+      "durak_adi": "Manzara",
+      "enlem": 38.269996,
+      "boylam": 26.859525
+    },
+    {
+      "durak_id": 52619,
+      "durak_adi": "Manzara",
+      "enlem": 38.270039,
+      "boylam": 26.859642
+    },
+    {
+      "durak_id": 52622,
+      "durak_adi": "Çamtepe Tepe",
+      "enlem": 38.2754013874646,
+      "boylam": 26.9236010328336
+    },
+    {
+      "durak_id": 52623,
+      "durak_adi": "Çamtepe Tepe",
+      "enlem": 38.2753273875468,
+      "boylam": 26.9235450325555
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:20",
+      "aciklama": null
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "hat_no": "833",
+  "hat_adi": "GÜNEŞLİ - BERGAMA",
+  "hat_baslangic": "GÜNEŞLİ",
+  "hat_bitis": "BERGAMA",
+  "duraklar": [
+    {
+      "durak_id": 23452,
+      "durak_adi": "Yukarıbey",
+      "enlem": 39.254124,
+      "boylam": 27.095694
+    },
+    {
+      "durak_id": 23453,
+      "durak_adi": "Yukarıbey",
+      "enlem": 39.253993,
+      "boylam": 27.095581
+    },
+    {
+      "durak_id": 23454,
+      "durak_adi": "Çamavlu Köyü Yolu",
+      "enlem": 39.290696,
+      "boylam": 27.128021
+    },
+    {
+      "durak_id": 23455,
+      "durak_adi": "Çamavlu Köyü Yolu",
+      "enlem": 39.290823,
+      "boylam": 27.127821
+    },
+    {
+      "durak_id": 23456,
+      "durak_adi": "Karaveliler Giriş",
+      "enlem": 39.2892323018793,
+      "boylam": 27.1459132563522
+    },
+    {
+      "durak_id": 23457,
+      "durak_adi": "Karaveliler Giriş",
+      "enlem": 39.2891383027711,
+      "boylam": 27.1459092556536
+    },
+    {
+      "durak_id": 23458,
+      "durak_adi": "Karaveliler Köy İçi",
+      "enlem": 39.2897763112703,
+      "boylam": 27.1488842538447
+    },
+    {
+      "durak_id": 23459,
+      "durak_adi": "Karaveliler Köy İçi",
+      "enlem": 39.2897483122393,
+      "boylam": 27.1490242533156
+    },
+    {
+      "durak_id": 23460,
+      "durak_adi": "Karaveliler İlköğretim Okulu",
+      "enlem": 39.288783,
+      "boylam": 27.146644
+    },
+    {
+      "durak_id": 23461,
+      "durak_adi": "Karaveliler İlköğretim Okulu",
+      "enlem": 39.288738,
+      "boylam": 27.146726
+    },
+    {
+      "durak_id": 23462,
+      "durak_adi": "Karaveliler",
+      "enlem": 39.29088,
+      "boylam": 27.14954
+    },
+    {
+      "durak_id": 23463,
+      "durak_adi": "Karaveliler",
+      "enlem": 39.29084,
+      "boylam": 27.14965
+    },
+    {
+      "durak_id": 23464,
+      "durak_adi": "Çamavlu Giriş",
+      "enlem": 39.31752,
+      "boylam": 27.142815
+    },
+    {
+      "durak_id": 23465,
+      "durak_adi": "Çamavlu Giriş",
+      "enlem": 39.317323,
+      "boylam": 27.142713
+    },
+    {
+      "durak_id": 23466,
+      "durak_adi": "Çamavlu",
+      "enlem": 39.317827,
+      "boylam": 27.140249
+    },
+    {
+      "durak_id": 23467,
+      "durak_adi": "Çamavlu",
+      "enlem": 39.317913,
+      "boylam": 27.140297
+    },
+    {
+      "durak_id": 23468,
+      "durak_adi": "Çamavlu Çıkış",
+      "enlem": 39.317858,
+      "boylam": 27.138595
+    },
+    {
+      "durak_id": 23471,
+      "durak_adi": "Güneşli",
+      "enlem": 39.344003,
+      "boylam": 27.125702
+    },
+    {
+      "durak_id": 23515,
+      "durak_adi": "Kıranlı Merkez",
+      "enlem": 39.3011288,
+      "boylam": 27.1581703
+    },
+    {
+      "durak_id": 23545,
+      "durak_adi": "Çamavlu Meydan",
+      "enlem": 39.3190269122775,
+      "boylam": 27.1405045536658
+    },
+    {
+      "durak_id": 23546,
+      "durak_adi": "Çamavlu Meydan",
+      "enlem": 39.3191373074884,
+      "boylam": 27.1404893134767
+    },
+    {
+      "durak_id": 23547,
+      "durak_adi": "Yukarıbey İlkokulu",
+      "enlem": 39.2523307176238,
+      "boylam": 27.0936447341061
+    },
+    {
+      "durak_id": 23548,
+      "durak_adi": "Yukarıbey İlkokulu",
+      "enlem": 39.2522074076893,
+      "boylam": 27.0935101454199
+    },
+    {
+      "durak_id": 23549,
+      "durak_adi": "Karaveliler Meydan",
+      "enlem": 39.2887883198689,
+      "boylam": 27.1486812468077
+    },
+    {
+      "durak_id": 23550,
+      "durak_adi": "Karaveliler Meydan",
+      "enlem": 39.2888473200324,
+      "boylam": 27.1488292469177
+    },
+    {
+      "durak_id": 24146,
+      "durak_adi": "Kıranlı Çıkış",
+      "enlem": 39.3022032269249,
+      "boylam": 27.1565143373372
+    },
+    {
+      "durak_id": 24147,
+      "durak_adi": "Kıranlı Çıkış",
+      "enlem": 39.3020622282825,
+      "boylam": 27.1565043361565
+    },
+    {
+      "durak_id": 24630,
+      "durak_adi": "Çamavlu Güneşli Yolu",
+      "enlem": 39.3207199637109,
+      "boylam": 27.1401685326427
+    },
+    {
+      "durak_id": 24631,
+      "durak_adi": "Çamavlu Güneşli Yolu",
+      "enlem": 39.320811962274,
+      "boylam": 27.1400535336722
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:00",
+      "aciklama": null
+    }
+  ]
+}

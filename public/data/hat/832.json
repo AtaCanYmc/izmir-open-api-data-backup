@@ -1,0 +1,273 @@
+{
+  "hat_no": "832",
+  "hat_adi": "YUKARICUMA - BERGAMA",
+  "hat_baslangic": "YUKARICUMA",
+  "hat_bitis": "BERGAMA",
+  "duraklar": [
+    {
+      "durak_id": 23472,
+      "durak_adi": "Yukarıcuma Giriş",
+      "enlem": 39.3165268319243,
+      "boylam": 27.0960875429182
+    },
+    {
+      "durak_id": 23474,
+      "durak_adi": "Terzihaliler Son Durak",
+      "enlem": 39.290788,
+      "boylam": 27.069431
+    },
+    {
+      "durak_id": 23475,
+      "durak_adi": "Terzihaliler Son Durak",
+      "enlem": 39.290714,
+      "boylam": 27.069493
+    },
+    {
+      "durak_id": 23476,
+      "durak_adi": "Terzihaliler Camii",
+      "enlem": 39.289299,
+      "boylam": 27.067917
+    },
+    {
+      "durak_id": 23477,
+      "durak_adi": "Terzihaliler Camii",
+      "enlem": 39.28929,
+      "boylam": 27.068002
+    },
+    {
+      "durak_id": 23478,
+      "durak_adi": "Hacıhamzalar Meydan",
+      "enlem": 39.292301,
+      "boylam": 27.045267
+    },
+    {
+      "durak_id": 23480,
+      "durak_adi": "Aşağıcuma Giriş",
+      "enlem": 39.271983,
+      "boylam": 27.016436
+    },
+    {
+      "durak_id": 23481,
+      "durak_adi": "Aşağıcuma Giriş",
+      "enlem": 39.272060111674,
+      "boylam": 27.0163306038372
+    },
+    {
+      "durak_id": 23483,
+      "durak_adi": "Aşağıcuma Okul",
+      "enlem": 39.270111,
+      "boylam": 27.011537
+    },
+    {
+      "durak_id": 23484,
+      "durak_adi": "Okçular Meydan",
+      "enlem": 39.286007,
+      "boylam": 26.966639
+    },
+    {
+      "durak_id": 23485,
+      "durak_adi": "Okçular Meydan",
+      "enlem": 39.285887,
+      "boylam": 26.966512
+    },
+    {
+      "durak_id": 23486,
+      "durak_adi": "Okçular Son Durak",
+      "enlem": 39.285599,
+      "boylam": 26.964624
+    },
+    {
+      "durak_id": 23621,
+      "durak_adi": "Aşağıcuma Meydan",
+      "enlem": 39.2708052163524,
+      "boylam": 27.0140776560859
+    },
+    {
+      "durak_id": 23622,
+      "durak_adi": "Yukarı Mahalle",
+      "enlem": 39.2710983643578,
+      "boylam": 27.0155259842402
+    },
+    {
+      "durak_id": 23623,
+      "durak_adi": "Yukarı Mahalle",
+      "enlem": 39.271006009712,
+      "boylam": 27.0156833064005
+    },
+    {
+      "durak_id": 23624,
+      "durak_adi": "Aşağıcuma Meydan",
+      "enlem": 39.2708350004048,
+      "boylam": 27.0139106688591
+    },
+    {
+      "durak_id": 23765,
+      "durak_adi": "Aşağıcuma Yolu",
+      "enlem": 39.2692090265075,
+      "boylam": 27.0167712994632
+    },
+    {
+      "durak_id": 23766,
+      "durak_adi": "Aşağıcuma Yolu",
+      "enlem": 39.26920802566,
+      "boylam": 27.0163772995549
+    },
+    {
+      "durak_id": 23980,
+      "durak_adi": "Kozak Maden",
+      "enlem": 39.2588691706106,
+      "boylam": 27.0408312476066
+    },
+    {
+      "durak_id": 24224,
+      "durak_adi": "Okçular Yolu",
+      "enlem": 39.2875208115635,
+      "boylam": 26.9716213499806
+    },
+    {
+      "durak_id": 24225,
+      "durak_adi": "Okçular Yolu",
+      "enlem": 39.287552811823,
+      "boylam": 26.9721333505994
+    },
+    {
+      "durak_id": 24258,
+      "durak_adi": "Terzihaliller Mermer",
+      "enlem": 39.2872960119731,
+      "boylam": 27.0690573585836
+    },
+    {
+      "durak_id": 24259,
+      "durak_adi": "Terzihaliller Mermer",
+      "enlem": 39.2873640121213,
+      "boylam": 27.069297358789
+    },
+    {
+      "durak_id": 24628,
+      "durak_adi": "Aşağıcuma Taş Ocağı",
+      "enlem": 39.2709179945477,
+      "boylam": 27.0079353069949
+    },
+    {
+      "durak_id": 24629,
+      "durak_adi": "Aşağıcuma Taş Ocağı",
+      "enlem": 39.2710489935494,
+      "boylam": 27.0079573074641
+    },
+    {
+      "durak_id": 24632,
+      "durak_adi": "Yukarıcuma Meydan",
+      "enlem": 39.3175998192081,
+      "boylam": 27.0953515521852
+    },
+    {
+      "durak_id": 24633,
+      "durak_adi": "Yukarıcuma Giriş",
+      "enlem": 39.3164688329922,
+      "boylam": 27.0962385423423
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:00",
+      "aciklama": null
+    }
+  ]
+}

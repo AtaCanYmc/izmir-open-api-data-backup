@@ -1,0 +1,497 @@
+{
+  "hat_no": "645",
+  "hat_adi": "YENİKENT - BERGAMA",
+  "hat_baslangic": "YENİKENT",
+  "hat_bitis": "BERGAMA",
+  "duraklar": [
+    {
+      "durak_id": 24197,
+      "durak_adi": "Maden",
+      "enlem": 39.072785558838,
+      "boylam": 27.0768852275018
+    },
+    {
+      "durak_id": 24423,
+      "durak_adi": "Yenikent Meydan",
+      "enlem": 39.0092099707586,
+      "boylam": 27.0579316010388
+    },
+    {
+      "durak_id": 24424,
+      "durak_adi": "Yenikent Aile Sağlığı",
+      "enlem": 39.0103969495246,
+      "boylam": 27.05496860931
+    },
+    {
+      "durak_id": 24425,
+      "durak_adi": "Yenikent Aile Sağlığı",
+      "enlem": 39.0103129511117,
+      "boylam": 27.0551966086354
+    },
+    {
+      "durak_id": 24426,
+      "durak_adi": "Yenikent Tariş",
+      "enlem": 39.0103248694005,
+      "boylam": 27.0518332513912
+    },
+    {
+      "durak_id": 24427,
+      "durak_adi": "Yenikent Tariş",
+      "enlem": 39.0104349328854,
+      "boylam": 27.0515866263117
+    },
+    {
+      "durak_id": 24428,
+      "durak_adi": "Yenikent Köprü",
+      "enlem": 39.0099109032982,
+      "boylam": 27.0447716637767
+    },
+    {
+      "durak_id": 24429,
+      "durak_adi": "Yenikent Köprü",
+      "enlem": 39.010147900988,
+      "boylam": 27.0445626634074
+    },
+    {
+      "durak_id": 24430,
+      "durak_adi": "Yenikent Zeytinlik",
+      "enlem": 39.0138178622254,
+      "boylam": 27.0406686609045
+    },
+    {
+      "durak_id": 24431,
+      "durak_adi": "Yenikent Zeytinlik",
+      "enlem": 39.0133468644566,
+      "boylam": 27.0405796641351
+    },
+    {
+      "durak_id": 24432,
+      "durak_adi": "Aşağıkırıklar Mezarlık Çıkış",
+      "enlem": 39.019369810519,
+      "boylam": 27.0362176499205
+    },
+    {
+      "durak_id": 24433,
+      "durak_adi": "Aşağıkırıklar Mezarlık Çıkış",
+      "enlem": 39.0198446149622,
+      "boylam": 27.0361392950377
+    },
+    {
+      "durak_id": 24434,
+      "durak_adi": "Aşağıkırıklar Mezarlık Giriş",
+      "enlem": 39.0219878016916,
+      "boylam": 27.0375426284044
+    },
+    {
+      "durak_id": 24435,
+      "durak_adi": "Aşağıkırıklar Mezarlık Giriş",
+      "enlem": 39.0221578018308,
+      "boylam": 27.037785626264
+    },
+    {
+      "durak_id": 24436,
+      "durak_adi": "Aşağıkırıklar Fabrika",
+      "enlem": 39.0263677890018,
+      "boylam": 27.0402475906297
+    },
+    {
+      "durak_id": 24437,
+      "durak_adi": "Aşağıkırıklar Fabrika",
+      "enlem": 39.0264687893375,
+      "boylam": 27.0404475891112
+    },
+    {
+      "durak_id": 24438,
+      "durak_adi": "Aşağıkırıklar Giriş",
+      "enlem": 39.0288147772596,
+      "boylam": 27.0407605745788
+    },
+    {
+      "durak_id": 24439,
+      "durak_adi": "Aşağıkırıklar Giriş",
+      "enlem": 39.0290347767494,
+      "boylam": 27.0409265725767
+    },
+    {
+      "durak_id": 24440,
+      "durak_adi": "Aşağıkırıklar Cami",
+      "enlem": 39.030885772224,
+      "boylam": 27.0422755560332
+    },
+    {
+      "durak_id": 24441,
+      "durak_adi": "Aşağıkırıklar Cami",
+      "enlem": 39.0307127762774,
+      "boylam": 27.0429385538344
+    },
+    {
+      "durak_id": 24442,
+      "durak_adi": "Aşağıkırıklar İlkokulu",
+      "enlem": 39.0317477802521,
+      "boylam": 27.0450995379618
+    },
+    {
+      "durak_id": 24443,
+      "durak_adi": "Aşağıkırıklar İlkokulu",
+      "enlem": 39.031637780396,
+      "boylam": 27.044992539064
+    },
+    {
+      "durak_id": 24444,
+      "durak_adi": "Aşağıkırıklar Çıkış",
+      "enlem": 39.0324367897361,
+      "boylam": 27.0479955204603
+    },
+    {
+      "durak_id": 24445,
+      "durak_adi": "Aşağıkırıklar Çıkış",
+      "enlem": 39.0323367899125,
+      "boylam": 27.0479085214101
+    },
+    {
+      "durak_id": 24446,
+      "durak_adi": "Aşağıkırıklar Çiftlik",
+      "enlem": 39.0344658003601,
+      "boylam": 27.0527634868896
+    },
+    {
+      "durak_id": 24447,
+      "durak_adi": "Aşağıkırıklar Çiftlik",
+      "enlem": 39.034669801446,
+      "boylam": 27.0532434835165
+    },
+    {
+      "durak_id": 24448,
+      "durak_adi": "Süleymanlı Giriş",
+      "enlem": 39.0619513926631,
+      "boylam": 27.0657485908046
+    },
+    {
+      "durak_id": 24449,
+      "durak_adi": "Süleymanlı Giriş",
+      "enlem": 39.0619236969655,
+      "boylam": 27.0658442950888
+    },
+    {
+      "durak_id": 24450,
+      "durak_adi": "Süleymanlı Muhtarlık",
+      "enlem": 39.0638986822377,
+      "boylam": 27.0653542890341
+    },
+    {
+      "durak_id": 24451,
+      "durak_adi": "Süleymanlı Muhtarlık",
+      "enlem": 39.0640326817044,
+      "boylam": 27.0654172881854
+    },
+    {
+      "durak_id": 24452,
+      "durak_adi": "Süleymanlı Çıkış",
+      "enlem": 39.067508658282,
+      "boylam": 27.0650892753583
+    },
+    {
+      "durak_id": 24453,
+      "durak_adi": "Süleymanlı Çıkış",
+      "enlem": 39.0678996569337,
+      "boylam": 27.065320272723
+    },
+    {
+      "durak_id": 24454,
+      "durak_adi": "Süleymanlı Yolu",
+      "enlem": 39.0707302805405,
+      "boylam": 27.0655745204616
+    },
+    {
+      "durak_id": 24455,
+      "durak_adi": "Süleymanlı Yolu",
+      "enlem": 39.0709436394036,
+      "boylam": 27.0656762589408
+    },
+    {
+      "durak_id": 24595,
+      "durak_adi": "Süleymanlı Kalarga Tepesi",
+      "enlem": 39.0519867597353,
+      "boylam": 27.0661103374761
+    },
+    {
+      "durak_id": 24596,
+      "durak_adi": "Süleymanlı Kalarga Tepesi",
+      "enlem": 39.0525177553921,
+      "boylam": 27.0658893361154
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "10:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:50",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "18:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:40",
+      "aciklama": null
+    }
+  ]
+}

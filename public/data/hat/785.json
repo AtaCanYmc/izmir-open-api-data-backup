@@ -1,0 +1,505 @@
+{
+  "hat_no": "785",
+  "hat_adi": "DAĞTEKKE - TORBALI",
+  "hat_baslangic": "DAĞTEKKE",
+  "hat_bitis": "ÇAYBAŞI",
+  "duraklar": [
+    {
+      "durak_id": 13416,
+      "durak_adi": "Dirmil Tarla",
+      "enlem": 38.244433622684,
+      "boylam": 27.4168586814937
+    },
+    {
+      "durak_id": 13417,
+      "durak_adi": "Dirmil Tarla",
+      "enlem": 38.2444363262282,
+      "boylam": 27.4170724126827
+    },
+    {
+      "durak_id": 13418,
+      "durak_adi": "Ongül",
+      "enlem": 38.2427,
+      "boylam": 27.4099
+    },
+    {
+      "durak_id": 13419,
+      "durak_adi": "Ongül",
+      "enlem": 38.2426,
+      "boylam": 27.4097
+    },
+    {
+      "durak_id": 13421,
+      "durak_adi": "Karakuyu Çıkış",
+      "enlem": 38.2385997091301,
+      "boylam": 27.3970003098905
+    },
+    {
+      "durak_id": 13422,
+      "durak_adi": "Karakuyu Çıkış",
+      "enlem": 38.2386,
+      "boylam": 27.3967
+    },
+    {
+      "durak_id": 13423,
+      "durak_adi": "Dirmil Giriş",
+      "enlem": 38.2449640350097,
+      "boylam": 27.4200940802926
+    },
+    {
+      "durak_id": 13424,
+      "durak_adi": "Dirmil Giriş",
+      "enlem": 38.2449997664089,
+      "boylam": 27.4202003308581
+    },
+    {
+      "durak_id": 13425,
+      "durak_adi": "Dirmil İlkokulu",
+      "enlem": 38.245099766854,
+      "boylam": 27.4221003333376
+    },
+    {
+      "durak_id": 13426,
+      "durak_adi": "Dirmil İlkokulu",
+      "enlem": 38.2450997667168,
+      "boylam": 27.4225003339131
+    },
+    {
+      "durak_id": 13427,
+      "durak_adi": "İncirağa",
+      "enlem": 38.2448,
+      "boylam": 27.424
+    },
+    {
+      "durak_id": 13428,
+      "durak_adi": "İncirağa",
+      "enlem": 38.2448,
+      "boylam": 27.4241
+    },
+    {
+      "durak_id": 13429,
+      "durak_adi": "Meydan",
+      "enlem": 38.2439,
+      "boylam": 27.4255
+    },
+    {
+      "durak_id": 13430,
+      "durak_adi": "Meydan",
+      "enlem": 38.244,
+      "boylam": 27.4254
+    },
+    {
+      "durak_id": 13431,
+      "durak_adi": "Beyaz Ev",
+      "enlem": 38.2417,
+      "boylam": 27.4277
+    },
+    {
+      "durak_id": 13432,
+      "durak_adi": "Beyaz Ev",
+      "enlem": 38.2418,
+      "boylam": 27.4276
+    },
+    {
+      "durak_id": 13433,
+      "durak_adi": "Dirmil Çıkış",
+      "enlem": 38.2399411490101,
+      "boylam": 27.4296901589991
+    },
+    {
+      "durak_id": 13434,
+      "durak_adi": "Dirmil Çıkış",
+      "enlem": 38.2399997060406,
+      "boylam": 27.4298003576052
+    },
+    {
+      "durak_id": 13435,
+      "durak_adi": "Ormanköy",
+      "enlem": 38.2490998075527,
+      "boylam": 27.4555003717385
+    },
+    {
+      "durak_id": 13436,
+      "durak_adi": "Ormanköy",
+      "enlem": 38.2491548499395,
+      "boylam": 27.455468356771
+    },
+    {
+      "durak_id": 13437,
+      "durak_adi": "Pınar Mevkii",
+      "enlem": 38.2462,
+      "boylam": 27.4523
+    },
+    {
+      "durak_id": 13438,
+      "durak_adi": "Pınar Mevkii",
+      "enlem": 38.2461,
+      "boylam": 27.4522
+    },
+    {
+      "durak_id": 13439,
+      "durak_adi": "Helvacı Köyü",
+      "enlem": 38.2435477387697,
+      "boylam": 27.4724184216905
+    },
+    {
+      "durak_id": 13440,
+      "durak_adi": "Helvacı Köyü",
+      "enlem": 38.2434177371279,
+      "boylam": 27.472277421929
+    },
+    {
+      "durak_id": 13441,
+      "durak_adi": "Çamlık",
+      "enlem": 38.2445,
+      "boylam": 27.4728
+    },
+    {
+      "durak_id": 13442,
+      "durak_adi": "Çamlık",
+      "enlem": 38.2445,
+      "boylam": 27.4727
+    },
+    {
+      "durak_id": 13443,
+      "durak_adi": "Dağtekke",
+      "enlem": 38.2476,
+      "boylam": 27.5097
+    },
+    {
+      "durak_id": 13444,
+      "durak_adi": "Ormanköy Meydan",
+      "enlem": 38.2497,
+      "boylam": 27.4573
+    },
+    {
+      "durak_id": 13445,
+      "durak_adi": "Ormanköy Meydan",
+      "enlem": 38.2497,
+      "boylam": 27.4574
+    },
+    {
+      "durak_id": 13446,
+      "durak_adi": "Yukarıcık",
+      "enlem": 38.2498,
+      "boylam": 27.4583
+    },
+    {
+      "durak_id": 13447,
+      "durak_adi": "Yukarıcık",
+      "enlem": 38.2497,
+      "boylam": 27.4583
+    },
+    {
+      "durak_id": 14414,
+      "durak_adi": "Zeytinlik",
+      "enlem": 38.2413,
+      "boylam": 27.466
+    },
+    {
+      "durak_id": 14415,
+      "durak_adi": "Zeytinlik",
+      "enlem": 38.2413,
+      "boylam": 27.4659
+    },
+    {
+      "durak_id": 14416,
+      "durak_adi": "Dere",
+      "enlem": 38.24054570123,
+      "boylam": 27.4681144247346
+    },
+    {
+      "durak_id": 14417,
+      "durak_adi": "Dere",
+      "enlem": 38.2405077007291,
+      "boylam": 27.4682584251514
+    },
+    {
+      "durak_id": 14418,
+      "durak_adi": "Mezarlık",
+      "enlem": 38.2422,
+      "boylam": 27.4704
+    },
+    {
+      "durak_id": 14419,
+      "durak_adi": "Mezarlık",
+      "enlem": 38.2421,
+      "boylam": 27.4704
+    },
+    {
+      "durak_id": 14420,
+      "durak_adi": "Orman",
+      "enlem": 38.2458,
+      "boylam": 27.4737
+    },
+    {
+      "durak_id": 14421,
+      "durak_adi": "Orman",
+      "enlem": 38.2457,
+      "boylam": 27.4737
+    },
+    {
+      "durak_id": 14422,
+      "durak_adi": "Yol Ayrımı",
+      "enlem": 38.246214,
+      "boylam": 27.476099
+    },
+    {
+      "durak_id": 14423,
+      "durak_adi": "Yol Ayrımı",
+      "enlem": 38.245716,
+      "boylam": 27.475939
+    },
+    {
+      "durak_id": 15585,
+      "durak_adi": "Dirmil Yol Ayrımı",
+      "enlem": 38.2432857498788,
+      "boylam": 27.4142343261881
+    },
+    {
+      "durak_id": 15586,
+      "durak_adi": "Dirmil Yol Ayrımı",
+      "enlem": 38.2433357505291,
+      "boylam": 27.4140083257604
+    },
+    {
+      "durak_id": 15631,
+      "durak_adi": "Zihni Dağlı",
+      "enlem": 38.2449157582274,
+      "boylam": 27.4469343720611
+    },
+    {
+      "durak_id": 15632,
+      "durak_adi": "Zihni Dağlı",
+      "enlem": 38.2447107558037,
+      "boylam": 27.4468603725854
+    },
+    {
+      "durak_id": 15633,
+      "durak_adi": "Ormanköy Giriş",
+      "enlem": 38.2478017919617,
+      "boylam": 27.4539053737892
+    },
+    {
+      "durak_id": 15634,
+      "durak_adi": "Ormanköy Giriş",
+      "enlem": 38.247786791776,
+      "boylam": 27.4540283740392
+    },
+    {
+      "durak_id": 15837,
+      "durak_adi": "Ormanköy Çıkış",
+      "enlem": 38.2480347946736,
+      "boylam": 27.4593203817466
+    },
+    {
+      "durak_id": 15838,
+      "durak_adi": "Ormanköy Çıkış",
+      "enlem": 38.2479977942228,
+      "boylam": 27.4592233817228
+    },
+    {
+      "durak_id": 15839,
+      "durak_adi": "Gündoğdu",
+      "enlem": 38.245529,
+      "boylam": 27.459662
+    },
+    {
+      "durak_id": 15840,
+      "durak_adi": "Gündoğdu",
+      "enlem": 38.245321,
+      "boylam": 27.459611
+    },
+    {
+      "durak_id": 15841,
+      "durak_adi": "İmbat",
+      "enlem": 38.242392,
+      "boylam": 27.463005
+    },
+    {
+      "durak_id": 15842,
+      "durak_adi": "İmbat",
+      "enlem": 38.24225,
+      "boylam": 27.463137
+    },
+    {
+      "durak_id": 16162,
+      "durak_adi": "Karakuyu Tarım",
+      "enlem": 38.2395777175885,
+      "boylam": 27.3999013125684
+    },
+    {
+      "durak_id": 16163,
+      "durak_adi": "Karakuyu Tarım",
+      "enlem": 38.2396297182242,
+      "boylam": 27.3997743123089
+    },
+    {
+      "durak_id": 16164,
+      "durak_adi": "Dirmil Gazi",
+      "enlem": 38.241111731268,
+      "boylam": 27.4044073164309
+    },
+    {
+      "durak_id": 16165,
+      "durak_adi": "Dirmil Gazi",
+      "enlem": 38.2412047322638,
+      "boylam": 27.4044143162794
+    },
+    {
+      "durak_id": 16435,
+      "durak_adi": "Dağtekke Yolu",
+      "enlem": 38.2438507453326,
+      "boylam": 27.5017244785012
+    },
+    {
+      "durak_id": 16436,
+      "durak_adi": "Dağtekke Yolu",
+      "enlem": 38.2439337465102,
+      "boylam": 27.501979478634
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "06:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "08:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    }
+  ]
+}

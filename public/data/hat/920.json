@@ -1,0 +1,137 @@
+{
+  "hat_no": "920",
+  "hat_adi": "ÇİĞLİ - KONAK",
+  "hat_baslangic": "ÇİĞLİ MERKEZ",
+  "hat_bitis": "KONAK",
+  "duraklar": [
+    {
+      "durak_id": 23275,
+      "durak_adi": "Katip Çelebi Üniversitesi Öğrenci Yurdu",
+      "enlem": 38.5123663960127,
+      "boylam": 27.0385995368606
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "00:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "02:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "04:00",
+      "aciklama": null
+    }
+  ]
+}

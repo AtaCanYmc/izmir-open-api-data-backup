@@ -1,0 +1,89 @@
+{
+  "hat_no": "232",
+  "hat_adi": "BİNBAŞI REŞATBEY MAHALLESİ - ESBAŞ AKTARMA MERKEZİ",
+  "hat_baslangic": "BİNBAŞI REŞATBEY MAHALLESİ",
+  "hat_bitis": "ESBAŞ AKTARMA MERKEZİ",
+  "duraklar": [
+    {
+      "durak_id": 13166,
+      "durak_adi": "Esbaş",
+      "enlem": 38.335418,
+      "boylam": 27.136299
+    },
+    {
+      "durak_id": 16863,
+      "durak_adi": "Binbaşı Reşatbey Mahallesi",
+      "enlem": 38.3522884214065,
+      "boylam": 27.1368975120339
+    },
+    {
+      "durak_id": 16864,
+      "durak_adi": "Aslanlar İlkokulu",
+      "enlem": 38.3518684190699,
+      "boylam": 27.1350375182661
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:00",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:55",
+      "aciklama": null
+    }
+  ]
+}

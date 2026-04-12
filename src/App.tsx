@@ -1,277 +1,391 @@
 import { useEffect, useMemo, useState } from "react";
 
-interface EshotHat {
-  HAT_NO?: string | number;
-  HAT_ADI?: string;
-  HAT_BASLANGIC?: string;
-  HAT_BITIS?: string;
-  DURAK_ADI?: string;
-  DURAK_ID?: number;
-  ENLEM?: number;
-  BOYLAM?: number;
-  YON?: number;
-  [key: string]: unknown;
+// --------------- types ---------------
+
+interface Hat {
+  hat_no: string;
+  hat_adi: string | null;
+  hat_baslangic: string | null;
+  hat_bitis: string | null;
 }
 
-interface EshotIndexEntry {
-  hatNo: string;
-  folder: string;
-  hatAdi?: string;
-  baslangic?: string;
-  bitis?: string;
-  counts?: {
-    duraklar?: number;
-    guzergah?: number;
-    saatler?: number;
-  };
+interface HatlarPayload {
+  total: number;
+  hatlar: Hat[];
 }
 
-interface EshotIndexPayload {
-  updatedAt?: string;
-  hatlar?: EshotIndexEntry[];
+interface Durak {
+  durak_id: number;
+  durak_adi: string | null;
+  enlem: number | null;
+  boylam: number | null;
 }
 
-interface DurakPayload {
-  duraklar?: EshotHat[];
+interface GuzergahNokta {
+  yon: number | null;
+  sira: number;
+  enlem: number | null;
+  boylam: number | null;
 }
 
-interface GuzergahPayload {
-  guzergah?: EshotHat[];
+interface HareketSaati {
+  yon: number | null;
+  kalkis_saati: string | null;
+  aciklama: string | null;
 }
 
-interface SaatPayload {
-  saatler?: EshotHat[];
+interface HatDetail {
+  hat_no: string;
+  hat_adi: string | null;
+  hat_baslangic: string | null;
+  hat_bitis: string | null;
+  duraklar: Durak[];
+  guzergah: GuzergahNokta[];
+  saatler: HareketSaati[];
 }
 
-function formatDate(value?: string): string {
-  if (!value) return "-";
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return value;
-  return new Intl.DateTimeFormat("tr-TR", {
-    dateStyle: "medium",
-    timeStyle: "short",
-  }).format(date);
-}
+type DetailTab = "duraklar" | "guzergah" | "saatler";
+
+// --------------- component ---------------
 
 function App() {
-  const [hatlar, setHatlar] = useState<EshotIndexEntry[]>([]);
-  const [selectedHat, setSelectedHat] = useState<EshotIndexEntry | null>(null);
-  const [duraklar, setDuraklar] = useState<EshotHat[]>([]);
-  const [guzergah, setGuzergah] = useState<EshotHat[]>([]);
-  const [saatler, setSaatler] = useState<EshotHat[]>([]);
-  const [query, setQuery] = useState("");
-  const [updatedAt, setUpdatedAt] = useState("-");
+  const [hatlar, setHatlar] = useState<Hat[]>([]);
+  const [selectedHatNo, setSelectedHatNo] = useState<string>("");
+  const [detail, setDetail] = useState<HatDetail | null>(null);
+  const [search, setSearch] = useState("");
+  const [activeTab, setActiveTab] = useState<DetailTab>("duraklar");
   const [loadingList, setLoadingList] = useState(true);
-  const [loadingDetails, setLoadingDetails] = useState(false);
+  const [loadingDetail, setLoadingDetail] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // hat listesini yukle
   useEffect(() => {
     let active = true;
-
-    const loadIndex = async () => {
-      try {
-        const response = await fetch("data/eshot/index.json", { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error(`index: HTTP ${response.status}`);
-        }
-
-        const payload = (await response.json()) as EshotIndexPayload;
-        const rows = Array.isArray(payload.hatlar) ? payload.hatlar : [];
-
+    fetch("data/hatlar.json", { cache: "no-store" })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json() as Promise<HatlarPayload>;
+      })
+      .then((payload) => {
         if (!active) return;
-
-        setHatlar(rows);
-        if (rows.length > 0) {
-          setSelectedHat(rows[0]);
-        }
-        setUpdatedAt(formatDate(payload.updatedAt));
-        setError(null);
-      } catch (err) {
-        if (!active) return;
-        const message = err instanceof Error ? err.message : "Bilinmeyen hata";
-        setError(`Veri okuma hatasi: ${message}`);
-      } finally {
+        setHatlar(payload.hatlar);
+        if (payload.hatlar.length > 0) setSelectedHatNo(payload.hatlar[0].hat_no);
+      })
+      .catch((err: unknown) => {
+        if (active) setError(err instanceof Error ? err.message : String(err));
+      })
+      .finally(() => {
         if (active) setLoadingList(false);
-      }
-    };
-
-    void loadIndex();
+      });
     return () => {
       active = false;
     };
   }, []);
 
+  // secilen hat detayini yukle
   useEffect(() => {
-    if (!selectedHat) return;
-
+    if (!selectedHatNo) return;
     let active = true;
-    const loadHatDetails = async () => {
-      setLoadingDetails(true);
-      try {
-        const base = `data/eshot/${selectedHat.folder}`;
-        const [durakRes, guzRes, saatRes] = await Promise.all([
-          fetch(`${base}/duraklar.json`, { cache: "no-store" }),
-          fetch(`${base}/guzergah.json`, { cache: "no-store" }),
-          fetch(`${base}/saatler.json`, { cache: "no-store" }),
-        ]);
-
-        if (!durakRes.ok || !guzRes.ok || !saatRes.ok) {
-          throw new Error(`hat detayi okunamadi (${selectedHat.hatNo})`);
-        }
-
-        const durakPayload = (await durakRes.json()) as DurakPayload;
-        const guzPayload = (await guzRes.json()) as GuzergahPayload;
-        const saatPayload = (await saatRes.json()) as SaatPayload;
-
-        if (!active) return;
-        setDuraklar(Array.isArray(durakPayload.duraklar) ? durakPayload.duraklar : []);
-        setGuzergah(Array.isArray(guzPayload.guzergah) ? guzPayload.guzergah : []);
-        setSaatler(Array.isArray(saatPayload.saatler) ? saatPayload.saatler : []);
-      } catch (err) {
-        if (!active) return;
-        const message = err instanceof Error ? err.message : "Bilinmeyen hata";
-        setError(`Hat detayi okunamadi: ${message}`);
-      } finally {
-        if (active) setLoadingDetails(false);
-      }
-    };
-
-    void loadHatDetails();
+    setLoadingDetail(true);
+    setDetail(null);
+    const safeNo = selectedHatNo.replace(/[^a-zA-Z0-9._-]/g, "_");
+    fetch(`data/hat/${safeNo}.json`, { cache: "no-store" })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json() as Promise<HatDetail>;
+      })
+      .then((d) => {
+        if (active) setDetail(d);
+      })
+      .catch((err: unknown) => {
+        if (active) setError(err instanceof Error ? err.message : String(err));
+      })
+      .finally(() => {
+        if (active) setLoadingDetail(false);
+      });
     return () => {
       active = false;
     };
-  }, [selectedHat]);
+  }, [selectedHatNo]);
 
   const filteredHatlar = useMemo(() => {
-    const normalized = query.trim().toLowerCase();
-    if (!normalized) return hatlar;
-    return hatlar.filter((item) => {
-      const text = `${item.hatNo} ${item.hatAdi || ""}`.toLowerCase();
-      return text.includes(normalized);
-    });
-  }, [query, hatlar]);
+    const q = search.trim().toLowerCase();
+    if (!q) return hatlar;
+    return hatlar.filter((h) =>
+      `${h.hat_no} ${h.hat_adi ?? ""}`.toLowerCase().includes(q)
+    );
+  }, [hatlar, search]);
+
+  const selectedHat = hatlar.find((h) => h.hat_no === selectedHatNo);
+
+  const tabLabel: Record<DetailTab, string> = {
+    duraklar: "Duraklar",
+    guzergah: "Güzergah",
+    saatler: "Saatler",
+  };
+
+  const tabCount = (tab: DetailTab): number => {
+    if (!detail) return 0;
+    if (tab === "duraklar") return detail.duraklar.length;
+    if (tab === "guzergah") return detail.guzergah.length;
+    return detail.saatler.length;
+  };
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-800">
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-        <section className="mb-6 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-          <h1 className="text-2xl font-bold tracking-tight">Izmir ESHOT Hatlari</h1>
-          <p className="mt-2 text-sm text-slate-600">
-            Kaynak: <code>data/eshot/index.json</code> ve hat bazli klasorler
+      <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8 space-y-6">
+
+        {/* ---- Header ---- */}
+        <section className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+          <h1 className="text-2xl font-bold tracking-tight">İzmir ESHOT</h1>
+          <p className="mt-1 text-sm text-slate-500">
+            Hat güzergahı, duraklar ve hareket saatleri
           </p>
 
+          {error && (
+            <div className="mt-4 rounded-xl bg-rose-50 px-4 py-3 text-sm text-rose-700">
+              {error}
+            </div>
+          )}
+
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {/* arama */}
             <label className="block">
-              <span className="mb-1 block text-sm font-medium text-slate-700">Hat no ara</span>
+              <span className="mb-1 block text-sm font-medium text-slate-700">Hat ara</span>
               <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
                 type="text"
-                placeholder="Hat no veya hat adi ara"
-                className="w-full rounded-xl border border-slate-300 px-3 py-2 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
+                placeholder="Hat no veya adı..."
+                className="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
               />
             </label>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
-              <p className="text-xs uppercase tracking-wide text-slate-500">Guncelleme</p>
-              <p className="mt-1 text-sm font-medium text-slate-700">{updatedAt}</p>
-            </div>
+            {/* dropdown */}
+            <label className="block">
+              <span className="mb-1 block text-sm font-medium text-slate-700">
+                Hat seç
+                {!loadingList && (
+                  <span className="ml-1.5 text-xs font-normal text-slate-400">
+                    ({filteredHatlar.length} hat)
+                  </span>
+                )}
+              </span>
+              <select
+                value={selectedHatNo}
+                onChange={(e) => {
+                  setSelectedHatNo(e.target.value);
+                  setActiveTab("duraklar");
+                }}
+                disabled={loadingList}
+                className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 disabled:opacity-50"
+              >
+                {loadingList ? (
+                  <option>Yükleniyor...</option>
+                ) : (
+                  filteredHatlar.map((h) => (
+                    <option key={h.hat_no} value={h.hat_no}>
+                      {h.hat_no} – {h.hat_adi ?? "İsimsiz"}
+                    </option>
+                  ))
+                )}
+              </select>
+            </label>
           </div>
 
+          {/* secilen hat ozet */}
+          {selectedHat && (
+            <div className="mt-4 flex items-center justify-between rounded-xl bg-indigo-50 px-4 py-3">
+              <div>
+                <p className="font-semibold text-indigo-800">
+                  Hat {selectedHat.hat_no} — {selectedHat.hat_adi ?? "İsimsiz Hat"}
+                </p>
+                <p className="mt-0.5 text-sm text-indigo-600">
+                  {selectedHat.hat_baslangic ?? "?"}{" "}→{" "}{selectedHat.hat_bitis ?? "?"}
+                </p>
+              </div>
+              {detail && (
+                <div className="flex gap-3 text-xs text-indigo-700">
+                  <span className="rounded-lg bg-indigo-100 px-2 py-1 font-semibold">
+                    {detail.duraklar.length} durak
+                  </span>
+                  <span className="rounded-lg bg-indigo-100 px-2 py-1 font-semibold">
+                    {detail.saatler.length} saat
+                  </span>
+                </div>
+              )}
+            </div>
+          )}
         </section>
 
-        <section className="grid gap-6 lg:grid-cols-2">
-          <article className="rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
-            <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3">
-              <h2 className="text-base font-semibold">Hat Listesi</h2>
-              <span className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700">
-                {filteredHatlar.length} kayit
-              </span>
+        {/* ---- Detail ---- */}
+        {selectedHatNo && (
+          <section className="rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+
+            {/* sekmeler */}
+            <div className="flex gap-1 border-b border-slate-200 px-4 pt-3">
+              {(["duraklar", "guzergah", "saatler"] as DetailTab[]).map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`rounded-t-lg px-4 py-2 text-sm font-medium transition ${
+                    activeTab === tab
+                      ? "bg-indigo-600 text-white"
+                      : "text-slate-600 hover:bg-slate-100"
+                  }`}
+                >
+                  {tabLabel[tab]}
+                  {detail && (
+                    <span className="ml-1.5 text-xs opacity-70">
+                      ({tabCount(tab)})
+                    </span>
+                  )}
+                </button>
+              ))}
             </div>
 
-            {loadingList ? <div className="px-4 py-6 text-sm text-slate-500">Liste yukleniyor...</div> : null}
-            {!loadingList && error ? <div className="px-4 py-6 text-sm text-rose-600">{error}</div> : null}
+            {loadingDetail && (
+              <div className="px-4 py-10 text-center text-sm text-slate-500">
+                Yükleniyor...
+              </div>
+            )}
 
-            {!loadingList && !error && filteredHatlar.length === 0 ? (
-              <div className="px-4 py-6 text-sm text-slate-500">Sonuc bulunamadi.</div>
-            ) : null}
+            {!loadingDetail && detail && (
+              <div className="overflow-x-auto">
 
-            {!loadingList && !error && filteredHatlar.length > 0 ? (
-              <div className="max-h-[520px] overflow-y-auto">
-                <table className="min-w-full divide-y divide-slate-200 text-sm">
-                  <thead className="bg-slate-50 text-left text-slate-600">
-                    <tr>
-                      <th className="px-4 py-3 font-semibold">Hat</th>
-                      <th className="px-4 py-3 font-semibold">Hat Adi</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-100">
-                    {filteredHatlar.map((item) => (
-                      <tr
-                        key={item.hatNo}
-                        className={`cursor-pointer hover:bg-slate-50 ${
-                          selectedHat?.hatNo === item.hatNo ? "bg-indigo-50" : ""
-                        }`}
-                        onClick={() => setSelectedHat(item)}
-                      >
-                        <td className="whitespace-nowrap px-4 py-3 font-medium text-slate-900">{item.hatNo}</td>
-                        <td className="px-4 py-3 text-slate-700">{item.hatAdi || "-"}</td>
+                {/* Duraklar */}
+                {activeTab === "duraklar" && (
+                  <table className="min-w-full divide-y divide-slate-200 text-sm">
+                    <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+                      <tr>
+                        <th className="px-4 py-3 font-semibold">Durak ID</th>
+                        <th className="px-4 py-3 font-semibold">Durak Adı</th>
+                        <th className="px-4 py-3 font-semibold">Koordinat</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {detail.duraklar.length === 0 ? (
+                        <tr>
+                          <td colSpan={3} className="px-4 py-8 text-center text-slate-400">
+                            Bu hat için durak kaydı yok.
+                          </td>
+                        </tr>
+                      ) : (
+                        detail.duraklar.map((d) => (
+                          <tr key={d.durak_id} className="hover:bg-slate-50">
+                            <td className="whitespace-nowrap px-4 py-2.5 font-mono text-xs text-slate-400">
+                              {d.durak_id}
+                            </td>
+                            <td className="px-4 py-2.5 font-medium text-slate-800">
+                              {d.durak_adi ?? "-"}
+                            </td>
+                            <td className="px-4 py-2.5 font-mono text-xs text-slate-500">
+                              {d.enlem != null && d.boylam != null
+                                ? `${d.enlem.toFixed(5)}, ${d.boylam.toFixed(5)}`
+                                : "-"}
+                            </td>
+                          </tr>
+                        ))
+                      )}
+                    </tbody>
+                  </table>
+                )}
+
+                {/* Guzergah */}
+                {activeTab === "guzergah" && (
+                  <table className="min-w-full divide-y divide-slate-200 text-sm">
+                    <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+                      <tr>
+                        <th className="px-4 py-3 font-semibold">Yön</th>
+                        <th className="px-4 py-3 font-semibold">Sıra</th>
+                        <th className="px-4 py-3 font-semibold">Enlem</th>
+                        <th className="px-4 py-3 font-semibold">Boylam</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {detail.guzergah.length === 0 ? (
+                        <tr>
+                          <td colSpan={4} className="px-4 py-8 text-center text-slate-400">
+                            Bu hat için güzergah kaydı yok.
+                          </td>
+                        </tr>
+                      ) : (
+                        detail.guzergah.map((g, i) => (
+                          <tr key={i} className="hover:bg-slate-50">
+                            <td className="px-4 py-2.5">
+                              <span
+                                className={`inline-block rounded-full px-2 py-0.5 text-xs font-semibold ${
+                                  g.yon === 1
+                                    ? "bg-green-100 text-green-700"
+                                    : "bg-orange-100 text-orange-700"
+                                }`}
+                              >
+                                {g.yon === 1 ? "Gidiş" : "Dönüş"}
+                              </span>
+                            </td>
+                            <td className="px-4 py-2.5 font-mono text-xs text-slate-500">
+                              {g.sira}
+                            </td>
+                            <td className="px-4 py-2.5 font-mono text-xs text-slate-600">
+                              {g.enlem?.toFixed(6) ?? "-"}
+                            </td>
+                            <td className="px-4 py-2.5 font-mono text-xs text-slate-600">
+                              {g.boylam?.toFixed(6) ?? "-"}
+                            </td>
+                          </tr>
+                        ))
+                      )}
+                    </tbody>
+                  </table>
+                )}
+
+                {/* Saatler */}
+                {activeTab === "saatler" && (
+                  <div className="p-4 grid gap-4 sm:grid-cols-2">
+                    {(["1", "2"] as const).map((yon) => {
+                      const rows = detail.saatler.filter(
+                        (s) => String(s.yon) === yon
+                      );
+                      return (
+                        <div
+                          key={yon}
+                          className="overflow-hidden rounded-xl border border-slate-200"
+                        >
+                          <div
+                            className={`px-4 py-2.5 text-sm font-semibold ${
+                              yon === "1"
+                                ? "bg-green-50 text-green-700"
+                                : "bg-orange-50 text-orange-700"
+                            }`}
+                          >
+                            {yon === "1" ? "Gidiş" : "Dönüş"} Saatleri
+                            <span className="ml-1.5 font-normal opacity-70">
+                              ({rows.length})
+                            </span>
+                          </div>
+                          <div className="flex flex-wrap gap-2 p-3">
+                            {rows.length === 0 ? (
+                              <span className="text-sm text-slate-400">Kayıt yok.</span>
+                            ) : (
+                              rows.map((s, i) => (
+                                <span
+                                  key={i}
+                                  className="rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-sm text-slate-700"
+                                >
+                                  {s.kalkis_saati ?? "-"}
+                                </span>
+                              ))
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
-            ) : null}
-          </article>
-
-          <article className="rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
-            <div className="border-b border-slate-200 px-4 py-3">
-              <h2 className="text-base font-semibold">Hat Detayi</h2>
-            </div>
-
-            {!selectedHat ? <div className="px-4 py-6 text-sm text-slate-500">Bir hat secin.</div> : null}
-            {selectedHat && loadingDetails ? <div className="px-4 py-6 text-sm text-slate-500">Detay yukleniyor...</div> : null}
-
-            {selectedHat && !loadingDetails ? (
-              <div className="space-y-4 px-4 py-4">
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-3">
-                  <p className="text-sm font-semibold text-slate-900">
-                    {selectedHat.hatNo} - {selectedHat.hatAdi || "Isimsiz Hat"}
-                  </p>
-                  <p className="mt-1 text-xs text-slate-600">
-                    {selectedHat.baslangic || "-"}{" -> "}{selectedHat.bitis || "-"}
-                  </p>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-3">
-                  <div className="rounded-xl border border-slate-200 p-3">
-                    <p className="text-xs text-slate-500">Durak</p>
-                    <p className="text-lg font-semibold text-slate-900">{duraklar.length}</p>
-                  </div>
-                  <div className="rounded-xl border border-slate-200 p-3">
-                    <p className="text-xs text-slate-500">Guzergah Noktasi</p>
-                    <p className="text-lg font-semibold text-slate-900">{guzergah.length}</p>
-                  </div>
-                  <div className="rounded-xl border border-slate-200 p-3">
-                    <p className="text-xs text-slate-500">Saat Kaydi</p>
-                    <p className="text-lg font-semibold text-slate-900">{saatler.length}</p>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="mb-2 text-sm font-semibold text-slate-800">Ornek Duraklar</h3>
-                  <ul className="space-y-2 text-sm text-slate-700">
-                    {duraklar.slice(0, 6).map((durak, idx) => (
-                      <li className="rounded-lg border border-slate-200 px-3 py-2" key={`${durak.DURAK_ID || idx}`}>
-                        {durak.DURAK_ADI || "Durak"} ({durak.DURAK_ID || "-"})
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ) : null}
-          </article>
-        </section>
+            )}
+          </section>
+        )}
       </div>
     </main>
   );

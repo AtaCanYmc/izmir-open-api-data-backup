@@ -1,0 +1,745 @@
+{
+  "hat_no": "738",
+  "hat_adi": "ÇEŞMEALTI - URLA",
+  "hat_baslangic": "ÇEŞMEALTI",
+  "hat_bitis": "URLA",
+  "duraklar": [
+    {
+      "durak_id": 50792,
+      "durak_adi": "Urla Emniyet",
+      "enlem": 38.362708,
+      "boylam": 26.770098
+    },
+    {
+      "durak_id": 50793,
+      "durak_adi": "Urla Emniyet",
+      "enlem": 38.362663,
+      "boylam": 26.77063
+    },
+    {
+      "durak_id": 50794,
+      "durak_adi": "İskele",
+      "enlem": 38.365,
+      "boylam": 26.7658
+    },
+    {
+      "durak_id": 50795,
+      "durak_adi": "İskele",
+      "enlem": 38.3649,
+      "boylam": 26.766
+    },
+    {
+      "durak_id": 50796,
+      "durak_adi": "Yalı",
+      "enlem": 38.3672,
+      "boylam": 26.763
+    },
+    {
+      "durak_id": 50797,
+      "durak_adi": "Yalı",
+      "enlem": 38.367781,
+      "boylam": 26.762696
+    },
+    {
+      "durak_id": 50798,
+      "durak_adi": "Altınevler",
+      "enlem": 38.3703,
+      "boylam": 26.762
+    },
+    {
+      "durak_id": 50799,
+      "durak_adi": "Altınevler",
+      "enlem": 38.3702,
+      "boylam": 26.7621
+    },
+    {
+      "durak_id": 50800,
+      "durak_adi": "Gelinkaya",
+      "enlem": 38.373603,
+      "boylam": 26.761469
+    },
+    {
+      "durak_id": 50801,
+      "durak_adi": "Gelinkaya",
+      "enlem": 38.3735,
+      "boylam": 26.7617
+    },
+    {
+      "durak_id": 50802,
+      "durak_adi": "Urla Devlet Demiryolları Kampı",
+      "enlem": 38.378458,
+      "boylam": 26.759353
+    },
+    {
+      "durak_id": 50803,
+      "durak_adi": "Urla Devlet Demiryolları Kampı",
+      "enlem": 38.3785,
+      "boylam": 26.7597
+    },
+    {
+      "durak_id": 50804,
+      "durak_adi": "Hilal",
+      "enlem": 38.382326,
+      "boylam": 26.757571
+    },
+    {
+      "durak_id": 50805,
+      "durak_adi": "Hilal",
+      "enlem": 38.382272,
+      "boylam": 26.75772
+    },
+    {
+      "durak_id": 50806,
+      "durak_adi": "Seren",
+      "enlem": 38.3845,
+      "boylam": 26.757
+    },
+    {
+      "durak_id": 50807,
+      "durak_adi": "Seren",
+      "enlem": 38.3847,
+      "boylam": 26.7569
+    },
+    {
+      "durak_id": 50808,
+      "durak_adi": "Karye Sitesi",
+      "enlem": 38.3866261878691,
+      "boylam": 26.7533235033372
+    },
+    {
+      "durak_id": 50809,
+      "durak_adi": "Karye Sitesi",
+      "enlem": 38.3864,
+      "boylam": 26.7542
+    },
+    {
+      "durak_id": 50810,
+      "durak_adi": "Kavak",
+      "enlem": 38.3878,
+      "boylam": 26.7503
+    },
+    {
+      "durak_id": 50811,
+      "durak_adi": "Kavak",
+      "enlem": 38.3879,
+      "boylam": 26.7503
+    },
+    {
+      "durak_id": 50812,
+      "durak_adi": "Esen Yelleri",
+      "enlem": 38.3908,
+      "boylam": 26.7479
+    },
+    {
+      "durak_id": 50813,
+      "durak_adi": "Esen Yelleri",
+      "enlem": 38.3907,
+      "boylam": 26.7481
+    },
+    {
+      "durak_id": 50814,
+      "durak_adi": "Gönül",
+      "enlem": 38.3927,
+      "boylam": 26.7474
+    },
+    {
+      "durak_id": 50815,
+      "durak_adi": "Gönül",
+      "enlem": 38.393,
+      "boylam": 26.7475
+    },
+    {
+      "durak_id": 50816,
+      "durak_adi": "Zeytin Ağacı",
+      "enlem": 38.3949272805808,
+      "boylam": 26.7462300822253
+    },
+    {
+      "durak_id": 50817,
+      "durak_adi": "Zeytin Ağacı",
+      "enlem": 38.395,
+      "boylam": 26.7462
+    },
+    {
+      "durak_id": 50818,
+      "durak_adi": "Perihan Mahmut Celalettin Demirgüreş İlkokulu",
+      "enlem": 38.3944001569629,
+      "boylam": 26.7439025845775
+    },
+    {
+      "durak_id": 50819,
+      "durak_adi": "Perihan Mahmut Celalettin Demirgüreş İlkokulu",
+      "enlem": 38.394600156623,
+      "boylam": 26.7442025828077
+    },
+    {
+      "durak_id": 50820,
+      "durak_adi": "Yaren",
+      "enlem": 38.3965360532459,
+      "boylam": 26.7420546706992
+    },
+    {
+      "durak_id": 50821,
+      "durak_adi": "Yaren",
+      "enlem": 38.3965,
+      "boylam": 26.7422
+    },
+    {
+      "durak_id": 50822,
+      "durak_adi": "Yıldız",
+      "enlem": 38.399397,
+      "boylam": 26.740592
+    },
+    {
+      "durak_id": 50823,
+      "durak_adi": "Yıldız",
+      "enlem": 38.3993,
+      "boylam": 26.7409
+    },
+    {
+      "durak_id": 50824,
+      "durak_adi": "Mavi Plaj",
+      "enlem": 38.4004,
+      "boylam": 26.7444
+    },
+    {
+      "durak_id": 50825,
+      "durak_adi": "Mavi Plaj",
+      "enlem": 38.4004,
+      "boylam": 26.7442
+    },
+    {
+      "durak_id": 50826,
+      "durak_adi": "Çeşmealtı Limanı",
+      "enlem": 38.3988,
+      "boylam": 26.7455
+    },
+    {
+      "durak_id": 50827,
+      "durak_adi": "Çeşmealtı Limanı",
+      "enlem": 38.3987,
+      "boylam": 26.7454
+    },
+    {
+      "durak_id": 50829,
+      "durak_adi": "Çeşmealtı",
+      "enlem": 38.3958,
+      "boylam": 26.7487
+    },
+    {
+      "durak_id": 50830,
+      "durak_adi": "Balıkçı Barınağı",
+      "enlem": 38.399098,
+      "boylam": 26.746698
+    },
+    {
+      "durak_id": 50831,
+      "durak_adi": "Balıkçı Barınağı",
+      "enlem": 38.398224,
+      "boylam": 26.747139
+    },
+    {
+      "durak_id": 50833,
+      "durak_adi": "Çeşmealtı Lojmanları",
+      "enlem": 38.3998,
+      "boylam": 26.7524
+    },
+    {
+      "durak_id": 50834,
+      "durak_adi": "Çeşmealtı Zeytinlik",
+      "enlem": 38.402161,
+      "boylam": 26.739255
+    },
+    {
+      "durak_id": 50835,
+      "durak_adi": "Çeşmealtı Zeytinlik",
+      "enlem": 38.402003,
+      "boylam": 26.739304
+    },
+    {
+      "durak_id": 51208,
+      "durak_adi": "Tümerk",
+      "enlem": 38.3338,
+      "boylam": 26.771
+    },
+    {
+      "durak_id": 51209,
+      "durak_adi": "Tümerk",
+      "enlem": 38.3336,
+      "boylam": 26.7709
+    },
+    {
+      "durak_id": 51210,
+      "durak_adi": "Özgürkent",
+      "enlem": 38.3344,
+      "boylam": 26.7735
+    },
+    {
+      "durak_id": 51211,
+      "durak_adi": "Özgürkent",
+      "enlem": 38.3343,
+      "boylam": 26.7739
+    },
+    {
+      "durak_id": 51212,
+      "durak_adi": "Yeşil Urla",
+      "enlem": 38.334,
+      "boylam": 26.7799
+    },
+    {
+      "durak_id": 51213,
+      "durak_adi": "Yeşil Urla",
+      "enlem": 38.3338,
+      "boylam": 26.7799
+    },
+    {
+      "durak_id": 51214,
+      "durak_adi": "İncikent",
+      "enlem": 38.3312,
+      "boylam": 26.7777
+    },
+    {
+      "durak_id": 51215,
+      "durak_adi": "İncikent",
+      "enlem": 38.3314,
+      "boylam": 26.7777
+    },
+    {
+      "durak_id": 51216,
+      "durak_adi": "Zeren",
+      "enlem": 38.3298006990568,
+      "boylam": 26.7749965542816
+    },
+    {
+      "durak_id": 51217,
+      "durak_adi": "Zeren",
+      "enlem": 38.3299136525288,
+      "boylam": 26.7751929533722
+    },
+    {
+      "durak_id": 51218,
+      "durak_adi": "Sarı Zeybek",
+      "enlem": 38.3281,
+      "boylam": 26.771
+    },
+    {
+      "durak_id": 51219,
+      "durak_adi": "Sarı Zeybek",
+      "enlem": 38.3284953599792,
+      "boylam": 26.7715851651422
+    }
+  ],
+  "guzergah": [],
+  "saatler": [
+    {
+      "yon": null,
+      "kalkis_saati": "07:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "07:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "09:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "11:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "12:05",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:10",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "13:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "14:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:20",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "15:35",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "16:15",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "17:45",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:30",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "19:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:25",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:55",
+      "aciklama": null
+    },
+    {
+      "yon": null,
+      "kalkis_saati": "21:55",
+      "aciklama": null
+    }
+  ]
+}
