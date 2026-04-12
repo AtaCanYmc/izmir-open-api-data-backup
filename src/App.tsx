@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
 import initSqlJs, { Database } from "sql.js";
+import RouteMap from "./components/RouteMap";
 
 // --------------- types ---------------
 
@@ -393,50 +394,76 @@ function App() {
 
                 {/* Guzergah */}
                 {activeTab === "guzergah" && (
-                  <table className="min-w-full divide-y divide-slate-200 text-sm">
-                    <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
-                      <tr>
-                        <th className="px-4 py-3 font-semibold">Yön</th>
-                        <th className="px-4 py-3 font-semibold">Sıra</th>
-                        <th className="px-4 py-3 font-semibold">Enlem</th>
-                        <th className="px-4 py-3 font-semibold">Boylam</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-slate-100">
-                      {detail.guzergah.length === 0 ? (
-                        <tr>
-                          <td colSpan={4} className="px-4 py-8 text-center text-slate-400">
-                            Bu hat için güzergah kaydı yok.
-                          </td>
-                        </tr>
-                      ) : (
-                        detail.guzergah.map((g, i) => (
-                          <tr key={i} className="hover:bg-slate-50">
-                            <td className="px-4 py-2.5">
-                              <span
-                                className={`inline-block rounded-full px-2 py-0.5 text-xs font-semibold ${
-                                  g.yon === 1
-                                    ? "bg-green-100 text-green-700"
-                                    : "bg-orange-100 text-orange-700"
-                                }`}
-                              >
-                                {g.yon === 1 ? "Gidiş" : "Dönüş"}
-                              </span>
-                            </td>
-                            <td className="px-4 py-2.5 font-mono text-xs text-slate-500">
-                              {g.sira}
-                            </td>
-                            <td className="px-4 py-2.5 font-mono text-xs text-slate-600">
-                              {g.enlem?.toFixed(6) ?? "-"}
-                            </td>
-                            <td className="px-4 py-2.5 font-mono text-xs text-slate-600">
-                              {g.boylam?.toFixed(6) ?? "-"}
-                            </td>
+                  <div className="space-y-4 p-4">
+                    {/* Harita */}
+                    <div className="rounded-xl overflow-hidden border border-slate-200">
+                      <div className="px-4 py-2 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+                        <span className="text-sm font-medium text-slate-700">Güzergah Haritası</span>
+                        <div className="flex gap-3 text-xs">
+                          <span className="flex items-center gap-1">
+                            <span className="w-3 h-0.5 bg-green-600 rounded"></span>
+                            Gidiş
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <span className="w-3 h-0.5 bg-orange-600 rounded" style={{ borderStyle: "dashed" }}></span>
+                            Dönüş
+                          </span>
+                        </div>
+                      </div>
+                      <RouteMap guzergah={detail.guzergah} className="h-[400px]" />
+                    </div>
+
+                    {/* Tablo */}
+                    <details className="group">
+                      <summary className="cursor-pointer text-sm text-slate-600 hover:text-slate-800 py-2">
+                        Koordinat tablosunu göster ({detail.guzergah.length} nokta)
+                      </summary>
+                      <table className="mt-2 min-w-full divide-y divide-slate-200 text-sm">
+                        <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+                          <tr>
+                            <th className="px-4 py-3 font-semibold">Yön</th>
+                            <th className="px-4 py-3 font-semibold">Sıra</th>
+                            <th className="px-4 py-3 font-semibold">Enlem</th>
+                            <th className="px-4 py-3 font-semibold">Boylam</th>
                           </tr>
-                        ))
-                      )}
-                    </tbody>
-                  </table>
+                        </thead>
+                        <tbody className="divide-y divide-slate-100">
+                          {detail.guzergah.length === 0 ? (
+                            <tr>
+                              <td colSpan={4} className="px-4 py-8 text-center text-slate-400">
+                                Bu hat için güzergah kaydı yok.
+                              </td>
+                            </tr>
+                          ) : (
+                            detail.guzergah.map((g, i) => (
+                              <tr key={i} className="hover:bg-slate-50">
+                                <td className="px-4 py-2.5">
+                                  <span
+                                    className={`inline-block rounded-full px-2 py-0.5 text-xs font-semibold ${
+                                      g.yon === 1
+                                        ? "bg-green-100 text-green-700"
+                                        : "bg-orange-100 text-orange-700"
+                                    }`}
+                                  >
+                                    {g.yon === 1 ? "Gidiş" : "Dönüş"}
+                                  </span>
+                                </td>
+                                <td className="px-4 py-2.5 font-mono text-xs text-slate-500">
+                                  {g.sira}
+                                </td>
+                                <td className="px-4 py-2.5 font-mono text-xs text-slate-600">
+                                  {g.enlem?.toFixed(6) ?? "-"}
+                                </td>
+                                <td className="px-4 py-2.5 font-mono text-xs text-slate-600">
+                                  {g.boylam?.toFixed(6) ?? "-"}
+                                </td>
+                              </tr>
+                            ))
+                          )}
+                        </tbody>
+                      </table>
+                    </details>
+                  </div>
                 )}
 
                 {/* Saatler */}
