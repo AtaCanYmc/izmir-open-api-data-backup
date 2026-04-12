@@ -3,7 +3,6 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import {
-  fetchAllHatlar,
   backupHatlar,
   backupDuraklar,
   backupHatGuzergahlari,
@@ -13,93 +12,78 @@ import {
 } from "../backup";
 import Database from "better-sqlite3";
 
-describe("fetchAllHatlar", () => {
-  it("tum sayfalari toplar ve HAT_NO'ya gore siralar", async () => {
-    const api: EshotApi = {
-      async getHatlar(limit = 100, offset = 0) {
-        if (limit !== 200) throw new Error("Unexpected limit");
-        if (offset === 0) return { total: 201, records: [{ HAT_NO: "300", HAT_ADI: "Test 300" }, { HAT_NO: "10", HAT_ADI: "Test 10" }] };
-        if (offset === 200) return { total: 201, records: [{ HAT_NO: "20", HAT_ADI: "Test 20" }] };
-        return { total: 201, records: [] };
-      },
-      getDuraklar: async () => ({ records: [] }),
-      getHatGuzergahlari: async () => ({ records: [] }),
-      getHareketSaatleri: async () => ({ records: [] }),
-    };
-
-    const result = await fetchAllHatlar(api);
-    expect(result.total).toBe(201);
-    expect(result.records.map((item) => String(item.HAT_NO))).toEqual(["10", "20", "300"]);
-  });
-
-  it("total yoksa ilk sayfa uzunlugunu total kabul eder", async () => {
-    const api: EshotApi = {
-      async getHatlar() { return { records: [{ HAT_NO: "5" }, { HAT_NO: "1" }] }; },
-      getDuraklar: async () => ({ records: [] }),
-      getHatGuzergahlari: async () => ({ records: [] }),
-      getHareketSaatleri: async () => ({ records: [] }),
-    };
-
-    const result = await fetchAllHatlar(api);
-    expect(result.total).toBe(2);
-    expect(result.records.map((item) => String(item.HAT_NO))).toEqual(["1", "5"]);
-  });
-});
-
 describe("backupHatlar", () => {
   it("hatlar endpoint'ini cagirir ve kayitlari dondurur", async () => {
     const mockApi: EshotApi = {
-      async getHatlar() { return { total: 2, records: [{ HAT_NO: "1", HAT_ADI: "Test 1" }] }; },
-      getDuraklar: async () => ({ records: [] }),
-      getHatGuzergahlari: async () => ({ records: [] }),
-      getHareketSaatleri: async () => ({ records: [] }),
+      async getHatlar() { return [{ HAT_NO: "1", HAT_ADI: "Test 1" }]; },
+      getDuraklar: async () => [],
+      getHatGuzergahlari: async () => [],
+      getHareketSaatleri: async () => [],
     };
 
     const result = await backupHatlar(mockApi);
-    expect(result.total).toBe(2);
     expect(result.records.length).toBe(1);
+  });
+
+  it("kayitlari HAT_NO'ya gore siralar", async () => {
+    const mockApi: EshotApi = {
+      async getHatlar() { 
+        return [
+          { HAT_NO: "300", HAT_ADI: "Test 300" },
+          { HAT_NO: "10", HAT_ADI: "Test 10" },
+          { HAT_NO: "20", HAT_ADI: "Test 20" },
+        ]; 
+      },
+      getDuraklar: async () => [],
+      getHatGuzergahlari: async () => [],
+      getHareketSaatleri: async () => [],
+    };
+
+    const result = await backupHatlar(mockApi);
+    expect(result.total).toBe(3);
+    expect(result.records.map((item) => String(item.HAT_NO))).toEqual(["10", "20", "300"]);
   });
 });
 
 describe("backupDuraklar", () => {
   it("duraklar endpoint'ini cagirir", async () => {
     const mockApi: EshotApi = {
-      getHatlar: async () => ({ records: [] }),
-      async getDuraklar() { return { total: 100, records: [{ HAT_NO: "D1" }] }; },
-      getHatGuzergahlari: async () => ({ records: [] }),
-      getHareketSaatleri: async () => ({ records: [] }),
+      getHatlar: async () => [],
+      async getDuraklar() { return [{ HAT_NO: "D1" }]; },
+      getHatGuzergahlari: async () => [],
+      getHareketSaatleri: async () => [],
     };
 
     const result = await backupDuraklar(mockApi);
-    expect(result.total).toBe(100);
+    expect(result.records.length).toBe(1);
   });
 });
 
 describe("backupHatGuzergahlari", () => {
   it("guzergahlar endpoint'ini cagirir", async () => {
     const mockApi: EshotApi = {
-      getHatlar: async () => ({ records: [] }),
-      getDuraklar: async () => ({ records: [] }),
-      async getHatGuzergahlari() { return { total: 500, records: [{ HAT_NO: "G1" }] }; },
-      getHareketSaatleri: async () => ({ records: [] }),
+      getHatlar: async () => [],
+      getDuraklar: async () => [],
+      async getHatGuzergahlari() { return [{ HAT_NO: "G1" }]; },
+      getHareketSaatleri: async () => [],
     };
 
     const result = await backupHatGuzergahlari(mockApi);
-    expect(result.total).toBe(500);
+    expect(result.records.length).toBe(1);
   });
 });
 
 describe("backupHareketSaatleri", () => {
   it("hareket saatleri endpoint'ini cagirir", async () => {
     const mockApi: EshotApi = {
-      getHatlar: async () => ({ records: [] }),
-      getDuraklar: async () => ({ records: [] }),
-      getHatGuzergahlari: async () => ({ records: [] }),
-      async getHareketSaatleri() { return { total: 1000, records: [{ HAT_NO: "H1" }] }; },
+      getHatlar: async () => [],
+      getDuraklar: async () => [],
+      getHatGuzergahlari: async () => [],
+      async getHareketSaatleri() { return [{ HAT_NO: "H1" }]; },
     };
 
     const result = await backupHareketSaatleri(mockApi);
-    expect(result.total).toBe(1000);
+    expect(result.records.length).toBe(1);
   });
 });
 
@@ -141,5 +125,4 @@ describe("persistAllToSqlite", () => {
     db.close();
   });
 });
-
 

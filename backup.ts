@@ -3,10 +3,9 @@ import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { createTables } from "./db/init";
 
-const PAGE_SIZE = 200;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const DATA_DIR = path.join(__dirname, "data");
+const DATA_DIR = path.join(__dirname, "public", "data");
 const DB_FILE = path.join(DATA_DIR, "eshot.db");
 const require = createRequire(path.join(process.cwd(), "package.json"));
 const Database = require("better-sqlite3") as typeof import("better-sqlite3");
@@ -19,16 +18,11 @@ export interface EshotHat {
   [key: string]: unknown;
 }
 
-interface HatlarResponse {
-  total?: number;
-  records?: EshotHat[];
-}
-
 export interface EshotApi {
-  getHatlar(limit?: number, offset?: number): Promise<HatlarResponse>;
-  getDuraklar(limit?: number, offset?: number): Promise<HatlarResponse>;
-  getHatGuzergahlari(limit?: number, offset?: number): Promise<HatlarResponse>;
-  getHareketSaatleri(limit?: number, offset?: number): Promise<HatlarResponse>;
+  getHatlar(): Promise<EshotHat[]>;
+  getDuraklar(): Promise<EshotHat[]>;
+  getHatGuzergahlari(): Promise<EshotHat[]>;
+  getHareketSaatleri(): Promise<EshotHat[]>;
 }
 
 export interface SqlitePersistResult {
@@ -41,26 +35,6 @@ export interface SqlitePersistResult {
 }
 
 export async function createEshotApi(): Promise<EshotApi> {
-  try {
-    const lib = await import("izmir-open-data-js");
-    const Client =
-      (lib as { IzmirOpenData?: new () => unknown; IzmirClient?: new () => unknown; default?: new () => unknown })
-        .IzmirOpenData ||
-      (lib as { IzmirOpenData?: new () => unknown; IzmirClient?: new () => unknown; default?: new () => unknown })
-        .IzmirClient ||
-      (lib as { IzmirOpenData?: new () => unknown; IzmirClient?: new () => unknown; default?: new () => unknown })
-        .default;
-
-    if (Client) {
-      const client = new Client() as { eshot?: EshotApi };
-      if (client.eshot?.getHatlar) {
-        return client.eshot;
-      }
-    }
-  } catch {
-    // Paketin mevcut surumundeki import sorunu nedeniyle fallback yoluna gecilir.
-  }
-
   const [{ IzmirClient }, { eshot }] = await Promise.all([
     import("izmir-open-data-js/dist/client.js"),
     import("izmir-open-data-js/dist/endpoints/eshot.js"),
@@ -68,30 +42,6 @@ export async function createEshotApi(): Promise<EshotApi> {
 
   const client = new IzmirClient();
   return eshot(client) as unknown as EshotApi;
-}
-
-export async function fetchAllHatlar(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
-  return fetchAllByMethod(api, "getHatlar");
-}
-
-async function fetchAllByMethod(api: EshotApi, method: keyof EshotApi): Promise<{ total: number; records: EshotHat[] }> {
-  const fn = api[method];
-  if (typeof fn !== "function") {
-    throw new Error(`${method} is not a function`);
-  }
-
-  const firstPage = await (fn as (limit?: number, offset?: number) => Promise<HatlarResponse>)(PAGE_SIZE, 0);
-  const total = Number(firstPage.total) || (firstPage.records?.length ?? 0);
-  const allRecords = [...(firstPage.records || [])];
-
-  for (let offset = PAGE_SIZE; offset < total; offset += PAGE_SIZE) {
-    const page = await (fn as (limit?: number, offset?: number) => Promise<HatlarResponse>)(PAGE_SIZE, offset);
-    if (!page.records?.length) break;
-    allRecords.push(...page.records);
-  }
-
-  allRecords.sort((a, b) => String(a.HAT_NO || "").localeCompare(String(b.HAT_NO || ""), "tr"));
-  return { total, records: allRecords };
 }
 
 function getHatNo(record: EshotHat): string | null {
@@ -292,19 +242,24 @@ export async function persistAllToSqlite(
 }
 
 export async function backupHatlar(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
-  return fetchAllByMethod(api, "getHatlar");
+  const records = await api.getHatlar();
+  records.sort((a, b) => String(a.HAT_NO || "").localeCompare(String(b.HAT_NO || ""), "tr"));
+  return { total: records.length, records };
 }
 
 export async function backupDuraklar(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
-  return fetchAllByMethod(api, "getDuraklar");
+  const records = await api.getDuraklar();
+  return { total: records.length, records };
 }
 
 export async function backupHatGuzergahlari(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
-  return fetchAllByMethod(api, "getHatGuzergahlari");
+  const records = await api.getHatGuzergahlari();
+  return { total: records.length, records };
 }
 
 export async function backupHareketSaatleri(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
-  return fetchAllByMethod(api, "getHareketSaatleri");
+  const records = await api.getHareketSaatleri();
+  return { total: records.length, records };
 }
 
 export async function backupAll(api: EshotApi, dryRun = false): Promise<void> {

@@ -5,7 +5,7 @@ import { createRequire } from "node:module";
 const require = createRequire(path.join(process.cwd(), "package.json"));
 const Database = require("better-sqlite3") as typeof import("better-sqlite3");
 const rootDir = process.cwd();
-const dataDir = path.join(rootDir, "data");
+const dataDir = path.join(rootDir, "public", "data");
 const dbPath = path.join(dataDir, "eshot.db");
 
 export function createTables(databaseFile = dbPath): string {
