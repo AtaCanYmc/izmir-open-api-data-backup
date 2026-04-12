@@ -25,9 +25,16 @@ interface GuzergahNokta {
 }
 
 interface HareketSaati {
-  yon: number | null;
-  kalkis_saati: string | null;
-  aciklama: string | null;
+  tarife_id: number | null;
+  sira: number | null;
+  gidis_saati: string | null;
+  donus_saati: string | null;
+  gidis_engelli_destegi: number | null;
+  donus_engelli_destegi: number | null;
+  bisikletli_gidis: number | null;
+  bisikletli_donus: number | null;
+  gidis_elektrikli_otobus: number | null;
+  donus_elektrikli_otobus: number | null;
 }
 
 interface HatDetail {
@@ -117,7 +124,7 @@ function queryHatDetail(db: Database, hatNo: string): HatDetail | null {
 
   // Saatler
   const saatStmt = db.prepare(`
-    SELECT tarife_id, sira, gidis_saati, donus_saati,
+    SELECT DISTINCT tarife_id, sira, gidis_saati, donus_saati,
            gidis_engelli_destegi, donus_engelli_destegi,
            bisikletli_gidis, bisikletli_donus,
            gidis_elektrikli_otobus, donus_elektrikli_otobus
@@ -433,63 +440,89 @@ function App() {
                 )}
 
                 {/* Saatler */}
-                {activeTab === "saatler" && (
-                  <div className="p-4 grid gap-4 sm:grid-cols-2">
-                    {(["gidis", "donus"] as const).map((yon) => {
-                      const saatKey = yon === "gidis" ? "gidis_saati" : "donus_saati";
-                      const rows = detail.saatler
-                        .filter((s) => s[saatKey] !== null)
-                        .sort((a, b) => (a.sira ?? 0) - (b.sira ?? 0));
-                      return (
-                        <div
-                          key={yon}
-                          className="overflow-hidden rounded-xl border border-slate-200"
-                        >
-                          <div
-                            className={`px-4 py-2.5 text-sm font-semibold ${
-                              yon === "gidis"
-                                ? "bg-green-50 text-green-700"
-                                : "bg-orange-50 text-orange-700"
-                            }`}
-                          >
-                            {yon === "gidis" ? "Gidiş" : "Dönüş"} Saatleri
-                            <span className="ml-1.5 font-normal opacity-70">
-                              ({rows.length})
-                            </span>
-                          </div>
-                          <div className="flex flex-wrap gap-2 p-3">
-                            {rows.length === 0 ? (
-                              <span className="text-sm text-slate-400">Kayıt yok.</span>
-                            ) : (
-                              rows.map((s, i) => {
-                                const saat = yon === "gidis" ? s.gidis_saati : s.donus_saati;
-                                const engelliDestegi = yon === "gidis" ? s.gidis_engelli_destegi : s.donus_engelli_destegi;
-                                const bisikletli = yon === "gidis" ? s.bisikletli_gidis : s.bisikletli_donus;
-                                const elektrikli = yon === "gidis" ? s.gidis_elektrikli_otobus : s.donus_elektrikli_otobus;
+                {activeTab === "saatler" && (() => {
+                  const tarifeler = [
+                    { id: 1, label: "Hafta İçi", bgClass: "bg-blue-50", textClass: "text-blue-700" },
+                    { id: 2, label: "Cumartesi", bgClass: "bg-purple-50", textClass: "text-purple-700" },
+                    { id: 3, label: "Pazar", bgClass: "bg-rose-50", textClass: "text-rose-700" },
+                  ];
+
+                  return (
+                    <div className="p-4 space-y-6">
+                      {tarifeler.map((tarife) => {
+                        const tarifeSaatleri = detail.saatler
+                          .filter((s) => s.tarife_id === tarife.id)
+                          .sort((a, b) => (a.sira ?? 0) - (b.sira ?? 0));
+
+                        if (tarifeSaatleri.length === 0) return null;
+
+                        return (
+                          <div key={tarife.id} className="space-y-3">
+                            <h3 className={`text-lg font-semibold ${tarife.textClass}`}>
+                              {tarife.label}
+                              <span className="ml-2 text-sm font-normal opacity-70">
+                                ({tarifeSaatleri.length} sefer)
+                              </span>
+                            </h3>
+                            <div className="grid gap-4 sm:grid-cols-2">
+                              {(["gidis", "donus"] as const).map((yon) => {
+                                const saatKey = yon === "gidis" ? "gidis_saati" : "donus_saati";
+                                const rows = tarifeSaatleri.filter((s) => s[saatKey] !== null);
                                 return (
-                                  <span
-                                    key={i}
-                                    className="rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-sm text-slate-700 flex items-center gap-1"
-                                    title={[
-                                      engelliDestegi ? "♿ Engelli desteği" : null,
-                                      bisikletli ? "🚲 Bisikletli" : null,
-                                      elektrikli ? "⚡ Elektrikli" : null,
-                                    ].filter(Boolean).join(", ") || undefined}
+                                  <div
+                                    key={yon}
+                                    className="overflow-hidden rounded-xl border border-slate-200"
                                   >
-                                    {saat ?? "-"}
-                                    {engelliDestegi === 1 && <span className="text-xs">♿</span>}
-                                    {bisikletli === 1 && <span className="text-xs">🚲</span>}
-                                    {elektrikli === 1 && <span className="text-xs">⚡</span>}
-                                  </span>
+                                    <div
+                                      className={`px-4 py-2.5 text-sm font-semibold ${
+                                        yon === "gidis"
+                                          ? "bg-green-50 text-green-700"
+                                          : "bg-orange-50 text-orange-700"
+                                      }`}
+                                    >
+                                      {yon === "gidis" ? "Gidiş" : "Dönüş"} Saatleri
+                                      <span className="ml-1.5 font-normal opacity-70">
+                                        ({rows.length})
+                                      </span>
+                                    </div>
+                                    <div className="flex flex-wrap gap-2 p-3">
+                                      {rows.length === 0 ? (
+                                        <span className="text-sm text-slate-400">Kayıt yok.</span>
+                                      ) : (
+                                        rows.map((s, i) => {
+                                          const saat = yon === "gidis" ? s.gidis_saati : s.donus_saati;
+                                          const engelliDestegi = yon === "gidis" ? s.gidis_engelli_destegi : s.donus_engelli_destegi;
+                                          const bisikletli = yon === "gidis" ? s.bisikletli_gidis : s.bisikletli_donus;
+                                          const elektrikli = yon === "gidis" ? s.gidis_elektrikli_otobus : s.donus_elektrikli_otobus;
+                                          return (
+                                            <span
+                                              key={i}
+                                              className="rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-sm text-slate-700 flex items-center gap-1"
+                                              title={[
+                                                engelliDestegi ? "♿ Engelli desteği" : null,
+                                                bisikletli ? "🚲 Bisikletli" : null,
+                                                elektrikli ? "⚡ Elektrikli" : null,
+                                              ].filter(Boolean).join(", ") || undefined}
+                                            >
+                                              {saat ?? "-"}
+                                              {engelliDestegi === 1 && <span className="text-xs">♿</span>}
+                                              {bisikletli === 1 && <span className="text-xs">🚲</span>}
+                                              {elektrikli === 1 && <span className="text-xs">⚡</span>}
+                                            </span>
+                                          );
+                                        })
+                                      )}
+                                    </div>
+                                  </div>
                                 );
-                              })
-                            )}
+                              })}
+                            </div>
                           </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
+                        );
+                      })}
+                    </div>
+                  );
+                })()}
               </div>
             )}
           </section>
