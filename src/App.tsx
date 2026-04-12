@@ -83,7 +83,7 @@ function queryHatDetail(db: Database, hatNo: string): HatDetail | null {
   const hat = hatStmt.getAsObject() as Hat;
   hatStmt.free();
 
-  // Duraklar - hat_no kolonu birden fazla hatti "-" ile birlestirerek tutar
+  // Duraklar - doğrudan duraklar tablosundan hat_no ile çekiyoruz
   const durakStmt = db.prepare(`
     SELECT d.durak_id, d.durak_adi, d.enlem, d.boylam
     FROM duraktan_gecen_hatlar dgh
@@ -348,7 +348,7 @@ function App() {
                   <table className="min-w-full divide-y divide-slate-200 text-sm">
                     <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
                       <tr>
-                        <th className="px-4 py-3 font-semibold">Durak ID</th>
+                        <th className="px-4 py-3 font-semibold">ID</th>
                         <th className="px-4 py-3 font-semibold">Durak Adı</th>
                         <th className="px-4 py-3 font-semibold">Koordinat</th>
                       </tr>
@@ -361,8 +361,8 @@ function App() {
                           </td>
                         </tr>
                       ) : (
-                        detail.duraklar.map((d) => (
-                          <tr key={d.durak_id} className="hover:bg-slate-50">
+                        detail.duraklar.map((d, i) => (
+                          <tr key={`${d.durak_id}-${i}`} className="hover:bg-slate-50">
                             <td className="whitespace-nowrap px-4 py-2.5 font-mono text-xs text-slate-400">
                               {d.durak_id}
                             </td>

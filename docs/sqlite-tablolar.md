@@ -48,12 +48,11 @@ Durak kayitlarini saklar.
 | `durak_adi` | TEXT | Durak ismi |
 | `enlem` | REAL | Enlem |
 | `boylam` | REAL | Boylam |
-| `yon` | INTEGER | Yon bilgisi |
 | `updated_at` | TEXT NOT NULL | Son guncelleme zamani |
 | `raw_json` | TEXT NOT NULL | Ham veri |
 
 Kisit:
-- `UNIQUE (hat_no, durak_id, yon)`
+- `UNIQUE (hat_no, durak_id)`
 
 Indeks:
 - `idx_duraklar_hat_no`

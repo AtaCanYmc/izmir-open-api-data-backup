@@ -128,9 +128,9 @@ export async function persistAllToSqlite(
     );
 
     const upsertDurak = db.prepare(
-      `INSERT INTO duraklar (hat_no, durak_id, durak_adi, enlem, boylam, yon, updated_at, raw_json)
-       VALUES (@hatNo, @durakId, @durakAdi, @enlem, @boylam, @yon, @updatedAt, @rawJson)
-       ON CONFLICT(hat_no, durak_id, yon) DO UPDATE SET
+      `INSERT INTO duraklar (hat_no, durak_id, durak_adi, enlem, boylam, updated_at, raw_json)
+       VALUES (@hatNo, @durakId, @durakAdi, @enlem, @boylam, @updatedAt, @rawJson)
+       ON CONFLICT(hat_no, durak_id) DO UPDATE SET
          durak_adi = excluded.durak_adi,
          enlem = excluded.enlem,
          boylam = excluded.boylam,
@@ -180,7 +180,6 @@ export async function persistAllToSqlite(
         durakAdi: pickText(row, ["DURAK_ADI", "ADI"]),
         enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
         boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
-        yon: pickNumber(row, ["YON"]),
         updatedAt: nowIso,
         rawJson: JSON.stringify(row),
       });

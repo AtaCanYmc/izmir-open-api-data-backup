@@ -41,10 +41,9 @@ export function createTables(databaseFile = dbPath): string {
       durak_adi TEXT,
       enlem REAL,
       boylam REAL,
-      yon INTEGER,
       updated_at TEXT NOT NULL,
       raw_json TEXT NOT NULL,
-      UNIQUE (hat_no, durak_id, yon)
+      UNIQUE (hat_no, durak_id)
     );
 
     CREATE TABLE IF NOT EXISTS guzergah_noktalari (
