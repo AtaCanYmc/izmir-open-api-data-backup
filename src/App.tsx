@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useCallback } from "react";
+import initSqlJs, { Database } from "sql.js";
 
 // --------------- types ---------------
 
@@ -7,11 +8,6 @@ interface Hat {
   hat_adi: string | null;
   hat_baslangic: string | null;
   hat_bitis: string | null;
-}
-
-interface HatlarPayload {
-  total: number;
-  hatlar: Hat[];
 }
 
 interface Durak {
@@ -46,9 +42,102 @@ interface HatDetail {
 
 type DetailTab = "duraklar" | "guzergah" | "saatler";
 
+// --------------- db helper ---------------
+
+async function loadDatabase(): Promise<Database> {
+  const SQL = await initSqlJs({
+    locateFile: () => `/sql-wasm.wasm`,
+  });
+  const response = await fetch("data/eshot.db");
+  if (!response.ok) throw new Error(`DB yüklenemedi: HTTP ${response.status}`);
+  const buffer = await response.arrayBuffer();
+  return new SQL.Database(new Uint8Array(buffer));
+}
+
+function queryHatlar(db: Database): Hat[] {
+  const stmt = db.prepare(`
+    SELECT hat_no, hat_adi, hat_baslangic, hat_bitis
+    FROM hatlar
+    ORDER BY CAST(hat_no AS INTEGER), hat_no
+  `);
+  const results: Hat[] = [];
+  while (stmt.step()) {
+    const row = stmt.getAsObject() as Hat;
+    results.push(row);
+  }
+  stmt.free();
+  return results;
+}
+
+function queryHatDetail(db: Database, hatNo: string): HatDetail | null {
+  // Hat bilgisi
+  const hatStmt = db.prepare(`
+    SELECT hat_no, hat_adi, hat_baslangic, hat_bitis
+    FROM hatlar WHERE hat_no = ?
+  `);
+  hatStmt.bind([hatNo]);
+  if (!hatStmt.step()) {
+    hatStmt.free();
+    return null;
+  }
+  const hat = hatStmt.getAsObject() as Hat;
+  hatStmt.free();
+
+  // Duraklar
+  const durakStmt = db.prepare(`
+    SELECT d.durak_id, d.durak_adi, d.enlem, d.boylam
+    FROM duraktan_gecen_hatlar dgh
+    JOIN duraklar d ON d.durak_id = dgh.durak_id
+    WHERE dgh.hat_no = ?
+    ORDER BY d.durak_id
+  `);
+  durakStmt.bind([hatNo]);
+  const duraklar: Durak[] = [];
+  while (durakStmt.step()) {
+    duraklar.push(durakStmt.getAsObject() as Durak);
+  }
+  durakStmt.free();
+
+  // Güzergah
+  const guzergahStmt = db.prepare(`
+    SELECT yon, sira, enlem, boylam
+    FROM guzergah_noktalari
+    WHERE hat_no = ?
+    ORDER BY yon, sira
+  `);
+  guzergahStmt.bind([hatNo]);
+  const guzergah: GuzergahNokta[] = [];
+  while (guzergahStmt.step()) {
+    guzergah.push(guzergahStmt.getAsObject() as GuzergahNokta);
+  }
+  guzergahStmt.free();
+
+  // Saatler
+  const saatStmt = db.prepare(`
+    SELECT yon, kalkis_saati, aciklama
+    FROM hareket_saatleri
+    WHERE hat_no = ?
+    ORDER BY yon, kalkis_saati
+  `);
+  saatStmt.bind([hatNo]);
+  const saatler: HareketSaati[] = [];
+  while (saatStmt.step()) {
+    saatler.push(saatStmt.getAsObject() as HareketSaati);
+  }
+  saatStmt.free();
+
+  return {
+    ...hat,
+    duraklar,
+    guzergah,
+    saatler,
+  };
+}
+
 // --------------- component ---------------
 
 function App() {
+  const [db, setDb] = useState<Database | null>(null);
   const [hatlar, setHatlar] = useState<Hat[]>([]);
   const [selectedHatNo, setSelectedHatNo] = useState<string>("");
   const [detail, setDetail] = useState<HatDetail | null>(null);
@@ -58,18 +147,21 @@ function App() {
   const [loadingDetail, setLoadingDetail] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // hat listesini yukle
+  // veritabanını yükle
   useEffect(() => {
     let active = true;
-    fetch("data/hatlar.json", { cache: "no-store" })
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json() as Promise<HatlarPayload>;
-      })
-      .then((payload) => {
-        if (!active) return;
-        setHatlar(payload.hatlar);
-        if (payload.hatlar.length > 0) setSelectedHatNo(payload.hatlar[0].hat_no);
+    loadDatabase()
+      .then((database) => {
+        if (!active) {
+          database.close();
+          return;
+        }
+        setDb(database);
+        const hatlarData = queryHatlar(database);
+        setHatlar(hatlarData);
+        if (hatlarData.length > 0) {
+          setSelectedHatNo(hatlarData[0].hat_no);
+        }
       })
       .catch((err: unknown) => {
         if (active) setError(err instanceof Error ? err.message : String(err));
@@ -82,31 +174,26 @@ function App() {
     };
   }, []);
 
-  // secilen hat detayini yukle
-  useEffect(() => {
-    if (!selectedHatNo) return;
-    let active = true;
+  // seçilen hat detayını yükle
+  const loadDetail = useCallback((hatNo: string) => {
+    if (!db || !hatNo) return;
     setLoadingDetail(true);
     setDetail(null);
-    const safeNo = selectedHatNo.replace(/[^a-zA-Z0-9._-]/g, "_");
-    fetch(`data/hat/${safeNo}.json`, { cache: "no-store" })
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json() as Promise<HatDetail>;
-      })
-      .then((d) => {
-        if (active) setDetail(d);
-      })
-      .catch((err: unknown) => {
-        if (active) setError(err instanceof Error ? err.message : String(err));
-      })
-      .finally(() => {
-        if (active) setLoadingDetail(false);
-      });
-    return () => {
-      active = false;
-    };
-  }, [selectedHatNo]);
+    try {
+      const hatDetail = queryHatDetail(db, hatNo);
+      setDetail(hatDetail);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setLoadingDetail(false);
+    }
+  }, [db]);
+
+  useEffect(() => {
+    if (selectedHatNo && db) {
+      loadDetail(selectedHatNo);
+    }
+  }, [selectedHatNo, db, loadDetail]);
 
   const filteredHatlar = useMemo(() => {
     const q = search.trim().toLowerCase();
