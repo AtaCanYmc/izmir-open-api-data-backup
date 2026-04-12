@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Database files (generated via npm run backup)
+public/data/*.db
+public/data/*.db-wal
+public/data/*.db-shm
+data/*.db
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
