@@ -6,9 +6,11 @@ import {
   backupHareketSaatleri,
   backupMetroIstasyonlar,
   backupIzbanIstasyonlar,
+  backupTramvayHatlar,
   type EshotApi,
   type MetroApi,
   type IzbanApi,
+  type TramvayApi,
 } from "../backup";
 
 describe("backupHatlar", () => {
@@ -114,6 +116,22 @@ describe("backupIzbanIstasyonlar", () => {
     };
 
     const result = await backupIzbanIstasyonlar(mockApi);
+    expect(result.records.length).toBe(2);
+  });
+});
+
+describe("backupTramvayHatlar", () => {
+  it("tramvay hatlari endpoint'ini cagirir", async () => {
+    const mockApi: TramvayApi = {
+      async getHatList() { 
+        return [
+          { HAT_ID: 1, HAT_ADI: "Karşıyaka Tramvayı" },
+          { HAT_ID: 2, HAT_ADI: "Konak Tramvayı" },
+        ]; 
+      },
+    };
+
+    const result = await backupTramvayHatlar(mockApi);
     expect(result.records.length).toBe(2);
   });
 });

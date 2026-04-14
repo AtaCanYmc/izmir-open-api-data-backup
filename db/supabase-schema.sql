@@ -91,6 +91,15 @@ CREATE TABLE IF NOT EXISTS izban_istasyonlar (
   updated_at TIMESTAMPTZ NOT NULL
 );
 
+-- Tramvay hatları
+CREATE TABLE IF NOT EXISTS tramvay_hatlar (
+  id SERIAL PRIMARY KEY,
+  hat_id INTEGER UNIQUE,
+  hat_adi TEXT,
+  hat_kodu TEXT,
+  updated_at TIMESTAMPTZ NOT NULL
+);
+
 -- İndeksler
 CREATE INDEX IF NOT EXISTS idx_eshot_duraklar_hat_no ON eshot_duraklar (hat_no);
 CREATE INDEX IF NOT EXISTS idx_eshot_duraktan_gecen_hatlar_durak_id ON eshot_duraktan_gecen_hatlar (durak_id);
@@ -127,6 +136,7 @@ ALTER TABLE eshot_hareket_saatleri ENABLE ROW LEVEL SECURITY;
 ALTER TABLE eshot_duraktan_gecen_hatlar ENABLE ROW LEVEL SECURITY;
 ALTER TABLE metro_istasyonlar ENABLE ROW LEVEL SECURITY;
 ALTER TABLE izban_istasyonlar ENABLE ROW LEVEL SECURITY;
+ALTER TABLE tramvay_hatlar ENABLE ROW LEVEL SECURITY;
 
 -- Public okuma politikaları
 CREATE POLICY "Public read backup_runs" ON backup_runs FOR SELECT USING (true);
@@ -137,6 +147,7 @@ CREATE POLICY "Public read eshot_hareket_saatleri" ON eshot_hareket_saatleri FOR
 CREATE POLICY "Public read eshot_duraktan_gecen_hatlar" ON eshot_duraktan_gecen_hatlar FOR SELECT USING (true);
 CREATE POLICY "Public read metro_istasyonlar" ON metro_istasyonlar FOR SELECT USING (true);
 CREATE POLICY "Public read izban_istasyonlar" ON izban_istasyonlar FOR SELECT USING (true);
+CREATE POLICY "Public read tramvay_hatlar" ON tramvay_hatlar FOR SELECT USING (true);
 
 -- Service role yazma politikaları (INSERT, UPDATE, DELETE)
 CREATE POLICY "Service write backup_runs" ON backup_runs FOR ALL USING (auth.role() = 'service_role');
@@ -147,3 +158,4 @@ CREATE POLICY "Service write eshot_hareket_saatleri" ON eshot_hareket_saatleri F
 CREATE POLICY "Service write eshot_duraktan_gecen_hatlar" ON eshot_duraktan_gecen_hatlar FOR ALL USING (auth.role() = 'service_role');
 CREATE POLICY "Service write metro_istasyonlar" ON metro_istasyonlar FOR ALL USING (auth.role() = 'service_role');
 CREATE POLICY "Service write izban_istasyonlar" ON izban_istasyonlar FOR ALL USING (auth.role() = 'service_role');
+CREATE POLICY "Service write tramvay_hatlar" ON tramvay_hatlar FOR ALL USING (auth.role() = 'service_role');
