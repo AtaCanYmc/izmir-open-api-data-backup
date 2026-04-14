@@ -1,14 +1,5 @@
-import path from "node:path";
-import { createRequire } from "node:module";
-import { fileURLToPath, pathToFileURL } from "node:url";
-import { createTables } from "./db/init";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const DATA_DIR = path.join(__dirname, "public", "data");
-const DB_FILE = path.join(DATA_DIR, "eshot.db");
-const require = createRequire(path.join(process.cwd(), "package.json"));
-const Database = require("better-sqlite3") as typeof import("better-sqlite3");
+import { pathToFileURL } from "node:url";
+import { getSupabaseClient, isSupabaseConfigured } from "./db/supabase";
 
 export interface EshotHat {
   HAT_NO?: string | number;
@@ -25,9 +16,8 @@ export interface EshotApi {
   getHareketSaatleri(): Promise<EshotHat[]>;
 }
 
-export interface SqlitePersistResult {
+export interface SupabasePersistResult {
   runId: number;
-  dbFile: string;
   hatlar: number;
   duraklar: number;
   guzergahlar: number;
@@ -71,12 +61,12 @@ function pickText(record: EshotHat, keys: string[]): string | null {
   return null;
 }
 
-function pickBool(record: EshotHat, key: string): number | null {
+function pickBool(record: EshotHat, key: string): boolean | null {
   const raw = record[key];
   if (raw === undefined || raw === null) return null;
   const value = String(raw).trim().toLowerCase();
-  if (value === "true" || value === "1") return 1;
-  if (value === "false" || value === "0") return 0;
+  if (value === "true" || value === "1") return true;
+  if (value === "false" || value === "0") return false;
   return null;
 }
 
@@ -93,171 +83,183 @@ function parseDuraktanGecenHatlar(record: EshotHat): string[] {
   return [...new Set(parts)];
 }
 
-export async function persistAllToSqlite(
+export async function persistAllToSupabase(
   now: Date,
   hatlar: EshotHat[],
   duraklar: EshotHat[],
   guzergahlar: EshotHat[],
-  saatler: EshotHat[],
-  databaseFile = DB_FILE
-): Promise<SqlitePersistResult> {
-  createTables(databaseFile);
-  const db = new Database(databaseFile);
+  saatler: EshotHat[]
+): Promise<SupabasePersistResult> {
+  const supabase = getSupabaseClient();
   const nowIso = now.toISOString();
 
-  const runStartStmt = db.prepare(
-    `INSERT INTO backup_runs (source, started_at, status, notes) VALUES (@source, @startedAt, @status, @notes)`
-  );
-  const runFinishStmt = db.prepare(
-    `UPDATE backup_runs SET finished_at = @finishedAt, status = @status, notes = @notes WHERE id = @id`
-  );
+  // Backup run başlat
+  const { data: runData, error: runError } = await supabase
+    .from("backup_runs")
+    .insert({
+      source: "backup.ts",
+      started_at: nowIso,
+      status: "running",
+      notes: "Veriler API'den cekildi, Supabase yazimi basliyor",
+    })
+    .select("id")
+    .single();
 
-  const runResult = runStartStmt.run({
-    source: "backup.ts",
-    startedAt: nowIso,
-    status: "running",
-    notes: "Veriler API'den cekildi, SQLite yazimi basliyor",
-  });
-  const runId = Number(runResult.lastInsertRowid);
+  if (runError || !runData) {
+    throw new Error(`Backup run başlatılamadı: ${runError?.message}`);
+  }
+  const runId = runData.id;
 
-  const writeAll = db.transaction(() => {
-    db.exec(
-      "DELETE FROM hatlar; DELETE FROM duraklar; DELETE FROM duraktan_gecen_hatlar; DELETE FROM guzergah_noktalari; DELETE FROM hareket_saatleri;"
-    );
+  try {
+    // Mevcut verileri temizle
+    console.log("  Mevcut veriler temizleniyor...");
+    await supabase.from("hareket_saatleri").delete().neq("id", 0);
+    await supabase.from("guzergah_noktalari").delete().neq("id", 0);
+    await supabase.from("duraktan_gecen_hatlar").delete().neq("id", 0);
+    await supabase.from("duraklar").delete().neq("id", 0);
+    await supabase.from("hatlar").delete().neq("hat_no", "");
 
-    const upsertHat = db.prepare(
-      `INSERT INTO hatlar (hat_no, hat_adi, hat_baslangic, hat_bitis, updated_at, raw_json)
-       VALUES (@hatNo, @hatAdi, @hatBaslangic, @hatBitis, @updatedAt, @rawJson)
-       ON CONFLICT(hat_no) DO UPDATE SET
-         hat_adi = excluded.hat_adi,
-         hat_baslangic = excluded.hat_baslangic,
-         hat_bitis = excluded.hat_bitis,
-         updated_at = excluded.updated_at,
-         raw_json = excluded.raw_json`
-    );
+    // Hatları yaz
+    console.log("  Hatlar yazılıyor...");
+    const hatlarData = hatlar
+      .map((row) => {
+        const hatNo = getHatNo(row);
+        if (!hatNo) return null;
+        return {
+          hat_no: hatNo,
+          hat_adi: pickText(row, ["HAT_ADI"]),
+          hat_baslangic: pickText(row, ["HAT_BASLANGIC"]),
+          hat_bitis: pickText(row, ["HAT_BITIS"]),
+          updated_at: nowIso,
+          raw_json: row,
+        };
+      })
+      .filter(Boolean);
 
-    const upsertDurak = db.prepare(
-      `INSERT INTO duraklar (hat_no, durak_id, durak_adi, enlem, boylam, updated_at, raw_json)
-       VALUES (@hatNo, @durakId, @durakAdi, @enlem, @boylam, @updatedAt, @rawJson)
-       ON CONFLICT(hat_no, durak_id) DO UPDATE SET
-         durak_adi = excluded.durak_adi,
-         enlem = excluded.enlem,
-         boylam = excluded.boylam,
-         updated_at = excluded.updated_at,
-         raw_json = excluded.raw_json`
-    );
-
-    const upsertDuraktanGecenHat = db.prepare(
-      `INSERT INTO duraktan_gecen_hatlar (durak_id, hat_no, updated_at)
-       VALUES (@durakId, @hatNo, @updatedAt)
-       ON CONFLICT(durak_id, hat_no) DO UPDATE SET updated_at = excluded.updated_at`
-    );
-
-    const upsertGuzergah = db.prepare(
-      `INSERT INTO guzergah_noktalari (hat_no, yon, sira, enlem, boylam, updated_at, raw_json)
-       VALUES (@hatNo, @yon, @sira, @enlem, @boylam, @updatedAt, @rawJson)
-       ON CONFLICT(hat_no, yon, sira) DO UPDATE SET
-         enlem = excluded.enlem,
-         boylam = excluded.boylam,
-         updated_at = excluded.updated_at,
-         raw_json = excluded.raw_json`
-    );
-
-    const insertSaat = db.prepare(
-      `INSERT INTO hareket_saatleri (hat_no, tarife_id, sira, gidis_saati, donus_saati, 
-        gidis_engelli_destegi, donus_engelli_destegi, bisikletli_gidis, bisikletli_donus,
-        gidis_elektrikli_otobus, donus_elektrikli_otobus, updated_at, raw_json)
-       VALUES (@hatNo, @tarifeId, @sira, @gidisSaati, @donusSaati,
-        @gidisEngelliDestegi, @donusEngelliDestegi, @bisikletliGidis, @bisikletliDonus,
-        @gidisElektrikliOtobus, @donusElektrikliOtobus, @updatedAt, @rawJson)`
-    );
-
-    for (const row of hatlar) {
-      const hatNo = getHatNo(row);
-      if (!hatNo) continue;
-      upsertHat.run({
-        hatNo,
-        hatAdi: pickText(row, ["HAT_ADI"]),
-        hatBaslangic: pickText(row, ["HAT_BASLANGIC"]),
-        hatBitis: pickText(row, ["HAT_BITIS"]),
-        updatedAt: nowIso,
-        rawJson: JSON.stringify(row),
-      });
+    if (hatlarData.length > 0) {
+      const { error } = await supabase.from("hatlar").upsert(hatlarData, { onConflict: "hat_no" });
+      if (error) throw new Error(`Hatlar yazılamadı: ${error.message}`);
     }
+
+    // Durakları yaz
+    console.log("  Duraklar yazılıyor...");
+    const durakTanGecenHatlarBatch: { durak_id: number; hat_no: string; updated_at: string }[] = [];
 
     for (const row of duraklar) {
       const durakId = pickNumber(row, ["DURAK_ID", "ID"]);
-      upsertDurak.run({
-        hatNo: getHatNo(row),
-        durakId,
-        durakAdi: pickText(row, ["DURAK_ADI", "ADI"]),
-        enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
-        boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
-        updatedAt: nowIso,
-        rawJson: JSON.stringify(row),
-      });
+      const hatNo = getHatNo(row);
 
+      const { error } = await supabase.from("duraklar").upsert(
+        {
+          hat_no: hatNo,
+          durak_id: durakId,
+          durak_adi: pickText(row, ["DURAK_ADI", "ADI"]),
+          enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
+          boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
+          updated_at: nowIso,
+          raw_json: row,
+        },
+        { onConflict: "hat_no,durak_id" }
+      );
+      if (error) console.warn(`  Durak yazılamadı: ${error.message}`);
+
+      // Duraktan geçen hatları topla
       if (durakId !== null) {
-        for (const hatNo of parseDuraktanGecenHatlar(row)) {
-          upsertDuraktanGecenHat.run({ durakId, hatNo, updatedAt: nowIso });
+        for (const gecenHatNo of parseDuraktanGecenHatlar(row)) {
+          durakTanGecenHatlarBatch.push({
+            durak_id: durakId,
+            hat_no: gecenHatNo,
+            updated_at: nowIso,
+          });
         }
       }
     }
 
+    // Duraktan geçen hatları batch olarak yaz
+    if (durakTanGecenHatlarBatch.length > 0) {
+      console.log("  Duraktan geçen hatlar yazılıyor...");
+      // Supabase'de batch upsert için 1000'lik parçalara böl
+      for (let i = 0; i < durakTanGecenHatlarBatch.length; i += 1000) {
+        const batch = durakTanGecenHatlarBatch.slice(i, i + 1000);
+        const { error } = await supabase
+          .from("duraktan_gecen_hatlar")
+          .upsert(batch, { onConflict: "durak_id,hat_no" });
+        if (error) console.warn(`  Duraktan geçen hatlar yazılamadı: ${error.message}`);
+      }
+    }
+
+    // Güzergahları yaz
+    console.log("  Güzergahlar yazılıyor...");
     let guzergahSira = 0;
-    for (const row of guzergahlar) {
+    const guzergahBatch = guzergahlar.map((row) => {
       const sira = pickNumber(row, ["SIRA", "SIRANO", "NOKTA_SIRA"]) ?? ++guzergahSira;
-      upsertGuzergah.run({
-        hatNo: getHatNo(row),
+      return {
+        hat_no: getHatNo(row),
         yon: pickNumber(row, ["YON"]),
         sira,
         enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
         boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
-        updatedAt: nowIso,
-        rawJson: JSON.stringify(row),
-      });
+        updated_at: nowIso,
+        raw_json: row,
+      };
+    });
+
+    // Batch olarak yaz
+    for (let i = 0; i < guzergahBatch.length; i += 1000) {
+      const batch = guzergahBatch.slice(i, i + 1000);
+      const { error } = await supabase
+        .from("guzergah_noktalari")
+        .upsert(batch, { onConflict: "hat_no,yon,sira" });
+      if (error) console.warn(`  Güzergah noktaları yazılamadı: ${error.message}`);
     }
 
-    for (const row of saatler) {
-      insertSaat.run({
-        hatNo: getHatNo(row),
-        tarifeId: pickNumber(row, ["TARIFE_ID"]),
-        sira: pickNumber(row, ["SIRA"]),
-        gidisSaati: pickText(row, ["GIDIS_SAATI"]),
-        donusSaati: pickText(row, ["DONUS_SAATI"]),
-        gidisEngelliDestegi: pickBool(row, "GIDIS_ENGELLI_DESTEGI"),
-        donusEngelliDestegi: pickBool(row, "DONUS_ENGELLI_DESTEGI"),
-        bisikletliGidis: pickBool(row, "BISIKLETLI_GIDIS"),
-        bisikletliDonus: pickBool(row, "BISIKLETLI_DONUS"),
-        gidisElektrikliOtobus: pickBool(row, "GIDIS_ELEKTRIKLI_OTOBUS"),
-        donusElektrikliOtobus: pickBool(row, "DONUS_ELEKTRIKLI_OTOBUS"),
-        updatedAt: nowIso,
-        rawJson: JSON.stringify(row),
-      });
-    }
-  });
+    // Hareket saatlerini yaz
+    console.log("  Hareket saatleri yazılıyor...");
+    const saatlerBatch = saatler.map((row) => ({
+      hat_no: getHatNo(row),
+      tarife_id: pickNumber(row, ["TARIFE_ID"]),
+      sira: pickNumber(row, ["SIRA"]),
+      gidis_saati: pickText(row, ["GIDIS_SAATI"]),
+      donus_saati: pickText(row, ["DONUS_SAATI"]),
+      gidis_engelli_destegi: pickBool(row, "GIDIS_ENGELLI_DESTEGI"),
+      donus_engelli_destegi: pickBool(row, "DONUS_ENGELLI_DESTEGI"),
+      bisikletli_gidis: pickBool(row, "BISIKLETLI_GIDIS"),
+      bisikletli_donus: pickBool(row, "BISIKLETLI_DONUS"),
+      gidis_elektrikli_otobus: pickBool(row, "GIDIS_ELEKTRIKLI_OTOBUS"),
+      donus_elektrikli_otobus: pickBool(row, "DONUS_ELEKTRIKLI_OTOBUS"),
+      updated_at: nowIso,
+      raw_json: row,
+    }));
 
-  try {
-    writeAll();
-    runFinishStmt.run({
-      id: runId,
-      finishedAt: new Date().toISOString(),
+    for (let i = 0; i < saatlerBatch.length; i += 1000) {
+      const batch = saatlerBatch.slice(i, i + 1000);
+      const { error } = await supabase.from("hareket_saatleri").insert(batch);
+      if (error) console.warn(`  Hareket saatleri yazılamadı: ${error.message}`);
+    }
+
+    // Backup run'ı başarılı olarak işaretle
+    await supabase.from("backup_runs").update({
+      finished_at: new Date().toISOString(),
       status: "success",
       notes: `hatlar=${hatlar.length}, duraklar=${duraklar.length}, guzergahlar=${guzergahlar.length}, saatler=${saatler.length}`,
-    });
+    }).eq("id", runId);
+
+    return {
+      runId,
+      hatlar: hatlar.length,
+      duraklar: duraklar.length,
+      guzergahlar: guzergahlar.length,
+      saatler: saatler.length,
+    };
   } catch (error) {
-    runFinishStmt.run({
-      id: runId,
-      finishedAt: new Date().toISOString(),
+    // Backup run'ı başarısız olarak işaretle
+    await supabase.from("backup_runs").update({
+      finished_at: new Date().toISOString(),
       status: "failed",
       notes: error instanceof Error ? error.message : "Bilinmeyen hata",
-    });
-    db.close();
+    }).eq("id", runId);
     throw error;
   }
-
-  db.close();
-  return { runId, dbFile: databaseFile, hatlar: hatlar.length, duraklar: duraklar.length, guzergahlar: guzergahlar.length, saatler: saatler.length };
 }
 
 export async function backupHatlar(api: EshotApi): Promise<{ total: number; records: EshotHat[] }> {
@@ -302,14 +304,23 @@ export async function backupAll(api: EshotApi, dryRun = false): Promise<void> {
 
   if (dryRun) return;
 
-  console.log("SQLite veritabanina yaziliyor...");
-  const result = await persistAllToSqlite(now, hatlar.records, duraklar.records, guzergahlar.records, saatler.records);
+  console.log("Supabase veritabanına yazılıyor...");
+  const result = await persistAllToSupabase(now, hatlar.records, duraklar.records, guzergahlar.records, saatler.records);
   console.log(`  ✓ run id  : ${result.runId}`);
-  console.log(`  ✓ db      : ${result.dbFile}`);
+  console.log(`  ✓ hatlar  : ${result.hatlar}`);
+  console.log(`  ✓ duraklar: ${result.duraklar}`);
 }
 
 export async function run(argv = process.argv): Promise<void> {
   const dryRun = argv.includes("--dry-run");
+
+  // Supabase konfigürasyonunu kontrol et
+  if (!dryRun && !isSupabaseConfigured()) {
+    console.error("Hata: SUPABASE_URL ve SUPABASE_SERVICE_ROLE_KEY environment variables tanımlanmalı");
+    console.error("Örnek: SUPABASE_URL=https://xxx.supabase.co SUPABASE_SERVICE_ROLE_KEY=xxx npm run backup");
+    process.exit(1);
+  }
+
   const api = await createEshotApi();
 
   if (dryRun) {
@@ -320,14 +331,14 @@ export async function run(argv = process.argv): Promise<void> {
   }
 
   await backupAll(api);
-  console.log(`\n✓ Yedekleme tamamlandi! -> ${DB_FILE}`);
+  console.log("\n✓ Yedekleme tamamlandı!");
 }
 
 const isDirectRun = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 
 if (isDirectRun) {
   run().catch((error) => {
-    console.error("Yedekleme hatasi:", error);
+    console.error("Yedekleme hatası:", error);
     process.exit(1);
   });
 }

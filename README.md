@@ -1,79 +1,96 @@
 # Izmir Open API Data Backup
 
-Bu proje, `izmir-open-data-js` kutuphanesi ile ESHOT verisini gunluk yedekler ve GitHub Pages uzerinden hat bazli goruntuler.
-Ek olarak verileri SQLite uzerinde saklamak icin `better-sqlite3` kullanir.
+Bu proje, `izmir-open-data-js` kutuphanesi ile ESHOT verisini gunluk yedekler ve **Supabase PostgreSQL** veritabaninda saklar.
+
+## Mimari
+
+- **Veri Kaynağı**: İzmir Büyükşehir Belediyesi Open Data API (ESHOT)
+- **Depolama**: Supabase PostgreSQL
+- **Otomasyon**: GitHub Actions (günlük yedekleme)
+- **Secrets**: GitHub Secrets üzerinden Supabase bilgileri
 
 ## Dosyalar
 
-- `backup.ts`: ESHOT verisini ceker, `data/eshot-hatlar.json` ve hat bazli klasor yapisini yazar.
-   - `data/eshot/index.json`
-   - `data/eshot/<hatNo>/duraklar.json`
-   - `data/eshot/<hatNo>/guzergah.json`
-   - `data/eshot/<hatNo>/saatler.json`
-- `.github/workflows/daily-backup.yml`: Her gun TSI 23:00 (UTC 20:00) backup scriptini calistirir ve degisiklik varsa commit/push yapar.
-- `index.html`: TypeScript React uygulamasini yukler.
-- `src/App.tsx`: Tailwind tabanli, responsive, arama destekli goruntuleme arayuzu.
-   - `index.json` uzerinden hat listesi yukler
-   - Secilen hat icin detay dosyalarini lazy-load eder
-- `tests/backup.test.ts`: backup mantigi icin birim testleri.
-- `db/init.ts`: `data/eshot.db` dosyasini ve tablolari olusturur.
-- `docs/sqlite-tablolar.md`: SQLite tablo semasi ve alan aciklamalari.
-- `prompt.md`: Sik kullanilan prompt kaliplari.
-- `data/eshot-hatlar.json`: Uretilen JSON yedek dosyasi.
-- `data/eshot/`: Hat bazli tum detay dosyalari.
+- `backup.ts`: ESHOT verisini çeker ve Supabase'e yazar.
+- `db/supabase.ts`: Supabase client bağlantı modülü.
+- `db/supabase-schema.sql`: PostgreSQL tablo şemaları (Supabase'de çalıştırılmalı).
+- `.github/workflows/daily-backup.yml`: Her gün 06:00 TSİ backup scriptini çalıştırır.
+- `src/App.tsx`: React frontend uygulaması.
+- `tests/backup.test.ts`: Backup mantığı için birim testleri.
 
 ## Kurulum
+
+### 1. Bağımlılıkları Yükle
 
 ```bash
 npm install
 ```
 
-## Calistirma
+### 2. Supabase Projesi Oluştur
+
+1. [supabase.com](https://supabase.com) üzerinden yeni proje oluştur
+2. SQL Editor'de `db/supabase-schema.sql` dosyasındaki SQL'i çalıştır
+3. Project Settings > API bölümünden bilgileri al:
+   - `SUPABASE_URL`: Project URL
+   - `SUPABASE_SERVICE_ROLE_KEY`: service_role key (secret, paylaşma!)
+
+### 3. GitHub Secrets Ayarla
+
+GitHub repository'de Settings > Secrets and variables > Actions'a git ve şu secrets'ları ekle:
+
+- `SUPABASE_URL`: `https://xxx.supabase.co`
+- `SUPABASE_SERVICE_ROLE_KEY`: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...`
+
+## Çalıştırma
+
+### Yerel Test (Supabase bağlantısıyla)
 
 ```bash
+SUPABASE_URL=https://xxx.supabase.co \
+SUPABASE_SERVICE_ROLE_KEY=xxx \
 npm run backup
 ```
 
-Sadece cekme testi (dosya yazmadan):
+### Sadece API Testi (veritabanına yazmadan)
 
 ```bash
 npm run backup:dry
 ```
 
-SQLite tablolarini olusturma:
-
-```bash
-npm run db:init
-```
-
-Testleri calistirma:
+### Testleri Çalıştırma
 
 ```bash
 npm test
 ```
 
-## GitHub Pages
+## Veritabanı Şeması
 
-1. GitHub depo ayarlarinda Pages kaynagini branch root olarak secin.
-2. `index.html` ve `data/` klasoru root'ta oldugu icin ek ayar gerekmez.
+Supabase'de aşağıdaki tablolar oluşturulur:
 
-## Ornek JSON formatlari
+| Tablo | Açıklama |
+|-------|----------|
+| `backup_runs` | Yedekleme çalışma kayıtları |
+| `hatlar` | Hat bilgileri (hat_no, hat_adi, vs.) |
+| `duraklar` | Durak bilgileri (koordinatlar, isimler) |
+| `guzergah_noktalari` | Güzergah polyline noktaları |
+| `hareket_saatleri` | Sefer saatleri |
+| `duraktan_gecen_hatlar` | Durak-hat ilişkileri |
 
-```json
-{
-  "updatedAt": "2026-04-08T20:00:00.000Z",
-  "source": "izmir-open-data-js / ESHOT grouped by HAT_NO",
-  "total": 441,
-  "hatlar": [{ "hatNo": "10", "folder": "10" }]
-}
-```
+Detaylı şema için `db/supabase-schema.sql` ve `docs/sqlite-tablolar.md` dosyalarına bakın.
 
-```json
-{
-  "updatedAt": "2026-04-08T20:00:00.000Z",
-  "source": "izmir-open-data-js / ESHOT getDuraklar",
-  "hatNo": "10",
-  "total": 52,
-  "duraklar": []
-}
-```
+## GitHub Actions Workflow
+
+Workflow her gün otomatik olarak çalışır:
+
+- **Zamanlama**: Her gün 06:00 TSİ (03:00 UTC)
+- **Manuel Tetikleme**: Actions sekmesinden "Run workflow" butonu
+
+Secrets doğru ayarlandığında, workflow İzmir Open Data API'den verileri çeker ve Supabase'e yazar.
+
+## Güvenlik Notları
+
+⚠️ **ÖNEMLİ**: `SUPABASE_SERVICE_ROLE_KEY` asla commit edilmemeli veya paylaşılmamalıdır!
+
+- GitHub Secrets üzerinden güvenli şekilde saklanır
+- Row Level Security (RLS) ile tablolar korunur
+- Okuma herkese açık, yazma sadece service_role ile mümkün

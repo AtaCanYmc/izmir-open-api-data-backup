@@ -1,47 +1,36 @@
-name: Daily ESHOT Backup
+name: Daily ESHOT Backup to Supabase
 
 on:
   schedule:
-    # TSİ 23:00 = UTC 20:00
-    - cron: "0 20 * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    # Her gün saat 03:00 UTC (Türkiye saati 06:00)
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Manuel tetikleme için
 
 jobs:
   backup:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Run backup script
+      - name: Run backup to Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: npm run backup
 
-      - name: Export JSON for frontend
-        run: npm run db:export
-
-      - name: Commit and push if changed
+      - name: Notify on failure
+        if: failure()
         run: |
-          git diff --quiet -- data/eshot.db public/data && \
-          git ls-files --others --exclude-standard -- data/eshot.db public/data | grep -q . || {
-            echo "Degisiklik yok, commit atlanacak."
-            exit 0
-          }
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/eshot.db public/data
-          git commit -m "chore: daily eshot backup $(date -u +'%Y-%m-%d')"
-          git push
+          echo "::error::Yedekleme başarısız oldu!"
+          echo "Lütfen Supabase bağlantı ayarlarını ve API'yi kontrol edin."
