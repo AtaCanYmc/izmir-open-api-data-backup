@@ -1,4 +1,6 @@
-import "dotenv/config";
+// .env dosyası varsa yükle (local development için)
+try { await import("dotenv/config"); } catch {}
+
 import { pathToFileURL } from "node:url";
 import { getSupabaseClient, isSupabaseConfigured } from "./db/supabase";
 
