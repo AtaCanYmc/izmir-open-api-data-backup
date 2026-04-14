@@ -1,7 +1,7 @@
 -- Supabase PostgreSQL Şeması
 -- İzmir Open API ESHOT Verileri
 
--- Yedekleme çalışma kayıtları
+-- Yedekleme çalışma kayıtları (maksimum 30 kayıt tutulur)
 CREATE TABLE IF NOT EXISTS backup_runs (
   id SERIAL PRIMARY KEY,
   source TEXT NOT NULL,
@@ -17,8 +17,7 @@ CREATE TABLE IF NOT EXISTS hatlar (
   hat_adi TEXT,
   hat_baslangic TEXT,
   hat_bitis TEXT,
-  updated_at TIMESTAMPTZ NOT NULL,
-  raw_json JSONB NOT NULL
+  updated_at TIMESTAMPTZ NOT NULL
 );
 
 -- Durak bilgileri
@@ -30,7 +29,6 @@ CREATE TABLE IF NOT EXISTS duraklar (
   enlem DOUBLE PRECISION,
   boylam DOUBLE PRECISION,
   updated_at TIMESTAMPTZ NOT NULL,
-  raw_json JSONB NOT NULL,
   UNIQUE (hat_no, durak_id)
 );
 
@@ -43,7 +41,6 @@ CREATE TABLE IF NOT EXISTS guzergah_noktalari (
   enlem DOUBLE PRECISION,
   boylam DOUBLE PRECISION,
   updated_at TIMESTAMPTZ NOT NULL,
-  raw_json JSONB NOT NULL,
   UNIQUE (hat_no, yon, sira)
 );
 
@@ -61,8 +58,7 @@ CREATE TABLE IF NOT EXISTS hareket_saatleri (
   bisikletli_donus BOOLEAN,
   gidis_elektrikli_otobus BOOLEAN,
   donus_elektrikli_otobus BOOLEAN,
-  updated_at TIMESTAMPTZ NOT NULL,
-  raw_json JSONB NOT NULL
+  updated_at TIMESTAMPTZ NOT NULL
 );
 
 -- Duraktan geçen hatlar (many-to-many ilişki)
@@ -80,6 +76,26 @@ CREATE INDEX IF NOT EXISTS idx_duraktan_gecen_hatlar_durak_id ON duraktan_gecen_
 CREATE INDEX IF NOT EXISTS idx_duraktan_gecen_hatlar_hat_no ON duraktan_gecen_hatlar (hat_no);
 CREATE INDEX IF NOT EXISTS idx_guzergah_hat_no ON guzergah_noktalari (hat_no);
 CREATE INDEX IF NOT EXISTS idx_saatler_hat_no ON hareket_saatleri (hat_no);
+
+-- backup_runs tablosu için 30 kayıt limiti trigger'ı
+CREATE OR REPLACE FUNCTION limit_backup_runs()
+RETURNS TRIGGER AS $$
+BEGIN
+  DELETE FROM backup_runs
+  WHERE id IN (
+    SELECT id FROM backup_runs
+    ORDER BY started_at DESC
+    OFFSET 30
+  );
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+DROP TRIGGER IF EXISTS trigger_limit_backup_runs ON backup_runs;
+CREATE TRIGGER trigger_limit_backup_runs
+  AFTER INSERT ON backup_runs
+  FOR EACH STATEMENT
+  EXECUTE FUNCTION limit_backup_runs();
 
 -- Row Level Security (RLS) - Okuma herkese açık, yazma sadece service_role
 ALTER TABLE backup_runs ENABLE ROW LEVEL SECURITY;
@@ -104,4 +120,3 @@ CREATE POLICY "Service write duraklar" ON duraklar FOR ALL USING (auth.role() = 
 CREATE POLICY "Service write guzergah_noktalari" ON guzergah_noktalari FOR ALL USING (auth.role() = 'service_role');
 CREATE POLICY "Service write hareket_saatleri" ON hareket_saatleri FOR ALL USING (auth.role() = 'service_role');
 CREATE POLICY "Service write duraktan_gecen_hatlar" ON duraktan_gecen_hatlar FOR ALL USING (auth.role() = 'service_role');
-

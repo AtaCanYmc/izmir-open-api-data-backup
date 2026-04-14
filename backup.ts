@@ -131,7 +131,6 @@ export async function persistAllToSupabase(
           hat_baslangic: pickText(row, ["HAT_BASLANGIC"]),
           hat_bitis: pickText(row, ["HAT_BITIS"]),
           updated_at: nowIso,
-          raw_json: row,
         };
       })
       .filter(Boolean);
@@ -157,7 +156,6 @@ export async function persistAllToSupabase(
           enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
           boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
           updated_at: nowIso,
-          raw_json: row,
         },
         { onConflict: "hat_no,durak_id" }
       );
@@ -200,7 +198,6 @@ export async function persistAllToSupabase(
         enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
         boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
         updated_at: nowIso,
-        raw_json: row,
       };
     });
 
@@ -228,7 +225,6 @@ export async function persistAllToSupabase(
       gidis_elektrikli_otobus: pickBool(row, "GIDIS_ELEKTRIKLI_OTOBUS"),
       donus_elektrikli_otobus: pickBool(row, "DONUS_ELEKTRIKLI_OTOBUS"),
       updated_at: nowIso,
-      raw_json: row,
     }));
 
     for (let i = 0; i < saatlerBatch.length; i += 1000) {
