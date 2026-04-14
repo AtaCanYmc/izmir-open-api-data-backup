@@ -113,11 +113,11 @@ export async function persistAllToSupabase(
   try {
     // Mevcut verileri temizle
     console.log("  Mevcut veriler temizleniyor...");
-    await supabase.from("hareket_saatleri").delete().neq("id", 0);
-    await supabase.from("guzergah_noktalari").delete().neq("id", 0);
-    await supabase.from("duraktan_gecen_hatlar").delete().neq("id", 0);
-    await supabase.from("duraklar").delete().neq("id", 0);
-    await supabase.from("hatlar").delete().neq("hat_no", "");
+    await supabase.from("eshot_hareket_saatleri").delete().neq("id", 0);
+    await supabase.from("eshot_guzergah_noktalari").delete().neq("id", 0);
+    await supabase.from("eshot_duraktan_gecen_hatlar").delete().neq("id", 0);
+    await supabase.from("eshot_duraklar").delete().neq("id", 0);
+    await supabase.from("eshot_hatlar").delete().neq("hat_no", "");
 
     // Hatları yaz
     console.log("  Hatlar yazılıyor...");
@@ -136,7 +136,7 @@ export async function persistAllToSupabase(
       .filter(Boolean);
 
     if (hatlarData.length > 0) {
-      const { error } = await supabase.from("hatlar").upsert(hatlarData, { onConflict: "hat_no" });
+      const { error } = await supabase.from("eshot_hatlar").upsert(hatlarData, { onConflict: "hat_no" });
       if (error) throw new Error(`Hatlar yazılamadı: ${error.message}`);
     }
 
@@ -148,7 +148,7 @@ export async function persistAllToSupabase(
       const durakId = pickNumber(row, ["DURAK_ID", "ID"]);
       const hatNo = getHatNo(row);
 
-      const { error } = await supabase.from("duraklar").upsert(
+      const { error } = await supabase.from("eshot_duraklar").upsert(
         {
           hat_no: hatNo,
           durak_id: durakId,
@@ -180,7 +180,7 @@ export async function persistAllToSupabase(
       for (let i = 0; i < durakTanGecenHatlarBatch.length; i += 1000) {
         const batch = durakTanGecenHatlarBatch.slice(i, i + 1000);
         const { error } = await supabase
-          .from("duraktan_gecen_hatlar")
+          .from("eshot_duraktan_gecen_hatlar")
           .upsert(batch, { onConflict: "durak_id,hat_no" });
         if (error) console.warn(`  Duraktan geçen hatlar yazılamadı: ${error.message}`);
       }
@@ -205,7 +205,7 @@ export async function persistAllToSupabase(
     for (let i = 0; i < guzergahBatch.length; i += 1000) {
       const batch = guzergahBatch.slice(i, i + 1000);
       const { error } = await supabase
-        .from("guzergah_noktalari")
+        .from("eshot_guzergah_noktalari")
         .upsert(batch, { onConflict: "hat_no,yon,sira" });
       if (error) console.warn(`  Güzergah noktaları yazılamadı: ${error.message}`);
     }
@@ -229,7 +229,7 @@ export async function persistAllToSupabase(
 
     for (let i = 0; i < saatlerBatch.length; i += 1000) {
       const batch = saatlerBatch.slice(i, i + 1000);
-      const { error } = await supabase.from("hareket_saatleri").insert(batch);
+      const { error } = await supabase.from("eshot_hareket_saatleri").insert(batch);
       if (error) console.warn(`  Hareket saatleri yazılamadı: ${error.message}`);
     }
 

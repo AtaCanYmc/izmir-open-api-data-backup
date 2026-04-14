@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS backup_runs (
 );
 
 -- Hat bilgileri
-CREATE TABLE IF NOT EXISTS hatlar (
+CREATE TABLE IF NOT EXISTS eshot_hatlar (
   hat_no TEXT PRIMARY KEY,
   hat_adi TEXT,
   hat_baslangic TEXT,
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS hatlar (
 );
 
 -- Durak bilgileri
-CREATE TABLE IF NOT EXISTS duraklar (
+CREATE TABLE IF NOT EXISTS eshot_duraklar (
   id SERIAL PRIMARY KEY,
   hat_no TEXT,
   durak_id INTEGER,
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS duraklar (
 );
 
 -- Güzergah noktaları
-CREATE TABLE IF NOT EXISTS guzergah_noktalari (
+CREATE TABLE IF NOT EXISTS eshot_guzergah_noktalari (
   id SERIAL PRIMARY KEY,
   hat_no TEXT,
   yon INTEGER,
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS guzergah_noktalari (
 );
 
 -- Hareket saatleri
-CREATE TABLE IF NOT EXISTS hareket_saatleri (
+CREATE TABLE IF NOT EXISTS eshot_hareket_saatleri (
   id SERIAL PRIMARY KEY,
   hat_no TEXT,
   tarife_id INTEGER,
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS hareket_saatleri (
 );
 
 -- Duraktan geçen hatlar (many-to-many ilişki)
-CREATE TABLE IF NOT EXISTS duraktan_gecen_hatlar (
+CREATE TABLE IF NOT EXISTS eshot_duraktan_gecen_hatlar (
   id SERIAL PRIMARY KEY,
   durak_id INTEGER NOT NULL,
   hat_no TEXT NOT NULL,
@@ -71,11 +71,11 @@ CREATE TABLE IF NOT EXISTS duraktan_gecen_hatlar (
 );
 
 -- İndeksler
-CREATE INDEX IF NOT EXISTS idx_duraklar_hat_no ON duraklar (hat_no);
-CREATE INDEX IF NOT EXISTS idx_duraktan_gecen_hatlar_durak_id ON duraktan_gecen_hatlar (durak_id);
-CREATE INDEX IF NOT EXISTS idx_duraktan_gecen_hatlar_hat_no ON duraktan_gecen_hatlar (hat_no);
-CREATE INDEX IF NOT EXISTS idx_guzergah_hat_no ON guzergah_noktalari (hat_no);
-CREATE INDEX IF NOT EXISTS idx_saatler_hat_no ON hareket_saatleri (hat_no);
+CREATE INDEX IF NOT EXISTS idx_eshot_duraklar_hat_no ON eshot_duraklar (hat_no);
+CREATE INDEX IF NOT EXISTS idx_eshot_duraktan_gecen_hatlar_durak_id ON eshot_duraktan_gecen_hatlar (durak_id);
+CREATE INDEX IF NOT EXISTS idx_eshot_duraktan_gecen_hatlar_hat_no ON eshot_duraktan_gecen_hatlar (hat_no);
+CREATE INDEX IF NOT EXISTS idx_eshot_guzergah_hat_no ON eshot_guzergah_noktalari (hat_no);
+CREATE INDEX IF NOT EXISTS idx_eshot_saatler_hat_no ON eshot_hareket_saatleri (hat_no);
 
 -- backup_runs tablosu için 30 kayıt limiti trigger'ı
 CREATE OR REPLACE FUNCTION limit_backup_runs()
@@ -99,24 +99,24 @@ CREATE TRIGGER trigger_limit_backup_runs
 
 -- Row Level Security (RLS) - Okuma herkese açık, yazma sadece service_role
 ALTER TABLE backup_runs ENABLE ROW LEVEL SECURITY;
-ALTER TABLE hatlar ENABLE ROW LEVEL SECURITY;
-ALTER TABLE duraklar ENABLE ROW LEVEL SECURITY;
-ALTER TABLE guzergah_noktalari ENABLE ROW LEVEL SECURITY;
-ALTER TABLE hareket_saatleri ENABLE ROW LEVEL SECURITY;
-ALTER TABLE duraktan_gecen_hatlar ENABLE ROW LEVEL SECURITY;
+ALTER TABLE eshot_hatlar ENABLE ROW LEVEL SECURITY;
+ALTER TABLE eshot_duraklar ENABLE ROW LEVEL SECURITY;
+ALTER TABLE eshot_guzergah_noktalari ENABLE ROW LEVEL SECURITY;
+ALTER TABLE eshot_hareket_saatleri ENABLE ROW LEVEL SECURITY;
+ALTER TABLE eshot_duraktan_gecen_hatlar ENABLE ROW LEVEL SECURITY;
 
 -- Public okuma politikaları
 CREATE POLICY "Public read backup_runs" ON backup_runs FOR SELECT USING (true);
-CREATE POLICY "Public read hatlar" ON hatlar FOR SELECT USING (true);
-CREATE POLICY "Public read duraklar" ON duraklar FOR SELECT USING (true);
-CREATE POLICY "Public read guzergah_noktalari" ON guzergah_noktalari FOR SELECT USING (true);
-CREATE POLICY "Public read hareket_saatleri" ON hareket_saatleri FOR SELECT USING (true);
-CREATE POLICY "Public read duraktan_gecen_hatlar" ON duraktan_gecen_hatlar FOR SELECT USING (true);
+CREATE POLICY "Public read eshot_hatlar" ON eshot_hatlar FOR SELECT USING (true);
+CREATE POLICY "Public read eshot_duraklar" ON eshot_duraklar FOR SELECT USING (true);
+CREATE POLICY "Public read eshot_guzergah_noktalari" ON eshot_guzergah_noktalari FOR SELECT USING (true);
+CREATE POLICY "Public read eshot_hareket_saatleri" ON eshot_hareket_saatleri FOR SELECT USING (true);
+CREATE POLICY "Public read eshot_duraktan_gecen_hatlar" ON eshot_duraktan_gecen_hatlar FOR SELECT USING (true);
 
 -- Service role yazma politikaları (INSERT, UPDATE, DELETE)
 CREATE POLICY "Service write backup_runs" ON backup_runs FOR ALL USING (auth.role() = 'service_role');
-CREATE POLICY "Service write hatlar" ON hatlar FOR ALL USING (auth.role() = 'service_role');
-CREATE POLICY "Service write duraklar" ON duraklar FOR ALL USING (auth.role() = 'service_role');
-CREATE POLICY "Service write guzergah_noktalari" ON guzergah_noktalari FOR ALL USING (auth.role() = 'service_role');
-CREATE POLICY "Service write hareket_saatleri" ON hareket_saatleri FOR ALL USING (auth.role() = 'service_role');
-CREATE POLICY "Service write duraktan_gecen_hatlar" ON duraktan_gecen_hatlar FOR ALL USING (auth.role() = 'service_role');
+CREATE POLICY "Service write eshot_hatlar" ON eshot_hatlar FOR ALL USING (auth.role() = 'service_role');
+CREATE POLICY "Service write eshot_duraklar" ON eshot_duraklar FOR ALL USING (auth.role() = 'service_role');
+CREATE POLICY "Service write eshot_guzergah_noktalari" ON eshot_guzergah_noktalari FOR ALL USING (auth.role() = 'service_role');
+CREATE POLICY "Service write eshot_hareket_saatleri" ON eshot_hareket_saatleri FOR ALL USING (auth.role() = 'service_role');
+CREATE POLICY "Service write eshot_duraktan_gecen_hatlar" ON eshot_duraktan_gecen_hatlar FOR ALL USING (auth.role() = 'service_role');
