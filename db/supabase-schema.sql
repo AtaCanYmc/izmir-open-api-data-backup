@@ -70,6 +70,27 @@ CREATE TABLE IF NOT EXISTS eshot_duraktan_gecen_hatlar (
   UNIQUE (durak_id, hat_no)
 );
 
+-- Metro istasyonları
+CREATE TABLE IF NOT EXISTS metro_istasyonlar (
+  id SERIAL PRIMARY KEY,
+  istasyon_id INTEGER UNIQUE,
+  istasyon_adi TEXT,
+  sira INTEGER,
+  enlem DOUBLE PRECISION,
+  boylam DOUBLE PRECISION,
+  updated_at TIMESTAMPTZ NOT NULL
+);
+
+-- İzban istasyonları
+CREATE TABLE IF NOT EXISTS izban_istasyonlar (
+  id SERIAL PRIMARY KEY,
+  istasyon_id INTEGER UNIQUE,
+  istasyon_adi TEXT,
+  enlem DOUBLE PRECISION,
+  boylam DOUBLE PRECISION,
+  updated_at TIMESTAMPTZ NOT NULL
+);
+
 -- İndeksler
 CREATE INDEX IF NOT EXISTS idx_eshot_duraklar_hat_no ON eshot_duraklar (hat_no);
 CREATE INDEX IF NOT EXISTS idx_eshot_duraktan_gecen_hatlar_durak_id ON eshot_duraktan_gecen_hatlar (durak_id);
@@ -104,6 +125,8 @@ ALTER TABLE eshot_duraklar ENABLE ROW LEVEL SECURITY;
 ALTER TABLE eshot_guzergah_noktalari ENABLE ROW LEVEL SECURITY;
 ALTER TABLE eshot_hareket_saatleri ENABLE ROW LEVEL SECURITY;
 ALTER TABLE eshot_duraktan_gecen_hatlar ENABLE ROW LEVEL SECURITY;
+ALTER TABLE metro_istasyonlar ENABLE ROW LEVEL SECURITY;
+ALTER TABLE izban_istasyonlar ENABLE ROW LEVEL SECURITY;
 
 -- Public okuma politikaları
 CREATE POLICY "Public read backup_runs" ON backup_runs FOR SELECT USING (true);
@@ -112,6 +135,8 @@ CREATE POLICY "Public read eshot_duraklar" ON eshot_duraklar FOR SELECT USING (t
 CREATE POLICY "Public read eshot_guzergah_noktalari" ON eshot_guzergah_noktalari FOR SELECT USING (true);
 CREATE POLICY "Public read eshot_hareket_saatleri" ON eshot_hareket_saatleri FOR SELECT USING (true);
 CREATE POLICY "Public read eshot_duraktan_gecen_hatlar" ON eshot_duraktan_gecen_hatlar FOR SELECT USING (true);
+CREATE POLICY "Public read metro_istasyonlar" ON metro_istasyonlar FOR SELECT USING (true);
+CREATE POLICY "Public read izban_istasyonlar" ON izban_istasyonlar FOR SELECT USING (true);
 
 -- Service role yazma politikaları (INSERT, UPDATE, DELETE)
 CREATE POLICY "Service write backup_runs" ON backup_runs FOR ALL USING (auth.role() = 'service_role');
@@ -120,3 +145,5 @@ CREATE POLICY "Service write eshot_duraklar" ON eshot_duraklar FOR ALL USING (au
 CREATE POLICY "Service write eshot_guzergah_noktalari" ON eshot_guzergah_noktalari FOR ALL USING (auth.role() = 'service_role');
 CREATE POLICY "Service write eshot_hareket_saatleri" ON eshot_hareket_saatleri FOR ALL USING (auth.role() = 'service_role');
 CREATE POLICY "Service write eshot_duraktan_gecen_hatlar" ON eshot_duraktan_gecen_hatlar FOR ALL USING (auth.role() = 'service_role');
+CREATE POLICY "Service write metro_istasyonlar" ON metro_istasyonlar FOR ALL USING (auth.role() = 'service_role');
+CREATE POLICY "Service write izban_istasyonlar" ON izban_istasyonlar FOR ALL USING (auth.role() = 'service_role');

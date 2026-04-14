@@ -4,7 +4,11 @@ import {
   backupDuraklar,
   backupHatGuzergahlari,
   backupHareketSaatleri,
+  backupMetroIstasyonlar,
+  backupIzbanIstasyonlar,
   type EshotApi,
+  type MetroApi,
+  type IzbanApi,
 } from "../backup";
 
 describe("backupHatlar", () => {
@@ -79,6 +83,38 @@ describe("backupHareketSaatleri", () => {
 
     const result = await backupHareketSaatleri(mockApi);
     expect(result.records.length).toBe(1);
+  });
+});
+
+describe("backupMetroIstasyonlar", () => {
+  it("metro istasyonlari endpoint'ini cagirir", async () => {
+    const mockApi: MetroApi = {
+      async getIstasyonList() { 
+        return [
+          { ISTASYON_ID: 1, ISTASYON_ADI: "Fahrettin Altay" },
+          { ISTASYON_ID: 2, ISTASYON_ADI: "Göztepe" },
+        ]; 
+      },
+    };
+
+    const result = await backupMetroIstasyonlar(mockApi);
+    expect(result.records.length).toBe(2);
+  });
+});
+
+describe("backupIzbanIstasyonlar", () => {
+  it("izban istasyonlari endpoint'ini cagirir", async () => {
+    const mockApi: IzbanApi = {
+      async getIstasyonList() { 
+        return [
+          { ISTASYON_ID: 1, ISTASYON_ADI: "Alsancak" },
+          { ISTASYON_ID: 2, ISTASYON_ADI: "Basmane" },
+        ]; 
+      },
+    };
+
+    const result = await backupIzbanIstasyonlar(mockApi);
+    expect(result.records.length).toBe(2);
   });
 });
 

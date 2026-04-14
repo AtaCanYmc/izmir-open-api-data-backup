@@ -9,11 +9,23 @@ export interface EshotHat {
   [key: string]: unknown;
 }
 
+export interface IstasyonRecord {
+  [key: string]: unknown;
+}
+
 export interface EshotApi {
   getHatlar(): Promise<EshotHat[]>;
   getDuraklar(): Promise<EshotHat[]>;
   getHatGuzergahlari(): Promise<EshotHat[]>;
   getHareketSaatleri(): Promise<EshotHat[]>;
+}
+
+export interface MetroApi {
+  getIstasyonList(): Promise<IstasyonRecord[]>;
+}
+
+export interface IzbanApi {
+  getIstasyonList(): Promise<IstasyonRecord[]>;
 }
 
 export interface SupabasePersistResult {
@@ -22,6 +34,8 @@ export interface SupabasePersistResult {
   duraklar: number;
   guzergahlar: number;
   saatler: number;
+  metroIstasyonlar: number;
+  izbanIstasyonlar: number;
 }
 
 export async function createEshotApi(): Promise<EshotApi> {
@@ -32,6 +46,26 @@ export async function createEshotApi(): Promise<EshotApi> {
 
   const client = new IzmirClient();
   return eshot(client) as unknown as EshotApi;
+}
+
+export async function createMetroApi(): Promise<MetroApi> {
+  const [{ IzmirClient }, { metro }] = await Promise.all([
+    import("izmir-open-data-js/dist/client.js"),
+    import("izmir-open-data-js/dist/endpoints/metro.js"),
+  ]);
+
+  const client = new IzmirClient();
+  return metro(client) as unknown as MetroApi;
+}
+
+export async function createIzbanApi(): Promise<IzbanApi> {
+  const [{ IzmirClient }, { izban }] = await Promise.all([
+    import("izmir-open-data-js/dist/client.js"),
+    import("izmir-open-data-js/dist/endpoints/izban.js"),
+  ]);
+
+  const client = new IzmirClient();
+  return izban(client) as unknown as IzbanApi;
 }
 
 function getHatNo(record: EshotHat): string | null {
@@ -88,7 +122,9 @@ export async function persistAllToSupabase(
   hatlar: EshotHat[],
   duraklar: EshotHat[],
   guzergahlar: EshotHat[],
-  saatler: EshotHat[]
+  saatler: EshotHat[],
+  metroIstasyonlar: IstasyonRecord[],
+  izbanIstasyonlar: IstasyonRecord[]
 ): Promise<SupabasePersistResult> {
   const supabase = getSupabaseClient();
   const nowIso = now.toISOString();
@@ -118,6 +154,8 @@ export async function persistAllToSupabase(
     await supabase.from("eshot_duraktan_gecen_hatlar").delete().neq("id", 0);
     await supabase.from("eshot_duraklar").delete().neq("id", 0);
     await supabase.from("eshot_hatlar").delete().neq("hat_no", "");
+    await supabase.from("metro_istasyonlar").delete().neq("id", 0);
+    await supabase.from("izban_istasyonlar").delete().neq("id", 0);
 
     // Hatları yaz
     console.log("  Hatlar yazılıyor...");
@@ -233,11 +271,46 @@ export async function persistAllToSupabase(
       if (error) console.warn(`  Hareket saatleri yazılamadı: ${error.message}`);
     }
 
+    // Metro istasyonlarını yaz
+    console.log("  Metro istasyonları yazılıyor...");
+    const metroBatch = metroIstasyonlar.map((row) => ({
+      istasyon_id: pickNumber(row, ["ISTASYON_ID", "ID"]),
+      istasyon_adi: pickText(row, ["ISTASYON_ADI", "ADI"]),
+      sira: pickNumber(row, ["SIRA"]),
+      enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
+      boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
+      updated_at: nowIso,
+    }));
+
+    if (metroBatch.length > 0) {
+      const { error } = await supabase
+        .from("metro_istasyonlar")
+        .upsert(metroBatch, { onConflict: "istasyon_id" });
+      if (error) console.warn(`  Metro istasyonları yazılamadı: ${error.message}`);
+    }
+
+    // İzban istasyonlarını yaz
+    console.log("  İzban istasyonları yazılıyor...");
+    const izbanBatch = izbanIstasyonlar.map((row) => ({
+      istasyon_id: pickNumber(row, ["ISTASYON_ID", "ID"]),
+      istasyon_adi: pickText(row, ["ISTASYON_ADI", "ADI"]),
+      enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
+      boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
+      updated_at: nowIso,
+    }));
+
+    if (izbanBatch.length > 0) {
+      const { error } = await supabase
+        .from("izban_istasyonlar")
+        .upsert(izbanBatch, { onConflict: "istasyon_id" });
+      if (error) console.warn(`  İzban istasyonları yazılamadı: ${error.message}`);
+    }
+
     // Backup run'ı başarılı olarak işaretle
     await supabase.from("backup_runs").update({
       finished_at: new Date().toISOString(),
       status: "success",
-      notes: `hatlar=${hatlar.length}, duraklar=${duraklar.length}, guzergahlar=${guzergahlar.length}, saatler=${saatler.length}`,
+      notes: `hatlar=${hatlar.length}, duraklar=${duraklar.length}, guzergahlar=${guzergahlar.length}, saatler=${saatler.length}, metro=${metroIstasyonlar.length}, izban=${izbanIstasyonlar.length}`,
     }).eq("id", runId);
 
     return {
@@ -246,6 +319,8 @@ export async function persistAllToSupabase(
       duraklar: duraklar.length,
       guzergahlar: guzergahlar.length,
       saatler: saatler.length,
+      metroIstasyonlar: metroIstasyonlar.length,
+      izbanIstasyonlar: izbanIstasyonlar.length,
     };
   } catch (error) {
     // Backup run'ı başarısız olarak işaretle
@@ -279,32 +354,67 @@ export async function backupHareketSaatleri(api: EshotApi): Promise<{ total: num
   return { total: records.length, records };
 }
 
-export async function backupAll(api: EshotApi, dryRun = false): Promise<void> {
+export async function backupMetroIstasyonlar(api: MetroApi): Promise<{ total: number; records: IstasyonRecord[] }> {
+  const records = await api.getIstasyonList();
+  return { total: records.length, records };
+}
+
+export async function backupIzbanIstasyonlar(api: IzbanApi): Promise<{ total: number; records: IstasyonRecord[] }> {
+  const records = await api.getIstasyonList();
+  return { total: records.length, records };
+}
+
+export async function backupAll(dryRun = false): Promise<void> {
   const now = new Date();
 
+  // API'leri oluştur
+  const [eshotApi, metroApi, izbanApi] = await Promise.all([
+    createEshotApi(),
+    createMetroApi(),
+    createIzbanApi(),
+  ]);
+
   console.log("ESHOT hat bilgileri cekiliyor...");
-  const hatlar = await backupHatlar(api);
+  const hatlar = await backupHatlar(eshotApi);
   console.log(`  ✓ Hatlar: ${hatlar.records.length} kayit`);
 
   console.log("ESHOT durak bilgileri cekiliyor...");
-  const duraklar = await backupDuraklar(api);
+  const duraklar = await backupDuraklar(eshotApi);
   console.log(`  ✓ Duraklar: ${duraklar.records.length} kayit`);
 
   console.log("ESHOT guzergahlar cekiliyor...");
-  const guzergahlar = await backupHatGuzergahlari(api);
+  const guzergahlar = await backupHatGuzergahlari(eshotApi);
   console.log(`  ✓ Guzergahlar: ${guzergahlar.records.length} kayit`);
 
   console.log("ESHOT hareket saatleri cekiliyor...");
-  const saatler = await backupHareketSaatleri(api);
+  const saatler = await backupHareketSaatleri(eshotApi);
   console.log(`  ✓ Hareket Saatleri: ${saatler.records.length} kayit`);
+
+  console.log("Metro istasyonları cekiliyor...");
+  const metroIstasyonlar = await backupMetroIstasyonlar(metroApi);
+  console.log(`  ✓ Metro İstasyonları: ${metroIstasyonlar.records.length} kayit`);
+
+  console.log("İzban istasyonları cekiliyor...");
+  const izbanIstasyonlar = await backupIzbanIstasyonlar(izbanApi);
+  console.log(`  ✓ İzban İstasyonları: ${izbanIstasyonlar.records.length} kayit`);
 
   if (dryRun) return;
 
   console.log("Supabase veritabanına yazılıyor...");
-  const result = await persistAllToSupabase(now, hatlar.records, duraklar.records, guzergahlar.records, saatler.records);
+  const result = await persistAllToSupabase(
+    now,
+    hatlar.records,
+    duraklar.records,
+    guzergahlar.records,
+    saatler.records,
+    metroIstasyonlar.records,
+    izbanIstasyonlar.records
+  );
   console.log(`  ✓ run id  : ${result.runId}`);
   console.log(`  ✓ hatlar  : ${result.hatlar}`);
   console.log(`  ✓ duraklar: ${result.duraklar}`);
+  console.log(`  ✓ metro   : ${result.metroIstasyonlar}`);
+  console.log(`  ✓ izban   : ${result.izbanIstasyonlar}`);
 }
 
 export async function run(argv = process.argv): Promise<void> {
@@ -317,16 +427,14 @@ export async function run(argv = process.argv): Promise<void> {
     process.exit(1);
   }
 
-  const api = await createEshotApi();
-
   if (dryRun) {
     console.log("[dry-run] Veri cekiliyor, DB'ye yazilmayacak...\n");
-    await backupAll(api, true);
+    await backupAll(true);
     console.log("\n[dry-run] Basarili!");
     return;
   }
 
-  await backupAll(api);
+  await backupAll();
   console.log("\n✓ Yedekleme tamamlandı!");
 }
 
