@@ -1,9 +1,5 @@
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
-// Environment variables'dan Supabase bilgilerini al
-const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
-
 let supabaseClient: SupabaseClient | null = null;
 
 /**
@@ -14,14 +10,18 @@ let supabaseClient: SupabaseClient | null = null;
 export function getSupabaseClient(): SupabaseClient {
   if (supabaseClient) return supabaseClient;
 
-  if (!SUPABASE_URL) {
+  // Environment variables'ı fonksiyon çağrıldığında oku (dotenv yüklendikten sonra)
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+  if (!url) {
     throw new Error("SUPABASE_URL environment variable tanımlanmamış");
   }
-  if (!SUPABASE_SERVICE_ROLE_KEY) {
+  if (!key) {
     throw new Error("SUPABASE_SERVICE_ROLE_KEY environment variable tanımlanmamış");
   }
 
-  supabaseClient = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+  supabaseClient = createClient(url, key, {
     auth: {
       autoRefreshToken: false,
       persistSession: false,
@@ -35,7 +35,7 @@ export function getSupabaseClient(): SupabaseClient {
  * Supabase'in kullanılabilir olup olmadığını kontrol eder
  */
 export function isSupabaseConfigured(): boolean {
-  return Boolean(SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY);
+  return Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
 }
 
 /**
