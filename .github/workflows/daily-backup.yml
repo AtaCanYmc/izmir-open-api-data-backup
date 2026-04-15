@@ -1,9 +1,9 @@
-name: Daily ESHOT Backup to Supabase
+name: Monthly ESHOT Backup to Supabase
 
 on:
   schedule:
-    # Her gün saat 03:00 UTC (Türkiye saati 06:00)
-    - cron: '0 3 * * *'
+    # Her ayın 15'i saat 18:00 UTC (Türkiye saati 21:00)
+    - cron: '0 18 15 * *'
   workflow_dispatch: # Manuel tetikleme için
 
 env:
