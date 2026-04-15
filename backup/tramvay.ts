@@ -79,9 +79,9 @@ async function backupTramvay(dryRun = false): Promise<void> {
 
         // Yaz
         const batch = hatlar.map((row) => ({
-            hat_id: pickNumber(row, ["SeferId", "Id"]),
-            hat_adi: pickText(row, ["Adi", "SeferAdi"]),
-            hat_kodu: pickText(row, ["Kod", "HatKodu"]),
+            hat_id: pickNumber(row, ["HatId"]),
+            hat_adi: pickText(row, ["Adi"]),
+            hat_kodu: pickText(row, ["Aciklama"]),
             updated_at: nowIso,
         }));
 

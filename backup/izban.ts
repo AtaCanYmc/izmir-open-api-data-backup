@@ -80,7 +80,7 @@ async function backupIzban(dryRun = false): Promise<void> {
         // Yaz
         const batch = istasyonlar.map((row) => ({
             istasyon_id: pickNumber(row, ["IstasyonId"]),
-            istasyon_adi: pickText(row, ["Adi"]),
+            istasyon_adi: pickText(row, ["IstasyonAdi"]),
             enlem: pickNumber(row, ["Enlem"]),
             boylam: pickNumber(row, ["Boylam"]),
             updated_at: nowIso,
