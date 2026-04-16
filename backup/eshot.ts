@@ -1,4 +1,6 @@
 // .env dosyası varsa yükle (local development için)
+import type {EshotSiraliDurak} from "izmir-open-data-js/dist/endpoints/eshot";
+
 try {
     await import("dotenv/config");
 } catch { /* ignore */
@@ -18,6 +20,8 @@ interface EshotApi {
     getHatGuzergahlari(): Promise<EshotRecord[]>;
 
     getHareketSaatleri(): Promise<EshotRecord[]>;
+
+    getSiraliDuraklar(hatNo: string, yon: 0 | 1): Promise<EshotSiraliDurak[]>;
 }
 
 async function createEshotApi(): Promise<EshotApi> {
@@ -152,6 +156,23 @@ async function backupEshot(dryRun = false): Promise<void> {
             }, {onConflict: "hat_no,durak_id"});
         }
         console.log(`  ✓ Duraklar yazıldı`);
+
+        for (const row of hatlar) {
+            const hatNo = getHatNo(row);
+            const siraliDuraklar0 = await api.getSiraliDuraklar(hatNo!, 0);
+            const siraliDuraklar1 = await api.getSiraliDuraklar(hatNo!, 1);
+            const siraliDuraklar = [...siraliDuraklar0, ...siraliDuraklar1];
+
+            for (const durak of siraliDuraklar) {
+                await supabase.from("eshot_hat_durak_sirasi").upsert({
+                    hat_no: hatNo,
+                    durak_id: Number(durak.durakId),
+                    yon: durak.yon,
+                    sira: durak.sira,
+                    updated_at: nowIso,
+                }, {onConflict: "hat_no,durak_id,yon"});
+            }
+        }
         console.log(`  ✓ Duraktan geçen hatlar yazıldı`);
 
         // Güzergahlar
