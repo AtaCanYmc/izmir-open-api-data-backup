@@ -142,19 +142,16 @@ async function backupEshot(dryRun = false): Promise<void> {
         console.log(`  ✓ Hatlar yazıldı`);
 
         // Duraklar
-        for (const row of duraklar.slice(0, 30)) {
+        for (const row of duraklar) {
             const durakId = pickNumber(row, ["DURAK_ID", "ID"]);
-            const hatNo = getHatNo(row);
-            console.log(row);
             await supabase.from("eshot_duraklar").upsert({
-                hat_no: hatNo,
                 durak_id: durakId,
                 durak_adi: pickText(row, ["DURAK_ADI", "ADI"]),
                 duraktan_gecen_hatlar: pickText(row, ["DURAKTAN_GECEN_HATLAR"]),
                 enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
                 boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
                 updated_at: nowIso,
-            }, {onConflict: "hat_no,durak_id"});
+            }, {onConflict: "durak_id"});
         }
         console.log(`  ✓ Duraklar yazıldı`);
 
