@@ -21,7 +21,7 @@ interface EshotApi {
 
     getHareketSaatleri(): Promise<EshotRecord[]>;
 
-    getSiraliDuraklar(hatNo: string, yon: 0 | 1): Promise<EshotSiraliDurak[]>;
+    scrapEshotSiraliDurakListesi(hatNo: string, yon: 0 | 1): Promise<EshotSiraliDurak[]>;
 }
 
 async function createEshotApi(): Promise<EshotApi> {
@@ -142,9 +142,10 @@ async function backupEshot(dryRun = false): Promise<void> {
         console.log(`  ✓ Hatlar yazıldı`);
 
         // Duraklar
-        for (const row of duraklar) {
+        for (const row of duraklar.slice(0, 30)) {
             const durakId = pickNumber(row, ["DURAK_ID", "ID"]);
             const hatNo = getHatNo(row);
+            console.log(row);
             await supabase.from("eshot_duraklar").upsert({
                 hat_no: hatNo,
                 durak_id: durakId,
@@ -159,8 +160,8 @@ async function backupEshot(dryRun = false): Promise<void> {
 
         for (const row of hatlar) {
             const hatNo = getHatNo(row);
-            const siraliDuraklar0 = await api.getSiraliDuraklar(hatNo!, 0);
-            const siraliDuraklar1 = await api.getSiraliDuraklar(hatNo!, 1);
+            const siraliDuraklar0 = await api.scrapEshotSiraliDurakListesi(hatNo!, 0);
+            const siraliDuraklar1 = await api.scrapEshotSiraliDurakListesi(hatNo!, 1);
             const siraliDuraklar = [...siraliDuraklar0, ...siraliDuraklar1];
 
             for (const durak of siraliDuraklar) {
