@@ -23,13 +23,12 @@ CREATE TABLE IF NOT EXISTS eshot_hatlar (
 -- Durak bilgileri
 CREATE TABLE IF NOT EXISTS eshot_duraklar (
   id SERIAL PRIMARY KEY,
-  hat_no TEXT,
   durak_id INTEGER,
   durak_adi TEXT,
   enlem DOUBLE PRECISION,
   boylam DOUBLE PRECISION,
   updated_at TIMESTAMPTZ NOT NULL,
-  UNIQUE (hat_no, durak_id)
+  UNIQUE (durak_id)
 );
 
 -- Güzergah noktaları
@@ -101,7 +100,7 @@ CREATE TABLE IF NOT EXISTS tramvay_hatlar (
 );
 
 -- İndeksler
-CREATE INDEX IF NOT EXISTS idx_eshot_duraklar_hat_no ON eshot_duraklar (hat_no);
+CREATE INDEX IF NOT EXISTS idx_eshot_duraklar_hat_no ON eshot_duraklar (durak_id);
 CREATE INDEX IF NOT EXISTS idx_eshot_duraktan_gecen_hatlar_durak_id ON eshot_duraktan_gecen_hatlar (durak_id);
 CREATE INDEX IF NOT EXISTS idx_eshot_duraktan_gecen_hatlar_hat_no ON eshot_duraktan_gecen_hatlar (hat_no);
 CREATE INDEX IF NOT EXISTS idx_eshot_guzergah_hat_no ON eshot_guzergah_noktalari (hat_no);
