@@ -65,19 +65,6 @@ function pickBool(record: EshotRecord, key: string): boolean | null {
     return null;
 }
 
-function parseDuraktanGecenHatlar(record: EshotRecord): string[] {
-    const raw = record.DURAKTAN_GECEN_HATLAR;
-    if (raw === undefined || raw === null) return [];
-    const text = String(raw).trim();
-    if (!text) return [];
-    const parts = text
-        .split(/[;,|]/)
-        .flatMap((part) => part.split(/\s+/))
-        .map((part) => part.trim())
-        .filter(Boolean);
-    return Array.from(new Set(parts));
-}
-
 async function backupEshot(dryRun = false): Promise<void> {
     const api = await createEshotApi();
     const now = new Date();
@@ -151,7 +138,6 @@ async function backupEshot(dryRun = false): Promise<void> {
         console.log(`  ✓ Hatlar yazıldı`);
 
         // Duraklar
-        const durakTanGecenHatlarBatch: { durak_id: number; hat_no: string; updated_at: string }[] = [];
         for (const row of duraklar) {
             const durakId = pickNumber(row, ["DURAK_ID", "ID"]);
             const hatNo = getHatNo(row);
@@ -159,24 +145,13 @@ async function backupEshot(dryRun = false): Promise<void> {
                 hat_no: hatNo,
                 durak_id: durakId,
                 durak_adi: pickText(row, ["DURAK_ADI", "ADI"]),
+                duraktan_gecen_hatlar: pickText(row, ["DURAKTAN_GECEN_HATLAR"]),
                 enlem: pickNumber(row, ["ENLEM", "LAT", "Y"]),
                 boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
                 updated_at: nowIso,
             }, {onConflict: "hat_no,durak_id"});
-
-            if (durakId !== null) {
-                for (const gecenHatNo of parseDuraktanGecenHatlar(row)) {
-                    durakTanGecenHatlarBatch.push({durak_id: durakId, hat_no: gecenHatNo, updated_at: nowIso});
-                }
-            }
         }
         console.log(`  ✓ Duraklar yazıldı`);
-
-        // Duraktan geçen hatlar
-        for (let i = 0; i < durakTanGecenHatlarBatch.length; i += 1000) {
-            const batch = durakTanGecenHatlarBatch.slice(i, i + 1000);
-            await supabase.from("eshot_duraktan_gecen_hatlar").upsert(batch, {onConflict: "durak_id,hat_no"});
-        }
         console.log(`  ✓ Duraktan geçen hatlar yazıldı`);
 
         // Güzergahlar
