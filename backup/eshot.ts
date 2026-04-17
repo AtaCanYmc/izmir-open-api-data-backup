@@ -144,7 +144,7 @@ async function backupEshot(dryRun = false): Promise<void> {
         // Duraklar
         for (const row of duraklar) {
             const durakId = pickNumber(row, ["DURAK_ID", "ID"]);
-            await supabase.from("eshot_duraklar").upsert({
+            const { error } = await supabase.from("eshot_duraklar").upsert({
                 durak_id: durakId,
                 durak_adi: pickText(row, ["DURAK_ADI", "ADI"]),
                 duraktan_gecen_hatlar: pickText(row, ["DURAKTAN_GECEN_HATLAR"]),
@@ -152,6 +152,10 @@ async function backupEshot(dryRun = false): Promise<void> {
                 boylam: pickNumber(row, ["BOYLAM", "LON", "X"]),
                 updated_at: nowIso,
             }, {onConflict: "durak_id"});
+
+            if (error) {
+                console.error(`❌ Durak ${durakId} yazılırken hata oluştu:`, error.message);
+            }
         }
         console.log(`  ✓ Duraklar yazıldı`);
 
@@ -162,13 +166,16 @@ async function backupEshot(dryRun = false): Promise<void> {
             const siraliDuraklar = [...siraliDuraklar0, ...siraliDuraklar1];
 
             for (const durak of siraliDuraklar) {
-                await supabase.from("eshot_hat_durak_sirasi").upsert({
+                const { error } = await supabase.from("eshot_hat_durak_sirasi").upsert({
                     hat_no: hatNo,
                     durak_id: Number(durak.durakId),
                     yon: durak.yon,
                     sira: durak.sira,
                     updated_at: nowIso,
                 }, {onConflict: "hat_no,durak_id,yon"});
+                if (error) {
+                    console.error(`❌ Durak ${durak.durakId} sırası yazılırken hata oluştu:`, error.message);
+                }
             }
         }
         console.log(`  ✓ Duraktan geçen hatlar yazıldı`);
@@ -186,7 +193,10 @@ async function backupEshot(dryRun = false): Promise<void> {
 
         for (let i = 0; i < guzergahBatch.length; i += 1000) {
             const batch = guzergahBatch.slice(i, i + 1000);
-            await supabase.from("eshot_guzergah_noktalari").upsert(batch, {onConflict: "hat_no,yon,sira"});
+            const { error } = await supabase.from("eshot_guzergah_noktalari").upsert(batch, {onConflict: "hat_no,yon,sira"});
+            if (error) {
+                console.log(`❌ Güzergah batch ${i}-${i + batch.length} yazılırken hata oluştu:`, error.message);
+            }
         }
         console.log(`  ✓ Güzergahlar yazıldı`);
 
@@ -208,7 +218,10 @@ async function backupEshot(dryRun = false): Promise<void> {
 
         for (let i = 0; i < saatlerBatch.length; i += 1000) {
             const batch = saatlerBatch.slice(i, i + 1000);
-            await supabase.from("eshot_hareket_saatleri").insert(batch);
+            const { error } =  await supabase.from("eshot_hareket_saatleri").insert(batch);
+            if (error) {
+                console.log(`❌ Hareket saatleri batch ${i}-${i + batch.length} yazılırken hata oluştu:`, error.message);
+            }
         }
         console.log(`  ✓ Hareket saatleri yazıldı`);
 
